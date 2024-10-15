@@ -14,12 +14,15 @@ realizadas com precisão. Imagine que o processador é o chefe dessa cidade, a m
 as informações, e as vias de comunicação são os barramentos que permitem que dados e informações circulem de um 
 lado para o outro. É fascinante como tudo isso se conecta para que o computador funcione!
 
- Além disso, a organização de computadores vai muito além de entender essas partes isoladas. Ela também aborda como otimizar o uso desses componentes, garantindo que o sistema seja rápido, eficiente e utilize menos energia. É 
+ Além disso, a organização de computadores vai muito além de entender essas partes isoladas. Ela também aborda como
+otimizar o uso desses componentes, garantindo que o sistema seja rápido, eficiente e utilize menos energia. É 
 como projetar uma cidade para ter menos congestionamento, maior eficiência energética e, ao mesmo tempo, permitir 
 que tudo funcione sem travamentos.
 
- Por fim, estudar esse tema é fundamental para quem deseja se aprofundar em como as máquinas "pensam" e executam as operações que vemos na prática. Desde o funcionamento de um simples aplicativo até o processamento de grandes 
-volumes de dados em servidores, a organização de computadores é o que garante que o hardware e o software conversem fluentemente e trabalhem em harmonia.
+ Por fim, estudar esse tema é fundamental para quem deseja se aprofundar em como as máquinas "pensam" e executam as 
+operações que vemos na prática. Desde o funcionamento de um simples aplicativo até o processamento de grandes 
+volumes de dados em servidores, a organização de computadores é o que garante que o hardware e o software conversem
+fluentemente e trabalhem em harmonia.
 
 
 
