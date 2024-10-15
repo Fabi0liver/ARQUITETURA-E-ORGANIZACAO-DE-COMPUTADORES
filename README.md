@@ -1,6 +1,5 @@
-# Resumo sobre Organização de Computadores
+# Organização de Computadores
 
-## Introdução
 A organização de computadores é uma disciplina essencial que investiga como os componentes de hardware e software interagem para executar tarefas. Ela permite uma compreensão mais profunda do funcionamento interno dos sistemas computacionais e é crucial para o desenvolvimento de tecnologias mais eficientes e avançadas.
 
 ## Principais Conteúdos
