@@ -92,3 +92,40 @@ essenciais para qualquer pessoa interessada em entender a fundo o funcionamento 
   processador aproveite ao máximo os recursos disponíveis, reduzindo gargalos e melhorando o desempenho geral do 
   sistema.
 
+ 
+ - Memória e Hierarquia de Memória: A memória de um computador pode ser comparada a uma vasta biblioteca, onde o 
+  processador busca as informações necessárias para realizar suas operações. A organização de computadores explora 
+  como diferentes níveis de memória, como a memória cache, RAM e discos de armazenamento, interagem para otimizar 
+  o acesso aos dados. A hierarquia de memória garante que os dados mais frequentemente usados estejam armazenados 
+  em locais mais rápidos, como o cache, enquanto informações menos usadas são armazenadas em dispositivos mais 
+  lentos, como o disco rígido ou SSD.
+
+   A velocidade de acesso aos dados é crucial para o desempenho do sistema, e por isso a hierarquia de memória é 
+  tão importante. Por exemplo, o processador pode acessar a memória cache em questão de nanosegundos, mas levaria 
+  muito mais tempo para acessar um dado armazenado em um disco rígido. A organização de computadores busca 
+  minimizar esse tempo de espera, garantindo que o processador tenha sempre as informações necessárias à sua 
+  disposição no menor tempo possível.
+
+
+ - Dispositivos de Entrada e Saída (I/O): São as "portas" do computador para o mundo externo, permitindo que ele 
+  se comunique com os usuários e outros sistemas. Teclados, mouses, monitores e impressoras são exemplos de 
+  dispositivos de entrada/saída (I/O). Na organização de computadores, estudamos como o computador gerencia esses 
+  fluxos de dados, especialmente considerando que a velocidade desses dispositivos é geralmente muito menor do que 
+  a velocidade da CPU ou da memória principal.
+
+   A comunicação entre a CPU e os dispositivos de I/O é mediada por controladores e barramentos, que garantem que 
+  os dados sejam transmitidos corretamente, sem interferir no desempenho do sistema. Técnicas como DMA (Direct 
+  Memory Access) permitem que os dispositivos I/O transfiram dados diretamente para a memória, liberando a CPU 
+  para outras tarefas. A organização eficiente desses dispositivos é fundamental para garantir que o sistema opere 
+  de forma fluida e sem gargalos.
+
+
+ - Barramentos de Dados: São como as "estradas" que conectam os diferentes componentes do computador, permitindo 
+  que dados e sinais de controle circulem entre eles. Eles são responsáveis por transportar informações entre a 
+  CPU, a memória e os dispositivos de entrada/saída. Na organização de computadores, estudamos os diferentes tipos 
+  de barramentos, como os barramentos de sistema, de memória e de I/O, cada um com suas funções específicas.
+
+   A eficiência dos barramentos impacta diretamente o desempenho do sistema. Se os dados não puderem fluir 
+  rapidamente e sem interrupções, isso cria gargalos que afetam a execução de tarefas. Técnicas como barramentos 
+  paralelos (que permitem a transmissão simultânea de vários bits de dados) ou barramentos de alta velocidade, 
+  como PCI Express, são abordadas para melhorar a velocidade de comunicação entre os componentes.
