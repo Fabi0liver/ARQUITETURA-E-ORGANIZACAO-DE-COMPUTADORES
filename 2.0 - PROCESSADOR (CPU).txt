@@ -163,4 +163,54 @@ contribuem para a eficiência e o poder de processamento do sistema.
   garantindo que a comunicação flua de forma eficiente.
 
 
+ - FPU (Floating Point Unit): É responsável por realizar operações matemáticas que envolvem números com casas 
+  decimais, ou seja, operações em ponto flutuante. Tarefas que envolvem gráficos 3D, cálculos científicos, 
+  simulações físicas e até jogos modernos dependem muito da FPU para realizar cálculos complexos com precisão e 
+  rapidez. A ULA pode lidar com operações inteiras, mas a FPU é projetada especificamente para lidar com operações 
+  que exigem maior precisão decimal.
+
+   A FPU acelera o processamento de tarefas intensivas em cálculos, evitando que a ULA fique sobrecarregada com 
+  operações matemáticas complexas. Sem uma FPU eficiente, o desempenho de softwares que dependem de cálculos 
+  precisos e rápidos seria severamente impactado.
+
+   Podemos pensar na FPU como uma calculadora científica, especializada em cálculos avançados e específicos, 
+  enquanto a ULA seria uma calculadora comum, mais voltada para operações simples. Cada uma tem sua função, mas 
+  ambas são necessárias para cobrir todos os tipos de operações matemáticas no processador.
+
+
+ - Núcleos (Cores): São as unidades de processamento independentes dentro de um processador. Inicialmente, os 
+  processadores tinham apenas um núcleo, o que limitava o número de instruções que poderiam ser executadas ao 
+  mesmo tempo. Com o avanço da tecnologia, surgiram os processadores multinúcleo, onde múltiplos núcleos permitem 
+  que várias tarefas sejam executadas simultaneamente. Isso melhora drasticamente o desempenho, especialmente em 
+  aplicativos que podem se beneficiar de processamento paralelo, como editores de vídeo, jogos e simulações 
+  científicas.
+
+   Cada núcleo tem sua própria ULA, UC e outros componentes essenciais, funcionando como se fossem pequenos 
+  processadores dentro do processador maior. Quando um computador realiza várias tarefas ao mesmo tempo, como 
+  rodar um navegador enquanto faz uma renderização gráfica, são os núcleos que dividem o trabalho e garantem que 
+  tudo funcione sem travamentos.
+
+   Podemos comparar os núcleos a uma equipe de cozinheiros em um restaurante. Se houver apenas um cozinheiro 
+  (núcleo único), ele precisa preparar todos os pratos sozinho, o que demora. Com mais cozinheiros (múltiplos 
+  núcleos), cada um pode cuidar de uma parte do menu, agilizando o serviço e melhorando a eficiência da cozinha.
+
+
+ - Unidade de Pré-Busca (Prefetch Unit): É responsável por antecipar quais dados e instruções serão necessários no 
+  futuro e buscá-los da memória antes que sejam solicitados. Isso permite que o processador tenha as informações 
+  prontas para uso, evitando atrasos durante a execução das tarefas. A pré-busca é fundamental para otimizar o 
+  desempenho da CPU, pois reduz o tempo de espera entre o pedido de uma instrução e sua execução.
+
+   A Unidade de Pré-Busca opera de forma preditiva, analisando padrões nas instruções que estão sendo executadas 
+  para prever quais serão as próximas solicitações. Quando bem-sucedida, essa antecipação pode aumentar 
+  significativamente a velocidade do processador, especialmente em tarefas que envolvem grandes volumes de dados 
+  ou instruções repetitivas.
+
+   Você pode imaginar a Unidade de Pré-Busca como um garçom eficiente que já traz a bebida para a mesa antes que 
+  você a peça, baseado em suas visitas anteriores ao restaurante. Ele antecipa suas necessidades, acelerando o 
+  serviço e tornando a experiência mais fluida.
+
+
+ 
+
+
 
