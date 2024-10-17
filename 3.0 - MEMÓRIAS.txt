@@ -542,6 +542,10 @@ tipos de memória para entender como eles funcionam e por que são tão importan
  memória virtual é sua velocidade, uma vez que o acesso ao disco rígido ou SSD é muito mais lento do que o acesso 
  direto à RAM.
 
+   Velocidade : Muito lenta (comparada à RAM)
+        Custo : Usado em disco rígido, então compartilha o custo do disco
+   Capacidade : Grande, dependendo do tamanho do disco
+
 
  - Como a Memória Virtual Funciona?
 
@@ -616,4 +620,42 @@ tipos de memória para entender como eles funcionam e por que são tão importan
    Em suma, a memória virtual é como um armário de backup para sua mesa de trabalho (RAM). Ele mantém seu fluxo de 
   trabalho ativo, mas a troca constante de documentos entre a mesa e o armário diminui sua velocidade. Para um 
   desempenho otimizado, é ideal que o sistema dependa mais da RAM do que da memória virtual.
+
+
+
+* Memória Terciária (ou Memória Externa)
+
+
+  A memória terciária, também conhecida como memória externa, desempenha um papel fundamental na organização de 
+ computadores, especialmente quando se trata de armazenamento a longo prazo e em grande escala. Diferente da 
+ memória primária, como a RAM, que armazena dados temporários e é volátil, a memória terciária é não volátil, ou 
+ seja, os dados permanecem armazenados mesmo quando o computador é desligado. Essa categoria de memória é usada 
+ para armazenar grandes volumes de dados que não precisam ser acessados com tanta frequência e oferece uma solução 
+ para armazenamentos que não caberiam na memória principal ou secundária.
+
+  Seu principal objetivo é fornecer um local seguro para o armazenamento de dados importantes e backup, 
+ especialmente em situações onde a confiabilidade é crítica e a capacidade de armazenamento precisa ser massiva. A 
+ memória terciária é frequentemente utilizada em sistemas de arquivamento de longo prazo, backups e grandes bases 
+ de dados corporativas, onde a recuperação rápida não é prioridade, mas a durabilidade e a segurança dos dados são 
+ essenciais. Um exemplo clássico desse tipo de memória são as fitas magnéticas, que ainda são amplamente 
+ utilizadas em grandes corporações para backups de dados em larga escala devido à sua durabilidade e capacidade.
+
+   Velocidade: Muito lenta
+        Custo: Muito barato por GB
+   Capacidade: Enorme (petabytes ou mais)
+
+
+ - Como Funciona a Memória Terciária?
+
+   A memória terciária é geralmente conectada ao sistema de computadores de forma offline ou em unidades externas 
+  que podem ser acessadas quando necessário. Seu processo de acesso aos dados é consideravelmente mais lento em 
+  comparação à memória principal ou secundária, pois, muitas vezes, envolve operações mecânicas, como a leitura de 
+  fitas ou discos ópticos. No entanto, como o objetivo principal é armazenar grandes quantidades de dados por 
+  longos períodos de tempo, essa limitação de velocidade é aceitável na maioria dos cenários de uso.
+
+   Quando o sistema precisa acessar informações armazenadas na memória terciária, geralmente envolve uma 
+  transferência do dado para a memória secundária ou principal, onde será processado ou manipulado. Uma vez 
+  finalizado, o dado pode ser novamente transferido para a memória terciária para arquivamento. O uso da memória 
+  terciária é altamente vantajoso quando se trata de dados que não precisam de acesso imediato, como backups 
+  antigos, grandes coleções de mídia ou informações históricas.
  
