@@ -1,0 +1,23 @@
+                                          MEMÓRIAS
+
+
+ Quando pensamos em um computador, a primeira imagem que vem à mente pode ser a de uma máquina capaz de realizar 
+várias tarefas ao mesmo tempo, desde abrir programas até armazenar arquivos. No entanto, para que todas essas 
+atividades aconteçam, é necessário algo que guarde informações e torne-o acessível sempre que o computador precisar. 
+Esse é o papel da memória. Ela é como o “cérebro de curto prazo” do computador, que armazena dados importantes de 
+maneira rápida e eficiente.
+
+ Se imaginarmos o computador como uma pessoa, podemos compará-lo com alguém que precisa lembrar de várias coisas ao 
+mesmo tempo para realizar suas atividades do dia. Por exemplo, se você está cozinhando e precisa seguir uma receita, 
+é a sua memória que você lembra de cada etapa, enquanto você prepara os ingredientes. Assim também funciona o 
+computador: ele precisa de diferentes tipos de memória para manter suas operações organizadas e eficientes.
+
+ A memória de um computador desempenha um papel fundamental em sua performance. Sem ela, o processador, que é o 
+cérebro do sistema, não teria onde buscar ou armazenar informações temporárias e permanentes. Isso seria como tentar 
+resolver um quebra-cabeça sem uma superfície plana para organizar as peças — você ficaria perdido, sem um lugar para 
+começar ou seguir em frente.
+
+ Portanto, a memória no computador serve como um espaço temporário e permanente onde tudo é organizado, processado e 
+acessado. Cada tipo de memória tem uma função específica dentro desse processo, garantindo que o sistema funcione de 
+forma eficiente e ágil, assim como a mente humana, que tem várias formas de armazenar e processar informações em 
+diferentes situações.
