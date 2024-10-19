@@ -1,0 +1,24 @@
+                                CONJUNTO DE INSTRUÇÕES OU ISA
+
+
+ O conjunto de instruções, ou ISA (Instruction Set Architecture), é como o idioma que um processador "fala". Assim 
+como qualquer idioma tem regras e estrutura que nos permitem comunicar, o ISA define as regras pelas quais um 
+processador interage com o software. Tudo o que um computador faz, desde somar dois números até rodar gráficos 
+complexos, depende de instruções simples que uma CPU recebe e processa. Essas instruções são como pequenos comandos 
+que orientam uma máquina para executar cada tarefa.
+
+ Cada processador possui seu próprio conjunto de instruções, o que significa que diferentes arquiteturas de 
+velocidade podem entender e executar conjuntos de comandos diferentes. Por exemplo, os algoritmos usados ​​em 
+computadores pessoais, como os da Intel ou AMD, possuem um ISA diferente daqueles usados ​​em smartphones, como os da 
+arquitetura ARM. Ainda que ambos realizem funções semelhantes, eles "pensam" de maneiras diferentes, baseando-se nos 
+comandos que conseguem entender.
+
+ Podemos pensar no ISA como o conjunto de ferramentas que a CPU tem à sua disposição. Algumas arquiteturas, chamadas 
+de CISC (Complex Instruction Set Computing), possuem uma caixa de ferramentas cheia de ferramentas complexas, 
+permitindo que executem operações avançadas em poucas instruções. Outras, como as arquiteturas RISC (Reduced 
+Instruction Set Computing), focam em ferramentas mais simples, realizando tarefas complexas ao combinar várias 
+instruções menores.
+
+ Em resumo, o conjunto de instruções é uma espinha dorsal que conecta o hardware com o software. Ele define o que é 
+possível para o processador e como ele interage com as instruções programadas, moldando a forma como todas as 
+operações computacionais acontecem, desde as mais simples até as mais complexas.
