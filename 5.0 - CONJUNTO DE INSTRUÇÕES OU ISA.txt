@@ -338,7 +338,8 @@ MISP se concentra na minimização do conjunto de instruções, ideal para aplic
 custo. Vamos nos aprofundar em cada uma dessas arquiteturas e descobrir o que as torna tão importantes na 
 tecnologia moderna.
 
- Vamos explorar cada uma das arquiteturas de conjunto de instruções (ISA) em mais detalhes, analisando algumas de  suas características:
+ Vamos explorar cada uma das arquiteturas de conjunto de instruções (ISA) em mais detalhes, analisando algumas de 
+suas características:
 
  * RISC (Reduced Instruction Set Computing):
 
@@ -549,7 +550,12 @@ tecnologia moderna.
   arquitetura MISP se torna cada vez mais relevante, mostrando que, às vezes, menos realmente é mais.
 
 
- E com isso concluímos que as arquiteturas RISC, CISC e MISP representam três abordagens distintas e complementares para a execução de instruções, cada uma com suas próprias vantagens e desvantagens. RISC se destaca pela simplicidade e eficiência, ideal para sistemas que priorizam velocidade e desempenho. CISC, por sua vez, oferece uma flexibilidade notável, permitindo operações complexas com um menor número de instruções, o que pode ser vantajoso em ambientes de computação de alto nível. Já a MISP busca a máxima simplicidade, sendo perfeita para aplicações que exigem baixo custo e eficiência energética.
+ E com isso concluímos que as arquiteturas RISC, CISC e MISP representam três abordagens distintas e 
+complementares para a execução de instruções, cada uma com suas próprias vantagens e desvantagens. RISC se 
+destaca pela simplicidade e eficiência, ideal para sistemas que priorizam velocidade e desempenho. CISC, por
+sua vez, oferece uma flexibilidade notável, permitindo operações complexas com um menor número de instruções,
+o que pode ser vantajoso em ambientes de computação de alto nível. Já a MISP busca a máxima simplicidade, 
+sendo perfeita para aplicações que exigem baixo custo e eficiência energética.
 
  A escolha da arquitetura mais adequada é, portanto, um fator crucial que depende das necessidades específicas de 
 cada sistema, abrangendo aspectos como desempenho, eficiência, custo e complexidade. À medida que a tecnologia 
@@ -568,7 +574,8 @@ comportamento da CPU, influenciando diretamente a eficiência e a eficácia das 
 esses elementos nos ajuda a visualizar como a máquina transforma uma sequência de instruções em ações concretas, 
 tornando o processo de computação mais acessível e compreensível.
 
- Ao explorarmos os principais componentes que constituem um conjunto de instruções, podemos apreciar a complexidade e a beleza do design dos processadores. Desde as instruções em si, que definem as ações a serem 
+ Ao explorarmos os principais componentes que constituem um conjunto de instruções, podemos apreciar a complexidade 
+e a beleza do design dos processadores. Desde as instruções em si, que definem as ações a serem 
 tomadas, até os modos de endereçamento que especificam como os dados são acessados, cada parte é meticulosamente 
 pensada para otimizar o desempenho. Vamos nos aprofundar nessa fascinante estrutura e descobrir como cada elemento 
 contribui para o funcionamento harmonioso de um sistema computacional.
