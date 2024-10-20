@@ -862,7 +862,11 @@ o desempenho e a eficiência dos sistemas computacionais. Cada escolha feita no 
 pode ter repercussões significativas na velocidade e na capacidade de resposta de um sistema, tornando o entendimento
 desses elementos essencial para qualquer pessoa envolvida no desenvolvimento de tecnologia.
 
-Compreender os componentes de um conjunto de instruções é, portanto, uma habilidade fundamental para engenheiros, desenvolvedores e programadores que desejam criar soluções eficazes e inovadoras. Ao conhecer as nuances do funcionamento interno dos processadores, os profissionais podem otimizar seu código, aproveitando ao máximo as capacidades do hardware. Essa conexão entre software e hardware é um dos pilares da computação moderna, e explorar esses conceitos nos ajuda a construir sistemas mais robustos e eficientes, impulsionando a tecnologia para novas alturas.
+Compreender os componentes de um conjunto de instruções é, portanto, uma habilidade fundamental para engenheiros, 
+desenvolvedores e programadores que desejam criar soluções eficazes e inovadoras. Ao conhecer as nuances do 
+funcionamento interno dos processadores, os profissionais podem otimizar seu código, aproveitando ao máximo as 
+capacidades do hardware. Essa conexão entre software e hardware é um dos pilares da computação moderna, e explorar
+esses conceitos nos ajuda a construir sistemas mais robustos e eficientes, impulsionando a tecnologia para novas alturas.
 
 
 
