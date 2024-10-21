@@ -554,11 +554,6 @@ e a capacidade de processamento em diversas áreas.
  
 
 
-
-
-
-
-
                                 "Por que o Paralelismo é Importante?"
 
  O paralelismo é fundamental no mundo moderno porque vivemos em uma era onde tudo está acelerado  desde a 
@@ -581,12 +576,4 @@ paralelismo se torna essencial. É como se várias pessoas estivessem trabalhand
 cabeça, cada uma montando sua seção ao mesmo tempo, em vez de todos esperarem que uma única pessoa monte tudo 
 sozinha. Isso não só acelera o processo, como também permite que lidemos com problemas que, de outra forma, seriam 
 impossíveis de resolver em um tempo razoável.
-
-
-
-
-
-
-
-
-                                      
+                 
