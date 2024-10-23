@@ -170,7 +170,6 @@ digital" para que tudo flua de maneira mais eficiente.
 
 
 
-
                                        "O que afeta o Desempenho?"
 
  O desempenho de um computador é resultado da combinação de vários componentes trabalhando juntos, assim como o 
