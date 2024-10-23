@@ -139,6 +139,7 @@ digital" para que tudo flua de maneira mais eficiente.
                       imagem, assim como em uma receita em que a precisão dos ingredientes melhora o sabor do 
                       prato final.
 
+
  - Bytes por Segundo (Bps): Quando falamos sobre a velocidade de transferência de dados, seja na internet ou entre 
                            dispositivos, usamos a unidade bytes por segundo (Bps). Isso nos diz a quantidade de 
                            dados que pode ser movida de um lugar para outro em um determinado período. Uma conexão 
@@ -147,12 +148,14 @@ digital" para que tudo flua de maneira mais eficiente.
                            de ingredientes que você pode pegar da despensa e levar para a bancada de uma só vez — 
                            quanto maior a taxa de transferência, mais rapidamente você pode concluir suas tarefas.
 
+
  - Watts (W): A energia consumida pelos computadores é medida em watts (W). Isso nos diz quanta energia o sistema 
              está usando, algo que é importante especialmente em dispositivos móveis como laptops e smartphones, 
              onde queremos que a bateria dure mais tempo. Um computador de alto desempenho que consome muita 
              energia pode ser comparado a uma cozinha que usa vários eletrodomésticos ao mesmo tempo. Sistemas 
              mais eficientes conseguem realizar muitas tarefas sem consumir muita energia, assim como um chef que 
             sabe usar os utensílios certos para economizar tempo e esforço.
+
 
  - IOPS (Operações de Entrada e Saída por Segundo): Para medir o desempenho de dispositivos de armazenamento, como  
        HDs ou SSDs, usamos IOPS (operações de entrada e saída por segundo). Essa unidade nos diz quantas operações 
