@@ -2,7 +2,7 @@
 
 
  Desempenho e otimização são aspectos fundamentais quando falamos sobre o funcionamento dos computadores. Se 
-pensarmos em um computador como uma máquina que processa informações, sua eficiência — ou desempenho — é o que 
+pensarmos em um computador como uma máquina que processa informações, sua eficiência ou desempenho é o que 
 determina o quão bem ele realiza suas tarefas. Otimização, por sua vez, é o processo de ajustar e melhorar essa 
 eficiência. Imagine um computador como uma cozinha. O desempenho é a rapidez com que as refeições (tarefas) são 
 preparadas, e a otimização é o processo de organizar melhor os ingredientes e utensílios para tornar a preparação 
