@@ -41,7 +41,7 @@ significativos ou travamentos.
 (hardware e software) estão bem coordenados, conseguem preparar vários pratos ao mesmo tempo, sem perder tempo 
 procurando ingredientes ou se esbarrando. Cada chef tem sua função clara, e a comunicação entre eles é eficiente, 
 o que faz com que as refeições sejam servidas rapidamente e com qualidade. Se algo na cozinha estiver fora de 
-ordem — como um fogão lento ou ingredientes mal distribuídos —, o processo todo fica mais demorado, e a refeição 
+ordem como um fogão lento ou ingredientes mal distribuídos , o processo todo fica mais demorado, e a refeição 
 pode demorar muito mais para ser servida.
 
  Portanto, o desempenho do computador depende dessa harmonia entre hardware e software. Quando todos os 
