@@ -2,11 +2,12 @@
 
 
  Quando falamos sobre Entrada e Saída (E/S) na organização de computadores, estamos nos referindo à forma como os 
-sistemas interagem com o mundo externo. Basicamente, E/S abrange os processos pelos quais um computador recebe 
-dados e também como devolve informações processadas. Esses conceitos são fundamentais para o funcionamento de 
-qualquer máquina, pois permitem a comunicação entre o usuário, os dispositivos periféricos e o próprio sistema. Sem 
-essa troca constante de dados, o computador seria apenas uma máquina isolada, incapaz de responder a comandos ou 
-fornecer resultados. Pense em E/S como o ponto de ligação que torna a interação entre humano e máquina possível.
+sistemas interagem com o mundo externo. Basicamente, Entrada e Saída abrange os processos pelos quais um computador 
+recebe dados e também como devolve informações processadas. Esses conceitos são fundamentais para o funcionamento 
+de qualquer máquina, pois permitem a comunicação entre o usuário, os dispositivos periféricos e o próprio sistema. 
+Sem essa troca constante de dados, o computador seria apenas uma máquina isolada, incapaz de responder a comandos 
+ou fornecer resultados. Pense em Entrada e Saída como o ponto de ligação que torna a interação entre humano e 
+máquina possível.
 
  Agora, imagine o computador como uma pessoa que precisa receber estímulos para reagir. Assim como os nossos 
 sentidos captam informações do ambiente (como visão, audição, tato), o computador também "sente" o mundo ao seu 
@@ -24,8 +25,8 @@ computador está fazendo em resposta aos nossos comandos.
 
  Portanto, entrada e saída são os pilares da comunicação entre nós e as máquinas. Esse fluxo contínuo de dados que 
 entram e saem permite que o computador funcione de maneira eficiente, executando tarefas complexas com rapidez e 
-precisão. Sem um sistema bem estruturado de E/S, as interações que temos com a tecnologia seriam lentas e 
-ineficazes. Ao longo dos anos, o avanço dessas tecnologias tem permitido que as máquinas se tornem cada vez mais  intuitivas e poderosas, aproximando-se cada vez mais das nossas expectativas e necessidades.
+precisão. Sem um sistema bem estruturado de entrada e saída, as interações que temos com a tecnologia seriam lentas 
+e ineficazes. Ao longo dos anos, o avanço dessas tecnologias tem permitido que as máquinas se tornem cada vez mais  intuitivas e poderosas, aproximando-se cada vez mais das nossas expectativas e necessidades.
 
 
 
@@ -39,11 +40,11 @@ mundo quando dispositivos de entrada fornecem informações, e só consegue se "
 saída comunicam os resultados. A evolução desses dispositivos foi fundamental para tornar as máquinas mais 
 acessíveis e poderosas.
 
- Ao longo do tempo, surgiram inúmeros tipos de dispositivos de E/S, cada um com funções específicas. Eles podem ser 
-agrupados em três grandes categorias: dispositivos de entrada, que enviam dados para o computador; dispositivos de 
-saída, que devolvem os resultados ao usuário; e dispositivos de entrada/saída, que têm a capacidade de enviar e 
-receber dados. Cada um desses grupos desempenha um papel essencial para garantir que o computador possa operar em 
-harmonia com o ambiente e com o usuário, tornando a interação mais fluida e eficiente.
+ Ao longo do tempo, surgiram inúmeros tipos de dispositivos de Entrada e Saída, cada um com funções específicas. 
+Eles podem ser agrupados em três grandes categorias: dispositivos de entrada, que enviam dados para o computador; 
+dispositivos de saída, que devolvem os resultados ao usuário; e dispositivos de entrada/saída, que têm a capacidade 
+de enviar e receber dados. Cada um desses grupos desempenha um papel essencial para garantir que o computador possa 
+operar em harmonia com o ambiente e com o usuário, tornando a interação mais fluida e eficiente.
 
 
 * Dispositivos de Entrada:
@@ -125,7 +126,7 @@ máquina capte o mundo ao seu redor e se expresse de forma compreensível.
 
                       "Como o Computador Lida com Entrada e Saída"
 
- A maneira como a interação dos computadores com o mundo externo é fundamental para o seu funcionamento. Os 
+ A maneira como os computadores interagem com o mundo externo é fundamental para o seu bom funcionamento. Os 
 dispositivos de Entrada e Saída (E/S) permitem que o sistema processe e transmita informações de forma eficiente. 
 No entanto, essa comunicação não ocorre de forma esperada: é preciso que o processador gerencie e coordene o fluxo 
 de dados entre o sistema e esses dispositivos. Essa gestão é essencial para evitar congestionamentos e garantir que 
@@ -135,8 +136,7 @@ computadores para lidar com essa comunicação são a Entrada e Saída mapeada n
  Esses dois métodos representam diferentes abordagens para o acesso e controle dos dispositivos de Entrada e Saída. 
 Enquanto a Entrada e Saída mapeada na criação de memória busca simplicidade ao tratar os dispositivos como parte da 
 memória principal do sistema, a Entrada e Saída isolada uma separação mais organizada, permitindo que a memória e 
-os dispositivos utilizem diferentes canais de comunicação. Cada método tem suas vantagens e vantagens, e a escolha 
-depende do equilíbrio entre a simplicidade e o desempenho que o sistema necessita.
+os dispositivos utilizem diferentes canais de comunicação. Cada método tem suas vantagens e desvantagens, e a escolha depende do equilíbrio entre a simplicidade e o desempenho que o sistema necessita.
 
 
 * Entrada e Saída Mapeada na Memória:
