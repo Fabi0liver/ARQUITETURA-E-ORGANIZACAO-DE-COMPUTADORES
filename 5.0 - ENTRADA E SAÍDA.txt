@@ -506,13 +506,13 @@ métodos, fica claro como a escolha entre eles pode afetar tanto o desempenho qu
   transferência de dados é crucial.
 
 
- Em conclusão, os métodos de transferência de dados método programado, interrupções e DMA  desempenham papéis 
-fundamentais na comunicação entre o processador e os dispositivos de entrada e saída. O método programado, embora 
-simples, pode ser ineficiente e causar gargalos em sistemas mais complexos. As interrupções oferecem uma solução 
-mais eficiente, permitindo que o processador gerencie suas tarefas de forma mais ágil, mas trazem desafios em 
-termos de complexidade de gerenciamento. Por fim, o DMA representa a abordagem mais eficiente, liberando o 
-processador para outras tarefas enquanto um controlador especializado cuida das transferências de dados. A escolha 
-do método ideal dependerá das necessidades específicas do sistema e das demandas de desempenho, com cada método 
+ Os métodos de transferência de dados método programado, interrupções e DMA  desempenham papéis fundamentais na 
+comunicação entre o processador e os dispositivos de entrada e saída. O método programado, embora simples, pode ser 
+ineficiente e causar gargalos em sistemas mais complexos. As interrupções oferecem uma solução mais eficiente, 
+permitindo que o processador gerencie suas tarefas de forma mais ágil, mas trazem desafios em termos de 
+complexidade de gerenciamento. Por fim, o DMA representa a abordagem mais eficiente, liberando o processador para 
+outras tarefas enquanto um controlador especializado cuida das transferências de dados. A escolha do método ideal 
+dependerá das necessidades específicas do sistema e das demandas de desempenho, com cada método 
 apresentando suas vantagens e desvantagens em diferentes contextos.
 
 
