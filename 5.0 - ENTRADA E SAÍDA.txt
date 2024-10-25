@@ -11,7 +11,7 @@ máquina possível.
 
  Agora, imagine o computador como uma pessoa que precisa receber estímulos para reagir. Assim como os nossos 
 sentidos captam informações do ambiente (como visão, audição, tato), o computador também "sente" o mundo ao seu 
-redor por meio de dispositivos como o teclado, o mouse, o microfone, ou até sensores em sistemas mais avançados. Essas são as entradas — os dados que chegam ao computador para serem processados. Quando você clica em um link ou 
+redor por meio de dispositivos como o teclado, o mouse, o microfone, ou até sensores em sistemas mais avançados. Essas são as entradas, os dados que chegam ao computador para serem processados. Quando você clica em um link ou 
 pressiona uma tecla, está enviando um comando para a máquina, algo que ela interpretará para executar uma ação. Da 
 mesma forma que nossos sentidos nos ajudam a reagir ao que está ao nosso redor, os dispositivos de entrada fornecem 
 ao computador os "sentidos" que ele usa para entender o que o usuário deseja.
