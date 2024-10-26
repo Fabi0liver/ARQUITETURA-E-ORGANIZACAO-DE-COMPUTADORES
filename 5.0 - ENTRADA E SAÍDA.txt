@@ -138,7 +138,8 @@ computadores para lidar com essa comunicação são a Entrada e Saída mapeada n
  Esses dois métodos representam diferentes abordagens para o acesso e controle dos dispositivos de Entrada e Saída. 
 Enquanto a Entrada e Saída mapeada na criação de memória busca simplicidade ao tratar os dispositivos como parte da 
 memória principal do sistema, a Entrada e Saída isolada uma separação mais organizada, permitindo que a memória e 
-os dispositivos utilizem diferentes canais de comunicação. Cada método tem suas vantagens e desvantagens, e a escolha depende do equilíbrio entre a simplicidade e o desempenho que o sistema necessita.
+os dispositivos utilizem diferentes canais de comunicação. Cada método tem suas vantagens e desvantagens, e a escolha
+depende do equilíbrio entre a simplicidade e o desempenho que o sistema necessita.
 
 
 * Entrada e Saída Mapeada na Memória:
