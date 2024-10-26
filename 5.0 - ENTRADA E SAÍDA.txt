@@ -11,7 +11,8 @@ máquina possível.
 
  Agora, imagine o computador como uma pessoa que precisa receber estímulos para reagir. Assim como os nossos 
 sentidos captam informações do ambiente (como visão, audição, tato), o computador também "sente" o mundo ao seu 
-redor por meio de dispositivos como o teclado, o mouse, o microfone, ou até sensores em sistemas mais avançados. Essas são as entradas, os dados que chegam ao computador para serem processados. Quando você clica em um link ou 
+redor por meio de dispositivos como o teclado, o mouse, o microfone, ou até sensores em sistemas mais avançados. 
+Essas são as entradas, os dados que chegam ao computador para serem processados. Quando você clica em um link ou 
 pressiona uma tecla, está enviando um comando para a máquina, algo que ela interpretará para executar uma ação. Da 
 mesma forma que nossos sentidos nos ajudam a reagir ao que está ao nosso redor, os dispositivos de entrada fornecem 
 ao computador os "sentidos" que ele usa para entender o que o usuário deseja.
@@ -26,7 +27,8 @@ computador está fazendo em resposta aos nossos comandos.
  Portanto, entrada e saída são os pilares da comunicação entre nós e as máquinas. Esse fluxo contínuo de dados que 
 entram e saem permite que o computador funcione de maneira eficiente, executando tarefas complexas com rapidez e 
 precisão. Sem um sistema bem estruturado de entrada e saída, as interações que temos com a tecnologia seriam lentas 
-e ineficazes. Ao longo dos anos, o avanço dessas tecnologias tem permitido que as máquinas se tornem cada vez mais  intuitivas e poderosas, aproximando-se cada vez mais das nossas expectativas e necessidades.
+e ineficazes. Ao longo dos anos, o avanço dessas tecnologias tem permitido que as máquinas se tornem cada vez mais 
+intuitivas e poderosas, aproximando-se cada vez mais das nossas expectativas e necessidades.
 
 
 
