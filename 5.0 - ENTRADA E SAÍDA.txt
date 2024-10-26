@@ -268,7 +268,12 @@ Desvantagens:
 
 
  A escolha entre as arquiteturas de E/S depende muito das necessidades do sistema. A arquitetura baseada em 
-barramento é excelente para ambientes onde simplicidade e baixo custo são prioridades, mas pode enfrentar  limitações de desempenho quando muitos dispositivos precisam se comunicar ao mesmo tempo. Já a arquitetura de rede  de E/S é ideal para sistemas que exigem alta performance e escalabilidade, mas traz consigo um custo mais alto e a  necessidade de um gerenciamento mais robusto. Ambas as arquiteturas têm seus méritos, e a escolha correta garante  que o sistema possa funcionar da maneira mais eficiente possível, de acordo com o volume e o tipo de operações  realizadas.
+barramento é excelente para ambientes onde simplicidade e baixo custo são prioridades, mas pode enfrentar  
+limitaçõesde desempenho quando muitos dispositivos precisam se comunicar ao mesmo tempo. Já a arquitetura de rede  
+de E/S é ideal para sistemas que exigem alta performance e escalabilidade, mas traz consigo um custo mais alto e a  
+necessidade de um gerenciamento mais robusto. Ambas as arquiteturas têm seus méritos, e a escolha correta garante 
+que o sistema possa funcionar da maneira mais eficiente possível, de acordo com o volume e o tipo de operações 
+realizadas.
 
 
 
