@@ -25,7 +25,8 @@ operações devem acontecer.
  Por fim, é importante destacar que o processador também desempenha um papel fundamental na evolução da 
 tecnologia. Ao longo dos anos, as CPUs têm se tornado mais rápidas, eficientes e compactas, permitindo que os 
 computadores sejam cada vez mais poderosos. Assim como um maestro que guia uma orquestra com precisão e ritmo, o 
-processador define o tom e a eficiência de todo o sistema computacional, tornando-se uma peça central na organização de computadores modernos.
+processador define o tom e a eficiência de todo o sistema computacional, tornando-se uma peça central na 
+organizaçãode computadores modernos.
 
  Agora que entendemos o papel fundamental da CPU, vamos explorar seus principais componentes e como eles trabalham 
 em conjunto para garantir o funcionamento eficiente dos computadores.
