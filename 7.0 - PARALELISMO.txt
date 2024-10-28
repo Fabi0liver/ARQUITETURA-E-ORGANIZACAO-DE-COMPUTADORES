@@ -82,7 +82,8 @@ executado. Isso significa que, ao lidarmos com grandes volumes de dados ou cálc
 diferentes estratégias para dividir o trabalho entre processadores ou dispositivos. Desde a fragmentação de dados 
 até a execução simultânea de tarefas independentes, o objetivo é sempre maximizar a eficiência do sistema.
 
- O paralelismo pode ocorrer em vários níveis, cada um com um foco específico. Ele pode ser aplicado dentro de um único processador com múltiplos núcleos, onde várias tarefas pequenas são divididas entre os núcleos, ou pode ser 
+ O paralelismo pode ocorrer em vários níveis, cada um com um foco específico. Ele pode ser aplicado dentro de um
+único processador com múltiplos núcleos, onde várias tarefas pequenas são divididas entre os núcleos, ou pode ser 
 distribuído em grandes sistemas, como clusters de computadores, onde múltiplas máquinas trabalham juntas em uma 
 única tarefa. Cada abordagem vem com seus próprios benefícios e também com desafios únicos, que devem ser 
 compreendidos para que possamos aproveitar ao máximo os recursos disponíveis.
@@ -403,7 +404,8 @@ disponíveis.
 organizada em várias etapas distintas. Cada uma dessas etapas lida com uma parte específica do processo de 
 execução de uma instrução. Quando uma instrução entra no pipeline, ela percorre essas etapas de forma sequencial. 
 No entanto, o grande trunfo do pipeline é que várias instruções podem ser processadas simultaneamente, cada uma em 
-uma etapa diferente do pipeline. Isso permite que o processador utilize seu tempo de forma mais eficaz, reduzindo o tempo total necessário para processar um conjunto de instruções.
+uma etapa diferente do pipeline. Isso permite que o processador utilize seu tempo de forma mais eficaz, reduzindo 
+o tempo total necessário para processar um conjunto de instruções.
 
  Essa abordagem de execução em paralelo não só melhora a taxa de instruções por ciclo (IPC) uma medida crítica de 
 desempenho em processadores — mas também aumenta a eficiência geral do sistema. Ao organizar a execução das 
