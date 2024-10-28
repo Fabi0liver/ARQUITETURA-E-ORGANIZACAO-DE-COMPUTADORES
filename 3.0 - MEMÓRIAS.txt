@@ -912,8 +912,3 @@ frequentemente em prateleiras mais distantes.
 processador ficaria esperando constantemente por informações, e o sistema seria muito mais lento. A hierarquia de 
 memórias permite que o computador atenda às suas demandas de forma rápida e eficiente, equilibrando velocidade,
 capacidade e custo, para que tudo funcione da maneira mais fluida possível.
-
-
-
- 
- 
