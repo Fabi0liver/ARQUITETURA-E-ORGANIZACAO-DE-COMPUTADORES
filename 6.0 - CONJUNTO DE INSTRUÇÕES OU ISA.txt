@@ -900,6 +900,3 @@ programação, mas também capacita os profissionais a inovar e criar soluções
 dos sistemas computacionais. À medida que a tecnologia avança e novas arquiteturas emergem, a importância de 
 compreender o conjunto de instruções se torna cada vez mais evidente, preparando a próxima geração de 
 desenvolvedores e engenheiros para enfrentar os desafios do futuro.
- 
-
- 
