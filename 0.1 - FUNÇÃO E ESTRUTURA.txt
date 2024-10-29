@@ -184,18 +184,18 @@ coordenadas e organizadas.
 
 * Controle:
 
-  A função de controle é fundamental para o funcionamento de um computador, atuando como o maestro de uma 
- orquestra. Assim como um maestro é responsável por garantir que cada músico toque na hora certa e na sequência 
- correta, a Unidade de Controle (UC) coordena todas as atividades do sistema, assegurando que os diferentes 
- componentes trabalhem em harmonia. Sem essa coordenação, o sistema poderia se tornar caótico, com informações 
- sendo enviadas para o lugar errado ou na ordem errada, resultando em um desempenho ineficiente ou até mesmo em 
- falhas.
+  A função de controle é essencial para que um computador execute suas operações de maneira organizada e eficiente. 
+ Ela age como um coordenador interno, responsável por orquestrar o fluxo de dados e instruções entre os diferentes 
+ componentes do sistema. Quando um programa é executado, o computador recebe uma sequência de instruções que 
+ precisam ser processadas de forma precisa e na ordem correta. A função de controle atua aqui para garantir que 
+ cada etapa do processo ocorra no momento certo, sem conflitos ou atrasos, permitindo que o sistema funcione com 
+ fluidez e rapidez.
 
-  A UC é responsável por emitir sinais de controle que instruem as várias partes do computador sobre o que deve ser 
- feito e quando. Isso inclui a gestão de operações de leitura e escrita de dados na memória, além de coordenar a 
- transferência de informações entre a CPU, os dispositivos de entrada e saída e a memória. Assim como em uma peça 
- teatral, onde o diretor orienta os atores sobre quando e como agir, a UC garante que cada parte do sistema saiba 
- exatamente qual é seu papel, permitindo uma execução suave e precisa das tarefas.
+  Essa função de controle é responsável por determinar o "quando" e o "como" de cada operação, assegurando que os 
+ componentes, como a memória e a CPU, trabalhem de forma sincronizada. Sem essa coordenação, as operações do 
+ computador se tornariam desorganizadas, comprometendo o desempenho e a confiabilidade do sistema. A função de 
+ controle, assim, serve como o coração rítmico do computador, mantendo todas as partes em sincronia para que as 
+ instruções sejam executadas de forma precisa e eficiente.
 
   - Unidade de Controle (UC): A Unidade de Controle pode ser vista como o diretor de uma orquestra, que dá o tom e  
                              a sequência das operações. Ela emite sinais para as diversas partes do computador, 
@@ -240,7 +240,7 @@ produção, onde cada máquina e estação de trabalho tem uma posição e funç
 foi projetada para maximizar a eficiência de operação e garantir que todas as tarefas e dados fluam sem 
 impedimentos.
 
- Uma estrutura não apenas organizada, mas também integra cada componente de hardware com os demais, garantindo que 
+ Uma estrutura não apenas organiza, mas também integra cada componente de hardware com os demais, garantindo que 
 os dados sejam transferidos rapidamente para onde forem necessários e que os processos funcionem em sincronia. 
 Dentro dessa estrutura organizada, cada componente desempenha um papel essencial. Desde a CPU, que realiza o 
 processamento principal, até os dispositivos de entrada e saída, que permitem a interação com o mundo exterior, 
@@ -249,7 +249,7 @@ todos os elementos são interligados por meio de barramentos, formando um sistem
  Cada um desses elementos da estrutura, além de executar tarefas específicas, também é projetado para suportar 
 determinadas funções com diferentes níveis de prioridade e velocidade. Abaixo, vamos detalhar cada um dos 
 principais componentes que especificam a estrutura de um computador, explorando como eles trabalham em conjunto 
-para dar suporte às operações fáceis para o funcionamento do sistema.
+para dar suporte às operações do sistema.
 
 
 * Unidade Central de Processamento (CPU):
@@ -514,7 +514,7 @@ tecnologia. Essa sofisticação é o que torna os computadores ferramentas indis
 
 
 
-                                     "Relação entre Função e Estrutura"
+                                    "Relação entre Função e Estrutura"
 
  A função e a estrutura de um computador estão intimamente ligadas, como os dois lados de uma moeda. Cada parte 
 física do computador foi cuidadosamente projetada para cumprir uma função específica, e essa conexão é essencial 
