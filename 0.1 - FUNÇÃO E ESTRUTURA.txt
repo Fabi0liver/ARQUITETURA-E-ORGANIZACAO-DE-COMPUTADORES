@@ -11,7 +11,7 @@ computador funcione corretamente.
 
  Compreender esses dois pilares é fundamental para quem deseja aprofundar seu conhecimento na área de TI,  especialmente em temas como processamento de dados, armazenamento e organização de componentes de hardware. Ao longo  dos anos, com o avanço da tecnologia, a arquitetura de computadores evoluiu significativamente, introduzindo novos  elementos e recursos que tornaram os sistemas mais rápidos e eficientes. Mas, independentemente de novos modelos e  inovações, esses conceitos básicos de função e estrutura permanecem como os fundamentos.
 
- A função de um computador abrange todas as operações que ele é capaz de fazer, desde cálculos complexos até a  exibição de gráficos na tela. Essas operações são fundamentais para que o computador cumpra suas tarefas de forma  eficiente. Já a estrutura é o modo como os componentes do computador estão organizados fisicamente, formando um  sistema que pode eliminar essas funções com eficiência. É como o layout e a disposição de uma fábrica que precisa ter  suas máquinas posicionadas de forma que o fluxo de produção seja rápido e eficiente.
+ A função de um computador abrange todas as operações que ele é capaz de fazer, desde cálculos complexos até a  exibição de gráficos na tela. Essas operações são fundamentais para que o computador cumpra suas tarefas de forma  eficiente. Já a estrutura é o modo como os componentes do computador estão organizados fisicamente, formando um  sistema que pode realizar essas funções com eficiência. É como o layout e a disposição de uma fábrica que precisa ter  suas máquinas posicionadas de forma que o fluxo de produção seja rápido e eficiente.
 
  Com essa visão inicial, podemos começar a explorar cada um desses conceitos com mais profundidade. Primeiro,  analisaremos as funções do sistema e como elas se manifestam no processamento, no armazenamento, na transferência de  dados e no controle. Em seguida, vamos entender a estrutura de um computador, seus principais componentes e como eles  trabalham em conjunto para cumprir essas funções.
 
@@ -33,7 +33,7 @@ transforma dados; pelo armazenamento, ele guarda e acessa informações de forma
 mantém os componentes em comunicação constante; e pelo controle, ele garante que todas as operações sejam 
 coordenadas e organizadas.
 
- Imagine o computador como uma linha de produção em uma fábrica: cada função é uma etapa específica do processo  que, em conjunto como demais, possibilita o funcionamento harmônico do sistema. Assim, enquanto o processamento e o  armazenamento garantem que os dados estejam disponíveis e prontos para uso, a transferência garante a circulação  das informações, e o controle regula e supervisiona todas as etapas para que nada saia de ordem.
+ Imagine o computador como uma linha de produção em uma fábrica: cada função é uma etapa específica do processo  que, em conjunto como os demais, possibilita o funcionamento harmônico do sistema. Assim, enquanto o processamento e o  armazenamento garantem que os dados estejam disponíveis e prontos para uso, a transferência garante a circulação  das informações, e o controle regula e supervisiona todas as etapas para que nada saia de ordem.
 
  Vamos explorar cada uma dessas funções em detalhes para entender como elas são específicas individualmente e em  conjunto para o desempenho eficiente do sistema, formando uma base do que conhecemos como arquitetura de  computadores.
 
@@ -122,6 +122,29 @@ coordenadas e organizadas.
 são os pilares que permitem que o sistema funcione de forma organizada e eficiente. Cada uma dessas funções  desempenha um papel essencial e elas interagem para garantir que o computador possa processar e armazenar  informações, além de manter o fluxo de dados entre seus componentes. Sem essas funções trabalhando juntas, o  computador seria incapaz de realizar operações complexas que o tornam uma ferramenta tão poderosa e versátil.
 
  Ao entender a função de cada componente, fica claro como o computador é capaz de realizar uma vasta gama de  tarefas, desde cálculos simples até operações complexas de processamento e armazenamento de dados. Essa compreensão  é fundamental para quem deseja se aprofundar na arquitetura de computadores e desenvolver soluções mais otimizadas  e eficientes, tanto em termos de software quanto de hardware.
+
+
+
+                                              "Estrutura"
+
+ A estrutura de um computador abrange todos os componentes físicos que compõem o sistema e a maneira como esses 
+componentes são organizados e interconectados para permitir que o computador execute suas funções de forma eficaz. 
+Em essência, a estrutura representa a configuração e disposição do hardware que dá suporte ao processamento, 
+armazenamento e comunicação entre os diversos elementos de um sistema computacional. Assim como em uma linha de 
+produção, onde cada máquina e estação de trabalho tem uma posição e função específica, uma estrutura de computador 
+foi projetada para maximizar a eficiência de operação e garantir que todas as tarefas e dados fluam sem 
+impedimentos.
+
+ Uma estrutura não apenas organizada, mas também integra cada componente de hardware com os demais, garantindo que 
+os dados sejam transferidos rapidamente para onde forem necessários e que os processos funcionem em sincronia. 
+Dentro dessa estrutura organizada, cada componente desempenha um papel essencial. Desde a CPU, que realiza o 
+processamento principal, até os dispositivos de entrada e saída, que permitem a interação com o mundo exterior, 
+todos os elementos são interligados por meio de barramentos, formando um sistema coeso e funcional.
+
+ Cada um desses elementos da estrutura, além de executar tarefas específicas, também é projetado para suportar 
+determinadas funções com diferentes níveis de prioridade e velocidade. Abaixo, vamos detalhar cada um dos 
+principais componentes que especificam a estrutura de um computador, explorando como eles trabalham em conjunto 
+para dar suporte às operações fáceis para o funcionamento do sistema.
 
 
 
