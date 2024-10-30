@@ -331,8 +331,7 @@ para dar suporte às operações do sistema.
   Compreender a arquitetura da memória é crucial para apreciar como os computadores operam. Neste contexto, 
  abordaremos os principais componentes da memória: registradores, cache, memória principal (RAM), memória 
  secundária (HD e SSD) e memória ROM. Vamos explorar como cada uma dessas memórias funciona, suas interações e como 
- elas contribuem para a eficiência geral do sistema, utilizando analogias que tornam esse conceito mais acessível e 
- fácil de entender.
+ elas contribuem para a eficiência geral do sistema.
 
   - Registradores: São as menores unidades de armazenamento dentro da CPU, atuando como um espaço de trabalho 
                   temporário para dados que estão sendo processados. Imagine os registradores como pequenas mesas 
@@ -356,7 +355,7 @@ para dar suporte às operações do sistema.
                         enquanto o computador está ligado. No entanto, essa memória é volátil, o que significa que 
                         todas as informações nela armazenadas são perdidas quando o computador é desligado. Quanto 
                         mais RAM um sistema possui, mais dados e programas podem ser carregados simultaneamente, 
-                        melhorando o desempenho em tarefas que exigem processamento intens.
+                        melhorando o desempenho em tarefas que exigem processamento.
 
   - Memória Secundária (HD e SSD): Enquanto a memória RAM armazena dados temporariamente, a memória secundária 
                                   é onde os dados são guardados permanentemente. Pense nela como um armazém onde 
@@ -413,11 +412,11 @@ para dar suporte às operações do sistema.
                             comunicação entre o dispositivo de entrada e o computador é essencial para garantir que 
                             o usuário tenha uma experiência interativa e responsiva.
 
- - Dispositivos de Saída: Por outro lado, têm a função de apresentar os resultados processados pelo computador ao 
-                         usuário. Os exemplos mais comuns são o monitor, que exibe visualmente as informações; a 
-                         impressora, que gera cópias físicas de documentos e imagens; e as caixas de som, que 
-                         reproduzem áudio. Esses dispositivos convertem os dados digitais em formatos que podem ser 
-                         compreendidos pelos humanos.
+ - Dispositivos de Saída: Têm a função de apresentar os resultados processados pelo computador ao usuário. Os 
+                         exemplos mais comuns são o monitor, que exibe visualmente as informações; a impressora, 
+                         que gera cópias físicas de documentos e imagens; e as caixas de som, que reproduzem áudio. 
+                         Esses dispositivos convertem os dados digitais em formatos que podem ser compreendidos 
+                         pelos humanos.
 
                           Por exemplo, ao abrir uma imagem no computador, o monitor recebe os dados digitais da CPU 
                          e os converte em sinais de luz que criam a imagem que você vê na tela. Essa conversão de 
@@ -508,7 +507,7 @@ facilitar o trânsito; da mesma forma, a arquitetura dos computadores modernos r
 Cada componente foi desenvolvido para otimizar o desempenho e garantir que múltiplas funções possam ser executadas 
 em sincronia, atendendo às crescentes demandas de um mundo digital e interconectado.
 
- m essência, a estrutura do computador não é apenas uma coleção de peças; é um sistema complexo que funciona como 
+ Em essência, a estrutura do computador não é apenas uma coleção de peças; é um sistema complexo que funciona como 
 um todo, permitindo que realizemos desde simples tarefas cotidianas até operações sofisticadas em ambientes de alta 
 tecnologia. Essa sofisticação é o que torna os computadores ferramentas indispensáveis em nossa vida moderna.
 
