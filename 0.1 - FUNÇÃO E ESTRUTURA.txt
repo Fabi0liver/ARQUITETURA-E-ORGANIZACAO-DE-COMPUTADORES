@@ -116,29 +116,6 @@ coordenadas e organizadas.
  barramentos operam é essencial para entender o fluxo de informações dentro do sistema computacional e como esse 
  fluxo impacta a eficiência e a velocidade do computador.
 
-  - Barramento de Dados: É a principal via de comunicação, permitindo que dados sejam enviados e recebidos entre os 
-                        componentes do computador. Imagine-o como a rodovia expressa que conecta os principais 
-                        pontos da cidade. Através dele, informações como instruções de programas e dados são 
-                        transportadas rapidamente, permitindo que a CPU e outros dispositivos troquem informações 
-                        em alta velocidade. Esse barramento é bidirecional, ou seja, pode enviar e receber dados ao 
-                        mesmo tempo, o que aumenta ainda mais a eficiência do sistema.
-
-  - Barramento de Endereços: Desempenha um papel igualmente importante, sendo responsável por indicar onde os dados 
-                            estão armazenados na memória. Ele funciona como um sistema de endereçamento, semelhante 
-                            ao serviço de correios que utiliza endereços para entregar cartas e pacotes. Cada vez 
-                            que a CPU precisa acessar dados específicos, ela usa o barramento de endereços para 
-                            informar onde esses dados estão localizados na memória. Esse direcionamento é vital 
-                            para garantir que as operações sejam realizadas de maneira precisa e rápida, evitando 
-                            confusões e erros na transferência de informações.
-
-  - Barramento de Controle: Por último, temos o barramento de controle, que gerencia as operações e garante que as 
-                           instruções sejam seguidas corretamente. Se os outros barramentos são as ruas por onde os 
-                           dados trafegam, o barramento de controle é como os sinais de trânsito que regulam o 
-                           fluxo. Ele envia sinais de controle para os diversos componentes, informando quem pode 
-                           “falar” e “ouvir” em uma conversa, como em uma orquestra onde cada músico deve saber o 
-                           momento certo de tocar. Essa coordenação é essencial para que todos os componentes do 
-                           sistema trabalhem juntos de forma harmoniosa.
-
   Em suma, a movimentação de dados é fundamental para o funcionamento eficiente de um computador. Através dos 
  barramentos de dados, endereços e controle, o sistema consegue manter um fluxo harmonioso de informações entre 
  seus componentes. Essa infraestrutura de comunicação é o que permite que o computador funcione como uma unidade 
@@ -171,8 +148,8 @@ coordenadas e organizadas.
 
 
  As funções de um computador processamento de dados, armazenamento de dados, transferência de dados e controle são 
-os pilares que permitem que o sistema funcione de forma organizada e eficiente. Cada uma dessas funções  desempenha 
-um papel essencial e elas interagem para garantir que o computador possa processar e armazenar  informações, além 
+os pilares que permitem que o sistema funcione de forma organizada e eficiente. Cada uma dessas funções desempenha 
+um papel essencial e elas interagem para garantir que o computador possa processar e armazenar informações, além 
 de manter o fluxo de dados entre seus componentes. Sem essas funções trabalhando juntas, o  computador seria 
 incapaz de realizar operações complexas que o tornam uma ferramenta tão poderosa e versátil.
 
@@ -289,8 +266,7 @@ para dar suporte às operações do sistema.
                   permitem acesso rápido às informações, já que estão localizados diretamente na CPU, o que 
                   facilita a troca de dados entre a Unidade de Controle e a Unidade Lógica Aritmética. Quando a CPU 
                   precisa realizar operações, ela utiliza os registradores para armazenar dados temporários, 
-                  endereços de memória e resultados intermediários, garantindo que as informações sejam processadas 
-                  com eficiência.
+                  endereços de memória e resultados intermediários.
 
   - Cache: A memória cache é uma forma de armazenamento que fornece acesso ultrarrápido a dados frequentemente 
           utilizados. Pense na cache como uma pequena, mas rápida, biblioteca dentro da CPU. Ao invés de buscar 
