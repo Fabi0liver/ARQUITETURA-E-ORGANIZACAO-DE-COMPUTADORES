@@ -44,9 +44,13 @@ transforma dados; pelo armazenamento, ele guarda e acessa informações de forma
 mantém os componentes em comunicação constante; e pelo controle, ele garante que todas as operações sejam 
 coordenadas e organizadas.
 
- Imagine o computador como uma linha de produção em uma fábrica: cada função é uma etapa específica do processo  que, em conjunto como os demais, possibilita o funcionamento harmônico do sistema. Assim, enquanto o processamento e o  armazenamento garantem que os dados estejam disponíveis e prontos para uso, a transferência garante a circulação  das informações, e o controle regula e supervisiona todas as etapas para que nada saia de ordem.
+ Imagine o computador como uma linha de produção em uma fábrica: cada função é uma etapa específica do processo  
+que, em conjunto como os demais, possibilita o funcionamento harmônico do sistema. Assim, enquanto o processamento
+e o  armazenamento garantem que os dados estejam disponíveis e prontos para uso, a transferência garante a circulação
+das informações, e o controle regula e supervisiona todas as etapas para que nada saia de ordem.
 
- Vamos explorar cada uma dessas funções em detalhes para entender como elas são específicas individualmente e em  conjunto para o desempenho eficiente do sistema.
+ Vamos explorar cada uma dessas funções em detalhes para entender como elas são específicas individualmente e em  
+conjunto para o desempenho eficiente do sistema.
 
 
 * Processamento de Dados:
@@ -165,7 +169,10 @@ um papel essencial e elas interagem para garantir que o computador possa process
 de manter o fluxo de dados entre seus componentes. Sem essas funções trabalhando juntas, o  computador seria 
 incapaz de realizar operações complexas que o tornam uma ferramenta tão poderosa e versátil.
 
- Ao entender a função de cada componente, fica claro como o computador é capaz de realizar uma vasta gama de  tarefas, desde cálculos simples até operações complexas de processamento e armazenamento de dados. Essa compreensão  é fundamental para quem deseja se aprofundar na arquitetura de computadores e desenvolver soluções mais otimizadas  e eficientes, tanto em termos de software quanto de hardware.
+ Ao entender a função de cada componente, fica claro como o computador é capaz de realizar uma vasta gama de  
+tarefas, desde cálculos simples até operações complexas de processamento e armazenamento de dados. Essa compreensão  
+é fundamental para quem deseja se aprofundar na arquitetura de computadores e desenvolver soluções mais otimizadas  
+e eficientes, tanto em termos de software quanto de hardware.
 
 
 
