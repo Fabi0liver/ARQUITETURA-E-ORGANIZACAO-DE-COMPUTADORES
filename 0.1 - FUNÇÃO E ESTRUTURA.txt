@@ -21,7 +21,10 @@ eficiente. Já a estrutura é o modo como os componentes do computador estão or
 sistema que pode realizar essas funções com eficiência. É como o layout e a disposição de uma fábrica que precisa
 ter suas máquinas posicionadas de forma que o fluxo de produção seja rápido e eficiente.
 
- Com essa visão inicial, podemos começar a explorar cada um desses conceitos com mais profundidade. Primeiro,  analisaremos as funções do sistema e como elas se manifestam no processamento, no armazenamento, na transferência de  dados e no controle. Em seguida, vamos entender a estrutura de um computador, seus principais componentes e como eles  trabalham em conjunto para cumprir essas funções.
+ Com essa visão inicial, podemos começar a explorar cada um desses conceitos com mais profundidade. Primeiro,  
+analisaremos as funções do sistema e como elas se manifestam no processamento, no armazenamento, na transferência
+de  dados e no controle. Em seguida, vamos entender a estrutura de um computador, seus principais componentes e 
+como eles  trabalham em conjunto para cumprir essas funções.
 
 
 
