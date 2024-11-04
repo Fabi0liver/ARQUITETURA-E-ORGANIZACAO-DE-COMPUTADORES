@@ -134,19 +134,6 @@ essenciais para qualquer pessoa interessada em entender a fundo o funcionamento 
   como PCI Express, são abordadas para melhorar a velocidade de comunicação entre os componentes.
 
 
- - Conjuntos de Instruções (ISA): É o conjunto básico de comandos que a CPU pode interpretar e executar. Ele 
-  define a interface entre o hardware e o software, sendo a "linguagem" que o processador entende. Existem dois 
-  principais tipos de ISA: o CISC (Complex Instruction Set Computing), que usa um grande número de instruções 
-  complexas, e o RISC (Reduced Instruction Set Computing), que utiliza um conjunto menor de instruções mais 
-  simples.
-
-   A escolha de ISA afeta diretamente a organização do processador e como ele executa as instruções. Processadores 
-  baseados em RISC, por exemplo, tendem a ser mais eficientes em tarefas que exigem alta performance, pois 
-  simplificam a execução de instruções, enquanto processadores CISC podem ser mais adequados para sistemas onde a 
-  compatibilidade com instruções complexas é uma prioridade. Estudar ISA é fundamental para entender a comunicação 
-  entre o hardware e o software de um sistema.
-
-
  - Instruções de Máquina e Linguagem de Montagem: As instruções de máquina são a forma mais básica de comandos 
   executados pela CPU, expressos em linguagem binária. Cada instrução de máquina executa uma tarefa específica, 
   como carregar dados, realizar uma operação aritmética ou mover dados entre registradores. A linguagem de 
