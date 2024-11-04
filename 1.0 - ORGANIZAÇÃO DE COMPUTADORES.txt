@@ -134,17 +134,6 @@ essenciais para qualquer pessoa interessada em entender a fundo o funcionamento 
   como PCI Express, são abordadas para melhorar a velocidade de comunicação entre os componentes.
 
 
- - Paralelismo: Se refere à capacidade de executar várias operações ao mesmo tempo, aproveitando melhor os 
-  recursos do processador. Na organização de computadores, isso significa usar múltiplos núcleos de processamento 
-  para dividir uma tarefa grande em partes menores, que podem ser processadas simultaneamente. Essa técnica 
-  aumenta a eficiência, permitindo que o computador execute mais tarefas em menos tempo.
-  
-   O paralelismo pode ser aplicado em diferentes níveis, desde a execução de várias instruções em um único ciclo 
-  de clock (pipeline), até a execução de múltiplas threads ou processos em processadores com vários núcleos. Essa 
-  abordagem é fundamental para melhorar o desempenho de sistemas modernos, especialmente em tarefas intensivas, 
-  como processamento de imagens, simulações científicas ou inteligência artificial.
-
-
  - Desempenho e Otimização: São tópicos centrais na organização de computadores, focando em como melhorar a 
   eficiência e velocidade do sistema. A performance de um computador pode ser medida por diversos fatores, como o 
   tempo de execução de programas, a quantidade de instruções que o processador pode executar por segundo, e o 
