@@ -134,18 +134,6 @@ essenciais para qualquer pessoa interessada em entender a fundo o funcionamento 
   como PCI Express, são abordadas para melhorar a velocidade de comunicação entre os componentes.
 
 
- - Instruções de Máquina e Linguagem de Montagem: As instruções de máquina são a forma mais básica de comandos 
-  executados pela CPU, expressos em linguagem binária. Cada instrução de máquina executa uma tarefa específica, 
-  como carregar dados, realizar uma operação aritmética ou mover dados entre registradores. A linguagem de 
-  montagem é a versão legível por humanos dessas instruções, onde comandos como "MOV" ou "ADD" representam 
-  operações específicas no processador.
-
-   Estudar a linguagem de montagem é importante porque permite entender como o software interage diretamente com o 
-  hardware, traduzindo comandos de alto nível para uma sequência de instruções que o processador pode executar. 
-  Programadores de sistemas e engenheiros de hardware utilizam a linguagem de montagem para otimizar o desempenho, 
-  criando código que explora ao máximo os recursos do processador.
-
-
  - Paralelismo: Se refere à capacidade de executar várias operações ao mesmo tempo, aproveitando melhor os 
   recursos do processador. Na organização de computadores, isso significa usar múltiplos núcleos de processamento 
   para dividir uma tarefa grande em partes menores, que podem ser processadas simultaneamente. Essa técnica 
