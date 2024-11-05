@@ -47,7 +47,7 @@ princípios definidos naquela época, mas com aperfeiçoamentos contínuos.
  A importância dessa evolução é enorme na computação moderna, pois a arquitetura de computadores define o modo como 
 um sistema processa dados, desde smartphones até supercomputadores. Cada escolha arquitetônica, seja ela para 
 maximizar o desempenho, reduzir o consumo de energia ou melhorar a confiabilidade, tem consequências que impactam 
-diretamente as capacidades dos dispositivos que usam no dia a dia. A evolução da arquitetura de computadores, 
+diretamente as capacidades dos dispositivos que usamos no dia a dia. A evolução da arquitetura de computadores, 
 portanto, não apenas impulsionou avanços tecnológicos, mas também possibilitou o desenvolvimento de uma sociedade 
 cada vez mais conectada e informatizada.
 
@@ -61,7 +61,7 @@ está relacionada ao que o sistema deve fazer, abordando o nível conceitual e f
 aspectos como o conjunto de instruções que uma CPU pode executar (a ISA, ou Instruction Set Architecture), a 
 estrutura de memória, o tipo de processamento suportado (como RISC ou CISC) e os modos de operação do processador. 
 Em resumo, a arquitetura lida com a lógica abstrata que define as funcionalidades do computador e como o sistema 
-será vista pelos programadores e pelo software. É como o "projeto de engenharia" do computador, pensado para que o 
+será visto pelos programadores e pelo software. É como o "projeto de engenharia" do computador, pensado para que o 
 software entenda como operar o hardware.
 
  Por outro lado, a organização de computadores trata da melhoria física da arquitetura, abordando a estrutura e a 
@@ -75,11 +75,11 @@ o “projeto lógico” da arquitetura.
 
  Em resumo, a principal diferença entre arquitetura e organização de computadores é que a primeira foca na 
 concepção teórica e funcional do sistema, enquanto a segunda trata dos detalhes práticos e físicos da melhoria. A 
-arquitetura é a camada mais abstrata e de alto nível, que define como operações fundamentais a interface entre 
-hardware e software; já a organização é o aspecto mais concreto e de baixo nível, que determina como o hardware 
-será fisicamente construído para suportar as funções definidas pela arquitetura. Juntos, esses dois aspectos são 
-essenciais para o funcionamento dos computadores, uma vez que um define as funcionalidades e o outro como realiza 
-na prática.
+arquitetura é a camada mais abstrata e de alto nível que define como as operações fundamentais são realizadas, 
+estabelecendo uma interface entre hardware e software, já a organização é o aspecto mais concreto e de baixo nível, 
+que determina como o hardware será fisicamente construído para suportar as funções definidas pela arquitetura. 
+Juntos, esses dois aspectos são essenciais para o funcionamento dos computadores, uma vez que um define as 
+funcionalidades e o outro como realiza na prática.
 
 
 
@@ -101,9 +101,10 @@ modernos.
 * Modelo de Von Neumann:
 
   O Modelo de Von Neumann é um dos modelos mais conhecidos e amplamente utilizados na arquitetura de computadores. 
- Ele organiza o sistema com uma unidade de controle, uma unidade lógica e aritmética (ULA), memória e dispositivos 
- de entrada e saída. Nesse modelo, as instruções e os dados são armazenados na mesma memória, o que facilita o 
- fluxo sequencial de operações. A CPU busca uma instrução, decodifica-a, executa e armazena o resultado.
+ Ele organiza o sistema com uma unidade de controle, com uma unidade lógica e aritmética (ULA), com uma memória e  
+ com dispositivos de entrada e saída. Nesse modelo, as instruções e os dados são armazenados na mesma memória, o 
+ que facilita o fluxo sequencial de operações. A CPU busca uma instrução, decodifica-a, executa e armazena o 
+ resultado.
 
   Esse modelo, apesar de ser simples e eficiente, sofre o chamado "gargalo de Von Neumann", que ocorre quando a 
  velocidade de transferência entre a CPU e a memória limita o desempenho do sistema. Para contornar essas 
@@ -118,7 +119,7 @@ modernos.
  precise alternar entre buscar instruções e dados no mesmo espaço de memória, eliminando o gargalo característico 
  da arquitetura de Von Neumann.
 
-  Essa arquitetura é amplamente utilizada em sistemas que desativam alta velocidade, como microcontroladores e 
+  Essa arquitetura é amplamente utilizada em sistemas que utilizam alta velocidade, como microcontroladores e 
  sistemas de controle industrial. Embora seja mais complexa e custosa de implementação, a Arquitetura Harvard 
  oferece ganhos significativos de eficiência e é ideal para aplicações que exigem execução paralela.
 
@@ -130,9 +131,10 @@ modernos.
  manipula dados, realiza operações e se comunica com outros componentes. Ela especifica instruções básicas, 
  operações aritméticas, lógicas e de controle, além dos tipos de dados que uma CPU pode processar.
 
-  Existem várias arquiteturas ISA, cada uma com características próprias e diferentes níveis de complexidade e 
- eficiência. A escolha da ISA impacta diretamente o desempenho e a compatibilidade do sistema, influenciando tanto 
- a maneira como o software é desenvolvido quanto a eficiência do hardware na execução das operações.
+  Existem vários tipos de arquiteturas ISA, cada uma com características próprias e diferentes níveis de 
+ complexidade e eficiência. A escolha da ISA impacta diretamente o desempenho e a compatibilidade do sistema, 
+ influenciando tanto a maneira como o software é desenvolvido quanto a eficiência do hardware na execução das 
+ operações.
 
 
 * RISC e CISC:
@@ -144,15 +146,15 @@ modernos.
 
   Por outro lado, o CISC usa um conjunto de instruções mais extenso, com operações complexas que permitem a 
  execução de tarefas mais elaboradas em menos linhas de código. Embora o CISC reduza o número total de instruções, 
- ele geralmente exige mais ciclos de relógio para cada operação. Ambas as arquiteturas têm vantagens e vantagens, 
- sendo aplicáveis ​​a diferentes tipos de sistemas e necessidades.
+ ele geralmente exige mais ciclos de relógio para cada operação. Ambas as arquiteturas têm vantagens e   
+ desvantagens, sendo aplicáveis ​​a diferentes tipos de sistemas e necessidades.
 
 
 * Pipeline:
 
   O Pipeline é uma técnica que permite dividir uma tarefa em várias etapas menores, com cada etapa realizada em 
  paralelo por diferentes partes do processador. Essa abordagem aumenta a eficiência e o desempenho, pois múltiplas 
- instruções podem ser processadas ao mesmo tempo, rapidamente o tempo total de execução.
+ instruções podem ser processadas ao mesmo tempo, acelerando o tempo total de execução.
 
   Embora o pipeline aumente a velocidade, ele também exige um controle rigoroso para evitar conflitos e ociosidade 
  no processo, chamados de “bolhas” no pipeline. Essa técnica é extremamente utilizada em aceleração de alto 
@@ -174,23 +176,12 @@ modernos.
 
   O Multiprocessamento utiliza múltiplas tarefas para dividir tarefas e realizar operações simultâneas, enquanto o 
  Processamento Paralelo divide uma única tarefa entre vários núcleos de CPU. Essas técnicas aumentam 
- significativamente a capacidade de processamento, sendo comuns em áreas que desativam alta eficiência, como  
+ significativamente a capacidade de processamento, sendo comuns em áreas que necessitam de alta eficiência, como  
  inteligência artificial e ciência de dados.
 
   Essas abordagens permitem que o sistema lide com grandes volumes de dados em tempo real, proporcionando uma 
  resposta rápida e eficiente. O multiprocessamento e o processamento paralelo são essenciais para sistemas que se 
- destacam de alto desempenho, como supercomputadores e servidores.
-
-
-* Execução Fora de Ordem:
-
-  Na Execução Fora de Ordem , a CPU executa instruções fora da sequência em que estão no programa, aproveitando 
- momentos em que a unidade de processamento estaria ociosa em uma execução sequencial. Essa técnica permite que o 
- processador aumente a eficiência e o rendimento, melhorando o desempenho do sistema.
-
-  Com essa abordagem, uma CPU funciona como uma linha de produção que não precisa esperar a conclusão de uma tarefa 
- específica antes de iniciar outras, otimizando o uso do tempo e dos recursos disponíveis. A execução fora de ordem 
- é extremamente usada em aceleração moderna para maximizar a capacidade de processamento.
+ destacam com alto desempenho, como supercomputadores e servidores.
 
 
  Entender os conceitos básicos de arquitetura de computadores nos permite olhar para um sistema e compreender o 
@@ -213,8 +204,8 @@ construam sobre essa base sólida e bem estruturada.
 
  A arquitetura de computadores desempenha um papel fundamental na computação, pois é ela que define a estrutura e o 
 funcionamento básico de um sistema. Ela atua como o “esqueleto” do computador, estabelecendo as regras e os padrões 
-que permitem que o hardware e o software trabalhem juntos de forma eficiente. Cada decisão na arquitetura – desde o 
-conjunto de instruções até a organização da memória – impacta diretamente no desempenho geral, na capacidade de 
+que permitem que o hardware e o software trabalhem juntos de forma eficiente. Cada decisão na arquitetura, desde o 
+conjunto de instruções até a organização da memória, impacta diretamente no desempenho geral, na capacidade de 
 resposta e na economia de energia dos sistemas. Em um mundo onde a quantidade de dados e a complexidade dos 
 processos só aumentam, uma arquitetura bem projetada faz toda a diferença.
 
@@ -240,7 +231,7 @@ de computadores é como desvendar o esqueleto de um organismo complexo: cada par
 para que o conjunto funcione de forma harmoniosa e eficaz. Esse conhecimento permite não apenas entender o que faz 
 um computador funcionar, mas também abre portas para inovações que moldam o futuro da informática
 
- Assim, estudar arquitetura de computadores é essencial para qualquer pessoa que deseja entender o fundo do mundo 
+ Assim, estudar arquitetura de computadores é essencial para qualquer pessoa que deseja entender ao fundo o mundo 
 da tecnologia, desde entusiastas e estudantes até profissionais da área. Esse conhecimento nos permite projetar e 
 otimizar sistemas mais robustos e alinhados às necessidades da sociedade. Em um mundo cada vez mais digital, 
 compreender a base do funcionamento dos computadores é um passo importante para aproveitar ao máximo o potencial 
