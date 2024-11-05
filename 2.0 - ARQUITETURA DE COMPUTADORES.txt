@@ -50,3 +50,35 @@ maximizar o desempenho, reduzir o consumo de energia ou melhorar a confiabilidad
 diretamente as capacidades dos dispositivos que usam no dia a dia. A evolução da arquitetura de computadores, 
 portanto, não apenas impulsionou avanços tecnológicos, mas também possibilitou o desenvolvimento de uma sociedade 
 cada vez mais conectada e informatizada.
+
+
+
+                 Diferença entre Arquitetura e Organização de Computadores
+
+ A arquitetura de computadores e a organização de computadores são conceitos fundamentais para entender como um 
+computador funciona, mas cada um deles aborda o sistema sob perspectivas diferentes. A arquitetura de computadores 
+está relacionada ao que o sistema deve fazer, abordando o nível conceitual e funcional do computador. Ela define 
+aspectos como o conjunto de instruções que uma CPU pode executar (a ISA, ou Instruction Set Architecture), a 
+estrutura de memória, o tipo de processamento suportado (como RISC ou CISC) e os modos de operação do processador. 
+Em resumo, a arquitetura lida com a lógica abstrata que define as funcionalidades do computador e como o sistema 
+será vista pelos programadores e pelo software. É como o "projeto de engenharia" do computador, pensado para que o 
+software entenda como operar o hardware.
+
+ Por outro lado, a organização de computadores trata da melhoria física da arquitetura, abordando a estrutura e a 
+disposição dos componentes internos. Enquanto a arquitetura especifica o que o sistema deve fazer, a organização 
+explica como ele será construído para executar essas funções. Isso inclui aspectos como a interconexão dos 
+componentes, o design dos circuitos de memória, o sistema de entrada e saída, e os detalhes da construção do 
+processador. Por exemplo, enquanto a arquitetura define que uma CPU deve ser capaz de realizar uma multiplicação, a 
+organização define como essa multiplicação será realizada em nível de hardware, especificando os circuitos e os 
+mecanismos que executam essa operação. Assim, a organização de computadores é como o “esqueleto” físico que suporta 
+o “projeto lógico” da arquitetura.
+
+ Em resumo, a principal diferença entre arquitetura e organização de computadores é que a primeira foca na 
+concepção teórica e funcional do sistema, enquanto a segunda trata dos detalhes práticos e físicos da melhoria. A 
+arquitetura é a camada mais abstrata e de alto nível, que define como operações fundamentais a interface entre 
+hardware e software; já a organização é o aspecto mais concreto e de baixo nível, que determina como o hardware 
+será fisicamente construído para suportar as funções definidas pela arquitetura. Juntos, esses dois aspectos são 
+essenciais para o funcionamento dos computadores, uma vez que um define as funcionalidades e o outro como realiza 
+na prática.
+
+
