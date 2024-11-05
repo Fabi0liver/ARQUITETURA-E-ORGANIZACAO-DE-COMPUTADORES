@@ -83,6 +83,86 @@ na prática.
 
 
 
-                      
+                       "Conceitos Básicos de Arquitetura de Computadores"
+
+ Os conceitos básicos de arquitetura de computadores são como o mapa que nos ajuda a entender como o "cérebro" de 
+um computador funciona. Eles definem uma estrutura, as instruções e as operações que possibilitam que um sistema 
+execute tudo, desde simples cálculos até tarefas complexas, como rodar programas e processar gráficos. Esses 
+conceitos abordam a essência do design dos computadores, mostrando como os dados são processados ​​e como as 
+operações são realizadas em um nível profundo e estruturado. Para quem está começando, entender esses fundamentos é 
+essencial, pois eles funcionam como o alicerce para a construção de sistemas e para o desenvolvimento de soluções 
+computacionais cada vez mais eficientes.
+
+
+* Modelo de Von Neumann:
+
+  O Modelo de Von Neumann é um dos modelos mais conhecidos e amplamente utilizados na arquitetura de computadores. 
+ Ele organiza o sistema com uma unidade de controle, uma unidade lógica e aritmética (ULA), memória e dispositivos 
+ de entrada e saída. Nesse modelo, as instruções e os dados são armazenados na mesma memória, o que facilita o 
+ fluxo sequencial de operações. A CPU busca uma instrução, decodifica-a, executa e armazena o resultado.
+
+  Esse modelo, apesar de ser simples e eficiente, sofre o chamado "gargalo de Von Neumann", que ocorre quando a 
+ velocidade de transferência entre a CPU e a memória limita o desempenho do sistema. Para contornar essas 
+ limitações, alternativas e melhorias foram desenvolvidas ao longo dos anos, mas a base desse modelo ainda se 
+ mantém em muitas arquiteturas modernas.
+
+
+* Arquitetura Harvard:
+
+  A Arquitetura Harvard é um modelo que difere da arquitetura de Von Neumann ao separar a memória de instruções da 
+ memória de dados, permitindo o acesso simultâneo a ambos. Esse design melhora o desempenho, pois evita que a CPU  
+ precise alternar entre buscar instruções e dados no mesmo espaço de memória, eliminando o gargalo característico 
+ da arquitetura de Von Neumann.
+
+  Essa arquitetura é amplamente utilizada em sistemas que desativam alta velocidade, como microcontroladores e 
+ sistemas de controle industrial. Embora seja mais complexa e custosa de implementação, a Arquitetura Harvard 
+ oferece ganhos significativos de eficiência e é ideal para aplicações que exigem execução paralela.
+
+
+* ISA (Arquitetura do Conjunto de Instruções):
+
+  A ISA (Instruction Set Architecture) é o conjunto de instruções que uma CPU é capaz de entender e executar, 
+ funcionando como uma interface entre o hardware e o software. Em essência, a ISA define como o processador 
+ manipula dados, realiza operações e se comunica com outros componentes. Ela especifica instruções básicas, 
+ operações aritméticas, lógicas e de controle, além dos tipos de dados que uma CPU pode processar.
+
+  Existem várias arquiteturas ISA, cada uma com características próprias e diferentes níveis de complexidade e 
+ eficiência. A escolha da ISA impacta diretamente o desempenho e a compatibilidade do sistema, influenciando tanto 
+ a maneira como o software é desenvolvido quanto a eficiência do hardware na execução das operações.
+
+
+* RISC e CISC:
+
+  RISC (Reduced Instruction Set Computing) e CISC (Complex Instruction Set Computing) são duas abordagens 
+ diferentes no design de aceleração. O RISC foca em um conjunto de instruções limitadas e simplificadas, permitindo 
+ que cada instrução seja executada em um único ciclo de relógio. Isso simplifica o design do processador, 
+ resultando em alta eficiência e velocidade.
+
+  Por outro lado, o CISC usa um conjunto de instruções mais extenso, com operações complexas que permitem a 
+ execução de tarefas mais elaboradas em menos linhas de código. Embora o CISC reduza o número total de instruções, 
+ ele geralmente exige mais ciclos de relógio para cada operação. Ambas as arquiteturas têm vantagens e vantagens, 
+ sendo aplicáveis ​​a diferentes tipos de sistemas e necessidades.
+
+
+* Pipeline:
+
+  O Pipeline é uma técnica que permite dividir uma tarefa em várias etapas menores, com cada etapa realizada em 
+ paralelo por diferentes partes do processador. Essa abordagem aumenta a eficiência e o desempenho, pois múltiplas 
+ instruções podem ser processadas ao mesmo tempo, rapidamente o tempo total de execução.
+
+  Embora o pipeline aumente a velocidade, ele também exige um controle rigoroso para evitar conflitos e ociosidade 
+ no processo, chamados de “bolhas” no pipeline. Essa técnica é extremamente utilizada em aceleração de alto 
+ desempenho, maximizando o uso dos recursos da CPU e contribuindo para a eficiência geral do sistema.
+
+
+* Hierarquia de Memória:
+
+  A Hierarquia de Memória organiza diferentes tipos de memória (cache, RAM, armazenamento) em níveis, classificados 
+ de acordo com a velocidade e a proximidade da CPU. As memórias mais rápidas, como o cache, estão mais próximas da 
+ CPU, enquanto as mais lentas, como o armazenamento, estão mais distantes.
+
+  Essa organização permite um acesso rápido a dados frequentemente utilizados, melhorando a eficiência do sistema e 
+ acelerando os tempos de espera da CPU. A localização da memória é um dos elementos mais importantes para o 
+ desempenho de sistemas modernos, otimizando o fluxo de dados entre a CPU e a memória.
 
 
