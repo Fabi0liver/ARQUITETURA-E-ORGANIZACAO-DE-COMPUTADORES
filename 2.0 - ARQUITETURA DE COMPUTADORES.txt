@@ -28,7 +28,7 @@ desenvolvimento de tecnologias mais avançadas e abrem portas para inovações. 
 
 
 
-                                      Contexto Histórico 
+                                      "Contexto Histórico"
 
  A arquitetura de computadores, como a conhecemos, teve suas origens na década de 1940, com o desenvolvimento dos 
 primeiros computadores digitais. Uma das maiores contribuições para esse campo foi o modelo de John von Neumann, 
@@ -53,7 +53,7 @@ cada vez mais conectada e informatizada.
 
 
 
-                 Diferença entre Arquitetura e Organização de Computadores
+                   "Diferença entre Arquitetura e Organização de Computadores"
 
  A arquitetura de computadores e a organização de computadores são conceitos fundamentais para entender como um 
 computador funciona, mas cada um deles aborda o sistema sob perspectivas diferentes. A arquitetura de computadores 
@@ -80,5 +80,9 @@ hardware e software; já a organização é o aspecto mais concreto e de baixo n
 será fisicamente construído para suportar as funções definidas pela arquitetura. Juntos, esses dois aspectos são 
 essenciais para o funcionamento dos computadores, uma vez que um define as funcionalidades e o outro como realiza 
 na prática.
+
+
+
+                      
 
 
