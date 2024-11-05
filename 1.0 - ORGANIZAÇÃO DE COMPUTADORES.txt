@@ -61,6 +61,7 @@ sistema de computação que realmente funciona e atende às necessidades, sejam 
 energia, ou processamento rápido de grandes volumes de dados.
 
 
+
                        "Principais Conteúdos em Organização de Computadores"
 
  A organização de computadores é uma área fundamental que molda o funcionamento eficiente de todo sistema 
@@ -203,7 +204,7 @@ otimização de sistemas.
 
 
 
-                    "Conclusão: O Coração da Eficiência Computacional"
+                                          "Conclusão"
 
  Em resumo, a organização de computadores é o estudo que nos permite entender e otimizar a forma como os 
 componentes de um sistema trabalham juntos. Desde o processador, que executa as operações, até os barramentos, que 
