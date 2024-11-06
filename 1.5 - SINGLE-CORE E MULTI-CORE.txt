@@ -31,3 +31,36 @@ fundamental em uma equipe que precisa colaborar para completar tarefas complexas
 demanda por núcleos mais eficientes e poderosos só tende a crescer, à medida que aplicações e sistemas se tornam
 cada vez mais exigentes. Portanto, entender o papel dos núcleos em um processador nos ajuda a apreciar melhor como 
 funcionam os dispositivos que usamos diariamente e como eles realizam tantas tarefas de maneira simultânea e  eficiente.
+
+
+
+                                  Conceito de Single-Core:
+
+ Um processador single-core é uma unidade de processamento que possui apenas um núcleo dedicado para executar todas 
+as operações. Esse único núcleo funciona como o “cérebro” do computador, responsável por lidar com todas as 
+instruções e tarefas que chegam ao processador. Em um processador single-core, o núcleo realiza cálculos 
+matemáticos, toma decisões lógicas, controla o fluxo de execução e armazena dados temporariamente, sendo, portanto, 
+o ponto central de processamento de todo o sistema. Mesmo que ele consiga lidar com muitas instruções, elas são 
+realizadas uma após a outra, já que o processador não possui outros núcleos para compartilhar o trabalho.
+
+ Para ilustrar, imagine que o núcleo de um processador single-core é como uma pessoa sozinha organizando uma festa. 
+Essa pessoa tem a responsabilidade de cuidar da decoração, preparar a comida e ainda receber os convidados. Ela 
+consegue fazer tudo, mas precisa fazer uma tarefa de cada vez, alternando entre elas. Se ela está decorando, a 
+comida fica aguardando; se está na cozinha, a recepção dos convidados é pausada. Da mesma forma, o processador 
+single-core alterna entre as tarefas, executando-as em sequência. Isso cria um efeito de multitarefa, mas na 
+verdade ele realiza apenas uma coisa por vez, alternando rapidamente entre as instruções.
+
+ Um single-core também depende muito da velocidade do clock para ser eficiente, pois, com um único núcleo, aumentar 
+a frequência do clock se torna a principal maneira de melhorar o desempenho. Quanto maior a frequência, mais rápido 
+o núcleo pode processar cada instrução. No entanto, há um limite para o quanto a frequência pode ser aumentada, 
+pois, quanto mais rápido, mais energia o processador consome e mais calor ele gera. Esse limite de frequência foi 
+um dos principais fatores que levaram ao desenvolvimento dos multi-core, que conseguiram dividir as tarefas entre 
+vários núcleos, melhorando a eficiência.
+
+ O single-core marcou uma era importante na computação, atendendo bem às demandas dos sistemas mais simples e 
+introduzindo muitos dos conceitos de processamento que ainda usamos. Embora que hoje em dia está ficando obsoleto 
+para muitos usos avançados, o single-core ainda é utilizado em dispositivos de baixa potência, como sensores IoT 
+(Internet das Coisas) e eletrônicos básicos, que precisam realizar apenas algumas tarefas simples. Esses 
+dispositivos não desabilitam multitarefa avançada, e o single-core permanece uma opção prática e econômica  nesses 
+contextos, garantindo um processamento suficiente com baixo consumo de energia.
+
