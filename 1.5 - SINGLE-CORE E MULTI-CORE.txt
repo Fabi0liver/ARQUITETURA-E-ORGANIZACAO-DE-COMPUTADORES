@@ -61,6 +61,34 @@ vários núcleos, melhorando a eficiência.
 introduzindo muitos dos conceitos de processamento que ainda usamos. Embora que hoje em dia está ficando obsoleto 
 para muitos usos avançados, o single-core ainda é utilizado em dispositivos de baixa potência, como sensores IoT 
 (Internet das Coisas) e eletrônicos básicos, que precisam realizar apenas algumas tarefas simples. Esses 
-dispositivos não desabilitam multitarefa avançada, e o single-core permanece uma opção prática e econômica  nesses 
+dispositivos não utlizam multitarefa avançada, e o single-core permanece uma opção prática e econômica  nesses 
 contextos, garantindo um processamento suficiente com baixo consumo de energia.
+
+
+* Contexto Histórico do Single-Core
+                                                                                                                                                                                                                                     
+  Por muitos anos, a aceleração single-core conquistou o mercado, sendo o padrão na indústria. Tudo começou com o 
+ lançamento do Intel 4004 em 1971, o primeiro processador de propósito geral com um único núcleo, que conseguia 
+ realizar operações básicas e era usado em calculadoras e dispositivos simples. Esse marco foi seguido por outros 
+ processadores, como o Intel 8086 e o ​​Motorola 68000, que se tornaram populares nas décadas de 1970 e 1980  e  que 
+ equiparam muitos dos primeiros computadores pessoais. Naquela época, as demandas computacionais eram bem  
+ diferentes, e um único núcleo era suficiente para as tarefas que os usuários da época precisavam realizar, pois 
+ tanto os sistemas operacionais quanto os programas eram relativamente simples e não projetados para o  
+ processamento paralelo.
+
+  Durante os anos de 1990 e início de 2000, a busca por mais desempenho levou os fabricantes a aumentar a 
+ frequência dos single-core, numa época marcada pela famosa "Guerra dos Gigahertz" entre Intel e AMD. Aumentar a 
+ velocidade do clock fazia o processador  executar as tarefas mais rapidamente, mas essa prática também gerava um 
+ grande desafio: o calor. À medida que a frequência aumentava, o consumo de energia e o aquecimento também subiam, 
+ chegando a um ponto em que o calor gerado se tornou uma barreira física. Esse problema limitava a possibilidade de 
+ aumentar ainda mais a frequência, evidenciando que depender exclusivamente de um único núcleo mais rápido não 
+ seria sustentável a longo prazo.
+
+  Por volta de 2005, ficou claro que o single-core atingiu seu limite de evolução em relação ao aumento de 
+ desempenho, e a indústria começou a explorar uma nova abordagem: o multi-core. Ao invés de contar com um único 
+ núcleo para realizar todas as tarefas, a solução foi dividir a carga de trabalho entre vários núcleos, permitindo 
+ que as operações fossem realizadas em paralelo. Esse avanço, marcado pelo lançamento de processadores como o Intel 
+ Core Duo e o AMD Athlon 64 X2, trouxe uma nova era de eficiência e desempenho multitarefa, tornando os 
+ processadores single-core obsoletos para a maioria das aplicações de alto desempenho e pavimentando o caminho para 
+ a computação moderna.
 
