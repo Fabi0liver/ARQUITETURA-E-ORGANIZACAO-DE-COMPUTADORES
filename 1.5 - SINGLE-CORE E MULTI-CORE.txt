@@ -245,3 +245,22 @@ contextos, garantindo um processamento suficiente com baixo consumo de energia.
  usos mostram que, apesar do avanço tecnológico, as necessidades específicas continuam a garantir um lugar 
  significativo para o single-core em nosso mundo moderno.
 
+
+ Assim concluímos que os processador single-core, apesar de sua simplicidade e limitações em relação à multitarefa 
+e ao processamento paralelo, ainda ocupa um lugar valioso na computação. Ele foi a base da evolução da execução de 
+tarefas nas décadas passadas, quando a demanda por tarefas simultâneas era limitada. O single-core  nos  mostra 
+como um processador pode realizar tarefas em sequência com eficiência e, até hoje, é uma solução prática e 
+econômica para dispositivos que não necessitam de alta potência ou processamento multitarefa.
+
+ Embora o single-core não atenda às necessidades de computadores modernos ou de aplicações intensivas, ele encontra 
+seu espaço em dispositivos específicos, como sensores, aparelhos IoT, e eletrônicos de baixo custo. Esses 
+dispositivos geralmente são de operação simples e eficiente, com baixo consumo de energia, e o single-core se 
+destaca nesses aspectos. Além disso, sua arquitetura direta facilita o desenvolvimento e a manutenção, sendo ideal 
+para sistemas legados e ambientes de controle industrial onde confiabilidade e estabilidade são fundamentais.
+
+ Assim, o single-core continua a ser relevante, mesmo que seu  desempenho tenha sido superado pelo multi-core. Ele 
+ainda representa uma escolha sensata em contextos onde complexidade e custo são fatores importantes para serem 
+controlados, e seu legado é duradouro. Ao entender o papel do single-core, conseguimos perceber a importância de 
+adaptar a tecnologia conforme as necessidades específicas de cada aplicação, valorizando tanto a inovação quanto a 
+eficiência ajustada a cada situação.
+
