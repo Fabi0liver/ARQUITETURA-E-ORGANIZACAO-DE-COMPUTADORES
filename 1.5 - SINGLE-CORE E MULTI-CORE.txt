@@ -135,7 +135,7 @@ contextos, garantindo um processamento suficiente com baixo consumo de energia.
 
    - Simplicidade e Custo Menor: Processadores single-core são mais simples de projetar e fabricar, o que reduz o 
                                 custo de produção. Isso se torna uma opção comum para dispositivos de baixo custo, 
-                                como termostatos, relógios digitais e muitos aparelhos de IoT(Internet da sCoisas), 
+                                como termostatos, relógios digitais e muitos aparelhos de IoT(Internet das Coisas), 
                                 onde o alto desempenho não é necessário.
 
    - Eficiência em Tarefas Simples: Para atividades leves e sequenciais, como controlar sensores ou executar 
@@ -268,7 +268,7 @@ eficiência ajustada a cada situação.
 
                                        "Conceito de Multi-Core"
 
- Imagine que seu processador é como o cérebro de uma pessoa, que precisa de várias tarefas ao mesmo tempo, como 
+ Imagine que seu processador é como o cérebro de uma pessoa, que precisa fazer várias tarefas ao mesmo tempo, como 
 fazer compras, responder mensagens e ouvir música. Se essa pessoa tivesse apenas uma mão (ou um núcleo de 
 processamento), precisaria fazer uma tarefa de cada vez, alternando entre elas. Isso poderia ser demorado e 
 ineficiente, especialmente se o trabalho fosse grande ou exigisse rapidez. Agora, se essa pessoa tivesse várias 
