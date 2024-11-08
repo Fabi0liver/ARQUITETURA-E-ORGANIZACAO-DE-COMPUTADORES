@@ -35,3 +35,32 @@ usuário final.
 
 
 
+                               "Contexto Histórico da GPU"                                                                                                                                  
+                                                                                                                                                                                                                                         
+ A história da GPU, ou Unidade de Processamento Gráfico, começou na década de 1980, quando o avanço dos 
+computadores pessoais trouxe a necessidade de uma forma mais rápida e eficiente de processar gráficos. Nos 
+primeiros computadores, a CPU era responsável por todas as operações, incluindo a criação e manipulação das imagens 
+na tela. No entanto, conforme os gráficos começaram a se tornar mais complexos, especialmente com o surgimento dos 
+primeiros jogos e interfaces gráficas, as CPU da época passaram a não conseguir acompanhar as demandas gráficas 
+crescentes. Esse contexto levou ao desenvolvimento de placas gráficas básicas, capazes de aliviar a CPU ao assumir 
+tarefas de renderização mais simples, inaugurando uma nova era de processamento dedicado.
+
+ Durante os anos 1990, o desenvolvimento da GPU avançou significativamente, com empresas como NVIDIA e ATI (agora 
+AMD) introduzindo as primeiras GPU com capacidade de processamento gráfico independente, projetadas para lidar 
+exclusivamente com gráficos 2D e 3D. Em 1999, a NVIDIA lançou a GeForce 256, considerada a primeira GPU moderna, 
+capaz de realizar transformações e cálculos de iluminação diretamente na placa gráfica, sem necessidade de 
+intervenção da CPU. Esse modelo pioneiro não só aprimorou a experiência visual nos computadores, como também abriu 
+as portas para gráficos em 3D, uma grande inovação na época, especialmente para o mercado de jogos e softwares de 
+design gráfico.
+
+ A partir dos anos 2000, com o avanço dos jogos e das tecnologias de simulação, as GPU começaram a evoluir 
+rapidamente para incluir mais núcleos de processamento, permitindo maior capacidade de paralelismo e processamento 
+em massa. Não demorou para que pesquisadores e profissionais de outras áreas percebessem o potencial das GPU em 
+tarefas complexas fora dos gráficos. Foi assim que elas ganharam espaço em áreas como ciência de dados, 
+inteligência artificial e até criptografia, onde a capacidade de realizar múltiplos cálculos simultaneamente se 
+tornou indispensável. Esse histórico de adaptação e evolução transformou a GPU de um simples componente gráfico em 
+um dos pilares da computação de alto desempenho, essencial tanto para a experiência de usuários comuns quanto para 
+aplicações científicas e empresariais de alta complexidade.
+
+
+
