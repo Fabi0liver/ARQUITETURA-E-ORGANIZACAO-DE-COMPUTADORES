@@ -15,7 +15,7 @@ a Unidade Central de Processamento, funciona como um supervisor multitarefas que
 diferentes tarefas, a GPU é como uma equipe de operários altamente focados, especializados em realizar tarefas 
 repetitivas de forma sincronizada. Cada “operário” na GPU (ou núcleo de processamento) é responsável por uma 
 pequena parte da tarefa, mas, juntos, eles conseguem resolver cálculos complexos com uma velocidade impressionante, 
-completando o trabalho com uma eficiência única. Essa arquitetura paralela é o que permite à GPU lidar com milhões 
+completando o trabalho com uma eficiência única. Essa arquitetura paralela é o que permite à GPU lidar com milhares 
 de operações ao mesmo tempo, tornando-a perfeita para tarefas que exigem muita repetição e simultaneidade.
 
  Com o avanço das tecnologias, a GPU foi incorporada a novas aplicações, destacando-se em áreas que exigem um 
@@ -111,7 +111,7 @@ dados brutos em imagens, gráficos e informações visuais complexos em tempo re
   com uma função específica:
 
    - CUDA Cores: São os núcleos mais comuns na GPU, responsáveis ​​por executar cálculos gerais e tarefas gráficas, 
-                como a renderização de pixels. Os  núcleos  CUDA   operam de forma paralela e são projetados para  
+                como a renderização de pixels. Os núcleos CUDA operam de forma paralela e são projetados para  
                 realizar cálculos rápidos e repetitivos, essenciais para renderizar gráficos detalhados.
                                                                                                                                                                                                                                       
    - RT Cores ou Ray Tracing: Núcleos dedicados ao ray tracing, técnica que simula como a luz se comporta ao 
@@ -221,7 +221,7 @@ cada núcleo encarregado de ordenar uma parte da lista. Ao final, todas as parte
 processo de forma muito mais rápido. 
 
  Esse tipo de processamento paralelo é fundamental em áreas como o treinamento de modelos de aprendizado de 
-máquina . Durante o treinamento de um modelo de IA, por exemplo, são necessários muitos cálculos complexos e 
+máquina. Durante o treinamento de um modelo de IA, por exemplo, são necessários muitos cálculos complexos e 
 ajustes de parâmetros para analisar grandes quantidades de dados. Com o uso de GPU, esses cálculos podem ser feitos 
 em paralelo, permitindo que o modelo aprenda mais rapidamente, reduzindo o tempo de treinamento de dias ou semanas 
 para apenas algumas horas ou minutos. Esse tipo de capacidade acelerou imensamente o avanço da inteligência 
@@ -267,23 +267,23 @@ perspectiva, levando em conta a posição da câmera na cena. Esse design é fun
 sejam exibidas corretamente, como se estivessem em um espaço real, com distorções de perspectiva, sombras e luzes 
 realistas.
 
- Depois que a geometria dos objetos é mapeada e projetada, a GPU precisa aplicar texturas e calcular iluminação . 
-Texturas são imagens bidimensionais que são "esticadas" sobre a superfície de objetos 3D para dar a impressão de 
+ Depois que a geometria dos objetos é mapeada e projetada, a GPU precisa aplicar texturas e calcular iluminação 
+(Texturas são imagens bidimensionais que são "esticadas" sobre a superfície de objetos 3D para dar a impressão de 
 materiais como madeira, metal ou pele. A iluminação, por sua vez, determina como a luz interage com os objetos, 
-criando efeitos como reflexos, sombras e brilhos. Esses cálculos são realizados por núcleos específicos da GPU, que 
-trabalham paralelamente para garantir que cada elemento da cena seja renderizado com alta precisão e velocidade. 
-Esse processo de cálculos simultâneos e distribuídos é o que permite que a GPU gere gráficos complexos com uma 
-fluidez necessária para aplicações como jogos, filmes e simulações em tempo real.
+criando efeitos como reflexos, sombras e brilhos). Esses cálculos são realizados por núcleos específicos da GPU, 
+que trabalham paralelamente para garantir que cada elemento da cena seja renderizado com alta precisão e  
+velocidade. Esse processo de cálculos simultâneos e distribuídos é o que permite que a GPU gere gráficos complexos 
+com uma fluidez necessária para aplicações como jogos, filmes e simulações em tempo real.
 
 
 
                                      "GPU e Aprendizado de Máquina"                                                                                                                            
                                                                                                                                                                                                                                          
- Com o avanço da inteligência artificial , as GPUs passaram a desempenhar um papel crucial no treinamento de  
+ Com o avanço da inteligência artificial , as GPU passaram a desempenhar um papel crucial no treinamento de  
 modelos de aprendizado de máquina e redes neurais. Esses modelos exigem uma enorme quantidade de cálculos, 
 especialmente durante a fase de treinamento, onde grandes volumes de dados precisam ser processados ​​repetidamente. 
 Durante esse processo, o modelo aprende a partir de exemplos e ajusta suas configurações para melhorar seus 
-resultados. As GPUs, com sua arquitetura de processamento paralelo, são ideais para essa tarefa, pois conseguem 
+resultados. As GPU, com sua arquitetura de processamento paralelo, são ideais para essa tarefa, pois conseguem 
 realizar esses cálculos simultaneamente de forma muito mais eficiente que uma CPU, acelerando significativamente o 
 tempo de treinamento.
 
@@ -320,7 +320,7 @@ aumenta os custos operacionais, mas também gera muito calor, o que exige sistem
 evitar o superaquecimento. Esses sistemas de resfriamento podem ser caros e complexos, adicionando ainda mais 
 desafios logísticos e financeiros.
 
- Outro desafio enfrentado pelas GPU é a ineficiência para operações sequenciais . Embora as GPU sejam exclusivas 
+ Outro desafio enfrentado pelas GPU é a ineficiência para operações sequenciais. Embora as GPU sejam exclusivas 
 para realizar múltiplas tarefas ao mesmo tempo, ou seja, processamento paralelo, elas não são tão eficientes quando 
 se trata de lidar com tarefas que necessitam do processamento sequencial. Nos cenários onde o processamento deve 
 seguir uma sequência lógica e tomar decisões passo a passo, como em algumas operações de software ou execução de 
@@ -330,9 +330,9 @@ para realizar uma grande quantidade de tarefas iguais de uma vez.
 
  Com o interesse crescente e a necessidade de processamento intensivo em diversas áreas, como inteligência 
 artificial, mineração de criptomoedas, e simulações científicas, o papel das GPU na computação moderna só tende a 
-aumentar. Em especial, como GPU são mostrados essenciais no treinamento de modelos de IA, onde grandes volumes de 
-dados precisam ser processados ​​de maneira rápida e eficiente. À medida que as demandas por processamento gráfico e 
-paralelismo aumentam, espera-se que as GPU evoluam ainda mais, com novas melhorias em termos de eficiência 
+aumentar. Em especial, como GPU vem se mostrando essenciais no treinamento de modelos de IA, onde grandes volumes  
+de dados precisam ser processados ​​de maneira rápida e eficiente. À medida que as demandas por processamento gráfico 
+e paralelismo aumentam, espera-se que as GPU evoluam ainda mais, com novas melhorias em termos de eficiência 
 energética e capacidade de processamento. Além disso, outras tecnologias emergentes, como a computação quântica , 
 podem complementar o trabalho das GPU e das CPU, permitindo que os computadores do futuro resolvam problemas ainda 
 mais complexos.
