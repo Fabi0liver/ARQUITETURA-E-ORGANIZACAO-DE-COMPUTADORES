@@ -64,3 +64,29 @@ aplicações científicas e empresariais de alta complexidade.
 
 
 
+                                 "Diferença entre CPU e GPU"                                                                                                                               
+                                                                                                                                                                                                                                         
+ A CPU, ou Unidade Central de Processamento, e a GPU, Unidade de Processamento Gráfico, são dois componentes 
+essenciais para o funcionamento dos computadores, cada um com um propósito específico. A CPU é conhecida como o 
+"cérebro" do computador, pois é responsável por coordenar e executar as instruções do sistema de maneira organizada 
+e sequencial. Ela realiza operações complexas e lida com várias tarefas ao mesmo tempo, como abrir programas, rodar 
+o sistema operacional e gerenciar diversas funções. Sua arquitetura é voltada para a versatilidade e precisão, o 
+que permite que a CPU tome decisões rápidas e execute tarefas diversificadas, porém, em menor quantidade 
+simultânea.
+
+ A GPU, por outro lado, foi projetada para realizar cálculos em massa de maneira paralela, sendo especialmente útil 
+em tarefas que exigem repetição e um alto volume de dados. Podemos fazer uma analogia com a gastronomia: se a CPU 
+fosse um chef de cozinha em um restaurante sofisticado, que prepara cada prato de forma cuidadosa e personalizada, 
+a GPU seria como uma equipe de cozinheiros em uma lanchonete de fast-food, onde cada cozinheiro realiza a mesma 
+tarefa repetidamente para montar uma grande quantidade de pratos rapidamente. Essa capacidade de repetição rápida e 
+simultânea é o que torna a GPU tão eficiente em certos tipos de tarefas.
+
+ Na prática, essa diferença significa que, enquanto a CPU lida bem com operações sequenciais e complexas, a GPU se 
+destaca no processamento paralelo, onde milhares de pequenos cálculos precisam ser realizados ao mesmo tempo. É por 
+isso que a GPU é ideal para renderização gráfica, onde cada pequeno ponto ou “pixel” da tela precisa ser calculado, 
+colorido e exibido. Com milhares de núcleos menores e especializados, a GPU consegue lidar com cada um desses 
+pixels em paralelo, criando imagens detalhadas de forma rápida e eficiente.
+
+ Assim, enquanto a CPU se concentra em manter o sistema funcionando de forma organizada, a GPU se encarrega de 
+“atender” grandes volumes de dados com rapidez, tornando-se indispensável para aplicações que exigem alta performance em processamento paralelo.
+
