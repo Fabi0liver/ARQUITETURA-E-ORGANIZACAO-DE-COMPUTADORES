@@ -549,7 +549,8 @@ necessidades. A computação heterogênea, a integração de inteligência artif
 mesmo a exploração da computação quântica são exemplos de como a tecnologia está se adaptando para criar soluções 
 mais rápidas, inteligentes e energeticamente eficientes. Além disso, novas tendências como núcleos para segurança 
 aprimorada, computação neuromórfica e melhorias para aprendizado de máquina indicam que o futuro dos núcleos 
-multi-core será cada vez mais focado em especialização. Com essas inovações, o objetivo é tornar os avanços mais  adaptáveis ​​e eficientes, capazes de gerenciar uma ampla gama de aplicações.
+multi-core será cada vez mais focado em especialização. Com essas inovações, o objetivo é tornar os avanços mais 
+adaptáveis ​​e eficientes, capazes de gerenciar uma ampla gama de aplicações.
 
 * Computação Heterogênea:
 
