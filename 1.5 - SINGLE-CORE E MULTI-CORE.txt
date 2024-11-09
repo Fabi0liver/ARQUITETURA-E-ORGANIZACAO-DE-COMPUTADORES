@@ -8,7 +8,8 @@
 na execução das instruções que fazem os programas funcionarem. Cada núcleo é, na verdade, uma unidade de 
 processamento independente que contém todos os componentes essenciais para o funcionamento do processador. Isso 
 inclui uma unidade de controle , responsável por interpretar as instruções do programa; a ALU ou ULA (Unidade 
-Lógica e Aritmética) , que realiza operações matemáticas e lógicas; e os registradores , que são pequenas áreas de  armazenamento para dados temporários e resultados intermediários. Juntos, esses elementos permitem que cada núcleo 
+Lógica e Aritmética) , que realiza operações matemáticas e lógicas; e os registradores , que são pequenas áreas de 
+armazenamento para dados temporários e resultados intermediários. Juntos, esses elementos permitem que cada núcleo 
 execute cálculos complexos, tome decisões lógicas e manipule dados rapidamente, possibilitando uma execução eficaz 
 de tarefas.
 
@@ -16,7 +17,8 @@ de tarefas.
 Imagine que cada núcleo seja um trabalhador na linha de montagem, onde cada funcionário recebe uma tarefa 
 específica a ser realizada. Assim como na fábrica, onde mais trabalhadores significam maior capacidade de produção, 
 em um processador, quanto mais núcleos houver, mais tarefas podem ser executadas simultaneamente. Essa capacidade  
-de trabalhar em paralelo é fundamental para aumentar a eficiência e a velocidade do processamento, permitindo que  os usuários realizem múltiplas atividades ao mesmo tempo sem perder desempenho.
+de trabalhar em paralelo é fundamental para aumentar a eficiência e a velocidade do processamento, permitindo que 
+os usuários realizem múltiplas atividades ao mesmo tempo sem perder desempenho.
 
  Além de aumentar a produtividade, os múltiplos núcleos em um processador permitem que os sistemas operacionais e  
 os aplicativos sejam projetados para aproveitar ao máximo essa arquitetura paralelamente. Com uma programação  
