@@ -217,11 +217,15 @@ arquitetura de computadores determina a velocidade e a eficiência com que as ta
 exemplo, para uma aplicação de inteligência artificial que analisa grandes quantidades de dados, uma arquitetura 
 externa para processamento paralelo é essencial para garantir que os resultados sejam rápidos e precisos. Em jogos, 
 a arquitetura influencia diretamente a fluidez e a qualidade gráfica, enquanto em ciência de dados, ela define o 
-quanto de dados pode ser processado em tempo real. Em outras palavras, a arquitetura é o coração que sustenta a performance do sistema em cenários de alta demanda.
+quanto de dados pode ser processado em tempo real. Em outras palavras, a arquitetura é o coração que sustenta a 
+performance do sistema em cenários de alta demanda.
 
  Além disso, a arquitetura de computadores também define a escalabilidade de um sistema, permitindo que ele se 
 adapte às demandas crescentes com o tempo. Em ambientes como data centers e servidores, onde a necessidade de 
-processamento é constante e em expansão, uma arquitetura flexível e bem planejada garante que novas aceleração e  memória possam ser integradas sem comprometer o desempenho. Desta forma, entender e investir em uma arquitetura  robusta é essencial para garantir que o sistema não funcione apenas bem agora, mas que também esteja preparado para  crescer e se adaptar às futuras necessidades da computação.
+processamento é constante e em expansão, uma arquitetura flexível e bem planejada garante que novas aceleração e 
+memória possam ser integradas sem comprometer o desempenho. Desta forma, entender e investir em uma arquitetura  
+robusta é essencial para garantir que o sistema não funcione apenas bem agora, mas que também esteja preparado
+para  crescer e se adaptar às futuras necessidades da computação.
 
 
 
