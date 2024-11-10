@@ -88,7 +88,8 @@ colorido e exibido. Com milhares de núcleos menores e especializados, a GPU con
 pixels em paralelo, criando imagens detalhadas de forma rápida e eficiente.
 
  Assim, enquanto a CPU se concentra em manter o sistema funcionando de forma organizada, a GPU se encarrega de 
-“atender” grandes volumes de dados com rapidez, tornando-se indispensável para aplicações que exigem alta performance em processamento paralelo.
+“atender” grandes volumes de dados com rapidez, tornando-se indispensável para aplicações que exigem alta 
+performance em processamento paralelo.
 
 
 
