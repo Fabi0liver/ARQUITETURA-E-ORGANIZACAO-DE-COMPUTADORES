@@ -145,4 +145,64 @@ durabilidade da PSU e permite atualizações futuras.
 longevidade de um computador. Compreender o consumo específico dos componentes e aplicar uma margem de segurança é 
 importante para garantir que o sistema funcione de forma confiável e estável e  permite  expansões futuras. Uma 
 fonte de alimentação adequada não apenas protege o sistema contra sobrecargas e superaquecimento, mas também 
-promove um consumo de energia mais eficiente, economizando recursos e prolongando a vida útil do equipamento.                                                                                                                     
+promove um consumo de energia mais eficiente, economizando recursos e prolongando a vida útil do equipamento. 
+
+
+
+                                      "Eficiência Energética"                                                                                                                                                                                              
+                                                                                                                                                                                                                                         
+ A eficiência energética de uma fonte de alimentação (PSU) é um conceito essencial para quem busca reduzir o 
+consumo elétrico e melhorar o desempenho do computador. De forma simples, essa eficiência representa o quanto a 
+energia que a fonte recebe da tomada é realmente utilizada para alimentar os componentes internos, em vez de ser 
+perdida como calor. Por exemplo, uma fonte com eficiência de 80% transforma 80% da energia em potência útil, 
+enquanto os 20% restantes acabam como calor. Essa eficiência é especialmente importante em PCs de alto desempenho, 
+como máquinas para jogos ou servidores, pois o consumo constante e elevado torna os ganhos de eficiência ainda mais 
+significativos.
+
+ Para medir essa eficiência, foram criadas certificações que ajudam o consumidor a escolher fontes que desperdicem 
+menos energia. Uma das mais reconhecidas é a certificação 80 PLUS , que garante um nível mínimo de eficiência de 
+80% em diferentes cargas de trabalho. As fontes com esta certificação são divididas em níveis como Bronze, Prata, 
+Ouro, Platina e Titânio, cada um com critérios de eficiência mais altos. Assim, enquanto uma fonte 80 PLUS Bronze 
+pode ter eficiência entre 82% e 85%, uma fonte Titanium pode atingir até 94% em carga média, tornando-a ideal para 
+quem busca um desempenho máximo com menor consumo de energia.
+
+* Certificação 80 PLUS e Seus Níveis
+  
+  A certificação 80 PLUS foi criada para orientar a escolha de fontes de alimentação mais eficientes. Cada nível 
+ indica uma eficiência mínima garantida, variando de acordo com a carga de trabalho (20%, 50% e 100%). Esses níveis  
+ de eficiência são especialmente úteis para quem precisa de um computador que rode programas pesados ​​ou que 
+ mantenha um funcionamento constante. Abaixo, estão os principais níveis de certificação e suas respectivas 
+ eficiências:
+
+  - 80 PLUS Bronze: Tem uma eficiência de aproximadamente 82-85%, o que já garante uma redução no desperdício de 
+                   energia.
+
+  - 80 PLUS Silver: Apresenta eficiência entre 85-88%, ideal para computadores de uso médio.
+
+  - 80 PLUS Gold: Alcança de 88-92%, sendo uma boa escolha para sistemas de médio a alto desempenho.
+
+  - 80 PLUS Platinum: Opera entre 90-94% de eficiência, adequado para quem deseja alto desempenho e baixo consumo.
+
+  - 80 PLUS Titanium: Com uma eficiência que pode chegar a 94% em cargas de 50%, é recomendada para equipamentos 
+                     que exigem eficiência máxima, como servidores e estações de trabalho.
+       
+                                                                                                                                                                                                               
+ * Benefícios da Alta Eficiência Energética
+
+   Uma fonte de alimentação com alta eficiência traz várias vantagens, tanto econômicas quanto de desempenho. Em 
+  termos financeiros, uma fonte mais eficiente reduz os custos na conta de eletricidade ao utilizar melhor a 
+  energia que recebe. Isso pode ser comparado a um carro que consome menos combustível para percorrer a mesma 
+  distância, economizando recursos. Além disso, ao gerar menos calor, essas fontes ajudam com um ambiente interno 
+  mais fresco, o que diminui o risco de superaquecimento e ajuda a prolongar a vida útil dos componentes do 
+  computador.
+
+   A alta eficiência energética também impacta na estabilidade de sistemas que exigem desempenho constante e 
+  seguro, como computadores para servidores ou máquinas de jogos. Um sistema com fonte eficiente oferece uma 
+  corrente mais estável e com menos oscilações, evitando quebras e falhas que podem comprometer o desempenho ou 
+  danificar o hardware.
+
+ Em  suma, a eficiência energética é um aspecto crucial na escolha de uma fonte de alimentação, pois influencia 
+diretamente tanto o custo de operação quanto a vida útil dos componentes internos do computador. Optar por uma 
+fonte com certificação 80 PLUS, especialmente nos níveis mais altos, é um investimento que resulta em economia de 
+energia, maior estabilidade e menor emissão de calor.  Dessa forma, a eficiência energética contribui para um 
+sistema mais seguro, econômico e preparado para as demandas do uso diário ou profissional.                                                                                                                    
