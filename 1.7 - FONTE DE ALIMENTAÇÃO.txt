@@ -313,7 +313,7 @@ durabilidade e estabilidade do sistema, proporcionando uma operação mais segur
 
                          "Influência da Fonte no Desempenho e na Estabilidade"                                                                                                                         
                                                                                                                                                                                                                                          
- A fonte de alimentação desempenha um papel vital para o desempenho e a estabilidade do computador. Muitas vezes 
+ A fonte de alimentação desempenha um papel vital para o desempenho e na estabilidade do computador. Muitas vezes 
 vista apenas como um “fornecedor de energia”, ela é, na verdade, a responsável por garantir que os componentes 
 internos , especialmente os de alto desempenho, como processadores (CPU) e placas de vídeo (GPU) recebam a energia 
 necessária de forma contínua e estável. Em sistemas mais robustos, onde o consumo de energia é elevado, uma fonte 
