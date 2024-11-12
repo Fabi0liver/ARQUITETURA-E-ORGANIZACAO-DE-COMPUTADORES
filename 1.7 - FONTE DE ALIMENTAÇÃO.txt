@@ -205,4 +205,50 @@ quem busca um desempenho máximo com menor consumo de energia.
 diretamente tanto o custo de operação quanto a vida útil dos componentes internos do computador. Optar por uma 
 fonte com certificação 80 PLUS, especialmente nos níveis mais altos, é um investimento que resulta em economia de 
 energia, maior estabilidade e menor emissão de calor.  Dessa forma, a eficiência energética contribui para um 
-sistema mais seguro, econômico e preparado para as demandas do uso diário ou profissional.                                                                                                                    
+sistema mais seguro, econômico e preparado para as demandas do uso diário ou profissional.        
+
+
+
+                             "Tipos de Fontes de Alimentação"                                                                                                                                                                   
+                                                                                                                                                                                                                                       
+ As fontes de alimentação (PSU) podem variar bastante em estrutura e funcionalidade, essas diferenças impactam 
+diretamente o desempenho, a organização interna e até a segurança de um computador. As PSU podem ser modulares, 
+semimodulares e não modulares, cada uma com suas características. Essas categorias atendem a diferentes 
+necessidades dos usuários, desde quem busca uma construção mais organizada e eficiente até quem quer uma opção mais 
+econômica e simples. Entender essas variações pode ajudar a escolher a fonte que melhor se adapta ao tipo de 
+sistema e ao uso que se pretende.
+
+ Além da eficiência energética e da potência, que são importantes para garantir que os componentes recebam energia 
+de forma estável, o tipo de cabos oferecidos pela PSU é uma característica fundamental. Em PSUs modulares, 
+semimodulares e não modulares, a presença e a disposição dos cabos são fatores que influenciam diretamente a 
+organização do sistema. Essa organização também afeta o fluxo de ar e, portanto, o resfriamento do equipamento, o 
+que é essencial para manter o computador funcionando de maneira eficiente e segura.
+
+ Logo abaixo, vamos explorar cada tipo de PSU para entender suas principais  características e vantagens.
+                                                                                                                                                                                                                              
+ * Fontes Modulares : Nesse tipo de  PSU, todos os cabos são removíveis, o que permite ao usuário conectar apenas  
+  os cabos necessários para o funcionamento do sistema. Esse recurso é vantajoso porque facilita a organização 
+  interna do gabinete e melhora o fluxo de ar, já que a área fica mais livre de cabos soltos. Em termos práticos, é 
+  como ter uma mala onde você coloca apenas os itens essenciais, deixando tudo mais arrumado e com espaço livre. 
+  Esse tipo de fonte costuma ser mais caro, mas é ideal para quem busca personalizar o interior do gabinete e 
+  garantir uma circulação mais eficiente, o que contribui para o resfriamento do sistema.
+
+ * Fontes Semi-Modulares : As fontes semi-modulares oferecem uma combinação entre cabos fixos e removíveis. 
+  Normalmente, os cabos essenciais, como o de energia principal da placa-mãe e do processador, são fixos, enquanto 
+  os outros, como os cabos de alimentação para discos rígidos e placas de vídeo, são suplementares. Esse tipo de 
+  PSU é uma solução interativa, permitindo que o usuário tenha alguma facilidade para conectar apenas os cabos 
+  extras que realmente precisam. Assim, é possível manter parte da organização e do fluxo de ar oferecido por uma 
+  fonte modular, mas com um custo mais acessível.
+
+ * Fontes Não Modulares : Em uma fonte não modular, todos os cabos são fixos e vêm conectados diretamente à PSU. 
+  Isso significa que mesmo os cabos que não serão usados ​​ficam dentro do gabinete, o que pode dificultar a 
+  organização e reduzir o espaço disponível para o fluxo de ar. Esse tipo de fonte é geralmente mais acessível e 
+  pode ser uma boa opção para computadores mais simples ou para quem não se preocupa tanto com a estética interna 
+  do gabinete. No entanto, a presença de cabos extras pode interferir na circulação de ar, elevando a temperatura 
+  interna do sistema.
+
+ Escolher o tipo de fonte de alimentação correta é importante para garantir uma montagem eficiente e segura do 
+sistema. Fontes modulares oferecem mais organização e um melhor fluxo de ar, ideais para quem busca desempenho e 
+facilidade de manutenção. Fontes semimodulares equilibram custo e flexibilidade, enquanto as não modulares são 
+opções mais econômicas e práticas para sistemas mais simples. Dessa forma, entender essas diferenças pode ajudar a 
+montar um computador que atenda às necessidades do usuário de maneira mais precisa e eficiente.                                                                                                            
