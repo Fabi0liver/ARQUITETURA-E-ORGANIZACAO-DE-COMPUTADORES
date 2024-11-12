@@ -25,10 +25,10 @@ Um computador de uso básico pode não exigir uma fonte tão potente, mas uma m�
 gráficas intensivas precisa de uma fonte robusta para manter a estabilidade e o desempenho.
 
  Além da potência, outro aspecto relevante é a eficiência energética da fonte de alimentação. Isso se refere à 
-quantidade de energia que ela obtém  e  quanto dessa energia é realmente aproveitada pelos componentes e quanto é 
+quantidade de energia que ela obtém e quanto dessa energia é realmente aproveitada pelos componentes e quanto é 
 desperdiçada em forma de calor. Quanto mais eficiente a fonte, menos energia é desperdiçada, o que reduz o consumo 
 elétrico e mantém a máquina mais fria e estável. Essa eficiência pode ser comparada a um carro que usa menos 
-combustível para percorrer a mesma distância, fontes eficientes consomem menos eletricidade  e em troca, ajudam a 
+combustível para percorrer a mesma distância, fontes eficientes consomem menos eletricidade e em troca, ajudam a 
 diminuir o custo da energia e o desgaste das peças internas, que ficam menos expostas ao calor.
 
  Por fim, a escolha de uma fonte de alimentação não é uma decisão isolada. Ela impacta o funcionamento de todo o 
@@ -44,7 +44,7 @@ fonte de alimentação, consumo e potência energética ajuda a construir um com
 de qualquer computador, garantindo que todos os componentes recebam a energia necessária para operar. Ela pode ser 
 vista como o “coração elétrico” do sistema, bombeando energia para todos os cantos e regulando o fluxo para que 
 cada peça receba exatamente o que precisa. Uma fonte de alimentação converte energia da rede elétrica , a qual  
-recebemos da tomada em nossas casas, que está em corrente alternada (C A) , para  corrente contínua (CC) que é o 
+recebemos da tomada em nossas casas, que está em corrente alternada (CA) , para  corrente contínua (CC) que é o 
 formato que os componentes internos do computador  utilizam. Mas, essa tarefa é mais complexa do que uma simples 
 conversão, pois envolve cuidados adicionais para garantir que a energia seja fornecida de forma confiável e segura.
 
