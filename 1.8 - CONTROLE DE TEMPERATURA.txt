@@ -160,7 +160,7 @@ segura e confiável.
   rapidamente substituído pelo ar fresco, contribuindo para a estabilidade térmica.
 
  * Aplicação de Pasta Térmica: A pasta térmica preenche pequenas imperfeições entre o processador e o dissipador, 
-  permitindo que o calor seja transferido mais facilmente. Como ela perde eficácia com o tempo,é necessario 
+  permitindo que o calor seja transferido mais facilmente. Como ela perde eficácia com o tempo, é necessário 
   reaplicá-la periodicamente para garantir que o processador permaneça resfriado.
 
  Manter esses cuidados de forma regular contribui para que o computador funcione de maneira otimizada, com 
