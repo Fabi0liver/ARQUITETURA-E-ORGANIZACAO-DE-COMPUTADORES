@@ -17,9 +17,9 @@ podem demorar a ser servidos.
 
  Assim, o desempenho do computador é essa busca pela harmonia entre os componentes. Quando o processador, a memória 
 e o software “trabalham juntos”, tudo flui com rapidez e eficiência. Porém, se algum componente estiver 
-sobrecarregado ou mal configurado, surgem gargalos — como se um fogão não conseguisse aquecer os pratos no tempo 
-certo. Esses gargalos são como pontos de congestionamento que retardam todo o processo, deixando o computador lento 
-e comprometendo a experiência do usuário.
+sobrecarregado ou mal configurado, surgem gargalos (como se um fogão não conseguisse aquecer os pratos no tempo 
+certo). Esses gargalos são como pontos de congestionamento que retardam todo o processo, deixando o computador 
+lento e comprometendo a experiência do usuário.
 
  A análise e a otimização do desempenho têm o objetivo justo de garantir que essa “cozinha digital” funcione da 
 melhor forma possível. Com uma boa organização e os ajustes corretos, o sistema se torna capaz de realizar 
@@ -27,6 +27,36 @@ múltiplas tarefas ao mesmo tempo, entregando resultados rápidos e suaves para 
 hardware e software é o que define uma experiência eficiente, onde tudo flui de maneira agradável e sem 
 interrupções.
 
+
+
+                                  "Impacto do Desempenho no Computador"  
+                                                                                                                                                                                                                                         
+ O desempenho de um computador afeta diretamente a forma como ele responde e realiza as tarefas executadas pelo 
+usuário, e isso tem um impacto significativo tanto no uso pessoal quanto no profissional. Em uma analogia simples, 
+imagine um carro: quando ele está em ótimo estado, com motor, pneus e outros componentes funcionando bem, ele 
+responde rapidamente ao acelerar, oferece uma direção suave e economiza combustível. Da mesma forma, um computador 
+com bom desempenho consegue abrir programas rapidamente, executar várias operações ao mesmo tempo e evitar 
+travamentos ou lentidão.
+
+ Esse impacto é sentido em diversas áreas do cotidiano. Em um ambiente de trabalho, por exemplo, um sistema com bom 
+desempenho permite que tarefas sejam realizadas mais rapidamente, o que aumenta a produtividade e reduz o tempo 
+perdido com problemas técnicos. Em áreas como design gráfico, desenvolvimento de software ou edição de vídeo, o 
+desempenho é ainda mais crucial, já que softwares pesados ​​utilizam bastante do processador e da memória. Quando 
+esses componentes são alinhados, o fluxo de trabalho é mais eficiente, permitindo que projetos sejam concluídos sem 
+interrupções, ou que se traduzam em entregas mais rápidas e com maior qualidade.
+
+ Para usuários comuns, o impacto também é notável. Um computador eficiente torna a navegação na internet, o uso de 
+redes sociais e até o lazer, como assistir a filmes ou jogar, muito mais agradável. A diferença entre um sistema 
+que funciona bem e um que apresenta travamentos constantes é como a diferença entre assistir a um filme sem pausas 
+ou ter que pausar a cada minuto. O bom desempenho, então, garante uma experiência fluida e evita a frustração de 
+esperar enquanto o computador "pensa" para abrir um arquivo ou carregar uma página.
+
+ Além disso, o desempenho também impacta no consumo de energia e na durabilidade do sistema. Computadores que 
+precisam trabalhar constantemente no limite para atender às demandas acabam consumindo mais energia e, com o tempo, 
+podem sofrer desgastes que prejudicam sua vida útil. Com um sistema eficiente, o uso de energia é mais equilibrado 
+e as peças funcionam dentro de suas capacidades ideais, o que não só beneficia o meio ambiente, mas também evita 
+custos com reparos e prolonga a vida útil do equipamento. Assim, o desempenho é um fator essencial para garantir 
+não apenas a rapidez nas operações, mas também a durabilidade e a eficiência no consumo de recursos do computador.
 
 
                                       "Métricas de desempenho"
