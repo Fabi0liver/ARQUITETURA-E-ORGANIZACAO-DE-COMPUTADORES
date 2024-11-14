@@ -54,14 +54,15 @@ esperar enquanto o computador "pensa" para abrir um arquivo ou carregar uma pág
  Além disso, o desempenho também impacta no consumo de energia e na durabilidade do sistema. Computadores que 
 precisam trabalhar constantemente no limite para atender às demandas acabam consumindo mais energia e, com o tempo, 
 podem sofrer desgastes que prejudicam sua vida útil. Com um sistema eficiente, o uso de energia é mais equilibrado 
-e as peças funcionam dentro de suas capacidades ideais, o que não só beneficia o meio ambiente, mas também evita 
-custos com reparos e prolonga a vida útil do equipamento. Assim, o desempenho é um fator essencial para garantir 
-não apenas a rapidez nas operações, mas também a durabilidade e a eficiência no consumo de recursos do computador.
+e com isso os componentes de hardware tende  á funcionarem dentro de suas capacidades ideais, o que não só 
+beneficia o meio ambiente, mas também evita custos com reparos e prolonga a vida útil do equipamento. Assim, o 
+desempenho é um fator essencial para garantir não apenas a rapidez nas operações, mas também a durabilidade e a 
+eficiência no consumo de recursos do computador.
 
 
                                       "Métricas de desempenho"
-
-  As métricas de desempenho são como um conjunto de ferramentas que nos ajudam a entender bem um computador, 
+                                                                                                                                                                                                                                         
+ As métricas de desempenho são como um conjunto de ferramentas que nos ajudam a entender bem um computador, 
 servidor ou qualquer sistema computacional que esteja realizando seu trabalho. Imagine que estamos tentando avaliar 
 o desempenho de um carro: precisamos observar sua velocidade, consumo de combustível e capacidade de carga. No 
 mundo dos computadores, o conceito é parecido. As estatísticas de desempenho permitem medir diferentes aspectos, 
@@ -71,16 +72,85 @@ ter uma visão clara de onde o sistema brilha e onde ele pode melhorar.
  Essas métricas são especialmente importantes em ambientes de TI, onde a eficiência impacta diretamente a 
 produtividade e até os custos operacionais. Em um data center, por exemplo, se um servidor consegue processar um 
 grande volume de dados de maneira rápida e com baixo consumo de energia, ele se torna mais econômico e eficaz. Mas, 
-para entender se isso está realmente acontecendo, é preciso medir e comparar diversos fatores. As estatísticas de 
+para entender se isso está realmente acontecendo, é preciso medir e comparar diversos fatores. As métricas de 
 desempenho são, portanto, o que nos guia para uma análise detalhada do sistema, indicando o que está funcionando 
 bem e o que pode ser ajustado.
 
  Assim como no exemplo do carro, diferentes tipos de detalhes fornecem informações sobre áreas específicas do 
 sistema, como o uso da CPU, a memória e a capacidade de resposta. Ao olhar para essas informações, podemos ajustar 
-e otimizar os componentes, garantindo que tudo funcione de forma harmoniosa e eficiente. Dessa forma, as 
-estatísticas de desempenho não apenas mostram o desempenho em números, mas também ajudam a traçar estratégias para 
-melhorar e aperfeiçoar o sistema, tornando a experiência de uso mais fluida e rápida, o que é essencial tanto para 
-usuários comuns quanto para grandes empresas
+e otimizar os componentes, garantindo que tudo funcione de forma harmoniosa e eficiente. Dessa forma, as métricas 
+de desempenho não apenas mostram o desempenho em números, mas também ajudam a traçar estratégias para melhorar e 
+aperfeiçoar o sistema, tornando a experiência de uso mais fluida e rápida, o que é essencial tanto para usuários 
+comuns quanto para grandes empresas.                                                                                        
+                                                                                                                                                                                                                                         
+ A seguir, exploraremos algumas dessas métricas que são importantes para avaliar o desempenho de computadores.
+
+
+* Tempo de Execução
+                                                                                                                                                                                                                                         
+  O tempo de execução é uma métrica central no estudo do desempenho de computadores, pois ele nos diz quanto tempo 
+ um programa ou tarefa demora para ser concluído. Imagine o tempo de execução como um cronômetro que inicia quando 
+ você começa a resolver uma tarefa e para assim que terminar. Em sistemas computacionais, esse “cronômetro” nos   
+ ajuda a entender a rapidez e a eficiência com que o computador consegue realizar uma série de instruções. Em 
+ aplicações práticas, o tempo de execução é usado tanto para avaliar o desempenho de softwares específicos quanto 
+ para medir a eficiência geral de um sistema. Essa métrica nos ajuda a fazer ajustes importantes, seja para tornar 
+ um programa mais rápido ou para melhorar o uso dos recursos do sistema.
+
+  - Tipos de Tempo de Execução: O tempo de execução pode ser dividido em três categorias principais, cada uma delas 
+   refletindo diferentes aspectos da execução de um programa:
+
+    Tempo de execução total : Esse  é o tempo desde o início até o final da execução de um programa, considerando 
+                             todos os ciclos de CPU, tempo de espera, acessos à memória e processos auxiliares que  
+                             o sistema realiza. É uma medida mais ampla do tempo de execução, pois considera todas 
+                             as etapas, do início ao fim da tarefa.
+
+    Tempo de execução do usuário : Refere-se ao tempo que o processador gasta exclusivamente executando as 
+                                  instruções do programa, sem incluir o tempo gasto com operações de sistema, como 
+                                  leitura e gravação de dados. Esse tempo representa o uso direto da CPU para as 
+                                  instruções do usuário, sendo útil para medir a eficiência do processamento 
+                                  específico de cada tarefa.
+
+    Tempo de execução do sistema : Inclui o tempo que o sistema operacional leva para realizar tarefas auxiliares 
+                                  ao funcionamento do programa, como alocação de memória e gerenciamento de 
+                                  arquivos. Embora esses processos não façam parte diretamente do design do 
+                                  programa, eles são essenciais para que o programa funcione corretamente e, 
+                                  dependendo do sistema, podem ter um impacto significativo no tempo de execução 
+                                  total.      
+                                                                                                                                                                                                                                
+    Esses tipos de tempo de execução fornecem uma visão mais detalhada de como os recursos do sistema estão sendo 
+   usados ​​e ajudam a identificar áreas de potencial otimização.
+
+
+  - Fatores que influenciam o tempo de execução: Vários fatores impactam o tempo de execução de um programa, e a 
+   escolha de hardware pode ser um dos mais relevantes. A velocidade do processador, a quantidade de memória RAM e 
+   o tipo de armazenamento (por exemplo, SSDs, que são mais rápidos que HDs) influenciam diretamente o tempo 
+   necessário para realizar tarefas. Se compararmos dois computadores executando o mesmo programa, aqueles com 
+   componentes mais rápidos e modernos provavelmente concluirão a tarefa em menos tempo. Além disso, o número de 
+   núcleos do processador e sua arquitetura também podem impactar o tempo de execução, permitindo que o programa 
+   execute várias operações simultaneamente.
+
+    Outro fator importante é a eficiência do código em si,  da mesma forma que um programa escrito pode reduzir ou 
+   aumentar significativamente o tempo de execução,  algoritmos eficientes que realizam as mesmas operações em 
+   menos etapas, tendem a resultar em tempos de execução mais curtos. Pequenas otimizações no código, como 
+   simplificar loops ou escolher  estruturas de dados mais adequadas para cada tipo de operação, podem fazer  uma  
+   grande  diferença, especialmente em programas que realizam operações repetitivas ou de grande escala.
+
+
+  - Como o Tempo de Execução é Medido: O tempo de execução é geralmente medido em segundos ou milissegundos, 
+   dependendo da duração do programa. Em contextos de otimização, os engenheiros de software utilizam ferramentas 
+   de monitoramento que ajudam a medir com precisão o tempo gasto em diferentes partes do código. Ferramentas como 
+   Profiler de software pode detalhar o tempo que cada função ou método leva para ser executado, facilitando a 
+   identificação de áreas para otimização. Além disso, testes de benchmark ajudam a comparar o tempo de execução de 
+   diferentes algoritmos ou sistemas.
+
+  O tempo de execução é uma das análises mais importantes para avaliar a eficiência de um sistema. Ele reflete a 
+ rapidez com que um programa ou tarefa pode ser concluído e servir como um indicador de como os recursos do sistema 
+ estão sendo utilizados. Melhorias no tempo de execução são o resultado de um bom equilíbrio entre hardware potente 
+ e código otimizado. Em resumo, entender e otimizar o tempo de execução ajuda não apenas a melhorar o desempenho 
+ dos softwares, mas também a fornecer uma experiência mais ágil e eficiente para os usuários.
+
+
+
 
 
                                        "O que afeta o Desempenho?"
