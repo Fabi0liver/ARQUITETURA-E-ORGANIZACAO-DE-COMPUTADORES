@@ -415,7 +415,7 @@ comuns quanto para grandes empresas.
    A latência, ou tempo de resposta, é um aspecto essencial para avaliar o desempenho de sistemas computacionais. 
   Desde o tempo que um processador leva para executar uma instrução até a demora em uma conexão de rede, a latência 
   afeta diretamente a experiência do usuário e a eficiência do sistema. Compreender os tipos de latência, os   
-  fatores que influenciam e como ela é medida permite que os profissionais de T I otimizem seus sistemas,  
+  fatores que influenciam e como ela é medida permite que os profissionais de TI otimizem seus sistemas,  
   garantindo operações mais rápidas e eficientes.
 
 
