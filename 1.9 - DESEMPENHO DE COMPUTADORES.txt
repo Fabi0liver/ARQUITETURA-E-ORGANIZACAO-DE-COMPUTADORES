@@ -347,6 +347,78 @@ comuns quanto para grandes empresas.
  sistema.
 
 
+* Número de Instruções de Máquina (IC)
+                                                                                                                                                                                                                                         
+  O número de instruções de máquina (IC, ou Instruction Count) é uma métrica fundamental para avaliar o desempenho 
+ de um processador e de um programa executado no computador. Basicamente, o IC refere-se ao número total de 
+ instruções realizadas por um processador durante a execução de um programa. Essas instruções são aritméticas, 
+ lógicas, de controle, entre outras, e representam as ações que o desenvolvedor realiza para concluir a tarefa que 
+ lhe foi dada. Quanto menor o número de instruções necessárias para executar um programa, mais eficiente ele é, 
+ pois o processador precisa de menos ciclos para concluir a execução.
+
+ - Tipos de Instruções por IC: Quando falamos sobre instruções de máquina , estamos lidando com os diferentes tipos 
+  de operações que o processador pode realizar. Essas operações podem ser definidas em várias categorias, 
+  dependendo de como elas afetam a execução do programa. Abaixo, detalharemos os principais tipos de instruções que 
+  compõem o IC.
+
+    Instruções Aritméticas: As instruções aritméticas são responsáveis ​​por realizar operações matemáticas, como 
+                           soma, subtração, multiplicação e divisão. São essenciais para a execução de qualquer 
+                           programa que envolva cálculos, desde operações simples até cálculos complexos em áreas 
+                           como gráficos ou simulações científicas.
+
+    Instruções Lógicas: As instruções lógicas envolvem operações de comparação e manipulação de bits, como E (AND), 
+                       OU (OR), NÃO (NOT). Elas são utilizadas, por exemplo, para comparar valores, tomar decisões 
+                       condicionais ou manipular dados binários. Essas instruções são essenciais em algoritmos que  
+                       precisam tomar decisões ou em processos como criptografia.
+
+    Instruções de controle: As instruções de controle controlam o fluxo de execução do programa. Um exemplo 
+                           clássico são as instruções de salto (jump), que fazem o programa mudar seu curso, como     
+                           nos loops e em estruturas condicionais (if/else). Elas são essenciais para a execução de               
+                           estruturas de alteração e tomada de decisão em qualquer programa.
+
+    Instruções de Memória: Essas instruções tratam da transferência de dados entre a memória e os registradores do 
+                          processador. As instruções de carregamento (load) e armazenamento (store) são exemplos 
+                          dessa categoria, e são fundamentais para acessar e modificar dados durante a execução do 
+                          programa.                                                                         
+                                                                                                                                                                                                                                      
+   Os tipos de instruções que compõem o IC são fundamentais para o funcionamento de um programa, cada um 
+  desempenhando um papel específico, como cálculos, controle de fluxo e acesso à memória, garantindo a eficiência 
+  do processador.
+
+                                                                                                                                                                                                                                      
+ - Fatores que influenciam o IC: O número de instruções de máquina que um programa exige pode variar dependendo de 
+  vários fatores. O primeiro deles é uma complexidade do código . Programas mais complexos exigem mais instruções 
+  para serem executados. Por exemplo, um algoritmo de ordenação simples pode exigir menos instruções do que um 
+  algoritmo complexo de busca em bancos de dados. Além disso, o estilo de programação também influencia o IC. 
+  Programas escritos de forma otimizada, utilizando operações mais eficientes, tendem a gerar um IC menor.
+
+   Outro fator importante é a arquitetura do processador. Diferentes arquiteturas de CPU possuem diferentes 
+  conjuntos de instruções e métodos para executar operações. Processadores modernos e eficientes, como os baseados 
+  em arquiteturas RISC (Reduced Instruction Set Computing), podem ser projetados para executar instruções simples 
+  rapidamente, enquanto as arquiteturas CISC (Complex Instruction Set Computing) pode ter instruções mais 
+  complexas, que realizam mais trabalho em um único ciclo, mas podem ter um número maior de instruções no geral. A 
+  escolha da arquitetura, portanto, influencia diretamente o número de instruções que um programa irá gerar.
+
+                                                                                                                                                                                                                                      
+ - Como o IC  é Medido: O número de instruções de máquina  é medido observando o número total de instruções 
+  realizadas pelo engenheiro durante a execução de um programa. Isso pode ser feito de diversas maneiras, mas o 
+  método mais comum envolve o uso de ferramentas de perfilamento ou simuladores de CPU . Esses programas analizam a 
+  execução do código e contam quais instruções são realmente realizadas pelo processador. Além disso, o IC pode ser 
+  calculado com base no código-fonte do programa, analisando a quantidade de instruções em um nível mais alto de 
+  abstração.
+
+   Outra métrica importante relacionada ao IC é o CPI (Ciclos por Instrução), que indica quantos ciclos do 
+  processador são necessários para executar uma instrução. O número de instruções por ciclo, combinado com o número 
+  total de instruções, ajuda a determinar a eficiência de um processador em termos de tempo de execução.
+
+  O número de instruções de máquina (IC) é uma métrica essencial para medir a eficiência do código e do 
+ processador. Ele nos dá uma ideia clara de quais operações o processador precisa realizar para executar um 
+ programa e ajuda a identificar áreas onde o desempenho pode ser melhorado. O número de instruções pode ser 
+ influenciado por vários fatores, como a complexidade do código, a arquitetura do processador e o tipo de 
+ instruções usadas. A medição do IC é um passo importante na otimização de programas e no design de sistemas 
+ computacionais mais rápidos e eficientes.
+
+
 * Ciclos por Instrução (CPI)
                                                                                                                                                                                                                                           
   O Ciclos por Instrução  é uma métrica usada para medir a eficiência de um processador na execução de instruções. 
