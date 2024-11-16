@@ -405,7 +405,7 @@ comuns quanto para grandes empresas.
  - Como os  Ciclos por Instrução é Medido: Medir o CPI envolve coletar dados sobre o número total de ciclos de 
   clock e o número de instruções realizadas durante uma tarefa. A fórmula básica é:
                                                                                                                                                                                                                                      
-             CPI = (Número total de ciclos de clock)/(Número total de instruções realizadas) 
+             CPI = (Número total de ciclos de clock) / (Número total de instruções realizadas) 
 
    Para realizar essa medição, são utilizados simuladores de desempenho ou ferramentas de análise de hardware que  
   coletam dados durante a execução de programas. Essas ferramentas registram quantos ciclos o processador consumiu 
