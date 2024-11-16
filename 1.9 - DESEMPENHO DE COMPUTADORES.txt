@@ -488,6 +488,73 @@ comuns quanto para grandes empresas.
  de aceleração e identificar oportunidades de melhoria em sistemas computacionais.
 
 
+* MIPS (Milhões de Instruções por Segundo)
+                                                                                                                                                                                                                                
+  MIPS é uma métrica usada para medir o desempenho de um processador. Ela indica quantas instruções a CPU é capaz 
+ de executar a cada segundo. Imagine um processador como um cozinheiro trabalhando em uma cozinha; o MIPS seria 
+ como contar quantas tarefas ele pode completar por minuto, como cortar vegetais, fritar alimentos ou misturar 
+ ingredientes. Embora seja uma métrica útil para ter uma ideia geral da capacidade de processamento, o MIPS tem 
+ limitações e pode não refletir completamente o desempenho real em todas as situações.
+
+ - Tipos de Instruções no Cálculo de MIPS: Nem todas as instruções realizadas pelo processador são iguais; alguns 
+  são mais simples e rápidos, enquanto outros são mais complexos e necessitam mais ciclos de processamento. Aqui 
+  estão os principais tipos de instruções que influenciam o cálculo do MIPS:
+
+    Instruções Aritméticas e Lógicas: Essas são as operações básicas, como somar, subtrair, multiplicar, dividir ou 
+                                     realizar comparações lógicas (por exemplo, "E",  "OU",  "NÃO"). Elas 
+                                     geralmente são rápidas, pois envolvem apenas os dados disponíveis nos 
+                                     registros internos do processador.
+
+    Instruções de controle: Instruções como saltos condicionais e loops, que controlam o fluxo do programa. Esses 
+                           podem exigir mais ciclos, especialmente quando causam mudanças no caminho de execução, 
+                           como pular para uma parte diferente do código.
+
+    Instruções de Acesso à Memória: Envolvem operações de leitura ou gravação na memória. Essas instruções costumam 
+                                   ser mais lentas, pois dependem do tempo de acesso à memória, que é mais lento 
+                                   que o acesso aos registradores internos.
+
+    Instruções de Entrada/Saída: Essas instruções lidam com dispositivos externos, como discos rígidos ou 
+                                interfaces de rede. Como depende de fatores externos (por exemplo a velocidade do 
+                                disco), tende a ser muito mais lento em comparação com as operações internas do 
+                                processador.
+
+   O número de MIPS varia dependendo da proporção de cada tipo de instrução em um programa. Programas que executam 
+  muitas instruções simples, como operações aritméticas, tendem a apresentar um número maior de MIPS, enquanto 
+  aqueles que fazem muitas operações de Entrada/Saída podem ter números menores.
+
+                                                                                                                                                                                                                                
+ - Fatores que influenciam o MIPS: Os fatores que influenciam o MIPS  estão diretamente relacionados às 
+  características do hardware, do software e do tipo de instruções processadas. Primeiramente, a complexidade das 
+  instruções desempenha um papel importante. Nem todas as instruções são iguais: algumas, como somar ou comparar 
+  números, são rápidas e necessitam poucos ciclos de relógio, enquanto outras, como operações de ponto flutuante ou 
+  acesso à memória, podem ser mais demoradas. Assim, um programa com muitas instruções simples pode apresentar um 
+  valor de MIPS mais alto, enquanto tarefas mais complexas tendem a reduzir esse número.
+
+   Outro fator significativo é a arquitetura do processador . Tecnologias como pipelining, execução fora de ordem e 
+  aceleração multi-core influenciam quantas instruções podem ser processadas simultaneamente. Além disso, o 
+  desempenho da memória e o tempo de acesso aos dados também impactam o MIPS, já que o processador pode ficar 
+  "esperando" pelos dados. Por isso, sistemas com memórias rápidas e otimizadas tendem a obter resultados melhores. 
+  Em resumo, o MIPS é influenciado por uma combinação de como as instruções são estruturadas e realizadas, bem como 
+  pela eficiência dos componentes do sistema.
+
+                                                                                                                                                                                                                               
+ - Como o MIPS é Medido: Para calcular o MIPS, usa se  a fórmula:
+
+    MIPS = (Número total de instruções realizadas) / (Tempo total de execução (em segundos)) x 10^6
+ 
+   Esse cálculo leva em conta o número total de instruções que o processador executa e o tempo necessário para 
+  completá-las. O número de instruções geralmente é determinado por ferramentas de análise ou benchmarks que 
+  simulam cargas de trabalho específicas no processador. No entanto, como o MIPS não considera muitas das  
+  complexidades das instruções, ele acaba por  ser uma métrica simplificada e em algumas situações, enganosa para 
+  avaliar o desempenho real.
+
+  O MIPS é uma métrica útil para ter uma visão geral da capacidade de processamento de uma CPU, mas deve ser 
+ interpretada com cuidado. Fatores como o tipo de instruções, a arquitetura do projeto e as condições de execução 
+ podem influenciar significativamente o valor medido. Assim como contar tarefas em uma cozinha não reflete a 
+ qualidade dos pratos servidos, o MIPS por si só não garante uma avaliação completa do desempenho de um sistema. 
+ Para uma análise mais precisa, é ideal combiná-lo com outras métricas e considerações específicas da aplicação.
+
+
 * Latência                                                                                                                                                                              
                                                                                                                                                                                                                                          
   A latência, ou tempo de resposta, refere-se ao tempo que um sistema leva para responder a uma solicitação. Em 
