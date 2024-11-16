@@ -697,6 +697,23 @@ comuns quanto para grandes empresas.
  falhas, garantindo um desempenho estável mesmo nas situações mais sofridas.
 
 
+ Assim se conclue que as métricas de desempenho são ferramentas essenciais para avaliar a eficiência de um 
+computador ou sistema, fornecendo informações importantes para entender como diferentes componentes trabalham 
+juntos. Elas servem como uma espécie de "raio X" do funcionamento interno de hardware e software, ajudando a 
+identificar gargalos, aprimorar processos e tomar decisões fundamentadas sobre melhorias ou aquisições. Sem essas 
+avaliações, seria como tentar ajustar um carro sem entender o que está afetando seu desempenho na estrada.
+
+ Apesar de sua importância, é fundamental lembrar que cada métrica tem suas limitações e não deve ser usadas 
+isoladamente. Por exemplo, valores altos de MIPS podem parecer impressionantes, mas não podem refletir o desempenho 
+real de um sistema em aplicações específicas. Por isso, é essencial usar diferentes análises em conjunto, como CPI 
+(Ciclos por Instrução), latência e throughput, para obter uma visão mais completa do comportamento do sistema em 
+situações do mundo real.
+
+ No final das contas, o objetivo é entender e utilizar as métricas de desempenho além dos números e cálculos: 
+trata-se de garantir que os sistemas atendam às necessidades dos usuários de forma eficiente e confiável. Seja para 
+projetar novas arquiteturas, otimizar software ou simplesmente escolher o hardware ideal para uma tarefa 
+específica, as métricas de desempenho  oferecem o conhecimento necessário para tomar decisões mais inteligentes e 
+alcançar melhores resultados.
 
 
 
