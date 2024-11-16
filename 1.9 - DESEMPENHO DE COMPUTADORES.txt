@@ -419,6 +419,75 @@ comuns quanto para grandes empresas.
  execução, melhor será o desempenho.
 
 
+* Instruções por Ciclo (IPC)
+                                                                                                                                                                                                                                         
+  O IPC  é uma métrica utilizada para medir a eficiência de uma operação. Ele indica a quantidade média de 
+ instruções que o processador consegue executar a cada ciclo de clock. Pense no IPC como a produtividade de uma 
+ linha de montagem: enquanto o clock do processador representa o ritmo da linha (quantas vezes ela "pula" para a 
+ próxima etapa), o IPC representa quantas tarefas são concluídas a cada pulso dessa linha. Um IPC mais alto 
+ significa que o processador está aproveitando melhor cada ciclo, tornando-o mais eficiente.
+                                                                                                                                                                                                                                                 
+ - Tipos de IPC: Existem diferentes categorias de instruções que afetam diretamente o IPC, já que nem todas as 
+  operações são realizadas com a mesma complexidade ou velocidade. Aqui estão os principais tipos:
+
+    Instruções Simples: As instruções simples são aquelas que requerem poucos recursos do processador e geralmente 
+                       podem ser realizadas em um único ciclo de clock. Exemplos incluem operações aritméticas 
+                       básicas, como adição e subtração. Eles são o "feijão com arroz" de processamento, sendo 
+                       rápidos e simples de executar.
+
+
+    Instruções Complexas: Já as instruções complexas exigem mais tempo e recursos do processador, pois envolvem 
+                         várias etapas ou acessos à memória. Um exemplo clássico é a multiplicação de números 
+                         grandes ou operações envolvidas em ponto flutuante. Essas instruções levam vários ciclos 
+                         de clock para serem concluídos, reduzindo a  média do IPC .
+
+    Instruções de Memória: Essas instruções lidam com o acesso à memória, como leitura ou escrita de dados. Como o 
+                          processador precisa esperar pela resposta da memória, que é mais lenta, essas instruções 
+                          podem causar "atrasos" no fluxo de execução, impactando  o IPC.
+
+    Instruções de controle: Instruções de controle, como saltos ou loop, alteram o fluxo normal de execução do  
+                           programa. Eles podem interromper a linha de execução e causar prejuízos, especialmente  
+                           se o processador sofrer erros  sobre qual será o próximo passo.
+
+   Cada tipo de instrução desempenha um papel no cálculo do IPC, e a mistura dessas instruções em um programa 
+  determina, em grande parte, a eficiência geral do processador. Processadores modernos tentam equilibrar a 
+  execução para minimizar os riscos das instruções mais "custosas".
+
+                                                                                                                                                                                                                                                 
+ - Fatores que influenciam o IPC: O IPC  é influenciado por diversos fatores que impactam diretamente o desempenho 
+  de um processador. A arquitetura do processador é um dos elementos mais importantes nesse contexto. Processadores 
+  modernos utilizam técnicas como pipelining , execução fora de ordem e multithreading , que ajudam a melhorar o 
+  IPC ao permitir que várias instruções sejam processadas ao mesmo tempo ou em diferentes estágios do ciclo. No 
+  entanto, a eficácia dessas técnicas depende de como as instruções são organizadas e do tipo de tarefas que o 
+  processador está executando. Programas com muitas dependências de dados ou que necessitam de  acesso frequente à 
+  memória podem dificultar o fluxo eficiente de instruções, resultando em um IPC mais baixo.
+
+   Além da arquitetura, o tipo de código que está sendo executado também afeta o IPC. Programas com muitas 
+  operações simples e independentes, como cálculos matemáticos diretos, tendem a alcançar um IPC maior, pois o 
+  processador consegue executar várias instruções em paralelo sem ficar preso esperando por dados. Por outro lado, 
+  códigos com muitas instruções de controle, como saltos ou loops complexos, podem interromper esse fluxo e reduzir 
+  a eficiência do processador. Assim, tanto a estrutura do processador quanto o design do software desempenham 
+  papéis cruciais no desempenho geral, e entender  a interação desses fatores é fundamental para a melhoria do IPC 
+  e, consequentemente, o desempenho do sistema.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+ - Como o IPC é Medido: Medir o IPC envolve monitorar a quantidade total de instruções realizadas pelo processador   
+  e o número de ciclos de clock necessários para concluí-los. A fórmula básica é:
+
+        IPC = (Número total de instruções realizadas) / (Número total de ciclos de clock)
+
+   Essa medição geralmente é realizada usando ferramentas de benchmarking e análise de desempenho, que simulam 
+  cargas de trabalho reais no processador. Ferramentas como o Perf (em sistemas Linux) ou simuladores de hardware 
+  permitem obter essas métricas de maneira precisa. É importante que a medição seja feita com uma carga de trabalho 
+  representativa, já que o IPC pode variar significativamente dependendo do tipo de programa executado.
+
+
+  O IPC é uma métrica essencial para entender a eficiência de um processador, mostrando como ele consegue 
+ aproveitar cada ciclo de clock. Embora o IPC seja influenciado por fatores como a arquitetura do processador, o 
+ tipo de instruções e o perfil do programa, ele também reflete o avanço tecnológico na melhoria do desempenho de 
+ sistemas computacionais. Ao compreender como o IPC funciona e como é medido, fica mais fácil avaliar o desempenho 
+ de aceleração e identificar oportunidades de melhoria em sistemas computacionais.
+
+
 * Latência                                                                                                                                                                              
                                                                                                                                                                                                                                          
   A latência, ou tempo de resposta, refere-se ao tempo que um sistema leva para responder a uma solicitação. Em 
