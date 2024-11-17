@@ -443,7 +443,8 @@ para dar suporte às operações do sistema.
 
  A estrutura de um computador é como um delicado relógio, onde cada engrenagem é projetada para funcionar em 
 perfeita harmonia. Desde a organização da CPU que inclui a Unidade Lógica Aritmética (ALU), a Unidade de Controle 
-(UC), até a forma como as memórias são dispostas em camadas e os barramentos conectam todos os componentes, cada parte tem um papel vital e estratégico.
+(UC), até a forma como as memórias são dispostas em camadas e os barramentos conectam todos os componentes, cada 
+parte tem um papel vital e estratégico.
 
  Essa interconexão cuidadosa garante que o computador consiga processar dados, armazenar informações e se comunicar 
 com o mundo externo de maneira rápida e eficiente. Imagine uma cidade onde cada rua e estrada foi planejada para 
