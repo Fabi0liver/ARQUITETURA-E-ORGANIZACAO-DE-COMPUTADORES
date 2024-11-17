@@ -470,7 +470,8 @@ garantir que as operações sejam executadas de forma suave e eficaz.
  Tomemos como exemplo a CPU, que é o "cérebro" do computador. Ela requer registradores rápidos para realizar 
 cálculos complexos em tempo real. Portanto, sua estrutura é projetada de maneira que esses registradores estejam 
 localizados muito próximos à Unidade Lógica Aritmética (ALU), que realiza operações matemáticas. Essa proximidade 
-garante que a CPU possa acessar os dados de forma imediata, sem a latência que ocorreria se os registradores estivessem mais distantes. Assim, a estrutura física da CPU não é apenas uma configuração aleatória de peças; ela é 
+garante que a CPU possa acessar os dados de forma imediata, sem a latência que ocorreria se os registradores 
+estivessem mais distantes. Assim, a estrutura física da CPU não é apenas uma configuração aleatória de peças; ela é 
 meticulosamente planejada para atender às exigências das funções que desempenha.
 
  Da mesma forma, a memória do computador é organizada para facilitar um acesso rápido pela CPU. A memória 
