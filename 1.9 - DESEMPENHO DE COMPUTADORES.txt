@@ -790,80 +790,154 @@ alcançar melhores resultados.
 
 
                        "Fatores que Influenciam o Desempenho de computadores"                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Entre os fatores  que mais  influenciam o desempenho de um computador está o algoritmo , a linguagem de programação , o compilador e a arquitetura de conjunto de instruções (ISA) . Cada um desses elementos contribui de maneira única para determinar como as tarefas serão realizadas, afetando diretamente a eficiência e a velocidade com que os programas são executados. Juntos, eles formam uma cadeia interdependente, onde a qualidade e a otimização de cada etapa impactam profundamente o comportamento do sistema como um todo.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+ Entre os fatores  que mais  influenciam o desempenho de um computador está o algoritmo , a linguagem de 
+programação , o compilador e a arquitetura de conjunto de instruções (ISA) . Cada um desses elementos contribui de 
+maneira única para determinar como as tarefas serão realizadas, afetando diretamente a eficiência e a velocidade 
+com que os programas são executados. Juntos, eles formam uma cadeia interdependente, onde a qualidade e a 
+otimização de cada etapa impactam profundamente o comportamento do sistema como um todo.
 
-Compreender esses fatores e como eles interagem é fundamental para atualizar sistemas computacionais, seja melhorando a execução de programas, reduzindo custos operacionais ou aumentando a eficiência do hardware. Cada um desses fatores afeta algumas  métricas específicas, como o tempo de execução, Throughput, número de instruções de máquina (IC), entre outros. A seguir, exploraremos detalhadamente como cada um desses elementos impactam o desempenho de computadores, destacando as métricas relacionadas e a importância de sua otimização.                                    
+ Compreender esses fatores e como eles interagem é fundamental para atualizar sistemas computacionais, seja 
+melhorando a execução de programas, reduzindo custos operacionais ou aumentando a eficiência do hardware. Cada um 
+desses fatores afeta algumas  métricas específicas, como o tempo de execução, Throughput, número de instruções de 
+máquina (IC), entre outros. A seguir, exploraremos detalhadamente como cada um desses elementos impactam o 
+desempenho de computadores, destacando as métricas relacionadas e a importância de sua otimização.                                    
                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                            
-   Algoritmo:  É a base lógica de qualquer programa, definindo a sequência de passos necessários para resolver um problema. A eficiência de um algoritmo determina, em grande parte, o tempo e os recursos necessários para realizar uma tarefa.
+* Algoritmo:  É a base lógica de qualquer programa, definindo a sequência de passos necessários para resolver um  
+ problema. A eficiência de um algoritmo determina, em grande parte, o tempo e os recursos necessários para realizar 
+ uma tarefa.
                                                                                                                                                                              
- Um algoritmo eficiente reduz a quantidade de operações e evita redundâncias, o que diminui o número de instruções de máquina (IC) e o tempo de execução. Por exemplo, ao escolher um algoritmo de busca binária em vez de uma busca linear, o número de comparações e  consequentemente as instruções , é ligeiramente reduzido. Além disso, a escolha de estruturas de dados complexas pode melhorar significativamente a latência e o Throughput.
+  Um algoritmo eficiente reduz a quantidade de operações e evita redundâncias, o que diminui o número de instruções 
+ de máquina (IC) e o tempo de execução. Por exemplo, ao escolher um algoritmo de busca binária em vez de uma busca 
+ linear, o número de comparações e  consequentemente as instruções , é ligeiramente reduzido. Além disso, a escolha 
+ de estruturas de dados complexas pode melhorar significativamente a latência e o Throughput.
 
-Métricas influenciadas:                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                Tempo de Execução : Algoritmos mais eficientes ajudam o computador a realizar as tarefas em menos tempo, agilizando o processamento e melhorando o desempenho geral.
+  Métricas influenciadas:                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                 
+    Tempo de Execução: Algoritmos mais eficientes ajudam o computador a realizar as tarefas em menos tempo, 
+                      agilizando o processamento e melhorando o desempenho geral.
 
-Número de Instruções de Máquina (IC) : Com algoritmos bem otimizados, o computador precisa realizar menos operações para alcançar o mesmo resultado, o que significa menos trabalho para o processador.
+    Número de Instruções de Máquina (IC): Com algoritmos bem otimizados, o computador precisa realizar menos 
+                                         operações para alcançar o mesmo resultado, o que significa menos trabalho 
+                                         para o processador.
 
-Latência : Algoritmos mais  otimizados e com o tempo de resposta menores , tornam processos como carregar uma página ou responder a uma interação  mais ágeis.
+    Latência: Algoritmos mais  otimizados e com o tempo de resposta menores , tornam processos como carregar uma 
+             página ou responder a uma interação  mais ágeis.
 
-Throughput : Algoritmos eficientes liberam o sistema mais rapidamente, permitindo que ele processe mais tarefas em paralelo, aumentando a capacidade de trabalho do computador.
+    Throughput: Algoritmos eficientes liberam o sistema mais rapidamente, permitindo que ele processe mais tarefas 
+               em paralelo, aumentando a capacidade de trabalho do computador.
 
-Em suma, o  algoritmo é a espinha dorsal de qualquer sistema computacional. Sua eficiência afeta diretamente quase todas as métricas de desempenho. Investir em algoritmos otimizados é essencial para sistemas que buscam alto desempenho e eficiência energética.
+  Em suma, o  algoritmo é a espinha dorsal de qualquer sistema computacional. Sua eficiência afeta diretamente 
+ quase todas as métricas de desempenho. Investir em algoritmos otimizados é essencial para sistemas que buscam alto 
+ desempenho e eficiência energética.
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                Linguagem de Programação: A linguagem de programação define  como o algoritmo será implementado, impactando a forma como o código interage com o compilador e eventualmente, com o hardware. Linguagens de alto nível, como Python, priorizam a legibilidade e a produtividade, enquanto linguagens de baixo nível, como C, oferecem maior controle sobre o hardware.
+                                                                                                                                                                                                                                * Linguagem de Programação: A linguagem de programação define  como o algoritmo será implementado, impactando a 
+ forma como o código interage com o compilador e eventualmente, com o hardware. Linguagens de alto nível, como 
+ Python, priorizam a legibilidade e a produtividade, enquanto linguagens de baixo nível, como C, oferecem maior 
+ controle sobre o hardware.
 
-Linguagens de alto nível podem introduzir sobrecarga devido a abstrações complexas, ou  aumentar o número de ciclos de clock e o IC. Já linguagens de baixo nível permitem otimizações manuais, resultando em código mais eficiente. Por exemplo, um código em C é geralmente mais rápido que o equivalente em Python, pois o primeiro tem menos abstrações e gera instruções mais diretas para o processador.
+  Linguagens de alto nível podem introduzir sobrecarga devido a abstrações complexas, ou  aumentar o número de 
+ ciclos de clock e o IC. Já linguagens de baixo nível permitem otimizações manuais, resultando em código mais 
+ eficiente. Por exemplo, um código em C é geralmente mais rápido que o equivalente em Python, pois o primeiro tem 
+ menos abstrações e gera instruções mais diretas para o processador.
 
-Métricas influenciadas:
-                                                                                                                                                                                                                                Ciclos de Clock : Linguagens de alto nível geralmente utilizam mais ciclos de clock porque possuem abstrações que facilitam a vida do programador, mas acabam exigindo mais trabalho do processador para traduzir essas instruções em ações concretas.
+  Métricas influenciadas:
+                                                                                                                                                                                                                                  
+    Ciclos de Clock: Linguagens de alto nível geralmente utilizam mais ciclos de clock porque possuem abstrações 
+                    que facilitam a vida do programador, mas acabam exigindo mais trabalho do processador para 
+                    traduzir essas instruções em ações concretas.
 
-Número de Instruções de Máquina (IC) : Linguagens de baixo nível tendem a produzir menos instruções de máquina porque permitem que o programador controle diretamente o que será executado, eliminando excessos e otimizando a comunicação com o hardware.
+    Número de Instruções de Máquina (IC): Linguagens de baixo nível tendem a produzir menos instruções de máquina 
+                                         porque permitem que o programador controle diretamente o que será 
+                                         executado, eliminando excessos e otimizando a comunicação com o hardware.
 
-CPI (Ciclos por Instrução) : Linguagens menos otimizadas aumentam o número de ciclos necessários para executar cada instrução, muitas vezes devido à necessidade de resolver complexidades adicionais geradas pelas abstrações da linguagem.
+    CPI (Ciclos por Instrução): Linguagens menos otimizadas aumentam o número de ciclos necessários para executar 
+                               cada instrução, muitas vezes devido à necessidade de resolver complexidades 
+                               adicionais geradas pelas abstrações da linguagem.
 
-Throughput : Um código bem otimizado em linguagens de baixo nível consegue processar mais tarefas em menos tempo, aumentando a eficiência geral do sistema e a quantidade de trabalho realizado por segundo.
+    Throughput: Um código bem otimizado em linguagens de baixo nível consegue processar mais tarefas em menos 
+               tempo, aumentando a eficiência geral do sistema e a quantidade de trabalho realizado por segundo.
 
-A escolha da linguagem de programação é um compromisso entre desempenho e facilidade de desenvolvimento. Embora linguagens de alto nível sejam mais acessíveis, linguagens de baixo nível são preferíveis para tarefas que exigem alta eficiência.
+  A escolha da linguagem de programação é um compromisso entre desempenho e facilidade de desenvolvimento. Embora 
+ linguagens de alto nível sejam mais acessíveis, linguagens de baixo nível são preferíveis para tarefas que exigem 
+ alta eficiência.
                                                                                                                                                                                                                                
-                                                                                                                                                                                                                               Compilador: O compilador é um programa que lê e analisa o código fonte que o  programador escreveu e  traduz  para  instruções que o processador pode entender, aplicando abstrações para melhorar o desempenho do programa.
+                                                                                                                                                                                                                               * Compilador: O compilador é um programa que lê e analisa o código fonte que o  programador escreveu e  traduz  
+ para  instruções que o processador pode entender, aplicando abstrações para melhorar o desempenho do programa.
 
-Compiladores modernos podem reorganizar instruções, eliminar redundâncias e ajustar o uso de registradores para maximizar a eficiência do processador. Um compilador otimizado reduz o IC, melhora o CPI e pode aumentar o throughput ao gerar código mais compacto e eficiente. 
+  Compiladores modernos podem reorganizar instruções, eliminar redundâncias e ajustar o uso de registradores para 
+ maximizar a eficiência do processador. Um compilador otimizado reduz o IC, melhora o CPI e pode aumentar o 
+ throughput ao gerar código mais compacto e eficiente. 
 
-Métricas influenciadas:
-                                                                                                                                                                                                                               Número de Instruções de Máquina (IC) : Compiladores otimizados ajudam a reduzir a quantidade de instruções que o processador precisa executar, tornando o programa mais extenso e eficiente.
+  Métricas influenciadas:
+                                                                                                                                                                                                                                 
+    Número de Instruções de Máquina (IC): Compiladores otimizados ajudam a reduzir a quantidade de instruções que o 
+                                         processador precisa executar, tornando o programa mais extenso e 
+                                         eficiente.
 
-CPI (Ciclos por Instrução) : As otimizações permitem que cada instrução use melhor o pipeline do processador, reduzindo desperdícios e aumentando a fluidez na execução.
+    CPI (Ciclos por Instrução): As otimizações permitem que cada instrução use melhor o pipeline do processador, 
+                               reduzindo desperdícios e aumentando a fluidez na execução.
 
-MIPS (Milhões de Instruções por Segundo) : Com um código bem otimizado, o engenheiro consegue executar mais instruções por segundo, aumentando a velocidade geral do programa.
+    MIPS (Milhões de Instruções por Segundo): Com um código bem otimizado, o engenheiro consegue executar mais 
+                                             instruções por segundo, aumentando a velocidade geral do programa.
 
-Throughput : Melhorias no código gerado pelo compilador garantem que o programa utilize os recursos do processador de forma mais eficiente, processando mais tarefas no mesmo período de tempo.
+    Throughput: Melhorias no código gerado pelo compilador garantem que o programa utilize os recursos do 
+               processador de forma mais eficiente, processando mais tarefas no mesmo período de tempo.
 
-O compilador desempenha um papel fundamental no desempenho dos programas. Escolher ferramentas de compilação de qualidade e utilizar otimizações avançadas pode fazer uma diferença significativa na eficiência do código gerado.
+  O compilador desempenha um papel fundamental no desempenho dos programas. Escolher ferramentas de compilação de 
+ qualidade e utilizar otimizações avançadas pode fazer uma diferença significativa na eficiência do código gerado.
                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                               Arquitetura do Conjunto de Instruções ou ISA:  É o conjunto de comandos que o processador pode executar diretamente. Ela define como as instruções são organizadas, processadas e traduzidas para operações no hardware. Exemplos incluem arquiteturas RISC e CISC.
+                                                                                                                                                                                                                               * Arquitetura do Conjunto de Instruções ou ISA:  É o conjunto de comandos que o processador pode executar  
+ diretamente. Ela define como as instruções são organizadas, processadas e traduzidas para operações no hardware. 
+ Exemplos incluem arquiteturas RISC e CISC.
 
-Arquiteturas RISC, com instruções simples e rápidas, geralmente apresentam melhores IPC (Instruções por Ciclo), enquanto arquiteturas CISC, com instruções complexas, podem reduzir o IC mas aumentar o CPI. Além disso, a ISA define como o compilador otimiza o código e como o processador utiliza seus recursos, influenciando diretamente o tempo de execução e throughput .
+  Arquiteturas RISC, com instruções simples e rápidas, geralmente apresentam melhores IPC (Instruções por Ciclo), 
+ enquanto arquiteturas CISC, com instruções complexas, podem reduzir o IC mas aumentar o CPI. Além disso, a ISA 
+ define como o compilador otimiza o código e como o processador utiliza seus recursos, influenciando diretamente o 
+ tempo de execução e throughput .
 
-Métricas influenciadas:
+  Métricas influenciadas:
                                                                                                                                                                                                                                      
-CPI (Ciclos por Instrução) : Processadores RISC geralmente possuem um CPI menor porque suas instruções são simples e uniformes, permitindo que sejam executadas de forma mais eficiente, com menos ciclos necessários para completar cada instrução. Isso significa que o processador pode realizar mais trabalho em menos tempo.
+    CPI (Ciclos por Instrução): Processadores RISC geralmente possuem um CPI menor porque suas instruções são 
+                               simples e uniformes, permitindo que sejam executadas de forma mais eficiente, com 
+                               menos ciclos necessários para completar cada instrução. Isso significa que o 
+                               processador pode realizar mais trabalho em menos tempo.
 
-IPC (Instruções por Ciclo) : A arquitetura RISC tende a melhorar o IPC porque suas instruções são otimizadas para serem executadas de forma rápida e paralela. Isso permite que o processador aproveite melhor cada ciclo de relógio, maximizando o desempenho geral.
+    IPC (Instruções por Ciclo): A arquitetura RISC tende a melhorar o IPC porque suas instruções são otimizadas 
+                               para serem executadas de forma rápida e paralela. Isso permite que o processador 
+                               aproveite melhor cada ciclo de relógio, maximizando o desempenho geral.
 
-Frequência do Processador : A frequência do processador, ou a velocidade com que ele opera, pode ser ajustada dependendo das características do ISA. ISA mais simples, como RISC, permitem frequências mais altas, já que o design otimizado gera menos sobrecarga no hardware.
+    Frequência do Processador: A frequência do processador, ou a velocidade com que ele opera, pode ser ajustada 
+                              dependendo das características do ISA. ISA mais simples, como RISC, permitem 
+                              frequências mais altas, já que o design otimizado gera menos sobrecarga no hardware.
 
-Tempo de Execução : O tempo necessário para concluir uma tarefa depende muito de como o ISA e o compilador trabalham juntos. Um ISA bem projetado, combinado com um compilador eficiente, pode reduzir o número de instruções e ciclos necessários, resultando em tempos de execução mais rápidos.
+    Tempo de Execução: O tempo necessário para concluir uma tarefa depende muito de como o ISA e o compilador 
+                      trabalham juntos. Um ISA bem projetado, combinado com um compilador eficiente, pode reduzir o 
+                      número de instruções e ciclos necessários, resultando em tempos de execução mais rápidos.
 
-A escolha da ISA define as capacidades básicas de desempenho de um processador. Arquiteturas bem projetadas, em combinação com bons compiladores e algoritmos otimizados, são fundamentais para sistemas de alta performance.
-
-
-Assim se conclue que fatores como o algoritmo, a linguagem de programação, o compilador e a ISA desempenham papéis essenciais no desempenho de computadores, cada um influenciando aspectos fundamentais das métricas de eficiência. O algoritmo, por exemplo, define a lógica que norteia todo o processamento, enquanto a linguagem de programação  compilada determinam como essa lógica é passada para o hardware. Já a ISA define as regras e instruções que o processador pode executar , permitindo ao programa otimizar o uso do hardware de forma mais eficiente. Esses elementos não operam isoladamente, mas interagem de forma dinâmica, impactando métricas como tempo de execução, throughput e número de instruções de máquina (IC).
-
-Ao compreender e equilibrar essas interações, é possível construir sistemas que não apenas entreguem alto desempenho, mas também sejam práticos e adaptados às necessidades do desenvolvedor e do usuário. A escolha cuidadosa de cada fator, desde a arquitetura do hardware até o código que o alimenta, permite maximizar a eficiência, reduzir custos e criar soluções modernas que atendam às demandas crescentes de processamento e agilidade. Dessa forma, conhecer esses detalhes técnicos e saber  aplicá-los de maneira estratégica é a base para o sucesso em projetos de computação e engenharia de software.
+  A escolha da ISA define as capacidades básicas de desempenho de um processador. Arquiteturas bem projetadas, em 
+ combinação com bons compiladores e algoritmos otimizados, são fundamentais para sistemas de alta performance.
 
 
+ Assim se conclui que fatores como o algoritmo, a linguagem de programação, o compilador e a ISA desempenham papéis 
+essenciais no desempenho de computadores, cada um influenciando aspectos fundamentais das métricas de eficiência. O 
+algoritmo, por exemplo, define a lógica que norteia todo o processamento, enquanto a linguagem de programação  
+compilada determinam como essa lógica é passada para o hardware. Já a ISA define as regras e instruções que o 
+processador pode executar , permitindo ao programa otimizar o uso do hardware de forma mais eficiente. Esses 
+elementos não operam isoladamente, mas interagem de forma dinâmica, impactando métricas como tempo de execução, 
+throughput e número de instruções de máquina (IC).
 
-                     "O Que é Otimização em Organização de Computadores?"
+ Ao compreender e equilibrar essas interações, é possível construir sistemas que não apenas entreguem alto 
+desempenho, mas também sejam práticos e adaptados às necessidades do desenvolvedor e do usuário. A escolha 
+cuidadosa de cada fator, desde a arquitetura do hardware até o código que o alimenta, permite maximizar a 
+eficiência, reduzir custos e criar soluções modernas que atendam às demandas crescentes de processamento e 
+agilidade. Dessa forma, conhecer esses detalhes técnicos e saber  aplicá-los de maneira estratégica é a base para o 
+sucesso em projetos de computação e engenharia de software.
+
+
+
+                       "O Que é Otimização em Organização de Computadores?"
 
  Imagine que você está em uma cozinha movimentada, onde diversos pratos estão sendo preparados simultaneamente. 
 Cada cozinheiro tem sua própria função, mas o verdadeiro sucesso da refeição depende da organização e eficiência 
