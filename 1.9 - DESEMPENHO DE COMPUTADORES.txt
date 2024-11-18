@@ -1062,52 +1062,91 @@ sistemas.
 
 
 
- "Lei de Amdahl"                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                              A Lei de Amdahl é uma fórmula fundamental para entender as limitações de desempenho em sistemas de computação, especialmente quando se trata de paralelismo. Desenvolvida por Gene Amdahl na década de 1960, essa lei descreve como o desempenho total de um sistema é afetado por uma parte sequencial de um processo que não pode ser paralelizado. Essa lei é crucial para avaliar até que ponto a introdução de mais recursos, como múltiplos núcleos de CPU, pode melhorar o desempenho de uma tarefa. Ela é frequentemente usada em ambientes de computação de alto desempenho, como servidores e sistemas de processamento paralelos, para prever o ganho real de eficiência ao dividir uma tarefa entre múltiplas habilidades.
+                                          "Lei de Amdahl"                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                               
+ A Lei de Amdahl é uma fórmula fundamental para entender as limitações de desempenho em sistemas de computação, 
+especialmente quando se trata de paralelismo. Desenvolvida por Gene Amdahl na década de 1960, essa lei descreve 
+como o desempenho total de um sistema é afetado por uma parte sequencial de um processo que não pode ser 
+paralelizado. Essa lei é crucial para avaliar até que ponto a introdução de mais recursos, como múltiplos núcleos 
+de CPU, pode melhorar o desempenho de uma tarefa. Ela é frequentemente usada em ambientes de computação de alto 
+desempenho, como servidores e sistemas de processamento paralelos, para prever o ganho real de eficiência ao 
+dividir uma tarefa entre múltiplas habilidades.
 
-A base do conceito é simples: mesmo que se aumente o número de núcleos ou se paralelize uma parte significativa de uma tarefa, sempre haverá uma porção do processo que precisa ser executada de forma sequencial. O impacto dessa parte sequencial no desempenho geral não pode ser ignorado, e a Lei de Amdahl nos ajuda a quantificar esse impacto.                                                                                                                                                        
-                                                                                                                                                                                                                                         
- A Fórmula da Lei de Amdahl:  Essa  fórmula ajuda a prever qual seria o ganho de desempenho total de um sistema, considerando as limitações naturais de um processo que precisa ser executado de forma sequencial.       
+ A base do conceito é simples: mesmo que se aumente o número de núcleos ou se paralelize uma parte significativa de 
+uma tarefa, sempre haverá uma porção do processo que precisa ser executada de forma sequencial. O impacto dessa 
+parte sequencial no desempenho geral não pode ser ignorado, e a Lei de Amdahl nos ajuda a quantificar esse impacto.                                                                                                                                                        
+      
+                                                                                                                                                                                                                                   
+* A Fórmula da Lei de Amdahl:  Essa  fórmula ajuda a prever qual seria o ganho de desempenho total de um sistema,  
+ considerando as limitações naturais de um processo que precisa ser executado de forma sequencial.       
                                                                                                                                                                                                                                          
   A fórmula da Lei de Amdahl é expressa da seguinte forma:                                                                                                               
                                                                                                                                                                                                                                          
-                                                                            S = 1 dividido por    ( 1 menos  P )    mais  P dividido por  N                                                                                    
+                                       1                                                                   
+                          S = _____________________                                                                                                            
+                                                                                                                           
+                                (1 - P) +  P / N                                                                                    
                                                                                                                                                                                                                                  Onde:
 
-  S : É o fator de aceleração (speed up) do sistema, ou seja, uma melhoria no desempenho do sistema com a paralelização.
+  S: É o fator de aceleração (speedup) do sistema, ou seja, uma melhoria no desempenho do sistema com a  
+       paralelização.
 
-  P: É uma fração do programa que pode ser paralelizada (em termos de tempo de execução). O valor de P está entre 0 e 1.
+  P: É uma fração do programa que pode ser paralelizada (em termos de tempo de execução). O valor de P está entre 0 
+    e 1.
 
  N: é o número de aceleração (ou núcleos) usado para paralelizar o processo.                                                                                               
-                                                                                                                                                                                                                               
- Como a Fórmula Funciona:  A fórmula reflete a ideia de que nem todo o processo de computação pode ser paralelizado. Algumas partes do código sempre precisam ser executadas de maneira sequencial. A fórmula leva em consideração dois componentes principais:                                                                                                                                                
+         
+        
+                                                                                                                                                                                                              
+* Como a Fórmula Funciona:  A fórmula reflete a ideia de que nem todo o processo de computação pode ser 
+ paralelizado. Algumas partes do código sempre precisam ser executadas de maneira sequencial. A fórmula leva em 
+ consideração dois componentes principais:                                                                                                                                                
                                                                                                                                                                                                                                  
- Parte Sequencial : O termo "( 1 menos P )" representa a parte do programa que não pode ser paralelizada. Mesmo que você use infinitos núcleos, essa parte ainda será realizada sequencialmente, o que limita o aumento do desempenho.                                                                                                                                                                                                                     
+    Parte Sequencial: O termo "(1 - P)" representa a parte do programa que não pode ser paralelizada. Mesmo 
+                     que você use infinitos núcleos, essa parte ainda será realizada sequencialmente, o que limita 
+                     o aumento do desempenho.                                                                                                                                                                                                                     
                                                                                                                                                                                                                                  
- Parte Paralelizada : O termo "P dividido por N" representa a parte paralelizada do programa. Aqui, o tempo para executar essa parte do programa diminui à medida que o número de aceleração "N" aumenta, mas, como a quantidade de trabalho paralelo é limitada por "P" , o aumento no desempenho não diminui à medida que adicionamos mais núcleos.                                                                                                                                                                                 
-                                                                                                                                                                                                                                         A soma das duas partes  "( 1 menos P ) mais   N dividido por  P"    representa o tempo total necessário para executar o programa em um ambiente paralelizado. Como "S" é o inverso desse tempo, a fórmula reflete a melhoria do desempenho total.                                                                                                                                                                                               
+    Parte Paralelizada: O termo "P / N" representa a parte paralelizada do programa. Aqui, o tempo para executar 
+                       essa parte do programa diminui à medida que o número de aceleração "N" aumenta, mas, como a 
+                       quantidade de trabalho paralelo é limitada por "P" , o aumento no desempenho não diminui à 
+                       medida que adicionamos mais núcleos.                                                                                                                                                                                 
+                                                                                                                                                                                                                                           
+  A soma das duas partes "(1 - P) + N / P" representa o tempo total necessário para executar o programa em um 
+ ambiente paralelizado. Como "S" é o inverso desse tempo, a fórmula reflete a melhoria do desempenho total.                                                                                                                                                                                               
                                                                                                                                                                                                                      
                                                                                                                                                                                                                      
-Limitações da Lei de Amdahl: A Lei de Amdahl é uma ferramenta poderosa para compreender os limites da paralelização, mas também possui suas limitações, especialmente ao ser aplicada em cenários mais complexos. Uma de suas principais restrições é que ela assume que uma fração paralelizável  do programa é fixo e independente do número de aceleração. Na prática, essa suposição pode ser simplista, pois muitos programas ajustam dinamicamente a proporção de trabalho paralelizável à medida que o número de processamento  aumenta. Além disso, a fórmula não considera sobrecargas de paralelização, como a comunicação entre atualização ou gerenciamento de tarefas, que podem aumentar o tempo adicional e reduzir os ganhos esperados no desempenho.
+* Limitações da Lei de Amdahl: A Lei de Amdahl é uma ferramenta poderosa para compreender os limites da  
+ paralelização, mas também possui suas limitações, especialmente ao ser aplicada em cenários mais complexos. Uma de 
+ suas principais restrições é que ela assume que uma fração paralelizável  do programa é fixo e independente do 
+ número de aceleração. Na prática, essa suposição pode ser simplista, pois muitos programas ajustam dinamicamente a 
+ proporção de trabalho paralelizável à medida que o número de processamento  aumenta. Além disso, a fórmula não 
+ considera sobrecargas de paralelização, como a comunicação entre atualização ou gerenciamento de tarefas, que 
+ podem aumentar o tempo adicional e reduzir os ganhos esperados no desempenho.
 
-Outra limitação importante é que a Lei de Amdahl não contempla  o  aumento da  escala do problema . Em muitos casos, ao aumentar o número de aceleração, o tamanho da tarefa a ser resolvida também cresce, como ocorre em cálculos científicos ou sistemas de big data. Esse cenário, chamado de escalabilidade forte , é melhor descrito pela  Lei de Gustafson , que considera o aumento proporcional ao trabalho paralelizável com a adição de mais desconforto. Assim, embora a Lei de Amdahl seja útil para analisar sistemas com um problema fixo, ela não reflete totalmente as realidades de aplicações modernas, onde o escalonamento e as sobrecargas desempenham um papel fundamental.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                                                                                                                         
- Assim conclue -se  que a  Lei de Amdahl é uma peça central para entender os limites de desempenho em sistemas de computação paralelamente. Ela nos ensina que, por mais que aumentemos o número de aceleração, o ganho total será sempre limitado por frações do trabalho que não podem ser paralelizadas. É como tentar agilizar o preparo de um jantar: mesmo que você tenha vários chefs para ajudar, ainda existem tarefas que só um pode fazer, como temperar o prato no ponto certo. Por isso, o aumento de eficiência  cresce de forma limitada, sendo restrito pelos elementos serializados do processo.
+  Outra limitação importante é que a Lei de Amdahl não contempla  o  aumento da  escala do problema . Em muitos 
+ casos, ao aumentar o número de aceleração, o tamanho da tarefa a ser resolvida também cresce, como ocorre em 
+ cálculos científicos ou sistemas de big data. Esse cenário, chamado de escalabilidade forte , é melhor descrito 
+ pela  Lei de Gustafson , que considera que, à medida que mais processadores são adicionados, o trabalho total 
+ realizado pelo sistema pode crescer proporcionalmente, pois a quantidade de tarefas paralelizáveis pode aumentar 
+ junto com o problema sendo resolvido. Assim, embora a Lei de Amdahl seja útil para analisar sistemas com um 
+ problema fixo, ela não reflete totalmente as realidades de aplicações modernas, onde o escalonamento e as 
+ sobrecargas desempenham um papel fundamental.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                         
+ Assim conclui-se  que a  Lei de Amdahl é uma peça central para entender os limites de desempenho em sistemas de 
+computação paralelamente. Ela nos ensina que, por mais que aumentemos o número de aceleração, o ganho total será 
+sempre limitado por frações do trabalho que não podem ser paralelizadas. É como tentar agilizar o preparo de um 
+jantar: mesmo que você tenha vários chefs para ajudar, ainda existem tarefas que só um pode fazer, como temperar o 
+prato no ponto certo. Por isso, o aumento de eficiência  cresce de forma limitada, sendo restrito pelos elementos 
+serializados do processo.
 
-Apesar de suas limitações, a Lei de Amdahl continua sendo um guia útil, ajudando desenvolvedores e engenheiros a projetar sistemas mais equilibrados e eficientes. Ela nos lembra que a otimização deve ser bem direcionada: mais não é a solução para tudo, assim como mais chefs em uma cozinha podem acabar atrapalhando. Ao combinar outras abordagens, como a Lei de Gustafson , é possível ter uma visão mais completa das possibilidades e desafios da computação paralelamente, equilibrando as expectativas e maximizando o desempenho nos sistemas modernos.                                                                                                                                                                                                    
+ Apesar de suas limitações, a Lei de Amdahl continua sendo um guia útil, ajudando desenvolvedores e engenheiros a 
+projetar sistemas mais equilibrados e eficientes. Ela nos lembra que a otimização deve ser bem direcionada: mais 
+não é a solução para tudo, assim como mais chefs em uma cozinha podem acabar atrapalhando. Ao combinar outras 
+abordagens, como a Lei de Gustafson , é possível ter uma visão mais completa das possibilidades e desafios da 
+computação paralelamente, equilibrando as expectativas e maximizando o desempenho nos sistemas modernos.                                                                                                                                                                                                    
 ​
 
 
-                      
-
-
-                                 
-
-                                   
-
-
-                           
 
                                           "Conclusão"
 
