@@ -221,4 +221,27 @@ e com boa largura de banda garante que as informações fluam rapidamente e sem 
 solucionar os gargalos de rede, você pode otimizar a comunicação entre os dispositivos do sistema e melhorar a 
 experiência geral de uso, tanto em atividades cotidianas quanto em tarefas mais exigentes.                                 
                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+
+                                              "Conclusão"                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                      
+ Os gargalos de desempenho são como obstáculos invisíveis que limitam a eficiência de um computador, mesmo quando 
+seus componentes são poderosos e modernos. Identificar esses pontos de restrição é essencial para garantir que o 
+sistema funcione da melhor forma, seja durante a execução de tarefas simples ou em atividades mais exigentes, como 
+jogos, edição de vídeo ou processamento de grandes volumes de dados. Cada tipo de gargalo , seja no processador, na 
+memória, no armazenamento ou na rede,  traz seus próprios desafios, mas todos têm um impacto direto na experiência 
+do usuário, tornando tarefas aparentemente simples, muito mais lentas e frustrantes.
+
+ A boa notícia é que, embora os gargalos possam parecer intransponíveis, muitas vezes existem soluções práticas e 
+eficientes para superá-los. Desde a atualização de hardware, como a troca do processador ou a melhoria do sistema 
+de processamento, até simples ajustes no software ou configurações do sistema,  possibilita otimizar o desempenho e 
+minimizar os efeitos negativos dos gargalos. Compreender onde o gargalo está ocorrendo e o que ele está afetando no 
+desempenho geral permite que o usuário tome decisões mais informadas e melhore a funcionalidade do seu computador 
+sem a necessidade de grandes investimentos.
+
+ No entanto, o mais importante é adotar uma abordagem equilibrada e estratégica. Melhorar um componente do sistema, 
+como uma CPU ou uma GPU, sem considerar o equilíbrio geral pode levar a novos gargalos em outras áreas. Portanto, a 
+chave para um desempenho otimizado é garantir que todos os componentes do sistema trabalhem juntos de forma 
+harmônica, assim como um time de futebol preciso de todos os jogadores em sintonia para alcançar bons resultados. 
+Identificar, entender e resolver os gargalos de desempenho permite que você aproveite ao máximo o potencial do seu 
+computador, garantindo uma experiência mais fluida, rápida e eficiente em todas as suas atividades.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
