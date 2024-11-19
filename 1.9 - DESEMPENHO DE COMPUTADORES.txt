@@ -950,8 +950,9 @@ modificações feitas, como atualizações de hardware ou melhorias de software,
 desejados. Assim como um atleta que monitora seu progresso nas corridas para ajustar seu treino, os profissionais 
 de T I utilizam o benchmarking para garantir que os sistemas evoluam de forma eficiente e atendam cada vez melhor 
 às demandas dos usuários e às necessidades do mercado.                                                                     
-                                                                                                                                                                                                                                                                                                                                                       Existem diferentes tipos de benchmarking, cada um com seu foco e abordagem para medir a eficiência do sistema.
-A seguir, exploraremos os principais tipos de benchmarking, seus exemplos e como eles podem ser úteis para melhorar o desempenho do seu sistema.                                                                                                                                                                        
+                                                                                                                                                                                                                           Existem diferentes tipos de benchmarking, cada um com seu foco e abordagem para medir a eficiência do sistema.
+A seguir, exploraremos os principais tipos de benchmarking, seus exemplos e como eles podem ser úteis para melhorar
+o desempenho do seu sistema.                                                                                                                                                                        
                                                                                                                                                                                                              
 * Benchmarking Sintético: É um tipo de teste que utiliza programas específicos para simular cargas de trabalho 
  específicas e medir o desempenho do sistema de forma controlada. Ele isola componentes do sistema, permitindo 
