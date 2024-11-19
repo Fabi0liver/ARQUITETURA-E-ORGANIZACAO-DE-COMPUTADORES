@@ -180,18 +180,45 @@ acesso adequado à largura de banda. Além disso, é importante verificar a qual
 especialmente nas configurações que envolvem dispositivos externos ou expansões, já que as conexões podem 
 contribuir para limitações na velocidade.
 
-Resolver gargalos nos barramentos é essencial para garantir que o computador funcione com fluidez, especialmente em sistemas que exigem comunicação rápida entre vários componentes. Assim como em uma cidade, onde estradas largas e bem planejadas evitam congestionamentos, barramentos eficientes e atualizados permitem que os dados fluam sem interrupções. Com as configurações e atualizações adequadas, o sistema se torna mais responsivo, garantindo que o desempenho do computador atenda às necessidades do usuário.                                 
-                                                                                                                                                                                                                            
-                                                                                                                                                                                                                            
-                                                                                                               
-                                                                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                            
-                                                                                                                
-                                                                                                                                                                                                                            
-                                                                                                                                                                          
-                                                                                                                                                                                                                            
-                                                                                                                                                          
-                                                                                                                                                                                                                            
-                                                                                                                                                                                                                            
-                                                                                                                                                                                                         
-                                                                                                                                                                                                                                                                
+Resolver gargalos nos barramentos é essencial para garantir que o computador funcione com fluidez, especialmente em sistemas que exigem comunicação rápida entre vários componentes. Assim como em uma cidade, onde estradas largas e bem planejadas evitam congestionamentos, barramentos eficientes e atualizados permitem que os dados fluam sem interrupções. Com as configurações e atualizações adequadas, o sistema se torna mais responsivo, garantindo que o desempenho do computador atenda às necessidades do usuário.        
+
+
+
+                                         "Gargalo na Rede" 
+
+ A rede de um computador é responsável pela comunicação entre diferentes dispositivos, seja dentro de uma rede 
+local (como em uma casa ou escritório) ou através da internet. Ela transmite dados entre o computador e servidores, 
+sites, ou outros dispositivos conectados, sendo crucial para atividades como navegação na web, streaming de vídeo, 
+jogos online e transferências de arquivos. O gargalo na rede ocorre quando a capacidade de transmissão de dados da 
+rede não é suficiente para atender à demanda do sistema. Isso pode ser causado por uma conexão de internet lenta, 
+um roteador com limitações, ou até congestionamento da rede, onde muitos dispositivos competem pelos mesmos 
+recursos de banda.
+
+ Quando a rede se torna o gargalo, os efeitos são notados rapidamente. No caso de navegação na internet , as 
+páginas podem demorar no carregamento ou os vídeos podem travar, mesmo em resoluções mais baixas. Em jogos online , 
+o gargalo pode resultar em atrasos na resposta dos comandos, prejudicando a experiência de jogo  para  o jogador. 
+Para transferências de arquivos , a lentidão pode ser enorme, com downloads e uploads levando muito mais tempo do 
+que o esperado. Em ambientes profissionais, onde a comunicação rápida e eficiente é essencial, um gargalo de rede 
+pode causar grandes atrasos, impactando a produtividade e prejudicando o desempenho geral do sistema.
+
+ Para resolver um gargalo de rede, a primeira medida é verificar a conexão de internet . Em muitos casos, uma 
+simples atualização no plano de internet ou uma escolha de um roteador mais moderno pode trazer melhorias 
+significativas. Se o problema for o congestionamento, priorizar o tráfego de dados para determinadas tarefas 
+importantes ou configurar uma rede mais eficiente pode ajudar a liberar a largura de banda. Além disso, a 
+otimização de configurações do sistema, como o uso de conexões com fio (Ethernet) em vez de Wi-Fi, pode garantir 
+uma comunicação mais estável e rápida. Se houver muitos dispositivos conectados à rede, limitar o número de 
+conexões simultâneas ou distribuir a carga entre diferentes canais pode ajudar a aliviar o congestionamento.
+
+ Outro ponto importante é o monitoramento da rede , utilizando ferramentas que identificam quais dispositivos ou 
+aplicativos estão consumindo mais banda. Se o gargalo for relacionado à interferência do sinal Wi-Fi , a mudança no 
+canal do roteador ou o uso de extensores de sinal pode melhorar a qualidade da conexão. Em alguns casos, fazer uso 
+de tecnologias como Wi-Fi 6 ou fibra ótica pode fornecer uma conexão mais rápida e eficiente, eliminando gargalos 
+que surgem de conexões antigas e lentas.
+
+ Eliminar o gargalo de rede é essencial para garantir um desempenho fluido em atividades que dependem de 
+comunicação constante, como navegar na internet, fazer videoconferências ou jogar online.  Uma rede bem configurada 
+e com boa largura de banda garante que as informações fluam rapidamente e sem interrupções. Ao identificar e 
+solucionar os gargalos de rede, você pode otimizar a comunicação entre os dispositivos do sistema e melhorar a 
+experiência geral de uso, tanto em atividades cotidianas quanto em tarefas mais exigentes.                                 
+                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
