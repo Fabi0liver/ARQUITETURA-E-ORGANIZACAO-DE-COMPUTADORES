@@ -43,7 +43,39 @@ ventilação limpo.
  Eliminar gargalos do processador é como liberar o cérebro de sobrecargas desnecessárias: o sistema flui melhor, 
 permitindo que cada tarefa seja realizada com eficiência. Atualizar o hardware, ajustar configurações e cuidar da 
 manutenção são passos cruciais para garantir um desempenho otimizado. Quando o processador opera sem restrições, a 
-experiência do usuário melhora significativamente, seja em tarefas simples ou nas mais complexas.                                                                                                                                                              
+experiência do usuário melhora significativamente, seja em tarefas simples ou nas mais complexas.
+
+
+
+                                      "Gargalo na Memória RAM" 
+
+ A memória RAM pode ser vista como uma “mesa de trabalho” do computador, onde ele organiza temporariamente as 
+informações que está utilizando. Um gargalo de memória RAM ocorre quando essa mesa fica pequena demais para 
+acomodar todos os dados necessários, forçando o sistema a usar alternativas mais lentas, como o disco rígido ou o 
+SSD, para armazenar temporariamente essas informações. Isso pode acontecer devido à falta de memória suficiente ou 
+à baixa velocidade da RAM em relação às demandas do sistema.
+
+ O gargalo de memória RAM tem um impacto direto no desempenho do computador. Travamentos frequentes, lentidão ao 
+alternar entre programas ou abas do navegador e tempo de resposta aumentados são sinais comuns. Em aplicativos que 
+exigem grande quantidade de memória, como editores de vídeo, jogos ou softwares de modelagem 3D, o problema é ainda 
+mais evidente. Se a RAM não for suficiente, o sistema recorre à memória virtual no disco, o que é muito mais lento 
+e pode levar a esperas prolongadas para concluir tarefas.
+
+ Resolver um gargalo de memória RAM pode ser simples em muitos casos. Adicionar mais memória ao sistema é uma 
+solução direta e eficaz, especialmente em computadores que suportam expansão. Para quem já tem uma quantidade 
+razoável de RAM, optar por módulos de maior velocidade (MHz) pode aumentar a capacidade do sistema de lidar com 
+tarefas intensivas. Outra estratégia para  otimizar o uso da memória  é  desativando aplicativos  em segundo plano 
+que consomem espaço desnecessário na  memória RAM. Por exemplo, fechar abas excessivas no navegador ou reduzir a 
+quantidade de programas abertos ao mesmo tempo pode ajudar a aliviar a pressão na RAM.
+
+ Resolver o gargalo de memória RAM é como organizar uma mesa de trabalho: ampliar o espaço ou manter apenas o 
+necessário sobre a mesa pode fazer  toda a diferença na produtividade. Seja com uma atualização de hardware ou com 
+práticas simples de otimização, resolver esse problema garante que o computador funcione de maneira mais eficiente 
+e sem interrupções. Assim, tarefas que antes eram relativamente lentas e frustrantes se tornam ágeis e fluidas, 
+trazendo uma experiência de uso muito mais satisfatória.                                                                                                                           
+                                                                                                                                                                                                                             
+                                                                                                                                                                                                                            
+                                                                                                                                                          
                                                                                                                                                                                                                             
                                                                                                                                                                                                                             
                                                                                                                                                                                                          
