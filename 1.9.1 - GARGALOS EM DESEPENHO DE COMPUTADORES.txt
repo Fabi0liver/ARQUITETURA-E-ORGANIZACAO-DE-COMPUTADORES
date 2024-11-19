@@ -1,0 +1,19 @@
+                               GARGALOS EM DESEPENHO DE COMPUTADORES
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                           
+ Imagine um computador como uma orquestra bem ensaiada, onde cada instrumento desempenha seu papel para criar uma 
+sinfonia perfeita. No entanto, basta que um músico toque fora do ritmo ou que um instrumento tenha problemas,  para 
+comprometer o desempenho de toda a apresentação. No mundo dos computadores, esse descompasso é conhecido como gargalo 
+no desempenho . Ele ocorre quando um componente específico se torna um ponto de restrição, incapaz de acompanhar o 
+ritmo dos demais, comprometendo significativamente a eficiência geral do sistema, mesmo que outras partes sejam 
+modernas e potentes.
+
+ Esses gargalos podem surgir em diversas áreas críticas do computador, como no processador, na memória RAM, no 
+armazenamento, nos barramentos ou na rede. Saber identificar esses gargalos  é essencial para entender porque um 
+sistema pode parecer lento ou ineficiente, mesmo com especificações de hardware de alto nível.         
+                                                                                                                                                                                                                                         
+ A seguir, exploraremos os principais tipos de gargalos, suas causas, os impactos que geram e as soluções disponíveis 
+para superá-los, além de refletir sobre a importância de abordar essas restrições para garantir um desempenho 
+equilibrado e fluido.                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                
