@@ -475,7 +475,6 @@ comuns quanto para grandes empresas.
                        básicas, como adição e subtração. Eles são o "feijão com arroz" de processamento, sendo 
                        rápidos e simples de executar.
 
-
     Instruções Complexas: Já as instruções complexas exigem mais tempo e recursos do processador, pois envolvem 
                          várias etapas ou acessos à memória. Um exemplo clássico é a multiplicação de números 
                          grandes ou operações envolvidas em ponto flutuante. Essas instruções levam vários ciclos 
@@ -597,7 +596,7 @@ comuns quanto para grandes empresas.
 
 * Latência                                                                                                                                                                              
                                                                                                                                                                                                                                          
-  A latência, ou tempo de resposta, refere-se ao tempo que um sistema leva para responder a uma solicitação. Em 
+  A latência ou tempo de resposta, refere-se ao tempo que um sistema leva para responder a uma solicitação. Em 
  termos simples, é o intervalo entre o momento em que um comando é dado e o momento em que o resultado é percebido. 
  Imagine apertar o interruptor da luz em um quarto: se a lâmpada demorar alguns segundos para acender, esse atraso 
  é a latência. Em sistemas computacionais, a latência pode influenciar a eficiência de redes, dispositivos de 
