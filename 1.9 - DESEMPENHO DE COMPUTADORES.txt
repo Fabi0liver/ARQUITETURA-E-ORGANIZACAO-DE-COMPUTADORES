@@ -227,14 +227,14 @@ comuns quanto para grandes empresas.
 
 
  - Fatores que influenciam o Ciclo de Clock: O ciclo de clock de um processador é influenciado por diversos fatores 
-  que determinam sua eficácia. Entre os mais importantes está a tecnologia de fabricação , que afeta a capacidade 
-  de atingir frequências mais altas de maneira eficiente, e a temperatura , que pode limitar a capacidade do 
+  que determinam sua eficácia. Entre os mais importantes está a tecnologia de fabricação, que afeta a capacidade 
+  de atingir frequências mais altas de maneira eficiente, e a temperatura, que pode limitar a capacidade do 
   processador de operar em altas frequências. Outra consideração importante é o tipo de instrução : instruções mais 
   complexas podem exigir mais ciclos de clock para serem executadas, o que pode afetar o tempo total necessário 
   para processar uma tarefa.
 
 
- - Como o Ciclo de Clock é Medido: O ciclo de clock é medido em hertz (Hz) , que é uma unidade de frequência. Um 
+ - Como o Ciclo de Clock é Medido: O ciclo de clock é medido em hertz (Hz), que é uma unidade de frequência. Um 
   hertz é equivalente a um ciclo por segundo. Por exemplo, um processador com uma frequência de 3 gigahertz (GHz)  
   executa 3 bilhões de ciclos de clock por segundo. O ciclo de clock pode ser medido diretamente através de 
   ferramentas de monitoramento de hardware, que monitoram o oscilador interno do processador e calculam a 
@@ -250,12 +250,12 @@ comuns quanto para grandes empresas.
 
 * Frequência do Processador
                                                                                                                                                                                                                                          
-  A frequência do processador , muitas vezes chamada de velocidade do clock , é uma das características mais  
+  A frequência do processador, muitas vezes chamada de velocidade do clock, é uma das características mais  
  importantes na avaliação de desempenho de um computador. Ela se refere à velocidade com que o processador executa 
  as instruções e, portanto, influencia diretamente o quão rápido o sistema pode realizar as tarefas. A frequência é 
- medida em hertz (Hz) e pode ser entendida como o ritmo de trabalho do processador , quanto maior a frequência, 
- mais rápido ele consegue realizar cálculos e processar dados. Em termos simples, podemos comparar a um metrônomo 
- que define o tempo de execução de uma música: quanto mais rápido o metrônomo, mais rápido será a execução.
+ medida em hertz (Hz) e pode ser entendida como o ritmo de trabalho do processador, quanto maior a frequência, mais 
+ rápido ele consegue realizar cálculos e processar dados. Em termos simples, podemos comparar a um metrônomo que 
+ define o tempo de execução de uma música: quanto mais rápido o metrônomo, mais rápido será a execução.
 
  - Tipos de Frequência do Processador: Embora a frequência do processador seja um fator crucial para o desempenho, 
   é importante destacar que nem toda frequência é igual. Existem diferentes tipos de frequências que um processador 
@@ -289,8 +289,8 @@ comuns quanto para grandes empresas.
  - Fatores que influenciam a frequência do processador: Existem vários fatores que podem influenciar a frequência 
   do processador, e esses fatores determinam em grande parte como a frequência se comporta no dia a dia. Um dos 
   principais fatores é a temperatura . Processadores modernos são aprimorados para evitar o superaquecimento, e 
-  isso pode fazer com que eles reduzam automaticamente a frequência (o chamado estrangulamento térmico ) para 
-  evitar danos. Ou seja, quando o processador está muito quente, ele desacelera para manter a temperatura dentro de 
+  isso pode fazer com que eles reduzam automaticamente a frequência (o chamado estrangulamento térmico) para evitar 
+  danos. Ou seja, quando o processador está muito quente, ele desacelera para manter a temperatura dentro de   
   limites seguros.
 
    Outro fator importante é a gestão de energia. A eficiência energética é uma prioridade em muitos dispositivos, 
@@ -324,7 +324,7 @@ comuns quanto para grandes empresas.
  lhe foi dada. Quanto menor o número de instruções necessárias para executar um programa, mais eficiente ele é, 
  pois o processador precisa de menos ciclos para concluir a execução.
 
- - Tipos de Instruções por IC: Quando falamos sobre instruções de máquina , estamos lidando com os diferentes tipos 
+ - Tipos de Instruções por IC: Quando falamos sobre instruções de máquina, estamos lidando com os diferentes tipos 
   de operações que o processador pode realizar. Essas operações podem ser definidas em várias categorias, 
   dependendo de como elas afetam a execução do programa. Abaixo, detalharemos os principais tipos de instruções que 
   compõem o IC.
@@ -355,7 +355,7 @@ comuns quanto para grandes empresas.
 
                                                                                                                                                                                                                                       
  - Fatores que influenciam o IC: O número de instruções de máquina que um programa exige pode variar dependendo de 
-  vários fatores. O primeiro deles é uma complexidade do código . Programas mais complexos exigem mais instruções 
+  vários fatores. O primeiro deles é uma complexidade do código. Programas mais complexos exigem mais instruções 
   para serem executados. Por exemplo, um algoritmo de ordenação simples pode exigir menos instruções do que um 
   algoritmo complexo de busca em bancos de dados. Além disso, o estilo de programação também influencia o IC. 
   Programas escritos de forma otimizada, utilizando operações mais eficientes, tendem a gerar um IC menor.
@@ -370,7 +370,7 @@ comuns quanto para grandes empresas.
                                                                                                                                                                                                                                       
  - Como o IC  é Medido: O número de instruções de máquina  é medido observando o número total de instruções 
   realizadas pelo engenheiro durante a execução de um programa. Isso pode ser feito de diversas maneiras, mas o 
-  método mais comum envolve o uso de ferramentas de perfilamento ou simuladores de CPU . Esses programas analizam a 
+  método mais comum envolve o uso de ferramentas de perfilamento ou simuladores de CPU. Esses programas analizam a 
   execução do código e contam quais instruções são realmente realizadas pelo processador. Além disso, o IC pode ser 
   calculado com base no código-fonte do programa, analisando a quantidade de instruções em um nível mais alto de 
   abstração.
@@ -396,7 +396,7 @@ comuns quanto para grandes empresas.
  quantos passos uma máquina precisa realizar para produzir um item. Quanto menor o número de passos, mais rápida 
  será a produção.
     
- - Tipos de Ciclos por Instrução : Existem diferentes tipos de CPI, pois o número de ciclos necessários para 
+ - Tipos de Ciclos por Instrução: Existem diferentes tipos de CPI, pois o número de ciclos necessários para 
   executar uma instrução pode variar dependendo da complexidade das operações e do design do processador. Vamos 
   explorar os principais:
 
@@ -415,9 +415,9 @@ comuns quanto para grandes empresas.
               útil para avaliar o desempenho da forma agregada, considerando diferentes tipos de instruções.
 
     CPI por Tipo de Instrução: Cada tipo de instrução pode ter um CPI diferente. Por exemplo:
-                               Instruções simples , como operações aritméticas básicas, geralmente têm um CPI baixo 
+                               Instruções simples, como operações aritméticas básicas, geralmente têm um CPI baixo 
                               (1 ou 2 ciclos).
-                               Instruções complexas , como acesso à memória ou operações de ponto flutuante, podem 
+                               Instruções complexas, como acesso à memória ou operações de ponto flutuante, podem 
                               ter CPIs mais altos devido à sua complexidade.
                                                                                                                                                                                                                       
    Os diferentes tipos de CPI nos permitem analisar o desempenho do processador em diversas condições. Enquanto o 
@@ -461,7 +461,7 @@ comuns quanto para grandes empresas.
 
 * Instruções por Ciclo (IPC)
                                                                                                                                                                                                                                          
-  O IPC  é uma métrica utilizada para medir a eficiência de uma operação. Ele indica a quantidade média de 
+  O IPC é uma métrica utilizada para medir a eficiência de uma operação. Ele indica a quantidade média de 
  instruções que o processador consegue executar a cada ciclo de clock. Pense no IPC como a produtividade de uma 
  linha de montagem: enquanto o clock do processador representa o ritmo da linha (quantas vezes ela "pula" para a 
  próxima etapa), o IPC representa quantas tarefas são concluídas a cada pulso dessa linha. Um IPC mais alto 
