@@ -68,23 +68,23 @@ comuns quanto para grandes empresas.
  - Tipos de Tempo de Execução: O tempo de execução pode ser dividido em três categorias principais, cada uma delas 
   refletindo diferentes aspectos da execução de um programa:
 
-    Tempo de execução total : Esse  é o tempo desde o início até o final da execução de um programa, considerando 
-                             todos os ciclos de CPU, tempo de espera, acessos à memória e processos auxiliares que  
-                             o sistema realiza. É uma medida mais ampla do tempo de execução, pois considera todas 
-                             as etapas, do início ao fim da tarefa.
+    Tempo de execução total: Esse  é o tempo desde o início até o final da execução de um programa, considerando 
+                            todos os ciclos de CPU, tempo de espera, acessos à memória e processos auxiliares que  
+                            o sistema realiza. É uma medida mais ampla do tempo de execução, pois considera todas 
+                            as etapas, do início ao fim da tarefa.
 
-    Tempo de execução do usuário : Refere-se ao tempo que o processador gasta exclusivamente executando as 
-                                  instruções do programa, sem incluir o tempo gasto com operações de sistema, como 
-                                  leitura e gravação de dados. Esse tempo representa o uso direto da CPU para as 
-                                  instruções do usuário, sendo útil para medir a eficiência do processamento 
-                                  específico de cada tarefa.
+    Tempo de execução do usuário: Refere-se ao tempo que o processador gasta exclusivamente executando as 
+                                 instruções do programa, sem incluir o tempo gasto com operações de sistema, como 
+                                 leitura e gravação de dados. Esse tempo representa o uso direto da CPU para as 
+                                 instruções do usuário, sendo útil para medir a eficiência do processamento 
+                                 específico de cada tarefa.
 
-    Tempo de execução do sistema : Inclui o tempo que o sistema operacional leva para realizar tarefas auxiliares 
-                                  ao funcionamento do programa, como alocação de memória e gerenciamento de 
-                                  arquivos. Embora esses processos não façam parte diretamente do design do 
-                                  programa, eles são essenciais para que o programa funcione corretamente e, 
-                                  dependendo do sistema, podem ter um impacto significativo no tempo de execução 
-                                  total.      
+    Tempo de execução do sistema: Inclui o tempo que o sistema operacional leva para realizar tarefas auxiliares 
+                                 ao funcionamento do programa, como alocação de memória e gerenciamento de 
+                                 arquivos. Embora esses processos não façam parte diretamente do design do 
+                                 programa, eles são essenciais para que o programa funcione corretamente e, 
+                                 dependendo do sistema, podem ter um impacto significativo no tempo de execução 
+                                 total.      
                                                                                                                                                                                                                                 
    Esses tipos de tempo de execução fornecem uma visão mais detalhada de como os recursos do sistema estão sendo 
   usados ​​e ajudam a identificar áreas de potencial otimização.
@@ -98,11 +98,11 @@ comuns quanto para grandes empresas.
   núcleos do processador e sua arquitetura também podem impactar o tempo de execução, permitindo que o programa 
   execute várias operações simultaneamente.
 
-   Outro fator importante é a eficiência do código em si,  da mesma forma que um programa escrito pode reduzir ou 
-  aumentar significativamente o tempo de execução,  algoritmos eficientes que realizam as mesmas operações em 
-  menos etapas, tendem a resultar em tempos de execução mais curtos. Pequenas otimizações no código, como 
-  simplificar loops ou escolher  estruturas de dados mais adequadas para cada tipo de operação, podem fazer  uma  
-  grande  diferença, especialmente em programas que realizam operações repetitivas ou de grande escala.
+   Outro fator importante é a eficiência do código em si, da mesma forma que um programa escrito pode reduzir ou 
+  aumentar significativamente o tempo de execução, algoritmos eficientes que realizam as mesmas operações em menos 
+  etapas, tendem a resultar em tempos de execução mais curtos. Pequenas otimizações no código, como simplificar 
+  loops ou escolher  estruturas de dados mais adequadas para cada tipo de operação, podem fazer uma grande  
+  diferença, especialmente em programas que realizam operações repetitivas ou de grande escala.
 
 
  - Como o Tempo de Execução é Medido: O tempo de execução é geralmente medido em segundos ou milissegundos, 
@@ -121,14 +121,13 @@ comuns quanto para grandes empresas.
 
 * Taxa de Processamento ou Throughput
                                                                                                                                                                                                                                          
-  A taxa de processamento , ou throughput , é uma métrica crucial no estudo de desempenho de sistemas  
- computacionais, pois mede a quantidade de operações que um sistema pode processar em um determinado período de 
- tempo. Em termos simples, é como medir a velocidade de uma linha de produção em uma fábrica: quanto mais peças uma 
- máquina consegue produzir por minuto, maior o rendimento dessa máquina. No contexto dos computadores, o throughput 
- é usado para avaliar a eficiência de processamento, seja em termos de instruções, transações ou dados, dependendo 
- da aplicação.
+  A taxa de processamento ou throughput, é uma métrica crucial no estudo de desempenho de sistemas computacionais,  
+ pois mede a quantidade de operações que um sistema pode processar em um determinado período de tempo. Em termos 
+ simples, é como medir a velocidade de uma linha de produção em uma fábrica: quanto mais peças uma máquina consegue 
+ produzir por minuto, maior o rendimento dessa máquina. No contexto dos computadores, o throughput é usado para 
+ avaliar a eficiência de processamento, seja em termos de instruções, transações ou dados, dependendo da aplicação.
 
- - Tipos de Taxa de Processamento : A taxa de processamento pode variar dependendo do tipo de sistema e das 
+ - Tipos de Taxa de Processamento: A taxa de processamento pode variar dependendo do tipo de sistema e das 
   tarefas que ele executa. Abaixo estão os principais tipos de throughput observados em diferentes contextos:
 
     Taxa de transferência da CPU: Este tipo de taxa de transferência se refere à quantidade de instruções ou   
@@ -175,12 +174,12 @@ comuns quanto para grandes empresas.
 
  - Como a Taxa de Processamento é Medida: A medição do rendimento depende do tipo de sistema e das unidades de  
   trabalho que estão sendo processadas. No caso de CPU , a medição pode ser feita em termos de instruções por 
-  segundo (IPS) ou operações por segundo (O P S). Esses valores indicam quais instruções ou operações o processador 
+  segundo (IPS) ou operações por segundo (OPS). Esses valores indicam quais instruções ou operações o processador 
   consegue completar dentro de um segundo. No caso de memória , a medição é geralmente feita em gigabytes por 
   segundo (GB/s) ou megabytes por segundo (MB/s), representando a quantidade de dados que podem ser transferidos 
   entre a CPU e a memória em um segundo.
 
-   Em termos de armazenamento , o rendimento é medido em termos de dados lidos ou gravados por segundo, como 
+   Em termos de armazenamento, o rendimento é medido em termos de dados lidos ou gravados por segundo, como 
   megabytes por segundo (MB/s) ou gigabytes por segundo (GB/s). Para redes , o throughput é medido em bits por 
   segundo (bp/s) ou megabits por segundo (Mbp/s), que indicam a velocidade de transmissão de dados pela rede.
 
@@ -215,7 +214,7 @@ comuns quanto para grandes empresas.
                                       oferecer desempenho superior, ele também pode gerar mais calor e consumir 
                                       mais energia.
 
-    Ciclo de Clock com Variação Dinâmica: Alguns processadores modernos  utilizam uma técnica chamada variabilidade 
+    Ciclo de Clock com Variação Dinâmica: Alguns processadores modernos utilizam uma técnica chamada variabilidade 
                                          dinâmica de frequência , onde a frequência do ciclo de clock  pode ser 
                                          ajustada dependendo da carga de trabalho do processador. Em momentos de 
                                          baixa demanda, o processador pode reduzir a frequência do clock para 
