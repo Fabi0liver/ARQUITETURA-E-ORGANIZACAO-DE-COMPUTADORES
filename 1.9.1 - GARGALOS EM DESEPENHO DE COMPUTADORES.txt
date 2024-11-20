@@ -180,7 +180,11 @@ acesso adequado à largura de banda. Além disso, é importante verificar a qual
 especialmente nas configurações que envolvem dispositivos externos ou expansões, já que as conexões podem 
 contribuir para limitações na velocidade.
 
-Resolver gargalos nos barramentos é essencial para garantir que o computador funcione com fluidez, especialmente em sistemas que exigem comunicação rápida entre vários componentes. Assim como em uma cidade, onde estradas largas e bem planejadas evitam congestionamentos, barramentos eficientes e atualizados permitem que os dados fluam sem interrupções. Com as configurações e atualizações adequadas, o sistema se torna mais responsivo, garantindo que o desempenho do computador atenda às necessidades do usuário.        
+Resolver gargalos nos barramentos é essencial para garantir que o computador funcione com fluidez, especialmente 
+em sistemas que exigem comunicação rápida entre vários componentes. Assim como em uma cidade, onde estradas largas
+e bem planejadas evitam congestionamentos, barramentos eficientes e atualizados permitem que os dados fluam sem 
+interrupções. Com as configurações e atualizações adequadas, o sistema se torna mais responsivo, garantindo que o 
+desempenho do computador atenda às necessidades do usuário.        
 
 
 
