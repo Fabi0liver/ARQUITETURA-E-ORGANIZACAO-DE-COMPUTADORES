@@ -650,9 +650,9 @@ comuns quanto para grandes empresas.
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                  
  - Como a Latência é Medida: A medição da latência depende do contexto. Em redes, por exemplo, utiliza se a 
-  ferramenta ping , que calcula o tempo que um pacote de dados leva para ir até um destino e voltar (round-trip 
-  time). Já no caso de dispositivos de armazenamento, a latência é medida em milissegundos (ms) e é determinada 
-  pelo tempo entre o comando de leitura ou gravação e sua execução. Para processadores, benchmarks específicos são 
+  ferramenta ping, que calcula o tempo que um pacote de dados leva para ir até um destino e voltar. Já no caso de 
+  dispositivos de armazenamento, a latência é medida em milissegundos (ms) e é determinada pelo tempo entre o 
+  comando de leitura ou gravação e sua execução. Para processadores, benchmarks específicos são 
   usados ​​para determinar o tempo médio de execução das instruções.
 
    Ferramentas como medidores de tempo interno, testes sintéticos e simulações práticas ajudam a avaliar a latência 
@@ -758,11 +758,11 @@ alcançar melhores resultados.
 
                        "Fatores que Influenciam o Desempenho de computadores"                                                                                                                                                                                                                                
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
- Entre os fatores  que mais  influenciam o desempenho de um computador está o algoritmo , a linguagem de 
-programação , o compilador e a arquitetura de conjunto de instruções (ISA) . Cada um desses elementos contribui de 
-maneira única para determinar como as tarefas serão realizadas, afetando diretamente a eficiência e a velocidade 
-com que os programas são executados. Juntos, eles formam uma cadeia interdependente, onde a qualidade e a 
-otimização de cada etapa impactam profundamente o comportamento do sistema como um todo.
+ Entre os fatores que mais influenciam o desempenho de um computador está o algoritmo, a linguagem de programação, 
+o compilador e a arquitetura de conjunto de instruções (ISA). Cada um desses elementos contribui de maneira única 
+para determinar como as tarefas serão realizadas, afetando diretamente a eficiência e a velocidade com que os 
+programas são executados. Juntos, eles formam uma cadeia interdependente, onde a qualidade e a otimização de cada 
+etapa impactam profundamente o comportamento do sistema como um todo.
 
  Compreender esses fatores e como eles interagem é fundamental para atualizar sistemas computacionais, seja 
 melhorando a execução de programas, reduzindo custos operacionais ou aumentando a eficiência do hardware. Cada um 
@@ -771,13 +771,13 @@ máquina (IC), entre outros. A seguir, exploraremos detalhadamente como cada um 
 desempenho de computadores, destacando as métricas relacionadas e a importância de sua otimização.                                    
                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                            
-* Algoritmo:  É a base lógica de qualquer programa, definindo a sequência de passos necessários para resolver um  
- problema. A eficiência de um algoritmo determina, em grande parte, o tempo e os recursos necessários para realizar 
+* Algoritmo: É a base lógica de qualquer programa, definindo a sequência de passos necessários para resolver um  
+ problema. A eficiência de um algoritmo determina em grande parte, o tempo e os recursos necessários para realizar 
  uma tarefa.
                                                                                                                                                                              
   Um algoritmo eficiente reduz a quantidade de operações e evita redundâncias, o que diminui o número de instruções 
  de máquina (IC) e o tempo de execução. Por exemplo, ao escolher um algoritmo de busca binária em vez de uma busca 
- linear, o número de comparações e  consequentemente as instruções , é ligeiramente reduzido. Além disso, a escolha 
+ linear, o número de comparações e  consequentemente as instruções é ligeiramente reduzido. Além disso, a escolha 
  de estruturas de dados complexas pode melhorar significativamente a latência e o Throughput.
 
   Métricas influenciadas:                                                                                                                                                                                                                                                                                                                                                                                                                                                                
@@ -789,17 +789,17 @@ desempenho de computadores, destacando as métricas relacionadas e a importânci
                                          operações para alcançar o mesmo resultado, o que significa menos trabalho 
                                          para o processador.
 
-    Latência: Algoritmos mais  otimizados e com o tempo de resposta menores , tornam processos como carregar uma 
+    Latência: Algoritmos mais  otimizados e com o tempo de resposta menores, tornam processos como carregar uma 
              página ou responder a uma interação  mais ágeis.
 
     Throughput: Algoritmos eficientes liberam o sistema mais rapidamente, permitindo que ele processe mais tarefas 
                em paralelo, aumentando a capacidade de trabalho do computador.
 
-  Em suma, o  algoritmo é a espinha dorsal de qualquer sistema computacional. Sua eficiência afeta diretamente 
- quase todas as métricas de desempenho. Investir em algoritmos otimizados é essencial para sistemas que buscam alto 
+  Em suma, o algoritmo é a espinha dorsal de qualquer sistema computacional. Sua eficiência afeta diretamente quase   
+ todas as métricas de desempenho. Investir em algoritmos otimizados é essencial para sistemas que buscam alto 
  desempenho e eficiência energética.
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                * Linguagem de Programação: A linguagem de programação define  como o algoritmo será implementado, impactando a 
+                                                                                                                                                                                                                                * Linguagem de Programação: A linguagem de programação define como o algoritmo será implementado, impactando a 
  forma como o código interage com o compilador e eventualmente, com o hardware. Linguagens de alto nível, como 
  Python, priorizam a legibilidade e a produtividade, enquanto linguagens de baixo nível, como C, oferecem maior 
  controle sobre o hardware.
@@ -830,8 +830,8 @@ desempenho de computadores, destacando as métricas relacionadas e a importânci
  linguagens de alto nível sejam mais acessíveis, linguagens de baixo nível são preferíveis para tarefas que exigem 
  alta eficiência.
                                                                                                                                                                                                                                
-                                                                                                                                                                                                                               * Compilador: O compilador é um programa que lê e analisa o código fonte que o  programador escreveu e  traduz  
- para  instruções que o processador pode entender, aplicando abstrações para melhorar o desempenho do programa.
+                                                                                                                                                                                                                               * Compilador: O compilador é um programa que lê e analisa o código fonte que o programador escreveu e traduz para 
+ instruções que o processador pode entender, aplicando abstrações para melhorar o desempenho do programa.
 
   Compiladores modernos podem reorganizar instruções, eliminar redundâncias e ajustar o uso de registradores para 
  maximizar a eficiência do processador. Um compilador otimizado reduz o IC, melhora o CPI e pode aumentar o 
@@ -899,7 +899,7 @@ throughput e número de instruções de máquina (IC).
 desempenho, mas também sejam práticos e adaptados às necessidades do desenvolvedor e do usuário. A escolha 
 cuidadosa de cada fator, desde a arquitetura do hardware até o código que o alimenta, permite maximizar a 
 eficiência, reduzir custos e criar soluções modernas que atendam às demandas crescentes de processamento e 
-agilidade. Dessa forma, conhecer esses detalhes técnicos e saber  aplicá-los de maneira estratégica é a base para o 
+agilidade. Dessa forma, conhecer esses detalhes técnicos e saber aplicá-los de maneira estratégica é a base para o 
 sucesso em projetos de computação e engenharia de software.
 
 
@@ -978,7 +978,7 @@ o desempenho do seu sistema.
   Exemplos de Benchmarking Comparativo:
                                                                                                                                                                                                                                                 
     PassMark PerformanceTest: Um software popular que compara o desempenho de vários sistemas e componentes, 
-                             gerando uma pontuação para CPU, GPU e memórias . É amplamente utilizado para 
+                             gerando uma pontuação para CPU, GPU e memórias. É amplamente utilizado para 
                              comparações de desempenho entre computadores ou hardware de diferentes fabricantes.
 
     Benchmarking de GPU: Permite avaliar a capacidade de processamento gráfico e a eficiência de uma placa de 
@@ -992,7 +992,7 @@ o desempenho do seu sistema.
  
 * Benchmarking de Regressão: É realizado para garantir que mudanças no sistema, como atualizações de software ou 
  atualizações de hardware, não resultem em uma queda no desempenho. Esse tipo de teste é importante para avaliar se  
- uma atualização   foi a  causa do  mal funcionamento  do sistema e os  impactos negativos  dessa alteração.
+ uma atualização foi a  causa do  mal funcionamento  do sistema e os  impactos negativos  dessa alteração.
 
   Exemplos de Benchmarking de Regressão:
                                                                                                                                                                                                                                                
@@ -1045,7 +1045,7 @@ uma tarefa, sempre haverá uma porção do processo que precisa ser executada de
 parte sequencial no desempenho geral não pode ser ignorado, e a Lei de Amdahl nos ajuda a quantificar esse impacto.                                                                                                                                                        
       
                                                                                                                                                                                                                                    
-* A Fórmula da Lei de Amdahl:  Essa  fórmula ajuda a prever qual seria o ganho de desempenho total de um sistema,  
+* A Fórmula da Lei de Amdahl: Essa  fórmula ajuda a prever qual seria o ganho de desempenho total de um sistema,  
  considerando as limitações naturais de um processo que precisa ser executado de forma sequencial.       
                                                                                                                                                                                                                                          
   A fórmula da Lei de Amdahl é expressa da seguinte forma:                                                                                                               
@@ -1091,14 +1091,14 @@ parte sequencial no desempenho geral não pode ser ignorado, e a Lei de Amdahl n
  considera sobrecargas de paralelização, como a comunicação entre atualização ou gerenciamento de tarefas, que 
  podem aumentar o tempo adicional e reduzir os ganhos esperados no desempenho.
 
-  Outra limitação importante é que a Lei de Amdahl não contempla  o  aumento da  escala do problema . Em muitos 
- casos, ao aumentar o número de aceleração, o tamanho da tarefa a ser resolvida também cresce, como ocorre em 
- cálculos científicos ou sistemas de big data. Esse cenário, chamado de escalabilidade forte , é melhor descrito 
- pela  Lei de Gustafson , que considera que, à medida que mais processadores são adicionados, o trabalho total 
- realizado pelo sistema pode crescer proporcionalmente, pois a quantidade de tarefas paralelizáveis pode aumentar 
- junto com o problema sendo resolvido. Assim, embora a Lei de Amdahl seja útil para analisar sistemas com um 
- problema fixo, ela não reflete totalmente as realidades de aplicações modernas, onde o escalonamento e as 
- sobrecargas desempenham um papel fundamental.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+  Outra limitação importante é que a Lei de Amdahl não contempla o aumento da  escala do problema. Em muitos casos, 
+ ao aumentar o número de aceleração, o tamanho da tarefa a ser resolvida também cresce, como ocorre em cálculos 
+ científicos ou sistemas de big data. Esse cenário, chamado de escalabilidade forte , é melhor descrito pela Lei de 
+ Gustafson, que considera que, à medida que mais processadores são adicionados, o trabalho total realizado pelo 
+ sistema pode crescer proporcionalmente, pois a quantidade de tarefas paralelizáveis pode aumentar junto com o 
+ problema sendo resolvido. Assim, embora a Lei de Amdahl seja útil para analisar sistemas com um problema fixo, ela 
+ não reflete totalmente as realidades de aplicações modernas, onde o escalonamento e as sobrecargas desempenham um 
+ papel fundamental.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
                                                                                                                                                          
  Assim conclui-se  que a  Lei de Amdahl é uma peça central para entender os limites de desempenho em sistemas de 
 computação paralelamente. Ela nos ensina que, por mais que aumentemos o número de aceleração, o ganho total será 
@@ -1110,7 +1110,7 @@ serializados do processo.
  Apesar de suas limitações, a Lei de Amdahl continua sendo um guia útil, ajudando desenvolvedores e engenheiros a 
 projetar sistemas mais equilibrados e eficientes. Ela nos lembra que a otimização deve ser bem direcionada: mais 
 não é a solução para tudo, assim como mais chefs em uma cozinha podem acabar atrapalhando. Ao combinar outras 
-abordagens, como a Lei de Gustafson , é possível ter uma visão mais completa das possibilidades e desafios da 
+abordagens, como a Lei de Gustafson, é possível ter uma visão mais completa das possibilidades e desafios da 
 computação paralelamente, equilibrando as expectativas e maximizando o desempenho nos sistemas modernos.                                                                                                                                                                                                    
 ​
 
@@ -1141,10 +1141,10 @@ esperar enquanto o computador "pensa" para abrir um arquivo ou carregar uma pág
  Além disso, o desempenho também impacta no consumo de energia e na durabilidade do sistema. Computadores que 
 precisam trabalhar constantemente no limite para atender às demandas acabam consumindo mais energia e, com o tempo, 
 podem sofrer desgastes que prejudicam sua vida útil. Com um sistema eficiente, o uso de energia é mais equilibrado 
-e com isso os componentes de hardware tende  á funcionarem dentro de suas capacidades ideais, o que não só 
-beneficia o meio ambiente, mas também evita custos com reparos e prolonga a vida útil do equipamento. Assim, o 
-desempenho é um fator essencial para garantir não apenas a rapidez nas operações, mas também a durabilidade e a 
-eficiência no consumo de recursos do computador.
+e com isso os componentes de hardware tende á funcionarem dentro de suas capacidades ideais, o que não só beneficia 
+o meio ambiente, mas também evita custos com reparos e prolonga a vida útil do equipamento. Assim, o desempenho é 
+um fator essencial para garantir não apenas a rapidez nas operações, mas também a durabilidade e a eficiência no 
+consumo de recursos do computador.
 
 
 
