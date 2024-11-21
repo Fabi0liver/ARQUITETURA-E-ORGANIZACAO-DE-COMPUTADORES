@@ -20,7 +20,7 @@ Uma analogia útil é comparar a arquitetura de computadores a um **projeto de u
 
 ## O que é Organização de Computadores?
 
-Já a **Organização de Computadores** foca no **modo como a arquitetura é implementada fisicamente**. Ela trata dos detalhes internos e práticos, como:
+Já a **Organização de Computadores** foca no modo como a arquitetura é implementafa é colocado em prática fisicamente. Ela trata dos detalhes internos e práticos, como:
 
 - **Circuitos e componentes físicos**: Mostra como os componentes como transistores, portas lógicas e registradores são usados para construir a arquitetura.
 - **Controle e operação**: Examina como as instruções são processadas em nível de hardware.
