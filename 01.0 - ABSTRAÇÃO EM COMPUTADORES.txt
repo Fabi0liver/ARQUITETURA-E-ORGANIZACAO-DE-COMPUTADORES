@@ -1,0 +1,29 @@
+                                      ABSTRAÇÃO EM COMPUTADORES                                                                                                                                                                           
+                                                                                                                                                                                                                                         
+
+ A abstração é um conceito presente em diversas áreas da vida e essencial para lidar com a complexidade. No dia a 
+dia, usamos a abstração constantemente, mesmo sem perceber. Por exemplo, quando usamos um smartphone para enviar uma 
+mensagem, raramente pensamos nas ondas de rádio, nos circuitos ou na infraestrutura que torna isso possível. Apenas 
+nos preocupamos em digitar e enviar. A abstração, nesse contexto, é como um filtro que nos permite focar no que é 
+relevante, deixando os detalhes técnicos no segundo plano.
+
+ No mundo da computação, a abstração desempenha um papel central. Um computador é uma máquina extremamente complexa, 
+com milhares de componentes interagindo entre si. No entanto, não é necessário compreender cada detalhe do seu 
+funcionamento para usá-lo. A abstração entra aqui como uma maneira de organizar essa complexidade, criando "camadas" 
+que simplificam a interação com o sistema. Isso permite que desenvolvedores, engenheiros e usuários trabalhem de 
+forma mais eficiente, cada um no seu nível de necessidade.
+
+ Essas camadas de abstração garantem que tarefas complicadas possam ser divididas em partes menores e mais 
+gerenciáveis. Pense em como usar uma interface gráfica para abrir um arquivo sem nos preocuparmos com como o sistema 
+operacional conversa com o disco rígido ou como a memória armazena temporariamente os dados. É como usar um controle 
+remoto para trocar de canal: você não precisa entender como os sinais viajam até a TV, apenas aperta um botão.
+
+ A abstração também é um ponto de conexão entre diferentes áreas da computação. Ela ajuda a criar linguagens de 
+programação mais intuitivas, sistemas operacionais organizados e hardware que respondam de forma previsível. Essa 
+abordagem modular facilita tanto a criação quanto a manutenção de sistemas, pois cada camada pode ser desenvolvida e 
+melhorada independentemente, desde que respeite as regras de comunicação com as camadas ao redor.
+
+ Por fim, a abstração não é apenas uma ferramenta técnica; é um modo de pensar que ajuda a simplificar o complexo e 
+tornar o inacessível utilizável. Ela permite que profissionais de diversas áreas trabalhem juntos sem precisar 
+dominar todos os detalhes de cada aspecto do sistema. No universo dos computadores, é graças à abstração que podemos 
+transformar conceitos matemáticos em soluções práticas para problemas do mundo real.
