@@ -114,3 +114,98 @@ lidem com sistemas cada vez mais avançados sem serem sobrecarregados pela sua c
 não é apenas uma ferramenta; é um alicerce para a evolução da computação moderna, permitindo que inovemos 
 continuamente enquanto mantemos a simplicidade na interação.
 
+
+
+                          "História da Abstração em Computadores"
+
+ A abstração em computadores é uma história de inovação e criatividade que transformou máquinas complexas em 
+ferramentas acessíveis e poderosas. No início, a interação com computadores era direcionada para quem tinha 
+conhecimentos profundos de hardware, mas ao longo das décadas, várias camadas de abstração foram surgindo, tornando 
+a computação mais eficiente, amigável e flexível. Vamos revisitar a evolução dessa jornada até a era moderna, onde 
+a virtualização e a computação em nuvem lideraram as inovações.
+
+                                                                                                                                                                                                                                       
+* As Origens: Computação Sem Abstração (de 1940 até 1950)
+                                                                                                                                                                                                                                       
+  Nos primórdios da computação, as máquinas eram projetos experimentais voltados para tarefas específicas, como 
+ resolver equações ou decifrar códigos. O ENIAC e o Colossus , por exemplo, eram enormes,  precisavam de manutenção  
+ constante e eram programados manualmente, usando painéis com cabos e interruptores. Não havia nenhuma camada que 
+ escondesse a complexidade: cada operação dependia de controles de hardware diretamente.
+
+  Nesse período, trabalhar com computadores era como construir uma casa tijolo por tijolo, sem ferramentas que 
+ agilizassem o processo. Era necessário entender o hardware profundamente para realizar qualquer tarefa, o que 
+ limitava o uso dessas máquinas para um grupo selecionado de cientistas e engenheiros. Esse cenário inicial 
+ ressaltou a necessidade de criar formas de simplificar a interação entre humanos e máquinas, um passo essencial 
+ para a popularização dos computadores.
+
+                                                                                                                                                                                                                                       * Primeiras Tentativas de Abstração: Linguagem de Máquina e Montagem (entre 1950 e 1960)
+                                                                                                                                                                                                                                       
+  Com o avanço da tecnologia, as máquinas passaram a aceitar instruções codificadas diretamente em binário , a 
+ chamada linguagem de máquina. Embora isso representava um avanço, ainda era extremamente trabalhoso, pois os 
+ programadores tinham que memorizar longas sequências de zeros e uns para executar até  mesmo tarefas mais simples.
+
+  Logo, surgiu a linguagem Assembly , que trouxe uma primeira camada de abstração ao substituir os números binários 
+ por palavras mais simples de interpretar, como MOV (que copia um valor de um local para outro), ADD (adição) e SUB 
+ (subtração). Essas instruções puderam ser traduzidas para o código binário pelo próprio sistema, poupando o 
+ programador de fazer essa conversão manualmente. Apesar de ainda estar intimamente ligado ao hardware, a Assembly 
+ permitiu que os desenvolvedores focassem mais nas soluções e menos nos detalhes do funcionamento interno da 
+ máquina.
+
+                                                                                                                                                                                                                                       * Surgimento de Linguagens de Alto Nível (entre 1950 e 1970)
+                                                                                                                                                                                                                                       
+  Enquanto a Assembly facilitava o trabalho dos programadores, ela ainda necessitava de  um profundo entendimento  
+ do hardware. Foi nesse contexto que surgiram linguagens de programação de alto nível , como Fortran (voltada para 
+ cálculos científicos) e COBOL (focada em aplicações comerciais). Essas linguagens introduziram comandos mais 
+ próximos da linguagem humana, permitindo expressar instruções complexas com poucas linhas de código.
+
+  Essas linguagens abstraíram as diferenças entre varios tipos de  hardwares, tornando possível escrever um 
+ programa que funcionasse em diferentes tipos de computadores, desde que houvesse um compilador para traduzir o 
+ código para a linguagem de máquina da plataforma. Isso marcou um salto significativo, pois os programadores 
+ passaram a trabalhar em um nível mais lógico, sem se preocupar tanto com as especificidades do hardware.
+
+                                                                                                                                                                                                                                         
+* Sistemas Operacionais e Interfaces (de 1960 á 1980)
+                                                                                                                                                                                                                                       
+  Com o crescimento do número de usuários e a diversificação das aplicações, tornou-se essencial gerenciar os 
+ recursos do hardware de forma centralizada. Foi aí que os sistemas operacionais ganharam destaque. Um sistema 
+ operacional, como o UNIX , atua como uma ponte entre o hardware e os programas, oferecendo serviços como 
+ gerenciamento de memória, controle de dispositivos e execução de processos.
+
+
+  Nessa época, também surgiram interfaces de linha de comando (CLIs), que permitiam aos usuários interagir com o 
+ computador por meio de comandos escritos. Embora sejam menos intimidantes que a programação direta em montagem, 
+ ainda necessitavam certo nível de conhecimento técnico. Mesmo assim, representaram uma camada importante de 
+ abstração que separava o usuário final dos detalhes técnicos do hardware.
+
+                                                                                                                                                                                                                                       * Computação Gráfica e Interfaces Visuais (de 1980 á 1990)
+                                                                                                                                                                                                                                       
+  Com a popularização dos computadores pessoais, empresas como a Apple e a Microsoft começaram a introduzir 
+ interfaces gráficas de usuário (GUIs). Ao digitar comandos, os usuários poderiam agora clicar nos ícones, arrastar 
+ janelas e usar menus para interagir com o sistema. Essas interfaces eram um divisor de águas, tornando os 
+ computadores acessíveis para pessoas sem treinamento técnico.
+
+  Pense nessa evolução como a diferença entre operar uma máquina de escrever e usar um editor de texto digital. As 
+ GUIs simplificaram a interação, escondendo os comandos complexos e mudando ações técnicas para tarefas visuais 
+ simples. Essa camada de abstração foi crucial para expandir o uso da computação em escolas, empresas e lares.
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * A Era da Abstração Complexa: Virtualização e Computação em Nuvem (entre os anos 2000 até o Presente)
+                                                                                                                                                                                                                                       
+  Com o avanço da internet e o aumento da capacidade de hardware, surgiram novas formas de abstração, como a 
+ virtualização . Essa tecnologia permite criar "máquinas virtuais" dentro de um único computador físico, cada uma 
+ funcionando como se fosse um sistema independente. Isso trouxe eficiência para empresas, que agora podiam executar 
+ vários sistemas operacionais em um único servidor, economizando recursos.
+
+  A computação em nuvem levou esse conceito ainda mais longo, eliminando a necessidade de gerenciamento de hardware 
+ local. Empresas e indivíduos agora podem acessar recursos computacionais sob demanda, pagando apenas pelo que 
+ utilizam. Isso é possível graças à abstração em vários níveis: os usuários veem apenas uma interface simples 
+ enquanto a infraestrutura física e lógica é completamente escondida.
+
+
+  A evolução da abstração em computadores é uma história de avanços que tornou o impossível acessível. Desde as 
+ primeiras interações diretas com hardware até as modernas interfaces gráficas e serviços em nuvem, cada passo foi 
+ motivado pelo desejo de simplificar a computação e torná-la mais eficiente. A abstração não apenas mudou humanos e 
+ máquinas, mas também permitiu que a tecnologia se tornasse a base da sociedade moderna. É graças a essas camadas 
+ de abstração que hoje podemos criar, aprender e inovar de maneiras que os pioneiros da computação mal poderiam 
+ imaginar.
+
+
