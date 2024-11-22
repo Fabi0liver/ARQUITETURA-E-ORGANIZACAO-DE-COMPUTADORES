@@ -221,8 +221,7 @@ quanto de dados pode ser processado em tempo real. Em outras palavras, a arquite
 performance do sistema em cenários de alta demanda.
 
  Além disso, a arquitetura de computadores também define a escalabilidade de um sistema, permitindo que ele se 
-adapte às demandas crescentes com o tempo. Em ambientes como data centers e servidores, onde a necessidade de 
-processamento é constante e em expansão, uma arquitetura flexível e bem planejada garante que novas aceleração e 
+adapte às demandas crescentes com o tempo. Em ambientes como data centers e servidores, onde a necessidade de processamento está em constante  expansão, uma arquitetura flexível e bem planejada garante que novas aceleração e 
 memória possam ser integradas sem comprometer o desempenho. Desta forma, entender e investir em uma arquitetura  
 robusta é essencial para garantir que o sistema não funcione apenas bem agora, mas que também esteja preparado
 para  crescer e se adaptar às futuras necessidades da computação.
@@ -243,6 +242,6 @@ da tecnologia, desde entusiastas e estudantes até profissionais da área. Esse 
 otimizar sistemas mais robustos e alinhados às necessidades da sociedade. Em um mundo cada vez mais digital, 
 compreender a base do funcionamento dos computadores é um passo importante para aproveitar ao máximo o potencial 
 das tecnologias, abrindo caminho para um entendimento mais profundo do que há por trás das telas que nos 
-conectamos, informamos e capacitamos diariamente .
+conectamos, nos informamos e nos capacitamos nos diariamente .
 
 
