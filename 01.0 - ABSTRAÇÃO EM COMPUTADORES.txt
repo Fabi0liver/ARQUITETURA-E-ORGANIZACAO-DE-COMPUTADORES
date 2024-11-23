@@ -345,7 +345,8 @@ entender e escrever o código em linguagem de máquina ou linguagem de montagem 
 Cada uma dessas ferramentas atua em um nível diferente do processo de tradução, mas ambas são essenciais para 
 transformar o código que escrevemos em algo que uma máquina pode executar.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                      * O Montador ou Assembler:  De Linguagem de Montagem para Código de Máquina
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+* O Montador ou Assembler:  De Linguagem de Montagem para Código de Máquina
                                                                                                                                                                                                                                                                                                                                                                                                                                                        
   O montador (ou assembler ) é uma ferramenta que traduz linguagem de montagem (Assembly) para código de máquina  
  ou seja, para a linguagem binária que o processador pode executar diretamente. A linguagem de montagem é uma forma 
@@ -362,7 +363,8 @@ transformar o código que escrevemos em algo que uma máquina pode executar.
  programação em um nível mais acessível, permitindo que os programadores lidem com códigos relativamente 
  compreensíveis, mas ainda próximos da máquina.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                      * O Compilador: De Linguagem de Alto Nível para Código de Máquina
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+* O Compilador: De Linguagem de Alto Nível para Código de Máquina
                                                                                                                                                                                                                                                                                                                                                                                                                                                         
   O compilador tem um papel ainda mais importante, pois lida com linguagens de alto nível , como C++, Java , ou 
  Python , que são muito mais legíveis e simples de entender. O compilador traduz essas linguagens para linguagem de 
