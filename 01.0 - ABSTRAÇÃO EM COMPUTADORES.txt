@@ -45,7 +45,8 @@ encontrar o que deseja. A organização por categorias, resumos  e  etiquetas cr
 navegação. Da mesma forma, em computadores, a abstração nos ajuda a lidar com sistemas complexos, camada por 
 camada, tornando possível o desenvolvimento de tecnologias cada vez mais avançadas.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                          * Interface: A Ponte Entre Usuário e o Sistema
+                                                                                                                                                                                                                                                                                                                                                                                                                          
+* Interface: A Ponte Entre Usuário e o Sistema
                                                                                                                                                                                                                                                                                                                                                                                                                             
   A interface é o meio pelo qual interagimos com um sistema. Ela atua como uma ponte que conecta usuários e 
  desenvolvedores aos recursos de um computador, escondendo detalhes complexos do funcionamento interno. Interfaces 
@@ -56,7 +57,8 @@ camada, tornando possível o desenvolvimento de tecnologias cada vez mais avanç
  experiência mais intuitiva, permitindo que o usuário se concentre na tarefa que deseja realizar, em vez de se 
  preocupar com como o computador executa a ação.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                          * Remoção de Detalhes: Simplificando o Complexo
+                                                                                                                                                                                                                                                                                                                                                                                                                         
+* Remoção de Detalhes: Simplificando o Complexo
                                                                                                                                                                                                                                                                                                                                                                                                                           
   A remoção de detalhes é o processo de ocultação do que não é relevante em um determinado contexto, permitindo que 
  desenvolvedores e usuários se concentrem apenas no que é importante. Isso é crucial para evitar que a complexidade 
