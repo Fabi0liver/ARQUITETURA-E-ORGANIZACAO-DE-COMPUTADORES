@@ -411,3 +411,21 @@ resto. Em essência, a abstração é o que permite que a computação moderna s
 conectando pessoas e soluções sem que elas precisem entender os mecanismos complexos que tornam tudo isso possível.
 
 
+
+                                         "Conclusão"
+
+ A abstração computacional é um dos pilares fundamentais que tornam uma tecnologia moderna acessível, eficiente e 
+escalável. Ao detalhar os detalhes mais complexos das operações internacionais de hardware e software, ela permite 
+que usuários e desenvolvedores se concentrem em suas tarefas sem se preocuparem com os mecanismos subjacentes. Essa 
+camada de camadas facilita desde a criação de programas até o uso de dispositivos, permitindo que tecnologias 
+avançadas sejam aproveitadas por pessoas com diferentes níveis de conhecimento técnico. Em suma, a abstração atua 
+como uma ponte, conectando a complexidade técnica dos computadores à simplicidade da experiência humana.
+
+ Sem uma abstração, o desenvolvimento tecnológico seria muito mais lento e trabalhoso. A capacidade de construir 
+sobre as camadas existentes, sem reinventar a base, é o que possibilita avanços como inteligência artificial, 
+computação em nuvem e até sistemas operacionais amigáveis. Assim, a abstração não é apenas um conceito técnico, mas 
+uma ferramenta essencial para resolver problemas complexos de maneira prática e escalável. Ela continuará sendo um 
+elemento indispensável no futuro da computação, orientando a inovação e permitindo que a tecnologia evolua para 
+atender às necessidades de um mundo cada vez mais interconectado.
+
+
