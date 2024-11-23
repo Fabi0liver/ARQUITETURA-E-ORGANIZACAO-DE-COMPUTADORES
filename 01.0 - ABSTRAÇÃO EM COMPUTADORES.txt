@@ -70,7 +70,8 @@ camada, tornando possível o desenvolvimento de tecnologias cada vez mais avanç
  operacionais, que esconde detalhes como a localização física de arquivos no disco rígido, apresentando ao usuário 
  uma estrutura de pastas organizada e intuitiva.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                          * Foco no Essencial: Destacando o Importante
+                                                                                                                                                                                                                                                                                                                                                                                                                          
+* Foco no Essencial: Destacando o Importante
                                                                                                                                                                                                                                                                                                                                                                                                                           
   Se a remoção de detalhes tira o excesso, o foco no essencial garante que os elementos fundamentais sejam 
  evidenciados. Esse pilar ajuda a manter a clareza e a eficiência ao interagir com sistemas computacionais.
@@ -80,7 +81,8 @@ camada, tornando possível o desenvolvimento de tecnologias cada vez mais avanç
  precise se preocupar com eles. Esse tipo de abstração é especialmente útil para programadores, que podem se 
  concentrar na solução de problemas, sem se distrair com detalhes que não impactam diretamente o resultado final.
 
-                                                                                                                                                                                                             * Generalização: Criando Soluções Universais
+                                                                                                                                                                                                            
+* Generalização: Criando Soluções Universais
                                                                                                                                                                                                                                                                                                                                                                                                                           
   Generalização é a arte de projetar componentes que podem ser usados ​​em múltiplos contextos, promovendo a 
  reutilização e a flexibilidade. Na computação, ela se manifesta em ferramentas como bibliotecas, APIs e 
