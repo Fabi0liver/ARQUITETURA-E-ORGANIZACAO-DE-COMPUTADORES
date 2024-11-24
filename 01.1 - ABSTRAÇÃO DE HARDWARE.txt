@@ -1,7 +1,8 @@
                                         ABSTRAÇÃO DE HARDWARE:  
                                    A Base que Sustenta a Computação
                                                                                                                                                                                                                                          
- A abstração de hardware é o processo que transforma os complexos componentes físicos de um computador (como circuitos, transistores e sinais elétricos ) em conceitos mais simples e acessíveis para que possam ser usados ​​de 
+ A abstração de hardware é o processo que transforma os complexos componentes físicos de um computador (como 
+circuitos, transistores e sinais elétricos ) em conceitos mais simples e acessíveis para que possam ser usados ​​de 
 forma eficiente. Imagine o hardware como uma gigantesca máquina industrial cheia de engrenagens, pistões e motores. 
 Para operar essa máquina com precisão, você não precisa entender o funcionamento detalhado de cada componente; basta 
 ter uma interface simplificada, como alavancas e botões, que traduza sua ação direta em operações internas. Essa é a 
