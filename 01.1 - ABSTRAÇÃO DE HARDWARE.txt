@@ -113,3 +113,37 @@ quando organizadas em codificação complexa, formam a base para todos os sistem
 trabalham em conjunto para transformar operações binárias simples em funcionalidades que vemos na prática, como 
 abrir um aplicativo ou processar uma imagem. Com isso, fica claro que o nível de portas lógicas é essencial na 
 transição do mundo físico dos sinais elétricos para o mundo lógico da computação.
+
+
+
+
+                    "Nível de Abstração de  Circuitos Combinacionais e Sequenciais:"                                                                                           
+                                  Decifrando o Fluxo de Informações
+                                                                                                                                                                                                                                                             
+ No nível de abstração de circuitos combinacionais e sequenciais, adentramos o universo das estruturas lógicas 
+responsáveis ​​por processar e armazenar informações nos computadores. Enquanto os componentes físicos, como os 
+transistores, são os blocos de construção básicos, os circuitos combinacionais e sequenciais organizam esses blocos 
+em sistemas que tomam decisões e lembram informações. Eles são essenciais para realizar tarefas como cálculos, 
+controle de fluxo de dados e armazenamento de estados, funcionando como o "cérebro" lógico do computador.
+
+ Os circuitos combinacionais podem ser entendidos como uma espécie de "calculadora instantânea". Eles processam os 
+sinais elétricos de entrada e produzem uma saída com base em regras lógicas predefinidas, sem depender de qualquer 
+informação passada. É como um interruptor que acende ou apaga uma lâmpada dependendo da posição  atual do botão, 
+sem guardar informações sobre o que aconteceu antes. Exemplos de circuitos combinacionais incluem somadores (que 
+realizam operações matemáticas), multiplexadores (que escolhem qual sinal será enviado adiante) e decodificadores 
+(que convertem um sinal em outro formato).
+
+ Por outro lado, os circuitos sequenciais são como cadernos de anotações: eles "lembram" o que aconteceu antes para 
+decidir o que fazer em seguida. Eles combinam a lógica dos circuitos combinacionais com a capacidade de 
+armazenamento dos estados anteriores, permitindo que o sistema tenha memória. Imagine um semáforo: ele muda de 
+verde para amarelo, depois para vermelho, com base em uma sequência predeterminada. Esse comportamento requer 
+"memória" do estado anterior, que no caso dos circuitos sequenciais é fornecida por componentes como flip-flops e 
+registradores. Esses circuitos são essenciais para criar contadores, relógios e até mesmo os registradores de uma 
+CPU, que armazenam e manipulam dados temporariamente durante o processamento.
+
+ Esses dois tipos de circuitos funcionam juntos como partes de uma engenharia lógica maior. Enquanto as 
+combinacionais decidem instantaneamente com base nas entradas, as sequenciais adicionam contexto e memória, 
+permitindo que o computador opere de maneira estruturada e previsível. Essa interação é fundamental para que as 
+camadas mais altas de abstração, como sistemas operacionais e linguagens de programação, possam se apoiar em uma 
+base sólida e funcional. Sem esse nível de abstração, o fluxo de informações dentro de um computador seria caótico 
+e impossível de ser gerenciado de forma eficiente.
