@@ -29,7 +29,7 @@ sistemas computacionais.
 
 
 
-                                "Nível de Abstração  Atômica e Subatômica:"                                                                                                                                                    
+                                "Nível de Abstração  Atômica e Subatômica"                                                                                                                                                    
                                          A Essência da Computação
                                                                                                                                                                                                                                       
  No nível mais fundamental do hardware, entramos no domínio atômico e subatômico, onde os componentes básicos da 
@@ -54,7 +54,7 @@ computacionais.
 
 
 
-                                    "Nível de Abstração de Transistores:"                                                                                                             
+                                    "Nível de Abstração de Transistores"                                                                                                             
                                       A Pedra Fundamental da Computação
                                                                                                                                                                                                                                       
  No núcleo de todo computador moderno está o transistor, um pequeno dispositivo eletrônico que revolucionou a 
@@ -86,7 +86,7 @@ passo para tornar a complexidade do hardware algo acessível e útil.
 
 
 
-                             "Nível de Abstração de  Portas Lógicas:"                                                                                                                                                                                              
+                             "Nível de Abstração de  Portas Lógicas"                                                                                                                                                                                              
                                 A Fundação da Lógica Computacional
                                                                                                                                                                                                                                        
  No nível de abstração de portas lógicas, encontramos um dos blocos de construção mais fundamentais da computação. 
@@ -117,7 +117,7 @@ transição do mundo físico dos sinais elétricos para o mundo lógico da compu
 
 
 
-                    "Nível de Abstração de  Circuitos Combinacionais e Sequenciais:"                                                                                           
+                    "Nível de Abstração de  Circuitos Combinacionais e Sequenciais"                                                                                           
                                   Decifrando o Fluxo de Informações
                                                                                                                                                                                                                                                              
  No nível de abstração de circuitos combinacionais e sequenciais, adentramos o universo das estruturas lógicas 
@@ -151,7 +151,7 @@ e impossível de ser gerenciado de forma eficiente.
 
 
 
-                           "Nível de Abstração de Componentes Físicos:"                                                                                                                                             
+                           "Nível de Abstração de Componentes Físicos"                                                                                                                                             
                                      O Alicerce do Computador
                                                                                                                                                                                                                                          
  O nível de abstração de componentes físicos é o ponto de partida de todo o sistema computacional. Aqui estão os 
@@ -182,3 +182,36 @@ dos transistores e a interação de sinais elétricos, ela fornece uma base sól
 engenheiros possam criar soluções computacionais de maneira acessível. Sem esse nível de abstração, a complexidade 
 do hardware seria esmagadora, tornando quase impossível o avanço da tecnologia moderna. Essa simplificação é o que 
 transforma a complexidade invisível do hardware em sistemas funcionais e eficientes que usamos diariamente.
+
+
+
+
+                         "Nível de Abstração de Placas de Circuito Impresso"                                                                                                                                                                                                                           
+                                  O Terreno de Operações da Computação
+                                                                                                                                                                                                                                      
+ No nível das placas de circuito impresso (PCB -  Printed Circuit Board ), encontramos uma infraestrutura física 
+que conecta e organiza todos os componentes fundamentais do hardware. As PCB são como as "estradas" e "avenidas" 
+pelos quais os sinais elétricos trafegam, permitindo que diferentes componentes, como chips de processamento e 
+memória , barramentos e capacitores, colaborem para executar as operações do computador. Eles são fornecidos por 
+camadas de materiais condutores e isolantes, onde circuitos complexos são cuidadosamente projetados para maximizar 
+a eficiência e minimizar interferências elétricas.
+
+ Para entender melhor, imagine uma cidade onde os veículos precisam se deslocar de um lugar para outro para 
+realizar tarefas importantes. As placas de circuito funcionam como o sistema viário dessa cidade: os fios 
+condutores são as estradas que ligam diferentes bairros (ou componentes) e as interseções são os pontos de controle 
+onde sinais elétricos são direcionados. Sem essa estrutura organizada, a "cidade do hardware" seria um caos, com 
+sinais se cruzando sem direção, causando falhas ou ineficiências.
+
+ Além de sua função como "vias de tráfego", as PCB também incluem pontos estratégicos para controle e suporte. 
+Existem trilhas específicas para alimentação de energia, garantindo que cada componente receba a voltagem 
+necessária, e outras trilhas para transmissão de dados. Capacitores e resistores, são como  "controladores de 
+fluxo", pois  ajudam no gerenciamento dos sinais elétricos, garantindo que eles cheguem ao destino na intensidade e 
+no tempo corretos. Os circuitos em uma PCB são otimizados para minimizar o ruído elétrico, que pode causar erros na 
+transmissão de dados, é como projetar uma estrada para evitar engarrafamentos e garantir viagens suaves.
+
+ Uma analogia prática seria comparar as PCB a uma "planta elétrica" ​​de um edifício moderno. Assim como os cabos 
+dentro das paredes de um prédio distribuem energia para os diversos cômodos, as trilhas em uma PCB conectam os 
+componentes eletrônicos e fornecem energia e dados a cada parte do sistema. Essa coordenação precisa e invisível é 
+o que permite que componentes como CPU, GPU e memórias trabalhem em sincronia. Assim, as placas de circuito 
+impresso não dão apenas suporte físico aos componentes, mas também servem como uma rede organizacional que 
+possibilita uma comunicação eficiente e confiável dentro de um sistema computacional.
