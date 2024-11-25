@@ -220,7 +220,7 @@ possibilita uma comunicação eficiente e confiável dentro de um sistema comput
 
 
                                "Nível de Abstração de Microarquitetura"                                                                                                                                                                              
-                                          A Coordenação Interna
+                                         A Coordenação Interna
                                                                                                                                                                                                                                       
  No nível da microarquitetura, estamos lidando com a forma como o processador organiza e coordena os sinais 
 binários que surgem dos componentes físicos. Aqui, em vez de interagir diretamente com os transistores e os 
