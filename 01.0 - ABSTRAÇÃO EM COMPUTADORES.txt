@@ -1,5 +1,4 @@
-
-ABSTRAÇÃO EM COMPUTADORES    
+                                       ABSTRAÇÃO EM COMPUTADORES    
 
 
  A abstração é um conceito presente em diversas áreas da vida e essencial para lidar com a complexidade. No dia a 
