@@ -1,4 +1,5 @@
-                                     ABSTRAÇÃO EM COMPUTADORES    
+
+ABSTRAÇÃO EM COMPUTADORES    
 
 
  A abstração é um conceito presente em diversas áreas da vida e essencial para lidar com a complexidade. No dia a 
@@ -220,7 +221,8 @@ a virtualização e a computação em nuvem lideraram as inovações.
 
 
 
-                             "Níveis de Abstração de Computadores"                                                                                                                                                                                                                                                                                                                                                                            
+                             "Níveis de Abstração de Computadores"                                                                                                                                                           
+
  Os computadores são máquinas extremamente complexas, compostas por diversos componentes interligados que trabalham 
 em conjunto para realizar desde tarefas simples até processos extremamente sofisticados. No entanto, para que essa 
 complexidade toda seja gerenciável e compreensível, ela é organizada em níveis de abstração. Esses níveis são 
