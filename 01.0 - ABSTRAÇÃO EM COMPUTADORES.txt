@@ -1,5 +1,5 @@
-                                     ABSTRAÇÃO EM COMPUTADORES                                                                                                                                                                           
-                                                                                                                                                                                                                                         
+                                     ABSTRAÇÃO EM COMPUTADORES    
+
 
  A abstração é um conceito presente em diversas áreas da vida e essencial para lidar com a complexidade. No dia a 
 dia, usamos a abstração constantemente, mesmo sem perceber. Por exemplo, quando usamos um smartphone para enviar 
@@ -158,7 +158,8 @@ a virtualização e a computação em nuvem lideraram as inovações.
  permitiu que os desenvolvedores focassem mais nas soluções e menos nos detalhes do funcionamento interno da 
  máquina.
 
-                                                                                                                                                                                                                             * Surgimento de Linguagens de Alto Nível (entre 1950 e 1970)
+
+* Surgimento de Linguagens de Alto Nível (entre 1950 e 1970)
 
   Enquanto a Assembly facilitava o trabalho dos programadores, ela ainda necessitava de  um profundo entendimento  
  do hardware. Foi nesse contexto que surgiram linguagens de programação de alto nível , como Fortran (voltada para 
@@ -183,7 +184,8 @@ a virtualização e a computação em nuvem lideraram as inovações.
  ainda necessitavam certo nível de conhecimento técnico. Mesmo assim, representaram uma camada importante de 
  abstração que separava o usuário final dos detalhes técnicos do hardware.
 
-                                                                                                                                                                                                                             * Computação Gráfica e Interfaces Visuais (de 1980 á 1990)
+
+* Computação Gráfica e Interfaces Visuais (de 1980 á 1990)
 
   Com a popularização dos computadores pessoais, empresas como a Apple e a Microsoft começaram a introduzir 
  interfaces gráficas de usuário (GUIs). Ao digitar comandos, os usuários poderiam agora clicar nos ícones, arrastar 
