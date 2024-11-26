@@ -45,7 +45,7 @@ encontrar o que deseja. A organização por categorias, resumos  e  etiquetas cr
 navegação. Da mesma forma, em computadores, a abstração nos ajuda a lidar com sistemas complexos, camada por 
 camada, tornando possível o desenvolvimento de tecnologias cada vez mais avançadas.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                          
+
 * Interface: A Ponte Entre Usuário e o Sistema
 
   A interface é o meio pelo qual interagimos com um sistema. Ela atua como uma ponte que conecta usuários e 
@@ -57,7 +57,7 @@ camada, tornando possível o desenvolvimento de tecnologias cada vez mais avanç
  experiência mais intuitiva, permitindo que o usuário se concentre na tarefa que deseja realizar, em vez de se 
  preocupar com como o computador executa a ação.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                         
+
 * Remoção de Detalhes: Simplificando o Complexo
 
   A remoção de detalhes é o processo de ocultação do que não é relevante em um determinado contexto, permitindo que 
@@ -70,7 +70,7 @@ camada, tornando possível o desenvolvimento de tecnologias cada vez mais avanç
  operacionais, que esconde detalhes como a localização física de arquivos no disco rígido, apresentando ao usuário 
  uma estrutura de pastas organizada e intuitiva.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                          
+
 * Foco no Essencial: Destacando o Importante
 
   Se a remoção de detalhes tira o excesso, o foco no essencial garante que os elementos fundamentais sejam 
@@ -81,7 +81,7 @@ camada, tornando possível o desenvolvimento de tecnologias cada vez mais avanç
  precise se preocupar com eles. Esse tipo de abstração é especialmente útil para programadores, que podem se 
  concentrar na solução de problemas, sem se distrair com detalhes que não impactam diretamente o resultado final.
 
-                                                                                                                                                                                                            
+
 * Generalização: Criando Soluções Universais
 
   Generalização é a arte de projetar componentes que podem ser usados ​​em múltiplos contextos, promovendo a 
@@ -93,7 +93,7 @@ camada, tornando possível o desenvolvimento de tecnologias cada vez mais avanç
  processadas. Isso cria um modelo generalizado que atende a diversos tipos de aplicações, diminuindo o ritmo de 
  desenvolvimento e aumentando a consistência.
 
-                                                                                                                                                                                                            
+
 * Decomposição: Dividindo para Conquistar
 
   Decomposição é o processo de dividir um problema grande e complexo em partes menores e mais manejáveis. É um 
