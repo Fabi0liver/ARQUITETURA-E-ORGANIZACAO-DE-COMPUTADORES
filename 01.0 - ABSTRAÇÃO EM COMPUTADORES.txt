@@ -449,7 +449,7 @@ níveis, do mais básico e físico ao mais complexo e focado no usuário.
  desenvolvimento mais acessível, colaborativo e ágil.
 
 
-* Nível de Aplicações: O Toque Final
+* Nível de Aplicações: O Toque Final na Abstração
                                                                                                                                                                                                                                    
   No topo da pirâmide de abstração está o nível das aplicações, onde os usuários interagem diretamente com o 
  computador de forma prática e intuitiva. Essas aplicações são os programas que utilizamos no dia a dia, como 
