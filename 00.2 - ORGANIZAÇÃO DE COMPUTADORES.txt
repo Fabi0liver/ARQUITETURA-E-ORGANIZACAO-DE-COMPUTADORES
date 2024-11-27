@@ -3,16 +3,18 @@
 
  Quando pensamos em um computador, muitas vezes enxergamos apenas uma caixa com teclas, uma tela e talvez um mouse 
 ao lado. Mas dentro desse equipamento aparentemente simples, existe um universo complexo de componentes que 
-trabalham juntos para tornar possível cada clique, cada imagem na tela, e cada linha de código sendo executada. É 
-como se o computador fosse uma grande cidade, com várias ruas e avenidas conectando bairros (os diferentes 
-componentes), e cada um deles com funções bem definidas. Entender essa organização é como entender o mapa dessa 
-cidade: só assim conseguimos saber como ela funciona tão bem.
+trabalham juntos para tornar possível cada clique, cada imagem na tela, e cada linha de código sendo executada. A 
+organização de computadores é  como se o computador fosse uma grande cidade, com várias ruas e avenidas conectando 
+bairros (os diferentes componentes), e cada um deles com funções bem definidas. Compreender essa organização é como 
+decifrar o mapa de uma cidade: somente assim podemos entender como suas partes interagem de maneira tão eficiente 
+para garantir seu bom funcionamento.
 
  A disciplina de Organização de Computadores se dedica justamente a nos ensinar esse “mapa”. Ela nos mostra como 
 cada peça, do processador até a memória, trabalha em conjunto para que as tarefas que pedimos ao computador sejam 
-realizadas com precisão. Imagine que o processador é o chefe dessa cidade, a memória é o arquivo que guarda todas 
-as informações, e as vias de comunicação são os barramentos que permitem que dados e informações circulem de um 
-lado para o outro. É fascinante como tudo isso se conecta para que o computador funcione!
+realizadas com precisão.  Imagine que o processador é o prefeito de uma  cidade, a memória é a sala de arquivos que 
+guarda todas as informações da cidade, e as ruas e  avenidas são os barramentos que permitem que dados e 
+informações circulem de um lado para o outro. É fascinante como tudo isso se conecta para que o computador 
+funcione!
 
  Além disso, a organização de computadores vai muito além de entender essas partes isoladas. Ela também aborda como
 otimizar o uso desses componentes, garantindo que o sistema seja rápido, eficiente e utilize menos energia. É 
@@ -45,13 +47,13 @@ tempo?". Esses são elementos conceituais que especificam as capacidades e limit
 organização de computadores tem uma abordagem prática, lidando com como esses conceitos arquitetônicos serão 
 implementados fisicamente no hardware.
 
- Por exemplo, a arquitetura pode definir que um processador terá quatro núcleos para melhorar o desempenho 
-multitarefa, mas é a organização que determinará como esses núcleos trabalharão em conjunto para maximizar a 
+ Por exemplo, a organização pode definir que um processador terá quatro núcleos para melhorar o desempenho 
+multitarefa, mas é a arquitetura que determinará como esses núcleos trabalharão em conjunto para maximizar a 
 eficiência. Ela se preocupa com como os núcleos compartilham recursos, como o cache, e como eles se comunicam 
 entre si para evitar desperdício de tempo ou energia. A organização também decide como os barramentos de dados 
 serão otimizados para evitar gargalos no fluxo de informações entre a CPU, a memória e outros componentes. É como 
 garantir que os elevadores e escadas em um prédio estejam bem posicionados e dimensionados para suportar o tráfego 
-de pessoas e não causar engarrafamentos.
+de pessoas.
 
  Em resumo, a arquitetura estabelece o que é possível em termos de capacidades e funcionalidades, enquanto a 
 organização foca em como tornar essas possibilidades eficientes e funcionais na prática. Sem uma boa organização, 
@@ -67,9 +69,9 @@ energia, ou processamento rápido de grandes volumes de dados.
  A organização de computadores é uma área fundamental que molda o funcionamento eficiente de todo sistema 
 computacional. Embora muitas vezes o foco dos usuários esteja no software que utilizam, o verdadeiro coração de um 
 computador está na forma como o hardware é organizado para executar tarefas de maneira rápida e eficiente. Cada 
-componente do processador à memória, dos barramentos aos controladores de I/O desempenha um papel essencial, e 
-o modo como esses elementos interagem define o desempenho global do sistema. Compreender como esses componentes 
-estão organizados é crucial para entender como a informação é processada e os resultados são entregues.
+componente do processador à memória, dos barramentos aos controladores de entrada e saída, desempenha um papel 
+essencial, e o modo como esses elementos interagem define o desempenho global do sistema. Compreender como esses 
+componentes estão organizados é crucial para entender como a informação é processada e os resultados são entregues.
 
  Esse campo de estudo vai além da simples montagem de peças físicas; trata-se de entender as escolhas e 
 otimizações que tornam o sistema mais ágil, eficiente e capaz de suportar diferentes cargas de trabalho. No mundo 
