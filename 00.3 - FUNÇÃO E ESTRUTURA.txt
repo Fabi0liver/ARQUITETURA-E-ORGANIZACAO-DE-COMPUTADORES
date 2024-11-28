@@ -421,8 +421,9 @@ para dar suporte às operações do sistema.
 
                             Isso é fundamental para o funcionamento do sistema, pois permite que a CPU saiba onde 
                            buscar informações ou onde armazenar resultados. Assim como um sistema de endereçamento 
-                           em uma cidade, onde cada casa tem um endereço específico, o barramento de endereços 
-                           garante que as informações sejam enviadas para os lugares certos.
+                           em uma cidade, onde cada casa tem um endereço específico (número, rua, bairro), o 
+                           barramento de endereços garante que as informações sejam enviadas para os lugares 
+                           certos.
 
   - Barramento de Controle: O barramento de controle carrega sinais de controle da CPU para os outros componentes 
                            do sistema, indicando como as operações devem ser realizadas. Ele é responsável por 
@@ -441,10 +442,10 @@ para dar suporte às operações do sistema.
  o desempenho do computador seria comprometido, tornando tudo mais lento e confuso.
 
 
- A estrutura de um computador é como um delicado relógio, onde cada engrenagem é projetada para funcionar em 
-perfeita harmonia. Desde a organização da CPU que inclui a Unidade Lógica Aritmética (ALU), a Unidade de Controle 
-(UC), até a forma como as memórias são dispostas em camadas e os barramentos conectam todos os componentes, cada 
-parte tem um papel vital e estratégico.
+ Em suma, a estrutura de um computador é como um delicado relógio, onde cada engrenagem é projetada para funcionar 
+em perfeita harmonia. Desde a organização da CPU que inclui a Unidade Lógica Aritmética (ALU), a Unidade de 
+Controle (UC), até a forma como as memórias são dispostas em camadas e os barramentos conectam todos os 
+componentes, cada parte tem um papel vital e estratégico.
 
  Essa interconexão cuidadosa garante que o computador consiga processar dados, armazenar informações e se comunicar 
 com o mundo externo de maneira rápida e eficiente. Imagine uma cidade onde cada rua e estrada foi planejada para 
