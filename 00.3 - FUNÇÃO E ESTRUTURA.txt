@@ -1,13 +1,13 @@
                                       FUNÇÃO E ESTRUTURA
 
 
- Para entender o funcionamento de um computador, é essencial explorar os conceitos de função e estrutura na 
-arquitetura e organização de computadores. Esses termos são amplamente utilizados para definir tanto o que o 
-computador faz quanto como ele é construído para realizar essas ações. Imagine um computador como uma grande 
-empresa: a função representa os objetivos e as atividades que uma empresa precisa cumprir, enquanto a estrutura é 
-uma organização física e hierárquica que permite que essas atividades aconteçam de forma coordenada. Em outras 
-palavras, cada uma dessas áreas, é um pilar para garantir que a “empresa” ou, neste caso, o computador funcione
-corretamente.
+ Para compreender o funcionamento de um computador, é fundamental explorar os conceitos de função e estrutura na 
+arquitetura e organização de computadores. Esses termos são usados ​​para descrever, de maneira clara, o que o 
+computador faz (função) e como ele é projetado e construída (estrutura) para executar  ações. Imagine um computador 
+como uma grande empresa: a função representa os objetivos e as atividades que uma empresa precisa cumprir, enquanto 
+a estrutura é uma organização física e hierárquica que permite que essas atividades aconteçam de forma coordenada. 
+Em outras palavras, cada uma dessas áreas, é um pilar para garantir que a “empresa” ou, neste caso, o computador 
+funcione corretamente.
 
  Compreender esses dois pilares é fundamental para quem deseja aprofundar seu conhecimento na área de TI, 
 especialmente em temas como processamento de dados, armazenamento e organização de componentes de hardware.
