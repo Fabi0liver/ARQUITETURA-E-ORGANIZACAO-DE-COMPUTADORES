@@ -3,7 +3,7 @@
 
  Para compreender o funcionamento de um computador, é fundamental explorar os conceitos de função e estrutura na 
 arquitetura e organização de computadores. Esses termos são usados ​​para descrever, de maneira clara, o que o 
-computador faz (função) e como ele é projetado e construída (estrutura) para executar  ações. Imagine um computador 
+computador faz (função) e como ele é projetado e construído (estrutura) para executar  ações. Imagine um computador 
 como uma grande empresa: a função representa os objetivos e as atividades que uma empresa precisa cumprir, enquanto 
 a estrutura é uma organização física e hierárquica que permite que essas atividades aconteçam de forma coordenada. 
 Em outras palavras, cada uma dessas áreas, é um pilar para garantir que a “empresa” ou, neste caso, o computador 
@@ -49,8 +49,8 @@ que, em conjunto como os demais, possibilita o funcionamento harmônico do siste
 e o  armazenamento garantem que os dados estejam disponíveis e prontos para uso, a transferência garante a circulação
 das informações, e o controle regula e supervisiona todas as etapas para que nada saia de ordem.
 
- Vamos explorar cada uma dessas funções em detalhes para entender como elas são específicas individualmente e em  
-conjunto para o desempenho eficiente do sistema.
+ Vamos explorar cada uma dessas funções em detalhes para entender como elas funcionam individualmente e como se 
+complementam para garantir o desempenho eficiente do sistema.
 
 
 * Processamento de Dados:
