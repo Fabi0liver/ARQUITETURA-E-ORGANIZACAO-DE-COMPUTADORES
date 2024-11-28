@@ -83,9 +83,9 @@ complementam para garantir o desempenho eficiente do sistema.
 
   - Registradores: Os registradores são pequenas áreas de armazenamento dentro da CPU que guardam dados 
                   temporariamente. Imagine-os como pequenas gavetas ao lado do trabalhador na cozinha, onde 
-                  ingredientes e móveis são guardados à mão para um acesso rápido. Esses registradores permitem que 
-                  a CPU acesse informações importantes rapidamente, melhorando a velocidade de execução e evitando 
-                  a necessidade de buscar dados na memória externa, que seria muito mais lenta.
+                  ingredientes e utensílios são guardados à mão para um acesso rápido. Esses registradores permitem 
+                  que a CPU acesse informações importantes rapidamente, melhorando a velocidade de execução e 
+                  evitando a necessidade de buscar dados na memória externa, que seria muito mais lenta.
 
   Em conjunto, a CPU, a ALU e os registradores formam um sistema intrínseco que garante que o processamento de 
  dados ocorra de maneira rápida e precisa. Essa colaboração transforma dados brutos em informações importantes e 
@@ -98,7 +98,7 @@ complementam para garantir o desempenho eficiente do sistema.
 * Armazenamento de Dados:
 
   O armazenamento de dados é um componente essencial do funcionamento de um computador, responsável por manter 
- informações que variam desde as temporárias, que precisam ser acessadas rapidamente durante a execução de tarefas, 
+ informações que variam desde temporárias, que precisam ser acessadas rapidamente durante a execução de tarefas, 
  até as permanentes, que são essenciais para o uso a longo prazo. Imagine o armazenamento como uma grande 
  biblioteca, onde diferentes depósitos atendem a diferentes necessidades: uma parte para livros que você usa com 
  frequência (como a memória RAM) e outra para os volumes que você consulta recentemente (como a memória 
@@ -122,7 +122,7 @@ complementam para garantir o desempenho eficiente do sistema.
   A movimentação de dados é uma função crucial no funcionamento de um computador, responsável por garantir que as 
  informações fluam de maneira eficiente entre os diversos componentes do sistema. Pense nisso como as estradas que 
  conectam diferentes partes de uma cidade. Sem essas vias de comunicação, o tráfego de informações entre a CPU, a 
- memória e os dispositivos de entrada e saída ficaria congestionado, resultando em lentidão e ineficiência. 
+ memória e os dispositivos de entrada e saída ficaria congestionados resultando em lentidão e ineficiência. 
  Portanto, a movimentação de dados não apenas possibilita a comunicação entre as partes do sistema, mas também é 
  fundamental para o desempenho global do computador.
 
@@ -163,11 +163,11 @@ complementam para garantir o desempenho eficiente do sistema.
  mas também os princípios de organização e colaboração que a sustentam.
 
 
- As funções de um computador processamento de dados, armazenamento de dados, transferência de dados e controle são 
-os pilares que permitem que o sistema funcione de forma organizada e eficiente. Cada uma dessas funções desempenha 
-um papel essencial e elas interagem para garantir que o computador possa processar e armazenar informações, além 
-de manter o fluxo de dados entre seus componentes. Sem essas funções trabalhando juntas, o  computador seria 
-incapaz de realizar operações complexas que o tornam uma ferramenta tão poderosa e versátil.
+ As funções de um computador como o processamento de dados, armazenamento de dados, transferência de dados e 
+controle são os pilares que permitem que o sistema funcione de forma organizada e eficiente. Cada uma dessas 
+funções desempenha um papel essencial e elas interagem para garantir que o computador possa processar e armazenar 
+informações, além de manter o fluxo de dados entre seus componentes. Sem essas funções trabalhando juntas, o  
+computador seria incapaz de realizar operações complexas que o tornam uma ferramenta tão poderosa e versátil.
 
  Ao entender a função de cada componente, fica claro como o computador é capaz de realizar uma vasta gama de  
 tarefas, desde cálculos simples até operações complexas de processamento e armazenamento de dados. Essa compreensão  
