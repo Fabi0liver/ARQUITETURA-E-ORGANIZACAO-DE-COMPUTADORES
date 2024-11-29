@@ -650,7 +650,7 @@ função e contribui para o fascinante processo de criação de programas.
  integração.
 
 
-* Empacotadores : Organizadores de Recursos
+* Empacotadores: Organizadores de Recursos
 
   Os empacotadores,  são ferramentas cruciais no processo de desenvolvimento de software, especialmente quando se 
  trata de preparar e organizar todos os recursos necessários para que um programa funcione corretamente. Eles são 
@@ -741,6 +741,7 @@ função e contribui para o fascinante processo de criação de programas.
  eficiente. Ele é o último passo antes de o programa começar a funcionar de verdade, unindo a organização do código 
  com a execução prática, tornando o trabalho dos programadores mais simples e direto.
 
+ 
  Em resumo, o processo de transformação do código fonte em um programa eficiente envolve uma série de etapas 
 cruciais, e cada uma delas tem um papel específico para garantir que o software funcione de maneira adequada. O 
 compilador e o montador (assembler) são os primeiros a traduzir o código de alto nível ou linguagem de montagem 
