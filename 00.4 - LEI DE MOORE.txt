@@ -99,3 +99,31 @@ mais potentes, eles também eram mais baratos de produzir. É como se você cons
 sofisticados pelo mesmo preço de um modelo antigo. Isso democratizou a tecnologia, permitindo que mais pessoas no 
 mundo tivessem acesso a ferramentas que melhoraram sua produtividade, comunicação e entretenimento. Sem a Lei de 
 Moore, é provável que o mundo digital não fosse tão integrado ao nosso cotidiano como é hoje.
+
+
+
+                                 "Os Limites da Lei de Moore"
+                                                                                                                                                                                                                           
+ Embora a Lei de Moore tenha impulsionado avanços incríveis por décadas, ela começou a enfrentar limites físicos e 
+econômicos nos últimos anos. Um dos principais desafios é a miniaturização dos transistores , que chegaram a 
+tamanhos tão pequenos (medidos em nanômetros) que estão perto de enfrentar os limites da física. Pense nos 
+transistores como peças de um quebra-cabeça: quanto menores eles são, mais difícil fica manuseá-los e colocá-los no 
+lugar correto. Em escalas tão minúsculas, efeitos quânticos começam a aparecer, como o "vazamento" de corrente 
+elétrica, onde os elétrons atravessam barreiras que deveriam bloqueá-los, prejudicando o desempenho.
+
+ Outro problema é o aquecimento . Chips com bilhões de transistores, funcionando em espaços tão reduzidos, geram 
+muito calor. Isso cria desafios para manter os refrigerados, pois os métodos tradicionais, como dissipadores de 
+calor e ventoinhas, já não são suficientes em muitos casos. Imagine tentar colocar mais lâmpadas em um cômodo 
+pequeno: quanto mais lâmpadas, mais quente o ambiente fica, e você precisa de um sistema de ventilação muito mais 
+potente para manter a temperatura sob controle. O mesmo acontece com os chips modernos.
+
+ Além disso, o custo de fabricação aumentou significativamente. Produzir transistores exige  tecnologias avançadas 
+e extremamente caras, como máquinas de litografia que utilizam luz ultravioleta extrema (EUV). Esses equipamentos 
+custam bilhões de dólares e tornam o processo de fabricação acessível apenas para algumas empresas no mundo. É como 
+construir arranha-céus em uma cidade: quanto mais altos eles são, mais caro e complexo é o projeto.
+
+ Por fim, existe também um limite econômico e de mercado . Nem todos os consumidores precisam de poder 
+computacional mais avançado. Muitas pessoas já estão satisfeitas com o desempenho dos dispositivos atuais, o que 
+reduz a demanda por inovações caras e extremas. Assim, a Lei de Moore, embora ainda inspire avanços, está se 
+adaptando a novas realidades, forçando a indústria a buscar soluções criativas, como designs tridimensionais de 
+chips e materiais alternativos, para continuar inovando sem depender apenas da miniaturização dos transistores.
