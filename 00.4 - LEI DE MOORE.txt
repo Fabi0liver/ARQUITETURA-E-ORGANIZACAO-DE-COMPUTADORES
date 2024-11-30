@@ -28,7 +28,7 @@ dizia: "A cada dois anos, precisamos dobrar a eficiência." Essa corrida não ap
 
 
                            O Contexto Histórico da Lei de Moore
-                                                                                                                                                                                                                                    
+                                                                                                                
  Nos anos 1960, a computação era uma área em ascensão, mas ainda muito distante do que conhecemos hoje. Os 
 computadores ocupavam salas inteiras e eram usados ​​principalmente por grandes empresas, governos e universidades. 
 Era uma tecnologia cara, volumosa e limitada, acessível apenas a quem realmente precisava. Foi nesse cenário que 
