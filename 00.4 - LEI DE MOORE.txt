@@ -1,0 +1,27 @@
+                                             LEI DE MOORE
+
+
+ A Lei de Moore é uma das variações mais conhecidas na história da tecnologia, proposta por Gordon Moore , cofundador 
+da Intel, em 1965. Ele observou que o número de transistores em um chip de computador dobrava aproximadamente a cada 
+dois anos, enquanto o custo de produção permanecia praticamente o mesmo. Em termos simples, isso significa que os 
+computadores se tornariam mais poderosos, menores e mais acessíveis ao longo do tempo. Apesar de não ser uma lei 
+científica, mas sim uma previsão baseada em tendências tecnológicas, ela se mostrou incrivelmente precisa durante 
+muitas décadas, orientando o avanço da tecnologia.
+
+ fluxo de corrente elétrica em um chip. Eles permitem que o processador realize cálculos e processe informações, 
+funcionando como "neurônios eletrônicos" de um computador. Imagine que um chip é como uma cidade, e os transistores 
+são os trabalhadores dessa cidade. Quanto mais trabalhadores você tiver, mais tarefas poderão ser realizadas 
+simultaneamente, aumentando a produtividade. Na Lei de Moore, o número desses trabalhadores (transistores) cresce 
+constantemente, tornando uma "cidade" cada vez mais eficiente.
+
+ A previsão de Moore também implicava que essa duplicação não apenas aumentaria o desempenho dos chips, mas reduziria 
+seus custos relativos. É como se, em uma fábrica, você conseguisse dobrar a produção de produtos sem precisar gastar 
+mais com máquinas ou espaço. Esse aspecto revolucionário da Lei de Moore foi crucial para democratizar a tecnologia, 
+permitindo que dispositivos como computadores pessoais, smartphones e tablets se tornassem acessíveis para bilhões de 
+pessoas no todo.
+
+ Por fim, a Lei de Moore também ajudou a definir o ritmo da inovação na indústria da computação. Empresas passaram a 
+trabalhar com cronogramas baseados nessa previsão, criando novos produtos e tecnologias de acordo com o ritmo de 
+crescimento descrito por Moore. É como se todos estivessem correndo uma maratona tecnológica com um cronômetro que 
+dizia: "A cada dois anos, precisamos dobrar a eficiência." Essa corrida não apenas impulsionou o avanço técnico, mas 
+também moldou a forma como pensamos sobre o progresso em eletrônica e computação.
