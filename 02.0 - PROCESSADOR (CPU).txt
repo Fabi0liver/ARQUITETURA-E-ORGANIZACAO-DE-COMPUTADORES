@@ -66,7 +66,7 @@ de um motor que garantem o desempenho eficiente da máquina. Cada um deles tem u
 permitindo que o processador execute as tarefas de maneira organizada, rápida e precisa. Esses componentes variam 
 desde aqueles que realizam cálculos até os que gerenciam o fluxo de dados dentro do sistema. É fundamental 
 compreender como essas partes se conectam e interagem, já que sua cooperação é o que garante o bom funcionamento 
-do processador e, consequentemente, do computador como um todo.
+do processador e consequentemente, do computador como um todo.
 
  Para entender como o processador opera, pense em uma equipe de profissionais trabalhando juntos para completar um 
 projeto complexo. Cada pessoa tem uma função específica, mas o sucesso depende de todos estarem sincronizados e 
@@ -207,7 +207,7 @@ contribuem para a eficiência e o poder de processamento do sistema.
 
  - Núcleos (Cores): São as unidades de processamento independentes dentro de um processador. Inicialmente, os 
   processadores tinham apenas um núcleo, o que limitava o número de instruções que poderiam ser executadas ao 
-  mesmo tempo. Com o avanço da tecnologia, surgiram os processadores multinúcleo, onde múltiplos núcleos permitem 
+  mesmo tempo. Com o avanço da tecnologia, surgiram os processadores multi-núcleo, onde múltiplos núcleos permitem 
   que várias tarefas sejam executadas simultaneamente. Isso melhora drasticamente o desempenho, especialmente em 
   aplicativos que podem se beneficiar de processamento paralelo, como editores de vídeo, jogos e simulações 
   científicas.
