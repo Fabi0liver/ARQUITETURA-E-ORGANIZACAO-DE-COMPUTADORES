@@ -237,6 +237,24 @@ contribuem para a eficiência e o poder de processamento do sistema.
   serviço e tornando a experiência mais fluida.
 
 
+ - Unidade de Gerenciamento de Memória (MMU - Memory Management Unit): É responsável por gerenciar como a memória é 
+  acessada e usada pela CPU, garantindo que cada programa tenha acesso apenas às áreas de memória que ele pertence. 
+  Ela faz isso traduzindo os endereços virtuais (aqueles usados ​​pelos programas) em endereços físicos (aqueles que 
+  realmente precisam de locais na memória RAM). Essa tradução é essencial para manter o sistema organizado e 
+  seguro.
+
+   A MMU também implementa mecanismos de proteção, impedindo que um programa acesse áreas de memória reservadas 
+  para o sistema ou para outros programas. Isso evita falhas e melhora a estabilidade do computador. Além disso, a 
+  MMU trabalha em conjunto com a CPU para gerenciar memória virtual, um recurso que permite ao sistema operar com 
+  mais dados da memória RAM disponível, utilizando parte do disco rígido como "extensão" temporária.
+
+   Você pode imaginar o MMU como um porteiro que organiza o acesso aos quartos de um hotel. Cada hóspede (programa) 
+  tem a chave do seu quarto (área de memória) e só pode acessar o espaço que lhe pertence. Esse porteiro também 
+  cuida para que as portas certas sejam destrancadas rapidamente (tradução de endereços), garantindo que os 
+  hóspedes não invadam os quartos uns dos outros (proteção de memória). Com esse controle, o hotel funciona sem 
+  conflitos e com muito mais eficiência.
+
+
  Os componentes do processador são fundamentais para garantir que a máquina funcione de maneira rápida e 
 eficiente. Desde a Unidade de Controle, que organiza as operações, até os núcleos que permitem o processamento 
 paralelo, cada parte desempenha um papel específico e insubstituível. Todos esses componentes precisam trabalhar 
