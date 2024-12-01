@@ -158,23 +158,6 @@ contribuem para a eficiência e o poder de processamento do sistema.
   e o sistema ficaria sobrecarregado.
 
 
- - Clock do Processador: É o "ritmo" que dita a velocidade com que as operações são realizadas dentro da CPU. Cada 
-  "tic" do clock corresponde a uma instrução ou parte de uma instrução sendo executada. A frequência do clock é 
-  medida em Hertz (Hz) e define quantos ciclos de instrução o processador pode completar em um segundo. Quanto 
-  maior a frequência, mais rápido o processador pode executar as instruções. Processadores modernos operam na casa 
-  dos gigahertz (GHz), ou seja, bilhões de ciclos por segundo.
-
-   O clock é crucial para manter o processador em sincronia, garantindo que todas as partes do sistema operem em 
-  harmonia. Um clock rápido pode aumentar significativamente o desempenho de tarefas, como o carregamento de 
-  programas ou a execução de cálculos complexos. No entanto, um clock mais rápido também gera mais calor, exigindo 
-  sistemas de refrigeração mais eficientes para evitar superaquecimento.
-
-   Imagine o clock como o batimento cardíaco do processador. Cada batida permite que o sangue (dados) flua pelo 
-  corpo (sistema), garantindo que tudo funcione em harmonia. Quanto mais rápido o batimento, mais rapidamente as 
-  funções vitais são realizadas, mas com o aumento do esforço, também surge a necessidade de um sistema de 
-  resfriamento adequado.
-
-
  - Unidade de Decodificação de Instruções: Atua como um "tradutor" dentro da CPU, convertendo as instruções que o 
   processador recebe em um formato que possa ser executado pela ULA e pela Unidade de Controle. Quando um programa 
   é executado, suas instruções estão codificadas em linguagem de máquina, que é difícil de ser compreendida 
@@ -238,7 +221,24 @@ contribuem para a eficiência e o poder de processamento do sistema.
   conflitos e com muito mais eficiência.
 
 
-- Núcleos (Cores): São as unidades de processamento independentes dentro de um processador. Inicialmente, os 
+ - Clock do Processador: É o "ritmo" que dita a velocidade com que as operações são realizadas dentro da CPU. Cada 
+  "tic" do clock corresponde a uma instrução ou parte de uma instrução sendo executada. A frequência do clock é 
+  medida em Hertz (Hz) e define quantos ciclos de instrução o processador pode completar em um segundo. Quanto 
+  maior a frequência, mais rápido o processador pode executar as instruções. Processadores modernos operam na casa 
+  dos gigahertz (GHz), ou seja, bilhões de ciclos por segundo.
+
+   O clock é crucial para manter o processador em sincronia, garantindo que todas as partes do sistema operem em 
+  harmonia. Um clock rápido pode aumentar significativamente o desempenho de tarefas, como o carregamento de 
+  programas ou a execução de cálculos complexos. No entanto, um clock mais rápido também gera mais calor, exigindo 
+  sistemas de refrigeração mais eficientes para evitar superaquecimento.
+
+   Imagine o clock como o batimento cardíaco do processador. Cada batida permite que o sangue (dados) flua pelo 
+  corpo (sistema), garantindo que tudo funcione em harmonia. Quanto mais rápido o batimento, mais rapidamente as 
+  funções vitais são realizadas, mas com o aumento do esforço, também surge a necessidade de um sistema de 
+  resfriamento adequado.
+
+
+ - Núcleos (Cores): São as unidades de processamento independentes dentro de um processador. Inicialmente, os 
   processadores tinham apenas um núcleo, o que limitava o número de instruções que poderiam ser executadas ao 
   mesmo tempo. Com o avanço da tecnologia, surgiram os processadores multi-núcleo, onde múltiplos núcleos permitem 
   que várias tarefas sejam executadas simultaneamente. Isso melhora drasticamente o desempenho, especialmente em 
