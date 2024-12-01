@@ -205,23 +205,6 @@ contribuem para a eficiência e o poder de processamento do sistema.
   ambas são necessárias para cobrir todos os tipos de operações matemáticas no processador.
 
 
- - Núcleos (Cores): São as unidades de processamento independentes dentro de um processador. Inicialmente, os 
-  processadores tinham apenas um núcleo, o que limitava o número de instruções que poderiam ser executadas ao 
-  mesmo tempo. Com o avanço da tecnologia, surgiram os processadores multi-núcleo, onde múltiplos núcleos permitem 
-  que várias tarefas sejam executadas simultaneamente. Isso melhora drasticamente o desempenho, especialmente em 
-  aplicativos que podem se beneficiar de processamento paralelo, como editores de vídeo, jogos e simulações 
-  científicas.
-
-   Cada núcleo tem sua própria ULA, UC e outros componentes essenciais, funcionando como se fossem pequenos 
-  processadores dentro do processador maior. Quando um computador realiza várias tarefas ao mesmo tempo, como 
-  rodar um navegador enquanto faz uma renderização gráfica, são os núcleos que dividem o trabalho e garantem que 
-  tudo funcione sem travamentos.
-
-   Podemos comparar os núcleos a uma equipe de cozinheiros em um restaurante. Se houver apenas um cozinheiro 
-  (núcleo único), ele precisa preparar todos os pratos sozinho, o que demora. Com mais cozinheiros (múltiplos 
-  núcleos), cada um pode cuidar de uma parte do menu, agilizando o serviço e melhorando a eficiência da cozinha.
-
-
  - Unidade de Pré-Busca (Prefetch Unit): É responsável por antecipar quais dados e instruções serão necessários no 
   futuro e buscá-los da memória antes que sejam solicitados. Isso permite que o processador tenha as informações 
   prontas para uso, evitando atrasos durante a execução das tarefas. A pré-busca é fundamental para otimizar o 
@@ -253,6 +236,23 @@ contribuem para a eficiência e o poder de processamento do sistema.
   cuida para que as portas certas sejam destrancadas rapidamente (tradução de endereços), garantindo que os 
   hóspedes não invadam os quartos uns dos outros (proteção de memória). Com esse controle, o hotel funciona sem 
   conflitos e com muito mais eficiência.
+
+
+- Núcleos (Cores): São as unidades de processamento independentes dentro de um processador. Inicialmente, os 
+  processadores tinham apenas um núcleo, o que limitava o número de instruções que poderiam ser executadas ao 
+  mesmo tempo. Com o avanço da tecnologia, surgiram os processadores multi-núcleo, onde múltiplos núcleos permitem 
+  que várias tarefas sejam executadas simultaneamente. Isso melhora drasticamente o desempenho, especialmente em 
+  aplicativos que podem se beneficiar de processamento paralelo, como editores de vídeo, jogos e simulações 
+  científicas.
+
+   Cada núcleo tem sua própria ULA, UC e outros componentes essenciais, funcionando como se fossem pequenos 
+  processadores dentro do processador maior. Quando um computador realiza várias tarefas ao mesmo tempo, como 
+  rodar um navegador enquanto faz uma renderização gráfica, são os núcleos que dividem o trabalho e garantem que 
+  tudo funcione sem travamentos.
+
+   Podemos comparar os núcleos a uma equipe de cozinheiros em um restaurante. Se houver apenas um cozinheiro 
+  (núcleo único), ele precisa preparar todos os pratos sozinho, o que demora. Com mais cozinheiros (múltiplos 
+  núcleos), cada um pode cuidar de uma parte do menu, agilizando o serviço e melhorando a eficiência da cozinha.
 
 
  Os componentes do processador são fundamentais para garantir que a máquina funcione de maneira rápida e 
