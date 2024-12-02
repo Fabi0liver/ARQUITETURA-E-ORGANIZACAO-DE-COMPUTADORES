@@ -24,7 +24,7 @@ informações em diferentes situações.
 
 
 
-                          "Memórias na Organização de Computadores"
+                            "Memórias na Organização de Computadores"
 
  As memórias desempenham um papel vital no funcionamento do computador, influenciando diretamente a rapidez e a 
 eficiência com que ele realiza suas tarefas. Se compararmos o computador a um escritório, as memórias serão as 
@@ -37,8 +37,8 @@ tenha acesso rápido às informações.
 muito rápido, e se não houvesse uma memória rápida para acompanhar esse ritmo, ele ficaria esperando, ocioso, sem 
 poder processar nada. As memórias funcionam como um sistema de suporte, mantendo dados à mão para que o 
 processador possa continuar executando suas funções sem interrupção. Isso é como ter tudo o que você precisa para 
-cozinhar já separado e organizado: com todos os ingredientes prontos, você consegue preparar uma receita de 
-maneira fluida, sem perder tempo procurando itens.
+cozinhar já separado e organizado e  com todos os ingredientes prontos,  assim você consegue preparar uma receita 
+de maneira fluida, sem perder tempo procurando itens.
 
  Além de organizar o acesso às informações, as memórias também influenciam a capacidade do computador de executar 
 múltiplas tarefas simultaneamente. Quando você abre diversos programas ao mesmo tempo, como um navegador, um 
