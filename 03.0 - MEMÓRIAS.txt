@@ -53,3 +53,29 @@ organização de computadores, as memórias são tão importantes quanto uma boa
 sem elas, o caos tomaria conta, e o funcionamento eficiente seria impossível. Assim, a memória garante que o 
 processador funcione em seu melhor potencial, mantendo o fluxo de dados organizado e acessível.
 
+
+
+
+                                    "Hierarquia de Memórias"
+
+ A  hierarquia de memória é uma estrutura que organiza os diferentes tipos de memória em um computador, levando em 
+conta velocidade, capacidade e custo. Ela permite que o sistema acesse dados de maneira eficiente, priorizando as 
+memórias mais rápidas para as informações que o processador precisa de imediato e utilizando as memórias mais 
+lentas para armazenamento de longo prazo. Essa organização é como uma pirâmide, com as memórias mais rápidas e 
+caras no topo, e as mais lentas e baratas na base.
+
+ No topo da situação, temos os registradores, que são as memórias mais rápidas e ficam dentro do processador, 
+acessando dados instantaneamente. Abaixo dos registradores, está a memória cache, que também é muito rápida e 
+ajuda o processador a acessar informações que ele usa com frequência, sem precisar buscar esses dados na memória 
+principal, que é mais lenta. Ambos são pequenos em capacidade, mas essenciais para manter o desempenho do sistema.
+
+ Descendo mais, encontramos a memória principal, a RAM, que tem uma capacidade maior que a cache, mas é um pouco 
+mais lenta. Ela armazena temporariamente os dados que o processador está usando no momento. Já os dispositivos de 
+armazenamento secundário, como HD e SSD, oferecem maior capacidade para armazenar dados permanentemente, mas são 
+mais lentos que a RAM, e são essenciais para armazenar programas, arquivos e o sistema operacional.
+
+ Por fim, na base da pirâmide estão os dispositivos de armazenamento externo, como pen drives e HD externos, que 
+têm capacidade ainda maior, mas são mais lentos. Eles são usados ​​principalmente para backups e transporte de 
+dados. A hierarquia de memória garante um equilíbrio entre desempenho e custo, otimizando o funcionamento do 
+sistema ao acessar dados de maneira eficiente.
+
