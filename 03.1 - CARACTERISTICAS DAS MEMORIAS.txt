@@ -465,4 +465,49 @@ longo do tempo, pode acabar se tornando mais alto do que as soluções locais.
 oferecendo uma solução mais barata em termos de capacidade de armazenamento. No entanto, a escolha do tipo de 
 memória deve sempre ser considerada não apenas o custo, mas também as necessidades de velocidade, confiabilidade e 
 acessibilidade. Portanto, é importante avaliar qual memória oferece o melhor equilíbrio entre preço e desempenho 
-para o seu uso específico.           
+para o seu uso específico.   
+
+
+
+                                        "Tamanho das Memórias"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+ O espaço de armazenamento de cada tipo de memória em um computador é essencial para determinar o desempenho e a 
+eficiência do sistema. Cada tipo de memória tem uma função específica, e o espaço disponível em cada uma delas 
+varia de acordo com a finalidade que ela atende. Desde as pequenas e rápidas memórias usadas pelo processador até 
+os grandes dispositivos de armazenamento de longo prazo, a organização e a capacidade de armazenamento de cada 
+tipo de memória são fundamentais para garantir que o computador funcione de forma otimizada.
+
+ As memórias são organizadas em uma hierarquia, e cada nível possui características diferentes em termos de 
+capacidade e velocidade. Algumas memórias têm capacidade muito limitada, mas são extremamente rápidas, enquanto 
+outras oferecem mais espaço, mas com um custo de desempenho.  Vamos explorar as principais memórias e a quantidade 
+de espaço que cada uma oferece, e como elas são utilizadas para o desempenho geral do sistema.
+
+ * Registradores: O espaço de armazenamento dos registradores é extremamente limitado, geralmente variando entre 
+  32 bits e 256 bits, dependendo da arquitetura do processador. Embora o espaço seja muito pequeno, os 
+  registradores são cruciais para a execução rápida de operações.
+
+
+ * Memória Cache: É maior que os registradores, mas ainda assim limitada, o espaço de armazenamento do cache varia 
+  de alguns kilobytes (KB) a megabytes (MB), sendo dividido em níveis (L1, L2 e L3), onde a L1 é a menor e mais 
+  rápida e a L3 é maior, mas mais lenta. Ela tem um papel fundamental na redução do tempo de acesso aos dados.
+
+
+ * Memória RAM: Ela tem uma capacidade muito maior que a dos registradores e cache, variando geralmente de 4 GB 
+  a 64 GB em computadores pessoais, podendo chegar a pacotes de terabytes em servidores de alto desempenho. A RAM 
+  é crucial para o desempenho multitarefa, já que permite que o processador acesse rapidamente uma grande 
+  quantidade de dados.
+
+ 
+ * HD e os SSD: O espaço de armazenamento dos HD pode variar de 500 GB a vários terabytes, tornando-os adequados 
+  para armazenar grandes volumes de dados, como sistemas operacionais, aplicativos, documentos e multimídia. 
+  Embora mais lentos que os SSD, os HD são mais acessíveis em termos de preço por gigabyte. Os SSD , por sua vez, 
+  são mais rápidos e oferecem um desempenho superior em termos de acesso aos dados, mas seu custo por gigabyte é 
+  maior. Eles geralmente variam de 120 GB a 4 TB, com unidades de maior capacidade aparecendo à medida que as 
+  tecnologias de memória evoluem.
+
+ Concluindo, cada tipo de memória em um computador desempenha um papel exclusivo em relação ao espaço de 
+armazenamento e à velocidade. Registradores e cache são muito rápidos, mas têm capacidade limitada, enquanto a RAM 
+oferece um espaço maior para armazenar dados temporariamente durante o processamento em tempo real. Já os HD e SSD 
+são usados ​​para armazenar grandes volumes de dados a longo prazo, com os SSD se destacando por sua maior 
+velocidade. A escolha entre esses tipos de memória depende das necessidades específicas do sistema, buscando um 
+equilíbrio entre capacidade de armazenamento e desempenho.             
