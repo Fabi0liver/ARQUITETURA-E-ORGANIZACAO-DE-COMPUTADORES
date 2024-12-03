@@ -347,7 +347,7 @@ utilizado de maneira estratégica para maximizar a eficiência de computadores e
 
 
 
-                                       "Desempenho das Memórias"
+                                     "Desempenho das Memórias"
 
  O desempenho das memórias do computador é um dos fatores mais cruciais que determinam a eficiência de um sistema. 
 Como as memórias são responsáveis ​​pelo armazenamento e recuperação de dados, o desempenho delas impacta 
@@ -430,4 +430,39 @@ transferência, escalabilidade e taxas de erros, é essencial para escolher o ti
 necessidades de cada sistema. Cada um desses fatores tem um impacto direto na eficiência e confiabilidade do 
 computador, e sua escolha pode melhorar consideravelmente o desempenho em tarefas específicas. Ao analisar esses 
 aspectos, podemos otimizar a experiência do usuário, escolher as memórias mais adequadas para o tipo de aplicação 
-desejada e garantir que o sistema opere de forma rápida, confiável e escalável.                 
+desejada e garantir que o sistema opere de forma rápida, confiável e escalável.      
+
+
+
+                                         "Custo das Memórias"                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+ O custo por bit das memórias é uma medida importante para entender a relação entre o preço de um dispositivo de 
+armazenamento e a quantidade de dados que ele consegue armazenar. Esse custo varia bastante dependendo do tipo de 
+memória, da tecnologia utilizada e da capacidade de armazenamento. De maneira simples, quanto menor o custo por 
+bit, mais eficiente o armazenamento é em termos de custo-benefício, permitindo que você armazene mais dados por um 
+preço mais baixo.
+
+ Memórias de semicondutores , como SSD e RAM, têm um custo por bit mais alto em comparação com as memórias 
+magnéticas. Isso ocorre porque as tecnologias que permitem altas velocidades de acesso e transferência de dados, 
+como memórias de estado sólido, envolvem custos de fabricação mais altos. Embora os SSD sejam muito mais rápidos e 
+específicos do que os discos rígidos, seu custo por bit é bem maior, o que pode torná-los menos acessíveis para 
+quem precisa de grandes capacidades de armazenamento a um preço mais baixo.
+
+ Por outro lado, memórias magnéticas , como os discos rígidos (HD), oferecem o custo por bit um pouco mais baixo. 
+Isso ocorre porque a tecnologia de armazenamento magnético é mais barata de produzir, especialmente quando se 
+trata de dispositivos de maior capacidade. HDs são ideais para armazenar grandes volumes de dados, como backups e 
+arquivos de mídia, onde a velocidade de acesso não é uma prioridade. Eles ainda dominam o mercado de armazenamento 
+de longo prazo devido à sua grande capacidade e ao baixo custo por bit.
+
+ Já as memórias ópticas e memórias em nuvem apresentam opções interessantes no custo por bit. Memórias ópticas, 
+como CDs e DVDs, têm um custo por bit relativamente baixo, mas sua velocidade de leitura e gravação limita sua 
+aplicação em cenários que necessitam o acesso rápido aos dados. Por outro lado, o custo por bit das memórias em 
+nuvem pode ser mais difícil de calcular, já que envolve não apenas o custo do armazenamento em si, mas também 
+taxas de acesso e largura de banda. Embora o armazenamento em nuvem seja escalável e flexível, o custo por bit, ao 
+longo do tempo, pode acabar se tornando mais alto do que as soluções locais.
+
+ Em resumo, o custo por bit das memórias depende do tipo de tecnologia utilizada, com as memórias magnéticas 
+oferecendo uma solução mais barata em termos de capacidade de armazenamento. No entanto, a escolha do tipo de 
+memória deve sempre ser considerada não apenas o custo, mas também as necessidades de velocidade, confiabilidade e 
+acessibilidade. Portanto, é importante avaliar qual memória oferece o melhor equilíbrio entre preço e desempenho 
+para o seu uso específico.           
