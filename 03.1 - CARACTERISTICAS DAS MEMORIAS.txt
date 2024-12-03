@@ -1,4 +1,4 @@
-                        Características das Memórias do Computador
+                              CARACTERÍSTICAS DAS MEMÓRIAS
                                                                                                                                                                                                                                        
   
  As memórias são elementos essenciais no funcionamento de um computador, desempenhando um papel fundamental na 
@@ -145,4 +145,56 @@ tarefas em tempo real e, ao mesmo tempo, salvar informações importantes para u
 Enquanto as memórias voláteis, como a RAM, são rápidas e eficientes para transferências temporárias, as memórias 
 não voláteis, como SSD e HD, garantem a segurança e a permanência dos dados. A combinação de ambos no computador é 
 fundamental para equilibrar agilidade e durabilidade, atendendo tanto às necessidades de desempenho em tempo real 
-quanto ao armazenamento seguro de informações importantes.     
+quanto ao armazenamento seguro de informações importantes.  
+
+
+
+                       "Estrutura de armazenamento das memórias"
+
+ As memórias de computador armazenam dados em unidades específicas, que variam em tamanho e formato, e são 
+organizadas de maneira a melhorar o acesso e o gerenciamento das informações. Para entender como as memórias 
+funcionam, é importante conhecer essas unidades de armazenamento, que formam uma base para o processamento de 
+dados em qualquer dispositivo. Cada uma dessas unidades tem uma capacidade de armazenamento definida e é 
+fundamental para a eficiência do sistema.
+
+ Essas unidades de armazenamento vão desde as menores, como o bit , até as maiores, como os blocos de memória 
+usados ​​em dispositivos de armazenamento como SSD e discos rígidos. Cada tipo de memória e sua capacidade 
+influenciam diretamente o desempenho do computador, e a forma como os dados são organizados nesses espaços 
+determinam a rapidez com que o processador pode acessar e manipular essas informações.
+
+ * Bit: É a unidade mais básica de informação em um computador. Ele pode ter apenas dois estados: 0 ou 1, 
+  representando as possibilidades binárias. Toda informação que processamos, desde textos até imagens e vídeos, é 
+  convertida em uma sequência de bits. Apesar de ser uma unidade mínima, é a base de todas as operações e é 
+  crucial para o funcionamento das memórias. Pensando em uma analogia simples, o bit é como uma chave que pode 
+  estar em uma das duas posições: ligada ou desligada.
+
+ * Byte: É composto por 8 bits e é a unidade de armazenamento mais comum. Ele é suficiente para representar uma 
+  única letra, número ou símbolo, como os que usamos em texto. O byte é usado para medir a quantidade de dados que 
+  podem ser armazenados em uma memória. Por exemplo, em um arquivo de texto simples, cada letra e espaço em branco 
+  serão armazenados em um ou mais bytes. Se o bit é a chave, o byte seria como uma caixa pequena onde podemos 
+  colocar até 8 chaves (bits) juntas.
+
+ * Word ou Palavra: É uma unidade de dados que pode ter tamanhos variados, geralmente entre 16 e 64 bits, 
+  dependendo da arquitetura do computador. Em sistemas mais antigos, uma palavra pode ser composta por 16 bits, 
+  mas em computadores modernos, ela é mais comumente composta por 32 ou 64 bits. A palavra é o tamanho ideal de 
+  dados que o processador manipula de uma vez, ou seja, ela define a quantidade de dados que podem ser processados ​​
+  em uma única operação. Para entender melhor, imagine que uma palavra seria como uma frase de tamanho fixo que o 
+  processador pode ler e processar de uma vez.
+
+ * Células: São a menor unidade de armazenamento dentro de uma memória específica, como a memória RAM ou os 
+  dispositivos de armazenamento. Cada célula pode armazenar um pouco de informação. No caso das memórias voláteis, 
+  como a RAM, as células são organizadas em uma matriz para formar grandes blocos de dados que podem ser acessados ​​
+  e alterados rapidamente. É como uma gaveta onde você pode guardar uma chave (bit) e, quando necessário, retirar 
+  ou colocar uma nova chave.
+
+ * Blocos de Memória: São unidades maiores que podem conter múltiplas células e são usados ​​em sistemas de 
+  armazenamento como SSD e HD. Eles organizam os dados de maneira mais eficiente, permitindo o armazenamento em 
+  larga escala. Nos SSD, por exemplo, o processo de escrita e leitura é feito por blocos, o que otimiza o 
+  desempenho ao acessar grandes quantidades de dados. Imagine os blocos como estantes de livros, onde cada estante 
+  (bloco) contém vários livros (células) com informações.
+
+ Compreender as unidades de armazenamento, como bits, bytes, palavras, células e blocos, é essencial para entender 
+como as memórias de computador funcionam e como os dados são organizados e acessados. Cada uma dessas unidades tem 
+um papel específico na estrutura do sistema, e a maneira como elas interagem determinam o desempenho do 
+computador. A capacidade de armazenamento de cada tipo de memória impacta diretamente na eficiência do sistema, 
+seja para realizar operações rápidas com a RAM, ou para armazenar grandes volumes de dados em SSD e HD.             
