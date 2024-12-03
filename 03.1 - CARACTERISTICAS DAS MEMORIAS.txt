@@ -1,0 +1,20 @@
+                        Características das Memórias do Computador
+                                                                                                                                                                                                                                       
+  
+ As memórias são elementos essenciais no funcionamento de um computador, desempenhando um papel fundamental na forma 
+como os dados são armazenados, acessados ​​e processados. Cada tipo de memória, seja ela volátil ou não volátil, 
+temporária ou permanente, foi projetada para atender a diferentes necessidades do sistema. Essas variações são o que 
+tornam possível realizar tarefas simples, como abrir um documento, até operações complexas, como rodar um jogo ou 
+processar grandes volumes de dados em tempo real.
+
+ O que torna as memórias tão interessantes é que elas não são apenas "caixas" para guardar informações. Elas têm 
+propriedades específicas, como velocidade, capacidade e volatilidade, que impactam diretamente o desempenho do 
+computador. Algumas memórias são extremamente rápidas, mas custam mais caro e têm menor capacidade, enquanto outras 
+oferecem espaço amplo, mas são mais lentas. Cada uma desempenha seu papel em uma execução bem adequada, garantindo 
+que os dados estejam sempre disponíveis para o engenheiro quando necessário, sem gastar recursos.
+
+ Além disso, as memórias do computador estão em constante evolução tecnológica, adaptando-se às demandas de um mundo 
+cada vez mais digital. Com novas tecnologias como memórias 3D NAND e SSD ultrarrápidos, elas estão ficando menores, 
+mais eficientes e mais rápidas, atendendo tanto às necessidades de dispositivos móveis quanto de supercomputadores. 
+Entender as características dessas memórias é como abrir a porta para compreender o coração e o cérebro de qualquer 
+sistema computacional.
