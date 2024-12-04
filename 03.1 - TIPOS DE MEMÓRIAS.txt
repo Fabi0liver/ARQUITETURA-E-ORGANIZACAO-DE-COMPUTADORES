@@ -499,26 +499,28 @@ eficiência do sistema.
 
 
 
-                            "Memória Terciária (ou Memória Externa)"
+                            "Memória Terciária ou Memória Externa"
 
- A memória terciária, também conhecida como memória externa, desempenha um papel fundamental na organização de computadores, especialmente quando se trata de armazenamento a longo prazo e em grande escala. Diferente da memória primária, como a RAM, que armazena dados temporários e é volátil, a memória terciária é não volátil, ou 
- seja, os dados permanecem armazenados mesmo quando o computador é desligado. Essa categoria de memória é usada 
- para armazenar grandes volumes de dados que não precisam ser acessados com tanta frequência e oferece uma solução 
- para armazenamentos que não caberiam na memória principal ou secundária.
+ A memória terciária, também conhecida como memória externa, desempenha um papel fundamental na organização de 
+computadores, especialmente quando se trata de armazenamento a longo prazo e em grande escala. Diferente da 
+memória primária, como a RAM, que armazena dados temporários e é volátil, a memória terciária é não volátil, ou 
+seja, os dados permanecem armazenados mesmo quando o computador é desligado. Essa categoria de memória é usada 
+para armazenar grandes volumes de dados que não precisam ser acessados com tanta frequência e oferece uma solução 
+para armazenamentos que não caberiam na memória principal ou secundária.
 
-  Seu principal objetivo é fornecer um local seguro para o armazenamento de dados importantes e backup, 
- especialmente em situações onde a confiabilidade é crítica e a capacidade de armazenamento precisa ser massiva. A 
- memória terciária é frequentemente utilizada em sistemas de arquivamento de longo prazo, backups e grandes bases 
- de dados corporativas, onde a recuperação rápida não é prioridade, mas a durabilidade e a segurança dos dados são 
- essenciais. Um exemplo clássico desse tipo de memória são as fitas magnéticas, que ainda são amplamente 
- utilizadas em grandes corporações para backups de dados em larga escala devido à sua durabilidade e capacidade.
+ Seu principal objetivo é fornecer um local seguro para o armazenamento de dados importantes e backup, 
+especialmente em situações onde a confiabilidade é crítica e a capacidade de armazenamento precisa ser massiva. A 
+memória terciária é frequentemente utilizada em sistemas de arquivamento de longo prazo, backups e grandes bases 
+de dados corporativas, onde a recuperação rápida não é prioridade, mas a durabilidade e a segurança dos dados são 
+essenciais. Um exemplo clássico desse tipo de memória são as fitas magnéticas, que ainda são amplamente utilizadas 
+em grandes corporações para backups de dados em larga escala devido à sua durabilidade e capacidade.
 
    Velocidade: Muito lenta
         Custo: Muito barato por GB
-   Capacidade: Enorme (petabytes ou mais)
+   Capacidade: Enorme (de GB a PB)
 
 
- - Como Funciona a Memória Terciária?
+ * Como Funciona a Memória Terciária?
 
    A memória terciária é geralmente conectada ao sistema de computadores de forma offline ou em unidades externas 
   que podem ser acessadas quando necessário. Seu processo de acesso aos dados é consideravelmente mais lento em 
@@ -533,25 +535,24 @@ eficiência do sistema.
   antigos, grandes coleções de mídia ou informações históricas.
 
 
- - Tipos de Memória Terciária:
+ * Tipos de Memória Terciária:
 
    Os tipos mais comuns de memória terciária incluem fitas magnéticas, discos ópticos (como CDs e DVDs), e até 
   mesmo algumas formas de armazenamento em nuvem, dependendo do uso. Cada tipo tem suas vantagens e desvantagens:
 
-     Fitoteca (Fitas Magnéticas:): As fitotecas são amplamente usadas em ambientes corporativos para o 
-                           arquivamento de grandes volumes de dados e backups de sistemas. Fitas magnéticas, 
-                           embora menos comuns em computadores pessoais, ainda são populares devido à sua 
-                           durabilidade e custo-benefício quando se trata de armazenar grandes quantidades de 
-                           dados. Uma única fita pode conter vários terabytes de dados, e as fitotecas permitem o 
-                           uso automático de várias fitas.
+    Fitas Magnéticas:  São amplamente usadas em ambientes corporativos para o arquivamento de grandes volumes de 
+                      dados e backups de sistemas. Fitas magnéticas, embora menos comuns em computadores pessoais, 
+                      ainda são populares devido à sua durabilidade e custo-benefício quando se trata de armazenar 
+                      grandes quantidades de dados. Uma única fita pode conter vários terabytes de dados, e as 
+                      fitas magnéticas permitem o uso automático de várias fitas.
 
-     Blu-ray Discs e DVDs: São formas comuns de armazenamento externo em que dados, filmes e backups são 
-                          armazenados. Eles são usados especialmente para guardar grandes volumes de dados por 
-                          períodos longos. Embora o uso doméstico tenha diminuído com o advento do armazenamento 
-                          na nuvem e de SSDs portáteis, eles ainda são usados em aplicações de longo prazo, devido 
-                          à sua durabilidade e baixo custo por gigabyte.
+    Blu-ray Discs e DVDs: São formas comuns de armazenamento externo em que dados, filmes e backups são 
+                         armazenados. Eles são usados especialmente para guardar grandes volumes de dados por 
+                         períodos longos. Embora o uso doméstico tenha diminuído com o advento do armazenamento na 
+                         nuvem e de SSD portáteis, eles ainda são usados em aplicações de longo prazo, devido à 
+                         sua durabilidade e baixo custo por gigabyte.
 
-     Pendrive (USB Flash Drives): É Um pendrive é um dispositivo portátil de armazenamento USB que se encaixa na 
+    Pendrive (USB Flash Drives):  Um pendrive é um dispositivo portátil de armazenamento USB que se encaixa na 
                                  categoria de memória terciária por ser uma forma prática de transportar dados de 
                                  um lugar para outro. Ele é ideal para backup de arquivos importantes, e seu uso é 
                                  frequente tanto em ambientes corporativos quanto pessoais. O pendrive tem uma 
@@ -560,28 +561,32 @@ eficiência do sistema.
                                  para transferir ou armazenar dados de longo prazo. Ele se destaca pela facilidade 
                                  de transporte e durabilidade em comparação com outros dispositivos externos.
 
-     Armazenamento em Nuvem: O armazenamento na nuvem se tornou uma opção popular de memória terciária. Ele 
-                            envolve o armazenamento de dados em servidores remotos acessados pela internet. Google 
-                            Drive, Dropbox, e iCloud são exemplos de serviços que permitem que os usuários 
-                            armazenem arquivos online, garantindo que os dados estejam acessíveis de qualquer 
-                            lugar, sem a necessidade de dispositivos físicos. No entanto, o acesso a esses dados 
-                            depende da disponibilidade de uma conexão de internet, e sua velocidade de recuperação 
-                            pode variar.
+    Armazenamento em Nuvem: O armazenamento na nuvem se tornou uma opção popular de memória terciária. Ele envolve 
+                           o armazenamento de dados em servidores remotos acessados pela internet. Google Drive, 
+                           Dropbox, e iCloud são exemplos de serviços que permitem que os usuários armazenem 
+                           arquivos online, garantindo que os dados estejam acessíveis de qualquer lugar, sem a 
+                           necessidade de dispositivos físicos. No entanto, o acesso a esses dados depende da 
+                           disponibilidade de uma conexão de internet, e sua velocidade de recuperação pode 
+                           variar.
 
-     Discos Rígidos Externos (HDDs e SSDs): São opções populares de memória terciária. Eles são usados para 
-                             armazenar backups de sistemas ou grandes coleções de dados, como vídeos e fotos. HDDs 
-                             externos oferecem grandes capacidades de armazenamento a preços acessíveis, enquanto 
-                             SSDs, embora mais caros, têm a vantagem de serem mais rápidos e duráveis. Ambos são 
-                             amplamente usados para expandir a capacidade de armazenamento de dispositivos como 
-                             laptops e desktops.
+    Discos Rígidos Externos (HDD e SSD): São opções populares de memória terciária. Eles são usados para armazenar 
+                                        backups de sistemas ou grandes coleções de dados, como vídeos e fotos. HDD 
+                                        externos oferecem grandes capacidades de armazenamento a preços 
+                                        acessíveis, enquanto SSD, embora mais caros, têm a vantagem de serem mais 
+                                        rápidos e duráveis. Ambos são amplamente usados para expandir a capacidade 
+                                        de armazenamento de dispositivos como laptops e desktops.
 
-     Cartões de Memória: Como os SD cards e microSDs, são outro tipo de memória terciária 
-                        frequentemente usado para armazenar dados de câmeras, smartphones e outros dispositivos 
-                        portáteis. Eles têm capacidades que variam de alguns gigabytes a mais de 1 terabyte e são 
-                        amplamente utilizados como uma solução portátil e econômica para guardar dados.
+    Cartões de Memória: Como os SD cards e microSDs, são outro tipo de memória terciária frequentemente usado para 
+                       armazenar dados de câmeras, smartphones e outros dispositivos portáteis. Eles têm 
+                       capacidades que variam de alguns gigabytes a mais de 1 terabyte e são amplamente utilizados 
+                       como uma solução portátil e econômica para guardar dados.
+
+   Esses tipos de memórias terciárias,  desempenham um papel crucial no armazenamento de grandes volumes de dados 
+  de forma segura e a longo prazo. Embora sejam mais lentas que as memórias primárias e secundárias, elas oferecem 
+ uma solução econômica e confiável para backup e arquivamento de informações importantes.
 
 
- - A Importância da Memória Terciária:
+ * A Importância da Memória Terciária:
 
    A memória terciária é fundamental para garantir que os dados armazenados por longos períodos possam ser 
   acessados de forma segura e organizada, sem sobrecarregar a memória principal ou secundária do sistema. Além 
@@ -595,62 +600,44 @@ eficiência do sistema.
   dados confidenciais por décadas.
 
 
- - A Relação entre a Memória Terciária e Outros Tipos de Memória:
+ Em resumo, a memória terciária desempenha um papel crucial no armazenamento de grandes volumes de dados a longo 
+prazo, oferecendo uma solução robusta e confiável para backups e arquivamento. Embora seja mais lenta do que a 
+memória primária e secundária, sua capacidade de armazenamento massivo e durabilidade compensam essa desvantagem 
+em aplicações que exigem confiabilidade acima de velocidade. Ela complementa a hierarquia de memória de um sistema 
+de computadores, garantindo que dados importantes possam ser armazenados de forma segura e recuperados conforme 
+necessário, sem comprometer o desempenho geral do sistema.
 
-   A memória terciária funciona em harmonia com a memória primária e secundária para garantir a eficiência de um 
-  sistema de computadores. Embora a memória primária, como a RAM, seja utilizada para o processamento imediato e 
-  rápido de dados e a memória secundária, como discos rígidos e SSDs, para armazenamento mais acessível e 
-  frequente, a memória terciária oferece um espaço dedicado para armazenamento de longo prazo. Isso ajuda a manter 
-  o sistema principal ágil e eficiente, sem sobrecarregar as memórias de acesso mais rápido com dados que não 
-  precisam de recuperação imediata.
-
-   Se pensarmos no fluxo de trabalho de um escritório, a memória terciária seria como o arquivo morto onde 
-  documentos antigos são mantidos. Eles são importantes, mas não precisam estar acessíveis no dia a dia, enquanto 
-  a RAM e o armazenamento secundário cuidam das tarefas cotidianas. Essa organização hierárquica da memória 
-  garante que o sistema opere de forma eficiente e organizada, evitando que dados desnecessários sobrecarreguem as 
-  operações de rotina.
-
-
- - Conclusão sobre a Memória Terciária:
-
-   Em resumo, a memória terciária desempenha um papel crucial no armazenamento de grandes volumes de dados a longo   
-  prazo, oferecendo uma solução robusta e confiável para backups e arquivamento. Embora seja mais lenta do que a 
- memória primária e secundária, sua capacidade de armazenamento massivo e durabilidade compensam essa desvantagem 
- em aplicações que exigem confiabilidade acima de velocidade. Ela complementa a hierarquia de memória de um 
- sistema de computadores, garantindo que dados importantes possam ser armazenados de forma segura e recuperados 
- conforme necessário, sem comprometer o desempenho geral do sistema.
-
-   Assim como uma empresa precisa de um arquivo para manter documentos históricos, a memória terciária oferece ao 
-  computador um "arquivo" de longo prazo, garantindo que mesmo dados antigos e raramente usados permaneçam seguros 
-  e acessíveis quando necessário.
+ Assim como uma empresa precisa de um arquivo para manter documentos históricos, a memória terciária oferece ao 
+computador um "arquivo" de longo prazo, garantindo que mesmo dados antigos e raramente usados permaneçam seguros e 
+acessíveis quando necessário.
 
 
 
-                                    "Memória ROM (Read-Only Memory)
+                                     "Memória ROM"
  
-  A memória ROM é um tipo de memória não volátil, essencial para o funcionamento dos computadores e dispositivos 
- eletrônicos. Ao contrário da RAM, a ROM não é usada para armazenar dados temporários, mas sim informações 
- permanentes que são fundamentais para o início e funcionamento correto de um sistema. Ela armazena instruções que 
- não precisam ser alteradas com frequência e que o sistema deve acessar sempre que é ligado, como o firmware ou o 
- BIOS, que são essenciais para iniciar o hardware e carregar o sistema operacional. Mesmo que o computador seja 
- desligado, as informações na ROM permanecem intactas, garantindo que o sistema saiba como se comportar na próxima 
- vez que for iniciado.
+ A memória ROM (Read-Only Memory) é um tipo de memória não volátil, essencial para o funcionamento dos 
+computadores e dispositivos eletrônicos. Ao contrário da RAM, a ROM não é usada para armazenar dados temporários, 
+mas sim informações permanentes que são fundamentais para o início e funcionamento correto de um sistema. Ela 
+armazena instruções que não precisam ser alteradas com frequência e que o sistema deve acessar sempre que é 
+ligado, como o firmware ou o BIOS, que são essenciais para iniciar o hardware e carregar o sistema operacional. 
+Mesmo que o computador seja desligado, as informações na ROM permanecem intactas, garantindo que o sistema saiba 
+como se comportar na próxima vez que for iniciado.
 
-  Por ser não volátil, a ROM mantém os dados armazenados mesmo sem energia elétrica, o que a torna perfeita para 
- armazenar códigos e instruções que o sistema precisa acessar de forma imutável. Diferente da memória RAM, que é 
- volátil e perde seus dados quando o sistema é desligado, a ROM atua como uma base estável e confiável para o 
- sistema funcionar. Sua principal função é garantir que o computador tenha as instruções básicas necessárias para 
- inicializar o hardware e carregar o sistema operacional no momento da inicialização.
+ Por ser não volátil, a ROM mantém os dados armazenados mesmo sem energia elétrica, o que a torna perfeita para 
+armazenar códigos e instruções que o sistema precisa acessar de forma imutável. Diferente da memória RAM, que é 
+volátil e perde seus dados quando o sistema é desligado, a ROM atua como uma base estável e confiável para o 
+sistema funcionar. Sua principal função é garantir que o computador tenha as instruções básicas necessárias para 
+inicializar o hardware e carregar o sistema operacional no momento da inicialização.
 
 
- - Como a ROM funciona?
+ * Como a ROM funciona?
 
    Quando o computador é ligado, o processador imediatamente consulta a ROM para acessar as instruções que dizem 
   ao sistema como inicializar. A ROM contém informações essenciais, como os testes de hardware, para garantir que 
   os componentes, como o processador, a memória e os dispositivos periféricos, estejam funcionando corretamente. 
-  Ela também direciona o sistema para localizar o sistema operacional e começar o processo de carregamento. Assim, 
-  enquanto a RAM é fundamental para o desempenho em tempo real, a ROM é crucial para garantir que o computador 
-  possa iniciar e funcionar corretamente desde o momento em que é ligado.
+  Ela também orienta o computador para localizar o sistema operacional e iniciar o processo. Assim, enquanto a RAM 
+  é fundamental para o desempenho em tempo real, a ROM é crucial para garantir que o computador possa iniciar e 
+  funcionar corretamente desde o momento em que é ligado.
 
    A ROM pode ser comparada a um manual de instruções escrito em pedra. Assim como um livro físico contém as 
   regras e diretrizes que precisam ser seguidas sempre que você usa um dispositivo, a ROM contém o conjunto de 
@@ -658,50 +645,50 @@ eficiência do sistema.
   armazenadas de forma permanente, o sistema ficaria sem direção e incapaz de iniciar.
 
 
- - Tipos de ROM:
+ * Tipos de ROM:
 
    Assim como a RAM, a ROM também passou por diversas evoluções ao longo do tempo. Inicialmente, a ROM era 
   totalmente imutável após ser fabricada. No entanto, com o avanço da tecnologia, surgiram versões programáveis e 
   regraváveis. Os tipos mais comuns incluem:
 
-     PROM (Programmable Read-Only Memory): Uma forma de ROM que pode ser programada uma única vez após a 
-                                          fabricação. Uma vez programada, as informações não podem ser alteradas.
+    PROM (Programmable Read-Only Memory): Uma forma de ROM que pode ser programada uma única vez após a 
+                                   fabricação. Uma vez programada, as informações não podem ser alteradas.
 
-     EPROM (Erasable Programmable Read-Only Memory): Uma versão que pode ser apagada e reprogramada, utilizando 
-                                          luz ultravioleta. Isso permite que as informações sejam atualizadas, mas 
-                                          requer um processo especial para isso.
+    EPROM (Erasable Programmable Read-Only Memory): Uma versão que pode ser apagada e reprogramada, utilizando 
+                                   luz ultravioleta. Isso permite que as informações sejam atualizadas, mas requer 
+                                   um processo especial para isso.
 
-     EEPROM (Electrically Erasable Programmable Read-Only Memory): Semelhante à EPROM, mas pode ser apagada e 
-                                          reprogramada eletricamente. Isso permite que as informações sejam 
-                                          atualizadas sem a necessidade de um processo físico, tornando-a mais 
-                                          prática para algumas aplicações.
+    EEPROM (Electrically Erasable Programmable Read-Only Memory ) : Semelhante à EPROM, mas pode ser apagada e 
+                                   reprogramada eletricamente. Isso permite que as informações sejam atualizadas 
+                                   sem a necessidade de um processo físico, tornando-a mais prática para algumas 
+                                   aplicações.
 
-     Flash Memory: Uma forma avançada de EEPROM que permite que grandes quantidades de dados sejam apagadas e 
-                                          reprogramadas rapidamente, sendo amplamente utilizada em dispositivos de 
-                                          armazenamento como USBs e SSDs.
+    Flash Memory: Uma forma avançada de EEPROM que permite que grandes quantidades de dados sejam apagadas e 
+                  reprogramadas rapidamente, sendo amplamente utilizada em dispositivos de armazenamento como USB 
+                  e SSD.
 
-   Cada tipo de ROM tem suas aplicações específicas e características que a tornam adequada para determinadas 
-  funções dentro de um sistema de computação. Mesmo com essas inovações, a ROM mantém seu papel fundamental de 
-  armazenar informações que o sistema precisa acessar sempre da mesma forma, garantindo consistência e 
-  confiabilidade em seu funcionamento. Diferente da RAM, que foca em velocidade e capacidade temporária, a ROM 
-  prioriza a estabilidade e a permanência dos dados.
+ Cada tipo de ROM tem suas aplicações específicas e características que a tornam adequada para determinadas 
+funções dentro de um sistema de computação. Mesmo com essas inovações, a ROM mantém seu papel fundamental de 
+armazenar informações que o sistema precisa acessar sempre da mesma forma, garantindo consistência e 
+confiabilidade em seu funcionamento. Diferente da RAM, que foca em velocidade e capacidade temporária, a ROM 
+prioriza a estabilidade e a permanência dos dados.
 
 
- - Capacidade e importância da ROM:
+ * Capacidade e importância da ROM:
 
    A quantidade de ROM necessária em um sistema depende da quantidade de dados que precisam ser armazenados 
   permanentemente. Em geral, a ROM é menor em termos de capacidade comparada à RAM ou à memória de armazenamento 
   secundário, pois seu foco está em guardar apenas as instruções essenciais. Para usuários casuais, a ROM é 
   invisível no dia a dia, mas seu papel é absolutamente crucial para o funcionamento de qualquer dispositivo.
-
+ 
    Sem a ROM, o sistema não saberia como iniciar, e não seria possível carregar o sistema operacional ou realizar 
   testes críticos no hardware ao ligar o dispositivo. É como uma fundação em um edifício: invisível durante o uso 
   diário, mas absolutamente essencial para que tudo funcione corretamente.
 
 
- - A importância da ROM no desempenho e organização de computadores:
+ * A importância da ROM no desempenho:
 
-   Embora a ROM não esteja diretamente ligada à velocidade ou desempenho do computador durante o uso diário, seu  
+   Embora a ROM não esteja diretamente ligada à velocidade ou desempenho do computador durante o uso diário, seu 
   papel na organização do sistema é inegável. Sem ela, o computador não poderia realizar a sequência de 
   inicialização, e o processador ficaria "perdido", sem saber quais instruções executar. A ROM serve como uma base 
   sólida e confiável, garantindo que o sistema sempre tenha as instruções que precisa desde o momento em que é 
@@ -712,14 +699,13 @@ eficiência do sistema.
   funcionais e atualizados sem a necessidade de substituições físicas.
 
 
- - Conclusão sobre a Memória ROM:
+ Em resumo, a ROM é um componente vital para o funcionamento correto de qualquer computador ou dispositivo 
+eletrônico. Enquanto a RAM é responsável por fornecer velocidade e desempenho em tempo real, a ROM garante que o 
+sistema tenha uma base estável de instruções para iniciar e operar corretamente. Seu papel na inicialização e na 
+permanência das informações torna a ROM um dos pilares essenciais para garantir que o sistema funcione sem 
+problemas, mesmo após ser desligado ou reiniciado.
 
-   Em resumo, a ROM é um componente vital para o funcionamento correto de qualquer computador ou dispositivo 
-  eletrônico. Enquanto a RAM é responsável por fornecer velocidade e desempenho em tempo real, a ROM garante que o 
-  sistema tenha uma base estável de instruções para iniciar e operar corretamente. Seu papel na inicialização e na 
-  permanência das informações torna a ROM um dos pilares essenciais para garantir que o sistema funcione sem 
-  problemas, mesmo após ser desligado ou reiniciado.
+ Assim como as fundações de um edifício, a ROM é algo que você raramente vê em ação, mas sem a qual o sistema não 
+poderia operar. Ela mantém as instruções críticas seguras e sempre acessíveis, permitindo que o hardware e o 
+software funcionem harmoniosamente desde o primeiro momento em que o computador é ligado.
 
-   Assim como as fundações de um edifício, a ROM é algo que você raramente vê em ação, mas sem a qual o sistema 
-  não poderia operar. Ela mantém as instruções críticas seguras e sempre acessíveis, permitindo que o hardware e o 
-  software funcionem harmoniosamente desde o primeiro momento em que o computador é ligado.
