@@ -709,3 +709,22 @@ problemas, mesmo após ser desligado ou reiniciado.
 poderia operar. Ela mantém as instruções críticas seguras e sempre acessíveis, permitindo que o hardware e o 
 software funcionem harmoniosamente desde o primeiro momento em que o computador é ligado.
 
+
+
+                                              "Conclusão"
+ 
+ Os tipos de memória de um computador são essenciais para o seu funcionamento eficiente e equilibrado. Cada tipo 
+tem uma função específica e se destaca em diferentes áreas, como velocidade, capacidade e permanência dos dados. 
+Desde as memórias mais rápidas, como o cache e a RAM, até as memórias de armazenamento mais seguras, como os SSD e 
+HD, cada uma delas contribui para o desempenho geral do sistema.
+
+ A interação entre essas memórias, trabalhando juntas de forma coordenada, permite que o computador atenda a 
+diversas necessidades de processamento de dados. As memórias mais rápidas garantem que o processador tenha acesso 
+imediato às informações mais usadas, enquanto as memórias de longo prazo armazenam dados importantes, garantindo 
+que nada seja perdido quando o computador for desligado. A chave para um desempenho eficaz é o  equilíbrio que há 
+entre essas memórias, aproveitando o que cada uma tem de melhor.
+
+ Entender como as memórias funcionam e a interação entre elas,  pode ajudar a tomar decisões mais informadas na 
+hora de escolher ou atualizar componentes de um computador. Seja em um dispositivo de uso pessoal, como um laptop, 
+ou em um servidor de grande porte, a combinação de certos tipos de memória pode otimizar o desempenho e garantir 
+que as necessidades de processamento e armazenamento sejam atendidas de forma eficiente e econômica.
