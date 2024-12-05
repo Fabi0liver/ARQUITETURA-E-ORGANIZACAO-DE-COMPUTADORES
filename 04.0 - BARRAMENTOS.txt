@@ -4,7 +4,7 @@
  Em um computador, há diversos componentes trabalhando juntos para realizar as tarefas que vemos na tela. Esses 
 componentes, como o processador, a memória e os dispositivos de armazenamento, não funcionam de forma isolada, mas 
 estão constantemente trocando informações entre si. Para que essa troca de dados ocorra de maneira eficiente, é 
-necessário um sistema de comunicação bem organizado. É nesse cenário que ambos os barramentos são responsáveis ​​por 
+necessário um sistema de comunicação bem organizado. É nesse cenário que os barramentos são responsáveis ​​por 
 conectar esses componentes e permitir a comunicação entre eles.
 
  Podemos imaginar um barramento como uma grande estrada dentro do computador, por onde "carros" (os dados) viajam 
@@ -31,15 +31,16 @@ eficiente for esse sistema, melhor será o desempenho geral do computador.
 
 
 
-                                     "Largura e Velocidade dos Barramento"
+                                     "Largura e Velocidade dos Barramentos"
 
  A largura e a velocidade dos barramentos são dois fatores essenciais que influenciam diretamente o desempenho de 
-qualquer computador. Podemos imaginar o barramento como uma "rodovia digital", onde os dados, endereços e sinais 
-de controle são os veículos que trafegam por ela. Quanto mais "faixas" essa rodovia tiver (largura do barramento) 
-e quanto mais rápido os veículos podem se mover (velocidade do barramento), maior será a eficiência da comunicação 
-entre as diferentes partes do sistema, como processadores, memórias e dispositivos de entrada/saída. Esses fatores 
-determinam a rapidez com que as informações são trocadas, o que impacta o desempenho em tarefas simples do dia a 
-dia até em processos mais complexos e exigentes, como edições de vídeo, jogos e simulações.
+qualquer computador. Podemos imaginar o barramentos como uma "rodovia digital", onde os dados, endereços e sinais 
+de controle são os veículos que trafegam por ela. Quanto mais "faixas" essa rodovia tiver (largura dos 
+barramentos) e quanto mais rápido os veículos podem se mover (velocidade dos barramentos), maior será a eficiência 
+da comunicação entre as diferentes partes do sistema, como processadores, memórias e dispositivos de 
+entrada/saída. Esses fatores determinam a rapidez com que as informações são trocadas, o que impacta o desempenho 
+em tarefas simples do dia a dia até em processos mais complexos e exigentes, como edições de vídeo, jogos e 
+simulações.
 
  No entanto, a importância da largura e da velocidade vai muito além de apenas "velocidade bruta". Esses elementos 
 também influenciam a forma como um sistema de computação lida com o volume de dados em trânsito, e a escolha 
@@ -297,14 +298,12 @@ comunicação entre os componentes.
     barramento de dados se torna um fator crucial para garantir que o computador funcione de maneira otimizada.
 
 
-   - Conclusão:
-
-     Em resumo, o barramento de dados é uma parte vital da arquitetura do computador, responsável pela 
-    transferência de informações entre os componentes do sistema. A largura e a velocidade do barramento 
-    influenciam diretamente a eficiência do sistema, enquanto a sua organização e funcionalidade garantem uma 
-    comunicação fluida e coordenada. À medida que a tecnologia avança e as demandas de processamento aumentam, 
-    entender o funcionamento e a importância do barramento de dados torna-se cada vez mais essencial para otimizar 
-    o desempenho dos computadores modernos.
+    Em resumo, o barramento de dados é uma parte vital da arquitetura do computador, responsável pela 
+  transferência de informações entre os componentes do sistema. A largura e a velocidade do barramento influenciam  
+  diretamente a eficiência do sistema, enquanto a sua organização e funcionalidade garantem uma comunicação fluida   
+  e coordenada. À medida que a tecnologia avança e as demandas de processamento aumentam, entender o funcionamento 
+  e a importância do barramento de dados torna-se cada vez mais essencial para otimizar o desempenho dos 
+  computadores modernos.
 
 
 
