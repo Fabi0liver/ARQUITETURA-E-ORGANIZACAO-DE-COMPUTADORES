@@ -637,14 +637,13 @@ comunicação entre os componentes.
     computadores.
  
 
-   - Conclusão:
 
-     Em conclusão, o barramento de entrada e saída desempenha um papel fundamental na arquitetura dos 
-    computadores, facilitando a comunicação entre o processador e os dispositivos periféricos. Através de 
-    diferentes tipos de barramentos, a troca de dados é realizada de forma eficiente, permitindo que os usuários 
-    interajam com o sistema de maneira fluida. Compreender o funcionamento, largura e velocidade do barramento de 
-    E/S é essencial para apreciar como os computadores operam e como a tecnologia continua a evoluir para atender 
-    às crescentes demandas de desempenho e interatividade.
+    Em conclusão, o barramento de entrada e saída desempenha um papel fundamental na arquitetura dos computadores, 
+   facilitando a comunicação entre o processador e os dispositivos periféricos. Através de diferentes tipos de 
+   barramentos, a troca de dados é realizada de forma eficiente, permitindo que os usuários interajam com o 
+   sistema de maneira fluida. Compreender o funcionamento, largura e velocidade do barramento de E/S é essencial 
+   para apreciar como os computadores operam e como a tecnologia continua a evoluir para atender às crescentes 
+   demandas de desempenho e interatividade.
 
 
  
@@ -746,7 +745,7 @@ computacionais.
   diversas aplicações em tecnologia.
 
 
- Conclusão Sobre os Barramentos Síncronos e Assíncronos: 
+Conclusão Sobre os Barramentos Síncronos e Assíncronos: 
 
  Escolher entre barramentos síncronos e assíncronos é uma decisão fundamental que depende das necessidades   
 específicas de cada sistema, assim como decidir entre um trem de alta velocidade ou uma van confortável para uma 
