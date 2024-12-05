@@ -7,11 +7,12 @@ estão constantemente trocando informações entre si. Para que essa troca de da
 necessário um sistema de comunicação bem organizado. É nesse cenário que ambos os barramentos são responsáveis ​​por 
 conectar esses componentes e permitir a comunicação entre eles.
 
- Podemos imaginar um barramento como uma grande estrada dentro do computador, por onde "carros" (os dados) viajam de 
-um ponto a outro, levando informações entre as diferentes partes. Assim como em uma cidade, onde as vias precisam 
-ser bem projetadas para evitar congestionamentos, os barramentos do computador também devem ser eficientes para 
-garantir que as informações fluam rapidamente e sem interrupções. Quando essa "estrada" está congestionada ou mal 
-projetada, o sistema como um todo fica lento, pois os dados não fornecem chegar ao destino a tempo.
+ Podemos imaginar um barramento como uma grande estrada dentro do computador, por onde "carros" (os dados) viajam 
+de um ponto a outro, levando informações entre as diferentes partes. Assim como em uma cidade, onde as vias 
+precisam ser bem projetadas para evitar congestionamentos, os barramentos do computador também devem ser 
+eficientes para garantir que as informações fluam rapidamente e sem interrupções. Quando essa "estrada" está 
+congestionada ou mal projetada, o sistema como um todo fica lento, pois os dados não fornecem chegar ao destino a 
+tempo.
 
  Essa comunicação é vital para o funcionamento do computador. O processador, por exemplo, precisa acessar dados 
 armazenados na memória, buscar instruções e enviar comandos para os dispositivos de saída, como a tela ou o disco 
@@ -19,8 +20,8 @@ rígido. Sem uma "via de acesso" organizada entre esses componentes, o processad
 dados, ou que impactaria diretamente o desempenho do sistema.
 
  No entanto, os barramentos não são apenas caminhos para os dados. Eles também controlam como e quando essa 
-comunicação deve ocorrer. Assim como em uma cidade, onde há semáforos e sinais para organizar o fluxo de tráfego, os 
-barramentos possuem mecanismos que regulam quem pode enviar ou receber informações em determinado momento. Isso 
+comunicação deve ocorrer. Assim como em uma cidade, onde há semáforos e sinais para organizar o fluxo de tráfego, 
+os barramentos possuem mecanismos que regulam quem pode enviar ou receber informações em determinado momento. Isso 
 evita que haja colisões de dados, ou que seja como um "acidente" dentro do sistema, resultando em erros ou falhas.
 
  Portanto, entender o papel dos barramentos em um computador é crucial para compreender como os componentes 
