@@ -210,7 +210,7 @@ comunicação entre os componentes.
 
    A seguir, alguns exemplos de barramentos que atuam especificamente na transmissão de dados:
 
-     - Barramento de Dados de 32 bits (ou 64 bits): Esse tipo de barramento é frequentemente utilizado em sistemas 
+     - Barramento de Dados de 32 bits ou 64 bits: Esse tipo de barramento é frequentemente utilizado em sistemas 
       mais antigos, onde a largura do barramento é fixa. Barramentos de 32 bits ou 64 bits são projetados para 
       transferir dados em blocos de 32 ou 64 bits, respectivamente. Eles são dedicados exclusivamente à 
       transferência de dados entre a CPU e a memória RAM.
@@ -431,7 +431,7 @@ comunicação entre os componentes.
 
      - Barramento de Controle da CPU: Esse barramento é utilizado internamente dentro do processador para 
       gerenciar suas operações. Ele é responsável por enviar sinais de controle para diferentes partes do 
-      processador, como unidades aritméticas e lógicas (ALUs) e registros.
+      processador, como unidades aritméticas e lógicas (ALU) e registros.
 
        Função: Coordena operações dentro da CPU, como a execução de instruções e a movimentação de dados entre 
               registros.
