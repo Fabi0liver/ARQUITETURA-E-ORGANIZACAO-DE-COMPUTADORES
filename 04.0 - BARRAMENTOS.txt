@@ -66,8 +66,8 @@ diretamente o funcionamento dos computadores.
 
  - Velocidade dos Barramentos:
 
-   A velocidade do barramento, por outro lado, se refere à quantidade de ciclos que o barramento pode completar em 
-  um segundo, sendo medida em Hertz (Hz). Voltando à nossa analogia da rodovia, essa velocidade seria como a 
+   A velocidade dos barramentos, por outro lado, se refere à quantidade de ciclos que o barramento pode completar 
+  em um segundo, sendo medida em Hertz (Hz). Voltando à nossa analogia da rodovia, essa velocidade seria como a 
   velocidade máxima permitida para os veículos. Um barramento que opera a 100 MHz pode realizar 100 milhões de 
   ciclos por segundo, enquanto um barramento de 200 MHz pode realizar o dobro disso.
 
@@ -268,11 +268,11 @@ comunicação entre os componentes.
                        comparação com métodos mais antigos.
 
 
-   Embora muitos barramentos possam desempenhar múltiplas funções em um sistema de computador, os barramentos de 
-  dados que discutimos são exemplos específicos projetados para transferir dados de forma eficiente em suas 
-  respectivas áreas. Esses barramentos ajudam a otimizar a comunicação entre componentes, garantindo que os dados 
-  sejam transmitidos de maneira rápida e eficaz, atendendo às necessidades de desempenho das diversas aplicações e 
-  dispositivos conectados.
+    Embora muitos barramentos possam desempenhar múltiplas funções em um sistema de computador, os barramentos de 
+   dados que discutimos são exemplos específicos projetados para transferir dados de forma eficiente em suas 
+   respectivas áreas. Esses barramentos ajudam a otimizar a comunicação entre componentes, garantindo que os dados 
+   sejam transmitidos de maneira rápida e eficaz, atendendo às necessidades de desempenho das diversas aplicações 
+   e dispositivos conectados.
     
 
    - Como os barramentos de dados Funcionam?
@@ -371,11 +371,11 @@ comunicação entre os componentes.
                   endereçamento.
 
 
-   Os barramentos de endereço desempenham um papel crucial na arquitetura de sistemas de computação, permitindo   
-  que a CPU acesse e interaja com a memória e dispositivos periféricos de maneira organizada e eficiente. Embora   
-  haja uma interconexão entre barramentos de endereço, dados e controle em muitos sistemas, os barramentos de  
-  endereço mencionados acima são especializados e focados exclusivamente em gerenciar informações de 
-  endereçamento, garantindo que cada parte do sistema funcione de forma harmônica e eficaz.
+    Os barramentos de endereço desempenham um papel crucial na arquitetura de sistemas de computação, permitindo   
+   que a CPU acesse e interaja com a memória e dispositivos periféricos de maneira organizada e eficiente. Embora   
+   haja uma interconexão entre barramentos de endereço, dados e controle em muitos sistemas, os barramentos de  
+   endereço mencionados acima são especializados e focados exclusivamente em gerenciar informações de 
+   endereçamento, garantindo que cada parte do sistema funcione de forma harmônica e eficaz.
 
 
    - Como o Barramento de Endereço Funciona:
@@ -403,14 +403,12 @@ comunicação entre os componentes.
     insatisfatória.
 
 
-   - Conclusão:
-
-     Em resumo, o barramento de endereço desempenha um papel essencial na arquitetura dos computadores, 
-    facilitando a comunicação entre o processador e a memória. Sua funcionalidade e eficácia são fundamentais para 
-    garantir que os dados sejam acessados de maneira organizada e rápida. Compreender o funcionamento, a largura, 
-    a velocidade e a importância do barramento de endereço é crucial para entender como os sistemas de computação 
-    operam de forma otimizada, especialmente à medida que a demanda por processamento de dados continua a crescer 
-    em um mundo cada vez mais digital.
+    Em resumo, o barramento de endereço desempenha um papel essencial na arquitetura dos computadores, facilitando 
+   a comunicação entre o processador e a memória. Sua funcionalidade e eficácia são fundamentais para garantir que 
+   os dados sejam acessados de maneira organizada e rápida. Compreender o funcionamento, a largura, a velocidade e 
+   a importância do barramento de endereço é crucial para entender como os sistemas de computação operam de forma 
+   otimizada, especialmente à medida que a demanda por processamento de dados continua a crescer em um mundo cada 
+   vez mais digital.
  
 
 
@@ -497,12 +495,12 @@ comunicação entre os componentes.
                      dados ou endereços.
 
 
-   Os barramentos de controle são essenciais para o funcionamento organizado e eficiente de um sistema de 
-  computação. Eles garantem que as operações sejam gerenciadas corretamente, permitindo que diferentes componentes 
-  se comuniquem e operem em harmonia. Embora muitos barramentos integrem funções de controle com dados e 
-  endereços, os exemplos acima mostram como existem barramentos que são exclusivamente dedicados ao controle. 
-  Esses barramentos são fundamentais para otimizar a performance do sistema, gerenciar interrupções e permitir a 
-  comunicação eficiente entre a CPU e a memória, além de facilitar o uso de dispositivos periféricos.
+    Os barramentos de controle são essenciais para o funcionamento organizado e eficiente de um sistema de 
+   computação. Eles garantem que as operações sejam gerenciadas corretamente, permitindo que diferentes 
+   componentes se comuniquem e operem em harmonia. Embora muitos barramentos integrem funções de controle com 
+   dados e endereços, os exemplos acima mostram como existem barramentos que são exclusivamente dedicados ao 
+   controle. Esses barramentos são fundamentais para otimizar a performance do sistema, gerenciar interrupções e 
+   permitir a comunicação eficiente entre a CPU e a memória, além de facilitar o uso de dispositivos periféricos.
 
 
    - Como os Barramento de Controle Funcionam?
@@ -530,14 +528,14 @@ comunicação entre os componentes.
     do sistema funcionem de maneira integrada e sincronizada, permitindo um desempenho otimizado.
 
 
-   - Conclusão:
 
-     Em suma, o barramento de controle desempenha um papel essencial na arquitetura dos computadores, garantindo 
-    que as operações entre os componentes do sistema sejam coordenadas e eficientes. Sua funcionalidade, largura e 
-    velocidade são fundamentais para o desempenho geral do sistema, permitindo que o processador se comunique 
-    efetivamente com a memória e os dispositivos. À medida que a tecnologia avança e os sistemas se tornam mais 
-    complexos, a importância do barramento de controle se torna ainda mais evidente, sendo crucial para o 
-    funcionamento harmonioso e eficaz dos computadores modernos.
+
+    Em suma, o barramento de controle desempenha um papel essencial na arquitetura dos computadores, garantindo 
+   que as operações entre os componentes do sistema sejam coordenadas e eficientes. Sua funcionalidade, largura e  
+   velocidade são fundamentais para o desempenho geral do sistema, permitindo que o processador se comunique 
+   efetivamente com a memória e os dispositivos. À medida que a tecnologia avança e os sistemas se tornam mais 
+   complexos, a importância do barramento de controle se torna ainda mais evidente, sendo crucial para o 
+   funcionamento harmonioso e eficaz dos computadores modernos.
 
 
 
@@ -609,11 +607,11 @@ comunicação entre os componentes.
        Comunicação: É um protocolo assíncrono, permitindo comunicação bidirecional.
 
 
-   Os barramentos de entrada e saída desempenham um papel crucial na interconexão de dispositivos periféricos e na 
-  comunicação entre eles e o processador. Barramentos como I2C, SPI, CAN, UART e RS-232 são exemplos de protocolos 
-  que foram projetados especificamente para essas funções, cada um com características e aplicações específicas. 
-  Compreender esses barramentos é fundamental para o desenvolvimento e a integração de sistemas eletrônicos e 
-  embarcados, permitindo que dispositivos diferentes se comuniquem de maneira eficiente e eficaz.
+    Os barramentos de entrada e saída desempenham um papel crucial na interconexão de dispositivos periféricos e 
+   na comunicação entre eles e o processador. Barramentos como I2C, SPI, CAN, UART e RS-232 são exemplos de 
+   protocolos que foram projetados especificamente para essas funções, cada um com características e aplicações 
+   específicas. Compreender esses barramentos é fundamental para o desenvolvimento e a integração de sistemas  
+   eletrônicos e embarcados, permitindo que dispositivos diferentes se comuniquem de maneira eficiente e eficaz.
 
 
    - Como o Barramento de Entrada e Saída Funciona:
