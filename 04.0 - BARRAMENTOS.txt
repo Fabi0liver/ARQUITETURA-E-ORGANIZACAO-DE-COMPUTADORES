@@ -745,13 +745,11 @@ computacionais.
   diversas aplicações em tecnologia.
 
 
-Conclusão Sobre os Barramentos Síncronos e Assíncronos: 
-
- Escolher entre barramentos síncronos e assíncronos é uma decisão fundamental que depende das necessidades   
-específicas de cada sistema, assim como decidir entre um trem de alta velocidade ou uma van confortável para uma 
-viagem. Os barramentos síncronos, com sua capacidade de operar em altas velocidades e precisão, são como um trem 
-que segue rigorosamente seu cronograma, tornando-os ideais para aplicações que exigem transferências rápidas e 
-confiáveis de dados, como em jogos de alta definição ou processamento gráfico.
+ Em suma, escolher entre barramentos síncronos e assíncronos é uma decisão fundamental que depende das 
+necessidades específicas de cada sistema, assim como decidir entre um trem de alta velocidade ou uma van 
+confortável para uma viagem. Os barramentos síncronos, com sua capacidade de operar em altas velocidades e 
+precisão, são como um trem que segue rigorosamente seu cronograma, tornando-os ideais para aplicações que exigem 
+transferências rápidas e confiáveis de dados, como em jogos de alta definição ou processamento gráfico.
 
  Por outro lado, os barramentos assíncronos oferecem flexibilidade e simplicidade, semelhantes a uma van que se 
 adapta ao ritmo de seus passageiros, sendo mais adequados para sistemas que não necessitam de uma comunicação 
