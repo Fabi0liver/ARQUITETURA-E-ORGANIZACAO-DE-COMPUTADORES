@@ -1,9 +1,24 @@
                                      HIERARQUIA DE MEMÓRIAS
 
- A hierarquia  de memória é uma estratégia que organiza diferentes tipos de memória em um computador com base em três fatores principais: velocidade, capacidade e custo. Essa organização permite que o sistema funcione de forma eficiente, acessando os dados mais importantes com rapidez enquanto armazena informações menos urgentes em memórias mais econômicas. É uma maneira de equilibrar desempenho e custo, aproveitando o melhor de cada tipo de memória.
+ A hierarquia  de memória é uma estratégia que organiza diferentes tipos de memória em um computador com base em três 
+fatores principais: velocidade, capacidade e custo. Essa organização permite que o sistema funcione de forma 
+eficiente, acessando os dados mais importantes com rapidez enquanto armazena informações menos urgentes em memórias 
+mais econômicas. É uma maneira de equilibrar desempenho e custo, aproveitando o melhor de cada tipo de memória.
 
-Imagine um escritório bem organizado. Os itens mais usados, como uma caneta e um bloco de notas, estão na sua mesa, ao alcance da mão, para que você os acesse imediatamente. Já arquivos importantes, mas que não são usados ​​com tanta frequência, ficam guardados em um armário próximo. E documentos antigos ou recentemente consultados vão para um depósito mais distante. O hierarquia  de memória funciona de maneira semelhante, priorizando o acesso rápido às informações mais críticas e relegando dados menos necessários para áreas de armazenamento mais lentas e amplas.
+ Imagine um escritório bem organizado. Os itens mais usados, como uma caneta e um bloco de notas, estão na sua mesa, 
+ao alcance da mão, para que você os acesse imediatamente. Já arquivos importantes, mas que não são usados ​​com tanta 
+frequência, ficam guardados em um armário próximo. E documentos antigos ou recentemente consultados vão para um 
+depósito mais distante. A hierarquia  de memória funciona de maneira semelhante, priorizando o acesso rápido às 
+informações mais críticas e relegando dados menos necessários para áreas de armazenamento mais lentas e amplas.
 
-No topo desse cenário estão as memórias mais rápidas e pequenas, como os registradores e a memória cache, que estão muito próximos do processador. À medida que descemos na posição, encontramos memórias como a RAM e o armazenamento secundário (HDs e SSD), que oferecem maior capacidade, mas com velocidades menores. No nível mais baixo, temos dispositivos de armazenamento externos e em nuvem, que podem salvar quantidades imensas de dados, mas levam mais tempo para serem acessados.
+ No topo desse cenário estão as memórias mais rápidas e pequenas, como os registradores e a memória cache, que estão 
+muito próximos do processador. À medida que descemos na hierarquia, encontramos memórias como a RAM e o armazenamento 
+secundário (HD e SSD), que oferecem maior capacidade, mas com velocidades menores. No nível mais baixo, temos 
+dispositivos de armazenamento externos e em nuvem, que podem salvar quantidades imensas de dados, mas levam mais 
+tempo para serem acessados.
 
-Essa organização é essencial para garantir que os computadores sejam capazes de realizar tarefas complexas de forma eficiente. Sem uma hierarquia, o processador poderia ficar esperando por dados, o que causaria lentidão e desperdício de recursos. Ao entender a hierarquia da memória, conseguimos enxergar como cada tipo de memória desempenha um papel único para manter o equilíbrio entre velocidade, capacidade e custo no mundo da computação.
+ Essa organização é essencial para garantir que os computadores sejam capazes de realizar tarefas complexas de forma 
+eficiente. Sem uma hierarquia, o processador poderia ficar esperando por dados, o que causaria lentidão e desperdício 
+de recursos. Ao entender a hierarquia da memória, conseguimos enxergar como cada tipo de memória desempenha um papel 
+único para manter o equilíbrio entre velocidade, capacidade e custo no mundo da computação.
+
