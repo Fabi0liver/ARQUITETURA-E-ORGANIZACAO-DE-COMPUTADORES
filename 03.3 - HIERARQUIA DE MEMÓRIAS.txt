@@ -293,9 +293,16 @@ medir a eficiência da hierarquia de memória e têm impacto direto no desempenh
 
    Taxa de acertos (hit ratio): É a porcentagem de acessos que resultaram em acertos. Uma alta taxa de acertos 
                                indica que o sistema está obtendo rapidamente os dados que precisa, o que se traduz 
-                               em um desempenho eficiente. Ela pode ser calculada como a razão entre o número de 
-                               hits e o número total de acessos à memória. Quanto maior essa taxa, mais eficiente 
-                               será o uso da memória cache e mais rápido será o processamento geral do sistema.
+                               em um desempenho eficiente. Ela pode ser calculada como a razão da divisão do  
+                               número de hits e o número total de acessos à memória. Quanto maior essa taxa, mais 
+                               eficiente será o uso da memória cache e mais rápido será o processamento geral do 
+                               sistema.
+
+   Tempo de Acesso (Hit Time): O tempo de acesso refere-se ao tempo necessário para recuperar os dados de um 
+                              nível de memória onde ocorreu o hit. Como a memória cache é muito rápida, o tempo de 
+                              acesso para um hit é mínimo, contribuindo para a agilidade do sistema. O hit time é 
+                              essencial para garantir que o processador possa continuar seu trabalho sem esperar 
+                              muito por dados.    
 
    O objetivo dos sistemas modernos é maximizar os acertos por meio de técnicas como a previsão de acesso, que 
   tenta antecipar os dados que o processador precisará em seguida. Isso reduz a necessidade de acessar memórias 
@@ -315,9 +322,15 @@ medir a eficiência da hierarquia de memória e têm impacto direto no desempenh
    Taxa de falhas (miss ratio): É o oposto da taxa de acertos, representando a porcentagem de acessos que 
                                resultaram em falhas. Uma alta taxa de falhas indica que o sistema está demorando 
                                mais para acessar os dados, o que pode comprometer o desempenho. Essa taxa é 
-                               calculada como a razão entre o número de erros e o número total de acessos . 
+                               calculada como a razão da divisão do número de falhas e o número total de acessos. 
                                Minimizar a taxa de falhas é crucial para evitar gargalos e garantir que o sistema 
                                funcione de maneira mais eficiente.
+
+   Penalidade de Miss (Miss Penalty): A penalidade de miss é o tempo adicional necessário para recuperar os dados 
+                                     quando ocorre um miss. Esse tempo inclui a busca no próximo nível da 
+                                     hierarquia, que é mais lento, como a memória RAM ou os discos rígidos. Quanto 
+                                     maior a frequência de miss, mais lento será o desempenho do sistema, já que o 
+                                     processador deverá esperar mais tempo pelos dados.            
 
    Para minimizar os impactos de uma miss, sistemas modernos utilizam técnicas como pré-busca (buscar dados antes 
   de serem solicitados) e organização eficiente de blocos de memória. Mesmo assim, o desempenho pode ser 
