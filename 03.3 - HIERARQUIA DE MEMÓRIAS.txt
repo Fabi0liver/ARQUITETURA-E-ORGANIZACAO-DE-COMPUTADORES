@@ -281,30 +281,43 @@ lento.
 procurá-lo no congelador ou até sair para comprar no mercado, isso seria uma "miss" . Esses conceitos ajudam a 
 medir a eficiência da hierarquia de memória e têm impacto direto no desempenho do sistema.
 
- * Hit: Um hit ocorre quando o dado solicitado pelo processador está imediatamente disponível no nível de memória 
-  acessado. Por exemplo, se o processador procura por instruções ou dados na memória cache e os encontra lá, isso 
-  é considerado um hit. Isso é ideal porque o cache é extremamente rápido, e o acesso a ela economiza tempo e 
-  recursos, mantendo o desempenho do sistema alto.
+ * Hit ou Acerto: Um hit ocorre quando o dado solicitado pelo processador está imediatamente disponível no nível 
+  de memória acessado. Por exemplo, se o processador procura por instruções ou dados na memória cache e os 
+  encontra lá, isso é considerado um hit. Isso é ideal porque o cache é extremamente rápido, e o acesso a ela 
+  economiza tempo e recursos, mantendo o desempenho do sistema alto.
 
    Imagine que você está em um escritório e precisa de uma caneta. Se a caneta está no seu porta-lápis, você não 
   perde tempo procurando em gavetas ou saindo para comprar uma nova. Da mesma forma, a hierarquia de memória 
   prioriza manter os dados mais acessados ​​e previsíveis nos níveis superiores, como a memória cache ou RAM, para 
   garantir mais acessos. Quanto maior a taxa de acertos, mais fluido será o desempenho do computador.
 
-   O objetivo dos sistemas modernos é maximizar os acessos por meio de técnicas como a previsão de acesso, que 
+   Taxa de acertos (hit ratio): É a porcentagem de acessos que resultaram em acertos. Uma alta taxa de acertos 
+                               indica que o sistema está obtendo rapidamente os dados que precisa, o que se traduz 
+                               em um desempenho eficiente. Ela pode ser calculada como a razão entre o número de 
+                               hits e o número total de acessos à memória. Quanto maior essa taxa, mais eficiente 
+                               será o uso da memória cache e mais rápido será o processamento geral do sistema.
+
+   O objetivo dos sistemas modernos é maximizar os acertos por meio de técnicas como a previsão de acesso, que 
   tenta antecipar os dados que o processador precisará em seguida. Isso reduz a necessidade de acessar memórias 
   mais lentas, como discos rígidos, otimizando a eficiência geral do sistema.
 
 
- * Miss: A miss acontece quando o dado solicitado pelo processador não está no nível de memória acessado, forçando 
-  o sistema a buscar informações em níveis mais distantes e lentos. Por exemplo, se um cache não contém o dado, o 
-  sistema precisará procurá-lo na memória RAM ou até no armazenamento secundário, como um SSD ou HD. Esse processo 
-  aumenta o tempo de espera e pode criar gargalos de desempenho.
+ * Miss ou Falha: A miss acontece quando o dado solicitado pelo processador não está no nível de memória acessado,  
+  forçando o sistema a buscar informações em níveis mais distantes e lentos. Por exemplo, se um cache não contém o 
+  dado, o sistema precisará procurá-lo na memória RAM ou até no armazenamento secundário, como um SSD ou HD. Esse 
+  processo aumenta o tempo de espera e pode criar gargalos de desempenho.
 
    Voltando à analogia do escritório: se a caneta que você precisa não está no porta-lápis, você terá que abrir 
   gavetas ou até ir à loja mais próxima para comprar uma. Essa interrupção atrasa o fluxo de trabalho e exige mais 
-  esforço. No contexto da posição de memória, uma miss é custosa porque exige mais tempo e energia para recuperar 
-  os dados.
+  esforço. No contexto da hierarquia de memória, uma miss é custosa porque exige mais tempo e energia para   
+  recuperar os dados.
+
+   Taxa de falhas (miss ratio): É o oposto da taxa de acertos, representando a porcentagem de acessos que 
+                               resultaram em falhas. Uma alta taxa de falhas indica que o sistema está demorando 
+                               mais para acessar os dados, o que pode comprometer o desempenho. Essa taxa é 
+                               calculada como a razão entre o número de erros e o número total de acessos . 
+                               Minimizar a taxa de falhas é crucial para evitar gargalos e garantir que o sistema 
+                               funcione de maneira mais eficiente.
 
    Para minimizar os impactos de uma miss, sistemas modernos utilizam técnicas como pré-busca (buscar dados antes 
   de serem solicitados) e organização eficiente de blocos de memória. Mesmo assim, o desempenho pode ser 
