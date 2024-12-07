@@ -189,60 +189,118 @@ de sistema e das demandas de processamento e comunicação envolvidas.
 
                                "Arquitetura de Entrada e Saída"
 
- A Arquitetura de Entrada e Saída de um sistema de computadores é o projeto que define como os dispositivos de entrada e saída se conectam e interagem com o processador e a memória, permitindo que os dados fluam de forma eficiente entre eles. Em termos simples, é como o sistema organiza e gerencia a comunicação entre a máquina e seus periféricos. Existem diferentes maneiras de se estruturar essa comunicação, e cada abordagem traz suas próprias vantagens e desafios. As duas principais formas de organização de entrada e saída são a arquitetura baseada em barramento e a arquitetura de rede de entrada e saída, ambas com características específicas para diferentes necessidades de sistemas.
+ A Arquitetura de Entrada e Saída de um sistema de computadores é o projeto que define como os dispositivos de 
+entrada e saída se conectam e interagem com o processador e a memória, permitindo que os dados fluam de forma 
+eficiente entre eles. Em termos simples, é como o sistema organiza e gerencia a comunicação entre a máquina e seus 
+periféricos. Existem diferentes maneiras de se estruturar essa comunicação, e cada abordagem traz suas próprias 
+vantagens e desafios. As duas principais formas de organização de entrada e saída são a arquitetura baseada em 
+barramento e a arquitetura de rede de entrada e saída, ambas com características específicas para diferentes 
+necessidades de sistemas.
 
 
-Arquitetura Baseada em Barramento : Na arquitetura baseada em barramento, todos os dispositivos de entrada e saída são conectados a um único  barramento de comunicação, que é compartilhado entre eles, o processador e a memória. Esse barramento é uma via de mão dupla que permite que os dados sejam transmitidos entre todos os componentes, e sua simplicidade o torna bastante comum em computadores pessoais e em servidores. O barramento atua como uma “rodovia” por onde as  informações trafegam, sendo que todos os dispositivos conectados "pegam carona" nesse fluxo.
+ * Arquitetura Baseada em Barramento: Na arquitetura baseada em barramento, todos os dispositivos de entrada e 
+  saída são conectados a um único  barramento de comunicação, que é compartilhado entre eles, o processador e a 
+  memória. Esse barramento é uma via de mão dupla que permite que os dados sejam transmitidos entre todos os 
+  componentes, e sua simplicidade o torna bastante comum em computadores pessoais e em servidores. O barramento 
+  atua como uma “rodovia” por onde as  informações trafegam, sendo que todos os dispositivos conectados "pegam 
+  carona" nesse fluxo.
 
- Vantagens:
+   Vantagens:
 
-Custo mais baixo: Como todos os dispositivos compartilham o mesmo barramento, o design é simples e barato. A estrutura é mais fácil de implementar, e novos dispositivos podem ser conectados sem grandes  mudanças no sistema.
+    Custo mais baixo: Como todos os dispositivos compartilham o mesmo barramento, o design é simples e barato. A 
+                     estrutura é mais fácil de implementar, e novos dispositivos podem ser conectados sem grandes  
+                     mudanças no sistema.
 
-Facilidade de expansão: Para adicionar novos dispositivos, basta conectá-los ao barramento, sem necessidade de mudanças significativas na arquitetura.
-
-
- Desvantagens:
-
-Concorrência no barramento: À medida que mais dispositivos são adicionados, todos precisam competir pelo mesmo canal de comunicação. Isso pode causar atrasos, já que um dispositivo pode ter que esperar até que outros terminem de usar o barramento.
-
-Gargalos de desempenho: A largura de banda é limitada. Se muitos dispositivos tentarem se comunicar ao mesmo tempo, isso pode resultar em lentidão, especialmente em sistemas com alta demanda de entrada e saída.
-
-  Pense no barramento como uma estrada que várias pessoas precisam usar ao mesmo tempo. Se houver poucas pessoas  (dispositivos), o tráfego flui sem problemas. Mas, à medida que mais pessoas começam a usar essa estrada, o congestionamento aumenta, e todos precisam esperar mais tempo para chegar ao seu destino.
-
-
- Arquitetura de Rede de Entrada e Saída : Na arquitetura de rede de entrada e saída, os dispositivos não compartilham um único barramento, mas cada um possui sua própria conexão dedicada com o processador. Essa abordagem é mais complexa e é comumente usada em sistemas distribuídos ou ambientes que demandam alta performance, como grandes centros de dados ou servidores empresariais. Aqui, em vez de uma estrada única, cada dispositivo tem sua "rua particular" para se comunicar com o processador, eliminando o congestionamento de dados.
-
-  Vantagens:
-
- Melhor desempenho: Como cada dispositivo tem sua própria conexão, ele não precisa competir por largura de banda com outros dispositivos. Isso resulta em uma comunicação mais rápida e eficiente.
-
-Maior escalabilidade: Essa arquitetura é ideal para sistemas grandes, pois você pode adicionar mais dispositivos sem se preocupar com perda de desempenho. Cada um opera independentemente, sem impactar o  restante do sistema.
-
-Desvantagens:
-
-Custo mais alto: A implementação de uma rede dedicada para cada dispositivo é mais cara e complexa. Exige mais  hardware e configurações, aumentando o custo do sistema.
-
-Gestão mais complexa: Com mais conexões e mais dispositivos atuando de forma independente, a gestão da rede torna-se mais complicada. Protocolos de comunicação mais sofisticados são necessários para  coordenar a interação entre os dispositivos e o processador.
-
-  Imagine que, ao invés de compartilhar uma única estrada, cada pessoa tem sua própria via expressa para chegar ao destino. Não há congestionamento, mas construir essas vias e garantir que todas funcionem corretamente requer mais planejamento e investimento.
+    Facilidade de expansão: Para adicionar novos dispositivos, basta conectá-los ao barramento, sem necessidade de 
+                           mudanças significativas na arquitetura.
 
 
- A escolha entre as arquiteturas de entrada e saída depende muito das necessidades do sistema. A arquitetura baseada em barramento é excelente para ambientes onde simplicidade e baixo custo são prioridades, mas pode enfrentar  limitaçõesde desempenho quando muitos dispositivos precisam se comunicar ao mesmo tempo. Já a arquitetura de rede  de E/S é ideal para sistemas que exigem alta performance e escalabilidade, mas traz consigo um custo mais alto e a necessidade de um gerenciamento mais robusto. Ambas as arquiteturas têm seus méritos, e a escolha correta garante que o sistema possa funcionar da maneira mais eficiente possível, de acordo com o volume e o tipo de operações realizadas.
+   Desvantagens:
+
+    Concorrência no barramento: À medida que mais dispositivos são adicionados, todos precisam competir pelo mesmo 
+                               canal de comunicação. Isso pode causar atrasos, já que um dispositivo pode ter que 
+                               esperar até que outros terminem de usar o barramento.
+
+    Gargalos de desempenho: A largura de banda é limitada. Se muitos dispositivos tentarem se comunicar ao mesmo 
+                           tempo, isso pode resultar em lentidão, especialmente em sistemas com alta demanda de 
+                           entrada e saída.
+
+   Pense no barramento como uma estrada que várias pessoas precisam usar ao mesmo tempo. Se houver poucas pessoas  
+ (dispositivos), o tráfego flui sem problemas. Mas, à medida que mais pessoas começam a usar essa estrada, o 
+ congestionamento aumenta, e todos precisam esperar mais tempo para chegar ao seu destino.
+
+
+ * Arquitetura de Rede de Entrada e Saída: Na arquitetura de rede de entrada e saída, os dispositivos não 
+  compartilham um único barramento, mas cada um possui sua própria conexão dedicada com o processador. Essa 
+  abordagem é mais complexa e é comumente usada em sistemas distribuídos ou ambientes que demandam alta 
+  performance, como grandes centros de dados ou servidores empresariais. Aqui, em vez de uma estrada única, cada 
+  dispositivo tem sua "rua particular" para se comunicar com o processador, eliminando o congestionamento de 
+  dados.
+
+   Vantagens:
+
+    Melhor desempenho: Como cada dispositivo tem sua própria conexão, ele não precisa competir por largura de 
+                      banda com outros dispositivos. Isso resulta em uma comunicação mais rápida e eficiente.
+
+    Maior escalabilidade: Essa arquitetura é ideal para sistemas grandes, pois você pode adicionar mais 
+                         dispositivos sem se preocupar com perda de desempenho. Cada um opera independentemente, 
+                         sem impactar o  restante do sistema.
+
+   Desvantagens:
+
+    Custo mais alto: A implementação de uma rede dedicada para cada dispositivo é mais cara e complexa. Exige mais  
+                    hardware e configurações, aumentando o custo do sistema.
+
+    Gestão mais complexa: Com mais conexões e mais dispositivos atuando de forma independente, a gestão da rede 
+                         torna-se mais complicada. Protocolos de comunicação mais sofisticados são necessários 
+                          para  coordenar a interação entre os dispositivos e o processador.
+
+   Imagine que, ao invés de compartilhar uma única estrada, cada pessoa tem sua própria via expressa para chegar 
+  ao destino. Não há congestionamento, mas construir essas vias e garantir que todas funcionem corretamente requer 
+  mais planejamento e investimento.
+
+
+ A escolha entre as arquiteturas de entrada e saída depende muito das necessidades do sistema. A arquitetura 
+baseada em barramento é excelente para ambientes onde simplicidade e baixo custo são prioridades, mas pode 
+enfrentar  limitações de desempenho quando muitos dispositivos precisam se comunicar ao mesmo tempo. Já a 
+arquitetura de rede  de E/S é ideal para sistemas que exigem alta performance e escalabilidade, mas traz consigo 
+um custo mais alto e a necessidade de um gerenciamento mais robusto. Ambas as arquiteturas têm seus méritos, e a 
+escolha correta garante que o sistema possa funcionar da maneira mais eficiente possível, de acordo com o volume e 
+o tipo de operações realizadas.
 
 
 
                             "Barramento de Entrada e Saída (E/S)"
 
- O barramento de entrada e saída (E/S) desempenha um papel crucial na arquitetura de um computador, servindo como a “rodovia” que conecta o processador, a memória e os dispositivos de entrada e saída. Essa interconexão é essencial para o funcionamento do sistema, pois possibilita a comunicação entre diferentes componentes e a transferência de dados de maneira organizada e eficiente. Para ilustrar essa dinâmica, pense no barramento como uma rede de estradas interconectadas em uma cidade: sem essas vias, o tráfego de informações seria caótico e ineficiente, resultando em um sistema que não conseguiria operar de forma eficaz. Compreender o funcionamento do barramento e suas subdivisões é fundamental para quem deseja se aprofundar na organização dos computadores e na maneira como eles interagem com o mundo externo.
+ O barramento de entrada e saída (E/S) desempenha um papel crucial na arquitetura de um computador, servindo como 
+a “rodovia” que conecta o processador, a memória e os dispositivos de entrada e saída. Essa interconexão é 
+essencial para o funcionamento do sistema, pois possibilita a comunicação entre diferentes componentes e a 
+transferência de dados de maneira organizada e eficiente. Para ilustrar essa dinâmica, pense no barramento como 
+uma rede de estradas interconectadas em uma cidade: sem essas vias, o tráfego de informações seria caótico e 
+ineficiente, resultando em um sistema que não conseguiria operar de forma eficaz. Compreender o funcionamento do 
+barramento e suas subdivisões é fundamental para quem deseja se aprofundar na organização dos computadores e na 
+maneira como eles interagem com o mundo externo.
 
- O barramento de entrada e saída é dividido em três partes principais: barramento de dados, barramento de endereços e barramento de controle. Cada uma dessas partes desempenha uma função específica, essencial para garantir que a comunicação entre os componentes do computador ocorra sem problemas. Para ilustrar essas funções, podemos pensar em exemplos do dia a dia: imagine uma estrada movimentada, onde diferentes faixas são reservadas para funções específicas, assim como acontece no barramento.
+ O barramento de entrada e saída é dividido em três partes principais: barramento de dados, barramento de 
+endereços e barramento de controle. Cada uma dessas partes desempenha uma função específica, essencial para 
+garantir que a comunicação entre os componentes do computador ocorra sem problemas. Para ilustrar essas funções, 
+podemos pensar em exemplos do dia a dia: imagine uma estrada movimentada, onde diferentes faixas são reservadas 
+para funções específicas, assim como acontece no barramento.
 
  Para entender melhor como essas componentes funcionam, vamos explorar cada tipo de barramento:
 
-Barramento de Dados : O barramento de dados é a faixa onde os dados realmente "viajam". Ele transporta a informação entre o processador ou a memória e dispositivos de entrada ou saída, assim como caminhões transportando mercadorias de um ponto a  outro. Por exemplo, quando você digita um documento no seu computador, os dados do documento são enviados pela barragem de dados para serem armazenados na memória RAM. A largura do barramento de dados, que pode variar de 8, 16, 32 ou 64 bits, influencia diretamente a quantidade de informações que podem ser transferidas simultaneamente, impactando a velocidade do sistema. Em um cenário prático, um barramento de dados de 64 bits pode transferir mais  informações em uma única operação do que um de 32 bits, resultando em um desempenho superior.
+ * Barramento de Dados : O barramento de dados é a faixa onde os dados realmente "viajam". Ele transporta a 
+  informação entre o processador ou a memória e dispositivos de entrada ou saída, assim como caminhões 
+  transportando mercadorias de um ponto a  outro. Por exemplo, quando você digita um documento no seu computador, 
+  os dados do documento são enviados pela barragem de dados para serem armazenados na memória RAM. A largura do 
+  barramento de dados, que pode variar de 8, 16, 32 ou 64 bits, influencia diretamente a quantidade de informações 
+  que podem ser transferidas simultaneamente, impactando a velocidade do sistema. Em um cenário prático, um 
+  barramento de dados de 64 bits pode transferir mais  informações em uma única operação do que um de 32 bits, 
+  resultando em um desempenho superior.
 
 
- Barramento de Endereços: O barramento de endereços funciona como a sinalização de trânsito na rodovia, indicando para onde os dados estão indo. Ele determina qual dispositivo de entrada ou saída ou qual parte da memória deve receber ou enviar dados. Cada dispositivo conectado ao barramento tem um endereço único, semelhante ao número da casa em uma rua. Por exemplo, quando o processador deseja ler um dado de um disco rígido, ele usa o barramento de endereços para especificar qual setor do disco deve ser acessado. Se a comunicação envolvesse vários dispositivos, como um teclado e uma impressora, cada um teria seu próprio endereço, permitindo que o processador se comunique com eles de forma eficiente e sem confusões.
+ * Barramento de Endereços: O barramento de endereços funciona como a sinalização de trânsito na rodovia, 
+  indicando para onde os dados estão indo. Ele determina qual dispositivo de entrada ou saída ou qual parte da memória deve receber ou enviar dados. Cada dispositivo conectado ao barramento tem um endereço único, semelhante ao número da casa em uma rua. Por exemplo, quando o processador deseja ler um dado de um disco rígido, ele usa o barramento de endereços para especificar qual setor do disco deve ser acessado. Se a comunicação envolvesse vários dispositivos, como um teclado e uma impressora, cada um teria seu próprio endereço, permitindo que o processador se comunique com eles de forma eficiente e sem confusões.
 
 
 Barramento de Controle: Por fim, o barramento de controle é responsável por gerenciar e coordenar o tráfego de dados, garantindo que tudo funcione de maneira harmoniosa. Ele transmite sinais de controle que dizem aos dispositivos quando enviar, receber ou interromper a transmissão de dados. Pense nele como os semáforos e sinais de trânsito em uma estrada movimentada, que organizam o fluxo de veículos e garantem que não haja acidentes. Por exemplo, quando o processador decide que é hora de imprimir um documento, ele envia um sinal através do barramento de controle para a impressora, que, por sua vez, inicia o processo de impressão. Essa coordenação é vital para manter a ordem e a eficiência do sistema, evitando conflitos entre diferentes operações.
