@@ -300,13 +300,30 @@ para funções específicas, assim como acontece no barramento.
 
 
  * Barramento de Endereços: O barramento de endereços funciona como a sinalização de trânsito na rodovia, 
-  indicando para onde os dados estão indo. Ele determina qual dispositivo de entrada ou saída ou qual parte da memória deve receber ou enviar dados. Cada dispositivo conectado ao barramento tem um endereço único, semelhante ao número da casa em uma rua. Por exemplo, quando o processador deseja ler um dado de um disco rígido, ele usa o barramento de endereços para especificar qual setor do disco deve ser acessado. Se a comunicação envolvesse vários dispositivos, como um teclado e uma impressora, cada um teria seu próprio endereço, permitindo que o processador se comunique com eles de forma eficiente e sem confusões.
+  indicando para onde os dados estão indo. Ele determina qual dispositivo de entrada ou saída ou qual parte da 
+  memória deve receber ou enviar dados. Cada dispositivo conectado ao barramento tem um endereço único, semelhante 
+  ao número da casa em uma rua. Por exemplo, quando o processador deseja ler um dado de um disco rígido, ele usa o 
+  barramento de endereços para especificar qual setor do disco deve ser acessado. Se a comunicação envolvesse 
+  vários dispositivos, como um teclado e uma impressora, cada um teria seu próprio endereço, permitindo que o 
+  processador se comunique com eles de forma eficiente e sem confusões.
 
 
-Barramento de Controle: Por fim, o barramento de controle é responsável por gerenciar e coordenar o tráfego de dados, garantindo que tudo funcione de maneira harmoniosa. Ele transmite sinais de controle que dizem aos dispositivos quando enviar, receber ou interromper a transmissão de dados. Pense nele como os semáforos e sinais de trânsito em uma estrada movimentada, que organizam o fluxo de veículos e garantem que não haja acidentes. Por exemplo, quando o processador decide que é hora de imprimir um documento, ele envia um sinal através do barramento de controle para a impressora, que, por sua vez, inicia o processo de impressão. Essa coordenação é vital para manter a ordem e a eficiência do sistema, evitando conflitos entre diferentes operações.
+ * Barramento de Controle: Por fim, o barramento de controle é responsável por gerenciar e coordenar o tráfego de 
+  dados, garantindo que tudo funcione de maneira harmoniosa. Ele transmite sinais de controle que dizem aos 
+  dispositivos quando enviar, receber ou interromper a transmissão de dados. Pense nele como os semáforos e sinais 
+  de trânsito em uma estrada movimentada, que organizam o fluxo de veículos e garantem que não haja acidentes. Por 
+  exemplo, quando o processador decide que é hora de imprimir um documento, ele envia um sinal através do 
+  barramento de controle para a impressora, que, por sua vez, inicia o processo de impressão. Essa coordenação é 
+  vital para manter a ordem e a eficiência do sistema, evitando conflitos entre diferentes operações.
 
 
- Em resumo, o barramento de entrada e saída é uma parte fundamental da comunicação dentro de um computador, permitindo que diferentes componentes trabalhem juntos de maneira eficaz. Ao entender as funções do barramento de dados, do barramento de endereços e do barramento de controle, podemos apreciar melhor a complexidade e a organização necessárias para que um sistema computacional opere de forma suave e eficiente. Assim como em uma rodovia bem planejada, onde cada elemento tem um papel a desempenhar, o barramento garante que a troca de informações entre o processador, a memória e os dispositivos de entrada e saída ocorra sem problemas, contribuindo para a performance geral do computador.
+ Em resumo, o barramento de entrada e saída é uma parte fundamental da comunicação dentro de um computador, 
+permitindo que diferentes componentes trabalhem juntos de maneira eficaz. Ao entender as funções do barramento de 
+dados, do barramento de endereços e do barramento de controle, podemos apreciar melhor a complexidade e a 
+organização necessárias para que um sistema computacional opere de forma suave e eficiente. Assim como em uma 
+rodovia bem planejada, onde cada elemento tem um papel a desempenhar, o barramento garante que a troca de 
+informações entre o processador, a memória e os dispositivos de entrada e saída ocorra sem problemas, contribuindo 
+para a performance geral do computador.
 
 
 
