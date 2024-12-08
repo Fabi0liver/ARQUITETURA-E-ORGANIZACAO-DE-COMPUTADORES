@@ -63,7 +63,7 @@ vários núcleos, melhorando a eficiência.
 introduzindo muitos dos conceitos de processamento que ainda usamos. Embora que hoje em dia está ficando obsoleto 
 para muitos usos avançados, o single-core ainda é utilizado em dispositivos de baixa potência, como sensores IoT 
 (Internet das Coisas) e eletrônicos básicos, que precisam realizar apenas algumas tarefas simples. Esses 
-dispositivos não utlizam multitarefa avançada, e o single-core permanece uma opção prática e econômica  nesses 
+dispositivos não utilizam multitarefa avançada, e o single-core permanece uma opção prática e econômica  nesses 
 contextos, garantindo um processamento suficiente com baixo consumo de energia.
 
 
@@ -79,7 +79,7 @@ contextos, garantindo um processamento suficiente com baixo consumo de energia.
  processamento paralelo.
 
   Durante os anos de 1990 e início de 2000, a busca por mais desempenho levou os fabricantes a aumentar a 
- frequência dos single-core, numa época marcada pela famosa "Guerra dos Gigahertz" entre Intel e AMD. Aumentar a 
+ frequência dos single-core, numa época marcada pela famosa "Guerra dos Giga-hertz" entre Intel e AMD. Aumentar a 
  velocidade do clock fazia o processador  executar as tarefas mais rapidamente, mas essa prática também gerava um 
  grande desafio: o calor. À medida que a frequência aumentava, o consumo de energia e o aquecimento também subiam, 
  chegando a um ponto em que o calor gerado se tornou uma barreira física. Esse problema limitava a possibilidade de 
