@@ -513,7 +513,7 @@ atividades, mas sim lidar com  todas ao mesmo tempo, de forma paralela.
  dispositivos de alto desempenho hoje em dia, impulsionando o avanço da tecnologia em diversas frentes.
 
 
- Assim concluimos que o multi-core  transformou a maneira como computadores, dispositivos móveis e até 
+ Assim concluímos que o multi-core  transformou a maneira como computadores, dispositivos móveis e até 
 eletrodomésticos modernos realizam tarefas, permitindo um aumento significativo na capacidade de processamento e na 
 eficiência. Em vez de depender de um único núcleo para realizar todo o trabalho, a arquitetura multi-core distribui 
 as tarefas entre vários núcleos, o que possibilita que o sistema lide com múltiplas atividades simultaneamente. 
@@ -548,7 +548,7 @@ grandes volumes de dados, os novos avanços na arquitetura de núcleos são esse
 necessidades. A computação heterogênea, a integração de inteligência artificial diretamente no processador e até 
 mesmo a exploração da computação quântica são exemplos de como a tecnologia está se adaptando para criar soluções 
 mais rápidas, inteligentes e energeticamente eficientes. Além disso, novas tendências como núcleos para segurança 
-aprimorada, computação neuromórfica e melhorias para aprendizado de máquina indicam que o futuro dos núcleos 
+aprimorada, computação neuro mórfica e melhorias para aprendizado de máquina indicam que o futuro dos núcleos 
 multi-core será cada vez mais focado em especialização. Com essas inovações, o objetivo é tornar os avanços mais 
 adaptáveis ​​e eficientes, capazes de gerenciar uma ampla gama de aplicações.
 
@@ -606,10 +606,10 @@ adaptáveis ​​e eficientes, capazes de gerenciar uma ampla gama de aplicaç�
 
 * Computação Neuromórfica:
 
-  Uma computação neuromórfica busca imitar o funcionamento do cérebro humano, empregando uma arquitetura baseada em 
- redes neurais e sinapses. Essa abordagem visa trazer um aumento significativo na eficiência energética e nas 
+  Uma computação neuro mórfica busca imitar o funcionamento do cérebro humano, empregando uma arquitetura baseada 
+ em redes neurais e sinapses. Essa abordagem visa trazer um aumento significativo na eficiência energética e nas 
  capacidades de aprendizado inovador dos processadores modernos, o que poderá ser útil para dispositivos de 
- inteligência artificial mais avançados. Ainda em fase de pesquisa, a neuromórfica representa um avanço para o 
+ inteligência artificial mais avançados. Ainda em fase de pesquisa, a neuro mórfica representa um avanço para o 
  multi-core, permitindo que futuros processadores tenham habilidades de aprendizado em tempo real.
 
 
