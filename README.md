@@ -34,9 +34,8 @@ Seguindo a analogia da casa, a organização de computadores seria equivalente a
 
 O principal objetivo deste repositório é **documentar e compartilhar conhecimentos** adquiridos durante os estudos em Arquitetura e Organização de Computadores. Aqui você encontrará:
 
-- 📚 Resumos e explicações teóricas.
-- 🛠️ Exercícios práticos e soluções.
-- 💻 Implementações de conceitos computacionais.
+- 📚 Resumos e explicações em TXT.
+- 🔊 Áudio dos textos em Pt-BR.
 
 Todos os materiais são frutos do aprendizado de um(a) estudante em evolução, então sinta-se à vontade para explorar, sugerir melhorias e contribuir!
 
