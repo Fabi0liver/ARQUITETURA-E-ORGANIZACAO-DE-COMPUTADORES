@@ -68,7 +68,7 @@ pelas necessidades específicas do sistema em questão.
 
                             "Como a Unidade de Controle Funciona"
 
- A Unidade de Controle (UC)  é o  organizador da CPU, responsável por coordenar e gerenciar todas as operações 
+ A Unidade de Controle (UC) é o organizador da CPU, responsável por coordenar e gerenciar todas as operações 
 realizadas dentro do processador. Ela é como um maestro, garantindo que cada componente da CPU execute sua tarefa 
 no momento certo e de forma eficiente. Para entender como um UC funciona, vamos observar suas etapas de operação, 
 explicadas de forma clara e sequencial, como se estivéssemos acompanhando o trabalho de um diretor em uma produção 
