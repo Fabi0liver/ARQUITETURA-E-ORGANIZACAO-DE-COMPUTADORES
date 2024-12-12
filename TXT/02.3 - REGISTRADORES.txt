@@ -223,7 +223,7 @@ complexidade do processamento moderno e como cada pequena parte contribui para o
 
 
  
-                                      "Principais Registradores da CPU"
+                                   "Principais Registradores da CPU"
 
  Os registradores são os "braços direitos" da CPU, ajudando a realizar operações essenciais de forma rápida e 
 organizada. Eles armazenam temporariamente dados, endereços e instruções enquanto o processador trabalha, agindo 
@@ -326,7 +326,7 @@ segundo.
 
 
 
-                "Importância dos Registradores no Ciclo de Instrução"
+                       "Importância dos Registradores no Ciclo de Instrução"
 
  Os registradores desempenham um papel essencial no ciclo de instrução de um processador, sendo verdadeiros 
 princípios que garantem a execução eficiente de cada etapa. Para entender a importância deles, imagine uma CPU como 
