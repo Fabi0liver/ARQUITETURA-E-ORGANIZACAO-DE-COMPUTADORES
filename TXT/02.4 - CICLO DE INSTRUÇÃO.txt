@@ -171,6 +171,62 @@ trabalhador sem um supervisor, realizando tarefas sem uma sequência lógica e e
 
 
 
+
+                              "Registradores no Ciclo de Instrução"
+
+ Os registradores são componentes essenciais dentro da CPU e desempenham um papel fundamental no ciclo de 
+instrução. Cada registrador tem uma função específica que facilita o processo de execução das instruções de forma 
+eficiente. Sem esses pequenos "bancos de memória" rápidos, a CPU não seria capaz de realizar operações complexas de 
+forma rápida e organizada. Cada tipo de registrador, como o PC , M A R , MBR , I R , ACC e REGs, possui um papel 
+único no ciclo de instruções, garantindo que a CPU siga a sequência de certas tarefas para processar dados e 
+executar programas.
+
+ * PC (Contador de Programas): O Contador de Programas (PC) é responsável por manter o controle de onde a CPU está 
+  no processo de execução de um programa. Ele armazena o endereço da próxima instrução que a CPU deve buscar da 
+  memória. Sem o PC, a CPU ficaria “perdida”, sem saber qual a próxima tarefa executada. Imagine-o como um marcador 
+  de página que mantém a leitura de um livro, sempre na página que você deve ler a seguir.
+
+
+ * MAR (Registro de Endereço de Memória): O MAR é responsável por armazenar o endereço de memória de onde a CPU 
+  deve ler ou para onde deve escrever dados. Em outras palavras, ele "aponta" para o local certo na memória. Se 
+  fosse uma biblioteca, o MAR seria como o número da prateleira onde o livro necessário está guardado. Ele é 
+  essencial para garantir que os dados sejam acessados ​​corretamente.
+
+
+ * MBR (Registro de Buffer de Memória): O MBR é o registrador que armazena temporariamente os dados que foram lidos 
+  ou que serão escritos na memória. Ele funciona como um intermediário entre a memória e a CPU. Se o MAR é o 
+  endereço, o MBR é o "correspondente físico" dos dados, pronto para ser lido ou escrito. É como se o MBR fosse o 
+  carregador de livros, que pega um livro da prateleira (memória) e o leva até o lugar onde ele será usado (a CPU).
+
+
+ * IR (Registrador de Instrução): O IR armazena as instruções que foram buscadas na memória e que a CPU está 
+  prestes a executar. Ele guarda o código de operação da instrução, informando à CPU o que precisa ser feito. Pense 
+  nele como um "papel de comando" que chega à CPU, dizendo-lhe qual tarefa realizar: somar números, comparar 
+  valores ou talvez mover dados.
+
+
+ * ACC (Acumulador): O Acumulador (ACC) é utilizado para armazenar resultados intermediários das operações 
+  aritméticas e lógicas realizadas pela CPU. Ele pode ser comparado a um "destinatário de resultados" onde a CPU 
+  guarda o que está sendo calculado no momento. Após cada operação, o ACC  armazena um  valor temporário até que 
+  outro cálculo seja feito ou até que o valor final seja armazenado em outro lugar.
+
+
+ * REGs (Registradores Gerais): Os registradores gerais  são uma coleção de espaços de armazenamento rápido que a 
+  CPU usa para armazenar dados temporariamente. Eles são os "bancos de dados rápidos" da CPU, acessados ​​
+  constantemente para armazenar valores que são usados ​​em diversas transações. Eles garantem que uma CPU tenha 
+  fácil acesso a dados importantes durante o processamento, como peças de um quebra-cabeça que são movidas o tempo 
+  todo para resolver uma tarefa.
+
+
+ Em suma, cada um desses registradores desempenha um papel fundamental para garantir que o ciclo de instrução da 
+CPU seja executado de maneira eficiente e precisa. Eles trabalham em conjunto para manter o fluxo de dados e 
+instruções, garantindo que a CPU saiba sempre o que fazer e onde procurar os dados necessários. Como peças de um 
+complexo sistema de organização, os registradores são específicos para o funcionamento do processador, permitindo 
+que os programas sejam executados de maneira fluida e sem erros. Sem eles, a CPU ficaria sem direção, incapaz de 
+acessar ou processar dados de forma rápida e organizada.
+
+
+
                                     "Tipos de Instruções"
 
  O ciclo de instrução é o processo fundamental que permite à CPU executar as tarefas programadas. Dentro desse 
