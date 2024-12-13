@@ -250,6 +250,52 @@ rígido, garantindo velocidade e fluidez ao processo.
 
 
 
+                                     "Barramentos no  Ciclo de Instrução"
+
+ Os barramentos são fundamentais para a comunicação entre os diferentes componentes de um computador, especialmente 
+durante o ciclo de instrução. Eles servem como canais de comunicação que permitem a troca de informações entre a 
+CPU, a memória e outros dispositivos. Existem três tipos principais de barramentos ( de dados, de endereço e de 
+controle) que desempenham papéis essenciais na execução eficiente das instruções e no gerenciamento do fluxo de 
+dados. Cada um tem uma função específica e complementar as outras para garantir que o ciclo de instrução seja 
+realizado sem erros e de forma eficaz.
+
+ * Barramento de Dados: É responsável por transportar os dados que estão sendo processados ​​pela CPU. Durante o 
+  ciclo de instrução, ele carrega os valores necessários para as operações e, após a execução, transporta os 
+  resultados de volta para a memória ou para dispositivos de entrada e saída.
+
+   O barramento de dados é como uma estrada por onde os carros (dados) viajam de um ponto a outro. Se você imagina 
+  o ciclo de instrução como uma série de entregas, o barramento de dados é uma via principal que permite que os 
+  materiais (dados) cheguem aos locais certos, garantindo que as informações possam chegar ao destino com rapidez e 
+  precisão.
+
+
+ * Barramento de Endereço: É responsável por carregar os endereços de memória, permitindo que a CPU saiba onde ler 
+  ou gravar dados na memória. Ele aponta para o local exato onde os dados estão armazenados ou onde devem ser 
+  armazenados após o processamento.
+
+   Pense no barramento de endereço como o endereço de uma casa em uma cidade. Assim como você precisa de um 
+  endereço para encontrar uma casa específica, o barramento de endereço fornece à CPU o “endereço” exato na 
+  memória, permitindo que ela acesse ou armazene informações sem confusão.
+
+
+ * Barramento de Controle: Coordena e regula todas as atividades dentro do ciclo de instrução. Ele envia sinais de 
+  controle que indicam quando uma operação deve ser realizada e qual operação deve ser realizada (por exemplo, 
+  leitura ou gravação de dados).
+
+   Este barramento é como o maestro de uma orquestra. Enquanto os outros barramentos são os músicos, o barramento 
+  de controle garante que todos toquem no momento certo e na intensidade certa, orquestrando as ações da CPU, 
+  memória e outros componentes para que o ciclo de instrução seja executado de maneira harmônica e eficiente.
+
+
+ Os barramentos, embora muitas vezes invisíveis aos usuários, são essenciais para o funcionamento do ciclo de 
+instrução. Eles formam uma rede de comunicação entre os componentes do computador, garantindo que os dados, 
+endereços e sinais de controle cheguem aos seus destinos corretamente e no momento certo. Sem esses barramentos, 
+uma CPU não seria capaz de realizar operações de forma eficiente, assim como uma empresa sem uma boa rede de 
+comunicação falharia em suas entregas. Portanto, o barramento é uma base invisível que torna o ciclo de instrução 
+possível e eficaz, permitindo que o computador execute suas tarefas com precisão e velocidade.
+
+
+
                                       "Tipos de Instruções"
 
  O ciclo de instrução é o processo fundamental que permite à CPU executar as tarefas programadas. Dentro desse 
