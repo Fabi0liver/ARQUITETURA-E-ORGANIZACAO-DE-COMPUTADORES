@@ -217,7 +217,6 @@ executar programas.
   fácil acesso a dados importantes durante o processamento, como peças de um quebra-cabeça que são movidas o tempo 
   todo para resolver uma tarefa.
 
-
  Em suma, cada um desses registradores desempenha um papel fundamental para garantir que o ciclo de instrução da 
 CPU seja executado de maneira eficiente e precisa. Eles trabalham em conjunto para manter o fluxo de dados e 
 instruções, garantindo que a CPU saiba sempre o que fazer e onde procurar os dados necessários. Como peças de um 
@@ -227,7 +226,31 @@ acessar ou processar dados de forma rápida e organizada.
 
 
 
-                                    "Tipos de Instruções"
+
+                       "Interação da Memória principal com o Ciclo de Instrução"
+
+ A interação entre o ciclo de instrução e a memória principal é essencial para que uma CPU consiga acessar e 
+manipular dados durante a execução de um programa. Durante o ciclo de instrução, a CPU precisa buscar  as 
+instruções e os dados que estão armazenados na memória principal (RAM). Isso acontece sempre que a CPU precisa de 
+informações para continuar com o processamento das operações, como calcular valores ou tomar decisões lógicas, e 
+sem essa interação, o fluxo de execução fica interrompido.
+
+ Quando a CPU executa a fase de Fetch (busca), ela consulta o endereço de memória fornecido pelo Program Counter 
+(PC) para buscar a próxima instrução. Esse processo pode envolver não apenas o carregamento de instruções, mas 
+também os dados que uma CPU precisa para operar. A memória principal armazena temporariamente essas informações, 
+tornando a interação com o ciclo de instrução rápida, mas crucial para o desempenho geral do sistema, já que é lá 
+que ficam os dados mais acessados ​​durante o processamento.
+
+ Em alguns casos, a interação se torna ainda mais intensa quando as instruções necessitam o acesso a dados 
+específicos na memória, como nas fases de Operand Fetch (Busca dos Operandos) ou até Write Back (Escrita dos 
+Resultados) . Nesses momentos, os dados são movidos entre os registradores e a memória principal, garantindo que as 
+operações sigam seu curso. Essa dinâmica de busca e armazenamento de dados ajuda a CPU a realizar suas tarefas de 
+forma eficiente, evitando que ela precise procurar nas partes mais lentas do sistema de memória, como o disco 
+rígido, garantindo velocidade e fluidez ao processo.
+
+
+
+                                      "Tipos de Instruções"
 
  O ciclo de instrução é o processo fundamental que permite à CPU executar as tarefas programadas. Dentro desse 
 ciclo, a CPU interpreta e executa diferentes tipos de instruções, cada uma desempenhando um papel específico para 
