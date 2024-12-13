@@ -177,7 +177,7 @@ trabalhador sem um supervisor, realizando tarefas sem uma sequência lógica e e
  Os registradores são componentes essenciais dentro da CPU e desempenham um papel fundamental no ciclo de 
 instrução. Cada registrador tem uma função específica que facilita o processo de execução das instruções de forma 
 eficiente. Sem esses pequenos "bancos de memória" rápidos, a CPU não seria capaz de realizar operações complexas de 
-forma rápida e organizada. Cada tipo de registrador, como o PC , M A R , MBR , I R , ACC e REGs, possui um papel 
+forma rápida e organizada. Cada tipo de registrador, como o PC , MAR , MBR , IR , ACC e REGs, possui um papel 
 único no ciclo de instruções, garantindo que a CPU siga a sequência de certas tarefas para processar dados e 
 executar programas.
 
@@ -405,7 +405,7 @@ diferentes tipos, é o coração que mantém o computador vivo e funcional.
 
 
 
-                       "Dependências e Conflitos  no  Ciclo de Instrução"
+                         "Dependências e Conflitos  no  Ciclo de Instrução"
 
  No ciclo de instrução, as dependências e os conflitos surgem quando uma instrução depende dos resultados de uma 
 instrução anterior ou quando há interações entre múltiplas instruções executadas em paralelo. Essas dependências 
