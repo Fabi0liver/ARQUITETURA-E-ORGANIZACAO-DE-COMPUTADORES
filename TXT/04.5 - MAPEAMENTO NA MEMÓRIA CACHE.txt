@@ -203,8 +203,10 @@ maximizem o desempenho e a eficiência da memória, reduzindo os gargalos no pro
  O mapeamento direto é um dos métodos mais utilizados para organizar e armazenar dados na memória cache devido à 
 sua simplicidade e eficiência. Ele oferece uma maneira estruturada de mapear os blocos de memória principal (RAM) 
 para linhas específicas no cache, o que facilita o acesso rápido aos dados. No entanto, apesar da sua simplicidade, 
-ele apresenta algumas limitações importantes, como os conflitos de mapeamento. Para entender melhor, vamos detalhar 
-o funcionamento desse método e explorar suas características de maneira simples e amigável.
+ele apresenta algumas limitações importantes, como os conflitos de mapeamento. 
+
+ Para entender melhor, vamos detalhar o funcionamento desse método e explorar suas características de maneira 
+simples e amigável.
 
 
  * Como Funciona o Mapeamento Direto?
@@ -274,7 +276,7 @@ o funcionamento desse método e explorar suas características de maneira simple
 
     Os 3 bits intermediários ( 1 0 1 ) formam o Index : Que indica a linha 5 do cache.
 
-    Os 3 bits mais significativos ( 1 0 1 ) formam a Tag : Que indica o bloco 5 na linha 5 da  cache.                                                           
+    Os 3 bits mais significativos ( 1 0 1 ) formam a Tag : Que indica o bloco 5 na linha 5 da cache.                                                           
  
     Os 2 bits de menor ordem ( 1 0 ) formam o Offset: Que indica a posição 2 dentro do bloco 5 na linha 5 da cache.
 
@@ -317,10 +319,7 @@ o funcionamento desse método e explorar suas características de maneira simple
                          processador a buscar os dados na memória principal com mais frequência, o que pode 
                          melhorar significativamente o desempenho geral.
 
-   O mapeamento direto é uma solução simples e econômica para organizar um cache de memória, sendo ideal para 
-  sistemas com requisitos modestos de desempenho. No entanto, seus conflitos de mapeamento podem afetar o 
-  desempenho em acessos imprevisíveis. Equilibrar suas vantagens e mitigar suas limitações é essencial para 
-  garantir eficiência sem complexidade.
+ O mapeamento direto é uma solução simples e econômica para organizar um cache de memória, sendo ideal para sistemas com requisitos modestos de desempenho. No entanto, seus conflitos de mapeamento podem afetar o desempenho em acessos imprevisíveis. Equilibrar suas vantagens e mitigar suas limitações é essencial para garantir eficiência sem complexidade.
                                                                                                                                                                                                                       
  Em suma, o mapeamento direto é uma solução prática e eficiente para organizar os dados na memória cache. Sua 
 simplicidade torna o sistema rápido e de fácil implementação, especialmente em sistemas que possuem padrões 
@@ -328,6 +327,124 @@ previsíveis de acesso à memória. Contudo, os conflitos de mapeamento podem se
 complexos, afetando o desempenho. A compreensão dos componentes, como Tag , Index , Offset e o bit valid , é 
 essencial para dominar o funcionamento desse método e avaliar suas especificações. Mesmo com suas restrições, o 
 mapeamento direto continua sendo uma abordagem popular devido ao equilíbrio entre custo, velocidade e simplicidade.
+
+
+
+                                     "Mapeamento Associativo"
+
+ O mapeamento associativo é um método flexível e poderoso para organizar os dados na memória cache, superando 
+algumas limitações do mapeamento direto. Diferentemente do mapeamento direto, onde cada bloco da memória principal 
+só pode ser armazenado em uma única linha do cache, no mapeamento associativo qualquer bloco pode ser armazenado em 
+qualquer linha da cache. Essa flexibilidade reduz significativamente os conflitos de mapeamento, garantindo um 
+melhor desempenho em cenários com acessos imprevisíveis à memória. 
+
+Vamos entender em detalhes como esse método funciona e explora suas características.
+
+ * Como Funciona o Mapeamento Associativo?
+
+   No mapeamento associativo , não existe uma restrição fixa entre blocos de memória principal e linhas do cache. 
+  Isso significa que qualquer bloco de memória pode ocupar qualquer linha disponível no cache. Quando um dado 
+  precisa ser armazenado, o sistema verifica se há uma linha livre no cache. Caso todas as linhas estejam ocupadas, 
+  um algoritmo de substituição (como LRU - Least Recently Used , ou menos usado recentemente) decida qual linha 
+  será sobrescrita.
+
+   O endereço de memória principal no mapeamento associativo é dividido em duas partes principais:
+
+       Tag : Identifica o bloco de memória.
+
+       Offset : Indica a posição exata do dado dentro do bloco.
+
+   Como não existe um Index fixo, o processador precisa comparar a Tag de cada linha do cache para identificar se o 
+  bloco desejado está presente.
+
+   Por Exemplo: 
+
+      Imagine um cache com 8 linhas e blocos de 4 bytes. Se quisermos armazenar um bloco da memória principal, ele 
+     pode ser alocado em qualquer uma das 8 linhas disponíveis. Quando o processador solicita um endereço 
+     específico, a Tag associada ao bloco é comparada com as Tags armazenadas em todas as linhas do cache até 
+     encontrar uma correspondência. Caso não haja uma correspondência, ocorre um cache miss , e o bloco é buscado 
+     na memória principal.
+
+   Esse processo pode parecer mais complexo, mas oferece uma vantagem significativa: ele elimina os conflitos 
+  diretos que ocorrem no mapeamento direto.
+
+
+ * Organização do Endereço de Memória
+
+   Para entender como os dados são organizados no mapeamento associativo, o endereço de memória principal é 
+  dividido da seguinte forma:
+
+  - Tag: Identifica de qual bloco de memória principal os dados pertencem. No mapeamento associativo, como qualquer 
+        linha pode ser usada, a Tag precisa ser comparada com todas as linhas do cache.
+
+  - Offset: Determina a posição exata do dado dentro do bloco, caso o bloco contenha mais de uma palavra ou byte de     
+           dados.
+
+    Além disso, cada linha do cache utiliza um bit de validade (bit Valid) para indicar se os dados armazenados 
+   nessa linha são válidos ou não.
+
+   Exemplo Prático: Vamos considerar um endereço de 8 bits e um cache com 8 linhas em que cada linha armazena 
+  blocos de 4 bytes. A divisão do endereço seria assim:
+
+     2 bits para o Offset : Determina a posição dentro do bloco (2² = 4 bytes,).
+
+     6 bits para a Tag : Identificam o bloco da memória principal.
+                                                                                                                                                                                                                        
+   Portanto, um endereço de 8 bits: 10110110, será dividido assim:
+
+         Tag (6 bits)| Offset (2 bits)  
+             101101          10             
+
+    Os 6 bits mais significativos ( 1 0 1 1 0 1 ) formam a Tag :  Que Identifica a linha 45  na cache.
+
+    Os 2 bits de menor ordem ( 1  0 ) formam o Offset: Que  determina a posição 2 dentro da linha 45 na cache.
+
+   Nesse caso, o processador compara os 6 bits da Tag com as Tags armazenadas em todas as linhas do cache até 
+  encontrar uma correspondência. O bit valid para a linha será definido como 1 se os dados forem válidos e 
+  estiverem prontos para uso.
+
+
+ * Vantagens e Limitações do Mapeamento Associativo:
+
+   O mapeamento associativo oferece mais flexibilidade em comparação ao mapeamento direto, mas essa flexibilidade 
+  tem um custo em termos de complexidade do hardware e tempo de busca. Vamos analisar suas vantagens e limitações:
+
+   Vantagens do Mapeamento Associativo:
+
+   - Redução de Conflitos: Como qualquer bloco pode ser armazenado em qualquer linha, os conflitos de mapeamento 
+                          são eliminados. Isso melhora o desempenho em aplicações com padrões de acesso 
+                          imprevisíveis.
+
+   - Melhor Aproveitamento de Cache: Todas as linhas de cache podem ser usadas de forma eficiente, sem a restrição 
+                                    de mapeamento direto.
+
+   - Flexibilidade: O sistema se adapta melhor a diferentes cenários de uso, oferecendo um desempenho mais 
+                    estável.
+
+   Limitações do Mapeamento Associativo:
+
+   - Tempo de Busca Maior: Para encontrar um bloco específico, é necessário comparar a Tag com todas as linhas do 
+                          cache, o que pode aumentar o tempo de acesso.
+
+   - Custo do Hardware: O hardware necessário para implementar a lógica de comparação simultânea entre as Tags é 
+                       mais complexo e caro em comparação com o mapeamento direto.
+
+   - Algoritmo de Substituição: Quando todas as linhas estão ocupadas, é necessário implementar um algoritmo para 
+                               decidir qual bloco será substituído (como o LRU ou FIFO).
+
+ O mapeamento associativo é uma solução flexível e eficiente para organizar os dados no cache de memória, 
+oferecendo um desempenho superior em cenários onde os acessos à memória são imprevisíveis ou intensivos. Sua 
+capacidade de armazenar qualquer bloco em qualquer linha reduz os conflitos de mapeamento, tornando o uso do cache 
+mais eficiente. No entanto, essa flexibilidade vem com um custo: a maior complexidade do hardware e o tempo 
+adicional necessário para comparar as Tags em todas as linhas.
+
+ Compreender o funcionamento da Tag , do Offset e do bit Válido é essencial para dominar o mapeamento associativo e 
+avaliar onde ele pode ser aplicado. Apesar de suas limitações, o mapeamento associativo é amplamente utilizado em 
+sistemas que priorizam desempenho e eficiência, garantindo um equilíbrio sólido entre flexibilidade e velocidade .
+
+
+
+
 
 
 
