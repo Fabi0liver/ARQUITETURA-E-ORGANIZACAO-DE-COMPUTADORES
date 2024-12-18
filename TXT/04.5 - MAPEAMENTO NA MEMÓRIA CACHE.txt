@@ -556,13 +556,13 @@ oferecer desempenho superior sem a complexidade extrema do mapeamento totalmente
 
 
 
-                            "Como o Escolher  Qual Mapeamento Usar?"
+                            "Como Escolher Qual Mapeamento Usar?"
 
  Escolher o mapeamento de endereço de memória ideal é como decidir a melhor forma de organizar uma estante de 
-livros em uma biblioteca. Deve considerar o espaço disponível, os tipos de livros e a frequência com que eles serão 
-consultados, no mundo da computação, é preciso avaliar como a memória cache e a memória principal interagem. Essa 
-escolha é essencial para garantir um desempenho eficiente do sistema, minimizando o tempo de acesso aos dados e 
-maximizando a utilização dos recursos disponíveis.
+livros em uma biblioteca. Deve-se considerar o espaço disponível, os tipos de livros e a frequência com que eles 
+serão consultados, no mundo da computação, é preciso avaliar como a memória cache e a memória principal interagem. 
+Essa escolha é essencial para garantir um desempenho eficiente do sistema, minimizando o tempo de acesso aos dados 
+e maximizando a utilização dos recursos disponíveis.
 
  Existem três métodos principais de mapeamento: o mapeamento direto , o mapeamento associativo e o mapeamento 
 associativo por conjunto . O mapeamento direto é como organizar livros por uma única regra fixa, como "um autor por 
