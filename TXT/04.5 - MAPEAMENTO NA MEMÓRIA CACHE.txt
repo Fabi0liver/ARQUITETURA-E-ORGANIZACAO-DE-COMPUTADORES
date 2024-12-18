@@ -261,13 +261,12 @@ simples e amigável.
    Exemplo Prático: Vamos imaginar um endereço de memória de 8 bits e um cache com 8 linhas , onde cada linha pode 
   armazenar um bloco de 4 bytes . O endereço de memória será dividido em 3 partes : Tag, Index e Offset .
 
-     2 bits para o Offset: Determina a posição exata do dado dentro do bloco. (pois 2² = 4, correspondendo a 4 
-                          bytes no bloco).
+    2 bits para o Offset: Determina a posição exata do dado dentro do bloco. (pois 2² = 4, correspondendo a 4 
+                         bytes no bloco).
 
-     3 bits para o Index: Seleciona a linha específica do cache (pois 2³= 8, correspondendo às 8 linhas da 
-                         cache).
+    3 bits para o Index: Seleciona a linha específica do cache (pois 2³= 8, correspondendo às 8 linhas da cache).
 
-     3 bits restantes para a Tag: Identificam o bloco específico da memória principal.
+    3 bits restantes para a Tag: Identificam o bloco específico da memória principal.
 
    Portanto, um endereço de 8 bits: 10110110, será dividido assim:
 
@@ -319,7 +318,10 @@ simples e amigável.
                          processador a buscar os dados na memória principal com mais frequência, o que pode 
                          melhorar significativamente o desempenho geral.
 
- O mapeamento direto é uma solução simples e econômica para organizar um cache de memória, sendo ideal para sistemas com requisitos modestos de desempenho. No entanto, seus conflitos de mapeamento podem afetar o desempenho em acessos imprevisíveis. Equilibrar suas vantagens e mitigar suas limitações é essencial para garantir eficiência sem complexidade.
+ O mapeamento direto é uma solução simples e econômica para organizar um cache de memória, sendo ideal para 
+sistemas com requisitos modestos de desempenho. No entanto, seus conflitos de mapeamento podem afetar o desempenho 
+em acessos imprevisíveis. Equilibrar suas vantagens e mitigar suas limitações é essencial para garantir eficiência 
+sem complexidade.
                                                                                                                                                                                                                       
  Em suma, o mapeamento direto é uma solução prática e eficiente para organizar os dados na memória cache. Sua 
 simplicidade torna o sistema rápido e de fácil implementação, especialmente em sistemas que possuem padrões 
@@ -441,6 +443,122 @@ adicional necessário para comparar as Tags em todas as linhas.
  Compreender o funcionamento da Tag , do Offset e do bit Válido é essencial para dominar o mapeamento associativo e 
 avaliar onde ele pode ser aplicado. Apesar de suas limitações, o mapeamento associativo é amplamente utilizado em 
 sistemas que priorizam desempenho e eficiência, garantindo um equilíbrio sólido entre flexibilidade e velocidade .
+
+
+
+                                 "Mapeamento Associativo por Conjunto"
+
+ O mapeamento associativo por conjunto é uma solução específica entre o mapeamento direto e o totalmente 
+associativo, oferecendo um equilíbrio eficiente entre simplicidade, custo e desempenho. Esse método resolve alguns 
+dos problemas encontrados no mapeamento direto, como os conflitos recorrentes, para permitir que um bloco de 
+memória principal seja armazenado em mais de uma posição possível dentro de um conjunto específico no cache. Vamos 
+entender melhor como esse método funciona e explorar suas características.                            
+                                                                                                                                                                                                                               
+ * Como Funciona o Mapeamento Associativo por Conjunto?
+
+   No mapeamento associativo por conjunto, a memória cache é dividida em conjuntos (daí o nome). Cada conjunto 
+  contém um número fixo de linhas (por exemplo, 2, 4 ou 8 linhas), e um bloco de memória principal pode ser 
+  armazenado em qualquer linha dentro de um conjunto específico. O conjunto onde o bloco será alocado é determinado 
+  por um cálculo matemático simples, semelhante ao mapeamento direto:                                     
+                                                                                                                                                                                                                         
+       Conjunto = (Endereço do Bloco da Memória Principal) % (Número Total de Conjuntos)                                  
+                                                                                                                                                                                                                                     
+   Por exemplo:
+
+       Se o cache tiver 8 conjuntos e o bloco de memória principal tiver endereço 14, o cálculo será: 14 % 8 = 6.
+       Isso significa que o bloco será armazenado em qualquer linha livre dentro do conjunto 6 .                             
+                                                                                                                                                                                                                         
+   Diferente do mapeamento direto, onde o bloco só pode ir para uma linha específica, o mapeamento associativo por  
+  conjunto permite flexibilidade: ele pode ocupar qualquer linha disponível dentro do conjunto. Isso reduz os 
+  conflitos e melhora a eficiência, mas ainda mantém uma estrutura mais simples do que o mapeamento totalmente 
+  associativo, que permite qualquer bloco em qualquer linha.                                                                                                      
+   
+                                                                                                                                                                                                               
+ * Organização do Endereço de Memória
+
+   Assim como no mapeamento direto, o endereço de memória principal é dividido  em três partes (Tag , Index e 
+  Offset) mas com algumas diferenças devido ao uso de conjuntos . Além disso, é comum utilizar um bit de validade 
+  (bit valid) para verificar se os dados na linha do cache são válidos. Vamos detalhar cada um desses  componente:
+
+  - Tag: Identifica o bloco de memória principal. A Tag é comparada com os dados armazenados no conjunto para 
+        verificar se o bloco desejado está presente.
+
+  - Index: Determina qual conjunto do cache será acessado. Ele é calculado a partir dos bits de menor ordem do 
+          endereço de memória, apontando diretamente para o conjunto correto.
+
+  - Offset: Indica a posição exata dentro do bloco, útil quando o bloco contém múltiplos bytes ou palavras.
+
+  - Bit Valid : O bit de validade indica se os dados armazenados na linha são válidos. Se o bit for 1 , significa que os dados podem ser usados. Caso contrário, o processador deve buscar os dados na memória principal.                                     
+                                                                                                                                                                                                                             
+   Exemplo Prático: Vamos imaginar um cache com 8 conjuntos , onde cada conjunto possui 2 linhas (ou seja, é um 
+  cache associativo por conjunto de grau 2). O endereço de memória tem 8 bits e será dividido em Tag, Index e 
+  Offset.
+
+    1 bit para o Offset : Indicam a posição exata do dado dentro do bloco.
+
+    3 bits para o Index : Selecionamos o conjunto específico (pois 2³= 8, correspondendo a 8 conjuntos).
+
+    4 bits restantes para a Tag : Identificam o bloco de memória.
+                                                                                                                                                                                                                                 
+   Agora, suponha um endereço de memória 10110110:                                                                                                               
+            
+         Tag (4 bits)|Index (3 bits)|Offset (1 bit)   
+              1011         011            0                                                                                                                  
+                                                                                                                                                                                                                                      
+    Os 3 bits intermediários (0 1 1 ) formam o Index:  Que indica  o conjunto 3 na cache .                                                                
+ 
+    Os 4 bits mais significativos (1 0 1 1) formam a Tag: Que indica a linha 11 do conjunto 3 da memoria cache .             
+
+    O bit menos significativo (0) forma o Offset: Que indica a primeira posição no  bloco dentro do conjunto 3  
+                                                 da cache.          
+
+   Se uma das linhas no conjunto 3 estiver vazia ou armazenar um bloco inválido (bit Valid = 0), o bloco será 
+  carregado ali, e o bit Valid será atualizado para 1 . Se as duas linhas estiverem ocupadas, o sistema precisará 
+  substituir um dos blocos existentes, geralmente usando uma política como LRU (Least Recentemente Used) .                                
+                                                                                                                                                                                                                      
+
+ * Vantagens e Limitações do Mapeamento Associativo por Conjunto:
+
+   O mapeamento associativo por conjunto busca o melhor dos dois mundos: a simplicidade do mapeamento direto com a 
+  flexibilidade do mapeamento totalmente associativo. Ainda assim, ele apresenta suas próprias vantagens e  
+  limitações.
+
+   Vantagens do Mapeamento Associativo por Conjunto:
+
+   - Redução de Conflitos: Como um bloco pode ser armazenado em qualquer linha dentro do conjunto, os conflitos de 
+                          mapeamento são significativamente reduzidos em comparação ao mapeamento direto.
+
+   - Flexibilidade: A possibilidade de escolher entre várias linhas no conjunto aumenta a eficiência do cache, 
+                   permitindo um melhor uso do espaço disponível.
+
+   - Bom Equilíbrio: O mapeamento associativo por conjunto oferece um equilíbrio entre desempenho, complexidade de 
+                    hardware e custo, tornando-se uma solução ideal para muitos sistemas.
+
+   Limitações do Mapeamento Associativo por Conjunto:
+
+   - Custo Moderado: Embora mais simples que o mapeamento totalmente associativo, o mapeamento por conjunto ainda 
+                    requer hardware adicional para comparar as tags de todas as linhas dentro de um conjunto.
+
+   - Política de Substituição: Quando todas as linhas de um conjunto estão ocupadas, é necessário substituir um 
+                              bloco existente. Isso adiciona uma pequena complexidade ao sistema, especialmente se 
+                              forem políticas usadas como LRU.
+
+   - Maior Latência que o Mapeamento Direto: O acesso ao cache pode ser gradualmente mais lento, pois o processador 
+                                            precisa verificar todas as linhas dentro do conjunto.
+
+
+ O mapeamento associativo por conjunto é uma solução eficiente e flexível para a organização da memória cache, 
+equilibrando simplicidade, custo e desempenho. Ele resolve os principais problemas do mapeamento direto, como os 
+conflitos de mapeamento, para permitir que um bloco seja armazenado em qualquer linha de um conjunto específico. 
+Compreender os componentes como Tag, Index, Offset e bit Válido é essencial para dominar seu funcionamento e 
+avaliar onde ele pode ser aplicado com sucesso. Embora tenha um custo e complexidade moderados, o mapeamento 
+associativo por conjunto continua sendo amplamente utilizado em sistemas modernos devido à sua capacidade de 
+oferecer desempenho superior sem a complexidade extrema do mapeamento totalmente associativo.
+
+
+
+
+
 
 
 
