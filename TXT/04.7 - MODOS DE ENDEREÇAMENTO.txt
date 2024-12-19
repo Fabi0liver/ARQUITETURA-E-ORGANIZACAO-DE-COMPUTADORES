@@ -147,3 +147,71 @@ sistemas que funcionam com dados estáticos. Embora suas especificações o torn
 dinâmicos, ele continua sendo uma solução prática para muitas situações, especialmente em sistemas onde a memória é 
 organizada de forma previsível. Por isso, o endereçamento direto permanece uma ferramenta fundamental no design de 
 arquiteturas de computação.
+
+
+
+                                   "Endereçamento Indireto"
+
+ O endereçamento indireto é um modo de endereçamento que envolve o uso de um ponteiro, ou seja, o valor armazenado 
+em um endereço de memória é usado para localizar o verdadeiro dado. Em vez de usar o valor diretamente na 
+instrução, o endereço de memória que contém o valor desejado é especificado. É como se você tivesse uma carta (o 
+endereço de memória) que contém o local exato de onde encontrar o presente (o valor) e, ao invés de abrir a carta e 
+ver o presente imediatamente, você primeiro vai até o local indicado. Em outras palavras, o valor real a ser 
+processado está armazenado em uma célula de memória, e a instrução apenas fornece o endereço dessa célula.
+
+ Esse modo é útil quando você precisa trabalhar com dados  que  são dinâmicos ou desconhecidos de antemão. Ao invés 
+de embutir o valor diretamente na instrução, o processador vai até o endereço indicado para buscar o dado, o que 
+permite maior flexibilidade. No entanto, esse processo envolve um passo adicional, que pode ser mais lento do que o 
+acesso direto ao valor, pois depende de mais uma operação para localizar o dado.
+
+ * Como Funciona: No endereçamento indireto, a instrução não especifica diretamente o valor do operando, mas o 
+  endereço de onde o operando pode ser encontrado. Ou seja, a instrução fornece um endereço de memória, e o 
+  processador deve acessar esse endereço para encontrar o valor necessário. Por exemplo, se uma instrução  do 
+  tipo  MOV R1, [ 1000 ] isso significa que o processador vai buscar o conteúdo do endereço 1000 da memória e 
+  colocar esse conteúdo no registrador R1. O valor real que o processador deseja manipular está então, localizado 
+  nesse endereço e será acessado por meio de um passo adicional de indireção.
+
+
+ * Vantagens:
+
+   Maior flexibilidade: O endereçamento indireto permite o acesso a dados cujos endereços podem ser alterados 
+                       dinamicamente durante a execução do programa, o que é útil em programas que lidam com 
+                       listas, tabelas e outras estruturas de dados.
+
+   Eficiência em estruturas dinâmicas: Em programas que utilizam ponteiros ou referências a dados que mudam 
+                                      frequentemente, o endereçamento indireto torna o código mais eficiente e 
+                                      modular.
+
+   Acesso a dados em locais variados: Como os dados podem estar em diferentes locais da memória, o endereçamento 
+                                     indireto permite acessar essas posições sem modificar a instrução original.
+
+
+ * Desvantagens:
+
+   Desempenho mais lento: O processo de acesso ao endereço de memória e, em seguida, acessar o valor real, exige 
+                         uma operação extra, o que pode levar mais tempo do que um acesso direto.
+
+   Complexidade adicional: Ao utilizar o endereçamento indireto, o processador precisa de  mais operações para 
+                          acessar o dado, o que pode aumentar a complexidade de implementação em relação a outros 
+                          modos realizados de endereçamento mais simples.
+
+   Maior uso de memória: Em alguns casos, pode ser necessário utilizar mais memória para armazenar os endereços, o 
+                        que pode impactar a eficiência do sistema, especialmente em arquiteturas com recursos 
+                        limitados.
+
+
+ * Exemplo de uso: O endereçamento indireto é amplamente utilizado em linguagens de programação que lidam com 
+  ponteiros e referências, como C e C++. Em um cenário típico, um ponteiro armazena o endereço de um dado na 
+  memória, e o programador pode acessar esse dado correspondente. Por exemplo, ao trabalhar com arrays ou listas 
+  encadeadas, os elementos podem ser armazenados em locais não corridos de memória, e o endereço de cada elemento 
+  pode ser armazenado em uma variável. Assim, uma instrução como MOV R1, [R2] pode indicar que o valor do 
+  registrador R2 contém o endereço do dado real, e o processador deve buscar esse valor. Esse uso do endereçamento 
+  indireto permite que o programa acesse dados de forma eficiente, sem a necessidade de modificar diretamente o 
+  código para lidar com diferentes endereços.
+
+ O endereçamento indireto oferece uma abordagem flexível para acesso a dados armazenados em locais dinâmicos da 
+memória, sendo particularmente útil em programas que manipulam estruturas de dados complexos. Embora ofereça maior 
+flexibilidade e capacidade de gerenciamento de dados em locais variados, sua principal desvantagem é o custo 
+adicional em termos de tempo de processamento e complexidade, devido à necessidade de uma etapa extra para 
+localizar e acessar os dados. No entanto, em cenários onde a flexibilidade e o acesso a dados variáveis ​​são 
+necessários, o endereçamento indireto é uma ferramenta essencial para os sistemas de computação modernos.
