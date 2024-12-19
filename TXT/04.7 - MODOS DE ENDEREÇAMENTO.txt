@@ -215,3 +215,129 @@ flexibilidade e capacidade de gerenciamento de dados em locais variados, sua pri
 adicional em termos de tempo de processamento e complexidade, devido à necessidade de uma etapa extra para 
 localizar e acessar os dados. No entanto, em cenários onde a flexibilidade e o acesso a dados variáveis ​​são 
 necessários, o endereçamento indireto é uma ferramenta essencial para os sistemas de computação modernos.
+
+
+
+                                 "Endereçamento Por Registrador"
+
+ O endereçamento por registrador é um modo de endereçamento onde o operando (o dado a ser manipulado) está 
+localizado diretamente em um registrador, que é uma pequena área de armazenamento de dados dentro do processador. 
+Nesse sentido, a instrução especifica um ou mais registradores para realizar a operação, ao invés de acessar dados 
+da memória principal ou de outro lugar. É como se você tivesse um bloco de anotações em sua mesa e, em vez de sair 
+procurando informações em outros lugares, você tivesse tudo o que precisa já escrito ali, facilitando e acelerando 
+o processo.
+
+ Esse tipo de endereçamento é extremamente rápido, já que acessar um registrador é muito mais eficiente do que 
+acessar uma memória. Ele é frequentemente usado para manipular valores temporários ou intermediários, como 
+resultados parciais de operações ou dados que são constantemente usados. Isso torna o endereçamento por registrador 
+ideal para operações que necessitam alta velocidade, como as operação de cálculos matemáticos ou manipulação de 
+dados em loops rápidos.
+
+ * Como Funciona: No endereçamento por registrador, a instrução indica diretamente quais registradores devem ser  
+  utilizados para a operação. Por exemplo, uma instrução como ADD R1, R2 significa que o valor presente no 
+  registrador R2 será somado ao valor presente no registrador R1, e o resultado será armazenado no registrador R1. 
+  O processo é extremamente rápido, porque os registradores estão localizados diretamente no receptor , e ao 
+  contrário da memória, não há latência significativa para acessar esses dados.
+
+
+ * Vantagens
+
+   Velocidade: Como os registradores estão localizados no processador e podem ser acessados ​​muito mais rapidamente  
+              do que a memória, o endereçamento por registrador é altamente eficiente em termos de tempo de 
+              execução.
+
+   Simplicidade: Não há necessidade de acessar a memória, o que simplifica a execução da instrução, tornando o   
+                processo mais direto e rápido.
+
+   Redução de latência: A latência de acesso é mínima, o que torna esse modo ideal para operações de alta 
+                       frequência ou cálculos pesados ​​em tempo real.
+
+
+ * Desvantagens
+
+   Limitação de espaço: O número de registradores em um processador é limitado, o que significa que, se muitos 
+                       dados forem necessários, o uso de endereçamento por registrador pode não ser prático.
+
+   Falta de flexibilidade: Como os dados precisam ser armazenados em registradores, é menos útil para manipulação 
+                          de grandes quantidades de dados ou para operações envolvendo grandes áreas de memória.
+
+   Dependência de hardware: O desempenho do endereçamento por registrador depende diretamente da quantidade de 
+                           registradores disponíveis no processador, o que pode variar dependendo da arquitetura.
+
+
+ * Exemplo de uso: O endereçamento por registrador é frequentemente utilizado em operações de design que envolvem 
+  números temporários ou resultados intermediários. Por exemplo, em uma operação como MOV R1, R2 o valor armazenado 
+  em R2 seria copiado para R1. Também é utilizado para operações matemáticas simples, como somar ou subtrair 
+  valores rapidamente,  como em instruções como ADD R3, R4 que soma o conteúdo de R4 ao valor em R3. Esses exemplos 
+  mostram como esse modo de endereçamento é eficiente e direto quando se trata de manipular valores temporários ou 
+  intermediários, onde a velocidade e a simplicidade são fundamentais.
+
+ O endereçamento por registrador é uma solução rápida e eficiente para manipulação de dados temporários dentro do 
+processador. Sua principal vantagem é a velocidade, uma vez que os registradores são acessados ​​muito mais 
+rapidamente do que a memória principal. Contudo, devido ao número limitado de registradores, sua aplicação é 
+restrita a dados temporários e operações simples. Ainda assim, é um dos modos de endereçamento mais importantes e 
+utilizados, sendo crucial em processos que exigem alto desempenho e tempo mínimo de execução.
+
+
+
+                        "Endereçamento Indireto Por Registrador"
+
+ O endereçamento indireto por registrador é um modo de endereçamento que envolve a utilização de um registrador 
+para apontar para o local na memória onde o dado real está armazenado. Nesse modo, a instrução não especifica 
+diretamente o valor a ser usado, mas sim o endereço de memória onde o valor se encontra. Isso é como se você 
+tivesse um mapa, mas em vez de te entregar o destino diretamente, ele te dá um ponto de partida para você encontrar 
+o caminho até o objetivo. Por exemplo, se a instrução é MOV R1, (R2), isso significa que o valor que está no 
+endereço de memória armazenado em R2 será movido para R1.
+
+ Esse tipo de endereçamento é útil em cenários em que os dados podem estar em diferentes locais da memória, e não 
+são valores fixos. Ele oferece mais facilidade do que o endereçamento imediato, permitindo que o valor da memória á 
+ser acessado seja dinâmico, ou seja, determinado em tempo de execução, a partir do conteúdo dos registradores. 
+Isso torna o endereçamento indireto por registrador um modo versátil para trabalhar com dados que não são  conhecidos anteriormente, especialmente em operações com grandes volumes de dados ou estruturas de dados, como  listas ou matrizes dinâmicas.
+
+ * Como Funciona: No endereçamento indireto por registrador, o valor contido no registrador especificado é 
+  utilizado como um ponteiro para um local de memória onde o dado é armazenado. Em vez de armazenar o dado 
+  diretamente na instrução, como no endereçamento imediato, ou simplesmente referenciar um endereço fixo de 
+  memória, o registrador contém o endereço de memória onde o operando real reside. Por exemplo, considere uma 
+  instrução LOAD R1, (R2). Aqui, o conteúdo de R2 não é o dado em si, mas sim o endereço de memória onde o dado 
+  está localizado. O processador, então, acessa a memória nesse endereço e carrega o valor para R1.
+
+
+ * Vantagens
+ 
+   Flexibilidade: O endereçamento indireto por registrador permite acessar diferentes locais de memória de forma 
+                 dinâmica, o que é útil para trabalhar com dados que não são fixos ou pré-determinados.
+
+   Eficiência em operações com dados dinâmicos: Ideal para situações em que a posição dos dados na memória varia, 
+                                               como em listas encadeadas ou outros tipos de estruturas de dados 
+                                               dinâmicas.
+
+   Redução do número de instruções: Pode reduzir a necessidade de especificar endereços completos nas instruções, 
+                                   pois os registradores atuam como ponteiros para acessar os dados.
+
+
+ * Desvantagens
+
+   Dependência de registradores: Esse método depende de registradores para armazenar os endereços de memória, por 
+                                isso o número de registradores disponíveis pode ser um limitador .
+
+   Maior complexidade: A necessidade de gerenciamento indireto pode adicionar um nível de complexidade maior ao 
+                      programa e ao design do processador, aumentando o custo computacional.
+
+   Velocidade: Embora mais flexível, o acesso indireto pode ser mais lento do que os métodos diretos, pois envolve 
+              múltiplos processos de acesso (primeiro o registrador e depois a memória).
+
+
+ * Exemplo de uso: O endereçamento indireto por registrador é muito utilizado em programas que manipulam estruturas 
+  de dados dinâmicas, como listas encadeadas. Em um programa que precisa acessar os elementos de uma lista, os 
+  endereços dos elementos podem ser armazenados em registradores, e o conteúdo desses endereços é constantemente 
+  alterado conforme o programa  navega pela lista. Um exemplo seria uma instrução como MOV R1, (R2) onde o endereço 
+  armazenado em R2 aponta para a primeira posição da lista e, assim, o dado real da lista é carregado para o 
+  registrador R1. Esse tipo de endereçamento é muito eficiente para manipulação de dados que mudam durante a 
+  execução do programa.
+
+ Em suma, o endereçamento indireto por registrador é uma abordagem poderosa e flexível, permitindo acessar dados em 
+locais dinâmicos da memória de forma eficiente. Embora tenham algumas limitações, como a dependência de 
+registradores e uma certa complexidade adicional no design do processador, eles se destacam em cenários que exigem 
+a manipulação de grandes volumes de dados ou estruturas dinâmicas de dados. Assim, é uma ferramenta avançada para 
+programadores e arquitetos de sistemas que precisam de soluções que vão além do simples acesso direto a valores 
+fixos na memória.
