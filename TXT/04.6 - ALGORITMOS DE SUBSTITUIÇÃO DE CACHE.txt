@@ -18,8 +18,7 @@ frequência no futuro, enquanto outros apenas olham para os dados mais antigos o
 suas vantagens e limitações, e  por isso, entender como cada um funciona é essencial para otimizar o uso do cache e 
 evitar que o sistema se torne mais lento.
 
- Neste estudo, vamos explorar os algoritmos mais comuns, como FIFO (First In, First Out) , LRU (Least Recentemente 
-Used), LFU (Least Frequently Used), entre outros ; além de discutir como cada um lida com os desafios da 
+ Neste estudo, vamos explorar os algoritmos mais comuns, como FIFO (First In, First Out) , LRU (Least Recently Used), LFU (Least Frequently Used), entre outros ; além de discutir como cada um lida com os desafios da 
 substituição de dados no cache . Assim, ao entender como o computador toma essas decisões, podemos melhorar a 
 maneira como ele lida com as informações e, consequentemente, acelerar o desempenho dos programas e sistemas.
 
