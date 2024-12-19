@@ -88,3 +88,62 @@ problemas que envolvem valores fixos e constantes. Porém, sua falta de flexibil
 dinâmicos, onde os dados podem mudar durante a execução do programa. Apesar disso, ele continua sendo uma 
 ferramenta fundamental na caixa de ferramentas de um processador, ideal para quando a simplicidade e a velocidade 
 são prioridades.
+
+
+
+                                    "Endereçamento Direto"
+
+ O endereçamento direto é um dos modos mais comuns e simples de compreender quando se trata de acesso à memória. 
+Nesse modo, a instrução contém diretamente o endereço de memória onde o dado necessário está armazenado. É como se 
+você tivesse um mapa detalhando exatamente onde buscar algo; você olha no mapa, vai direto ao local e pega o que 
+precisa. Por exemplo, se uma instrução precisa acessar um valor armazenado em uma posição específica da memória, 
+ela já possui o endereço exato dessa posição embutido na instrução.
+
+ Esse modo é amplamente usado porque simplifica o acesso a dados que não mudam de lugar durante a execução do 
+programa. Por exemplo, imagine que você tem uma tabela de valores na memória e precisa consultar elementos 
+específicos dela; o endereçamento direto oferece uma forma eficiente de fazer isso. No entanto, como o endereço 
+está fixo na instrução, ele não é ideal em situações que exigem flexibilidade ou manipulação dinâmica dos dados.
+
+
+ * Como Funciona: No endereçamento direto, a instrução inclui o endereço exato da memória onde o dado está   
+  armazenado. Por exemplo, em uma instrução como LOAD R1, 1000, o número 1000 é o endereço de memória que contém o 
+  valor a ser carregado no registrador R1. Nesse caso, o processador simplesmente consulta a memória nesse endereço 
+  e obtém o dado necessário, sem precisar realizar cálculos adicionais para determinar onde está o valor.
+
+
+ * Vantagens:
+
+   Simplicidade: O endereçamento direto é fácil de implementar e entender, pois o endereço exato já está na  
+                instrução.
+
+   Eficiência: Para dados que não mudam de posição, o acesso direto à memória reduz o tempo necessário para buscar 
+              informações.
+
+   Ideal para estruturas fixas: Funciona bem em programas onde tabelas, constantes ou dados importantes permanecem 
+                               em posições fixas na memória.
+
+
+ * Desvantagens:
+
+   Falta de flexibilidade: Não é adequado para cenários onde os dados mudam de posição ou precisam ser acessados ​​de 
+                          maneira dinâmica.
+
+   Tamanho das instruções: Embutir endereçamento direto na instrução pode ocupar espaço significativo, 
+                          especialmente em arquiteturas com tamanhos de instrução limitados.
+
+   Dependência da organização da memória: Alterações na disposição dos dados na memória podem exigir mudanças no 
+                                         código, o que pode dificultar a manutenção do programa.
+
+
+ * Exemplo de uso: O endereçamento direto é muito utilizado em aplicações onde os dados permanecem estáticos na   
+  memória. Por exemplo, em programas que acessam tabelas de conversão, como uma tabela ASCII, o endereço direto 
+  pode indicar para a exata posição  onde estão armazenados os valores correspondentes aos caracteres. Outra 
+  aplicação comum é em sistemas embarcados, onde certos valores de configuração ou constantes importantes ficam 
+  sempre em posições fixas na memória. Por exemplo, uma instrução como LOAD R2, 2000 pode buscar diretamente um 
+  dado que está armazenado em uma posição específica de memória, como um parâmetro definido pelo sistema.
+
+ O endereçamento direto é como ter um endereço fixo para cada dado, garantindo simplicidade e eficiência em 
+sistemas que funcionam com dados estáticos. Embora suas especificações o tornem menos ideal para cenários 
+dinâmicos, ele continua sendo uma solução prática para muitas situações, especialmente em sistemas onde a memória é 
+organizada de forma previsível. Por isso, o endereçamento direto permanece uma ferramenta fundamental no design de 
+arquiteturas de computação.
