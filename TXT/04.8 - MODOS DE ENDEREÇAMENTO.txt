@@ -341,3 +341,102 @@ registradores e uma certa complexidade adicional no design do processador, eles 
 a manipulação de grandes volumes de dados ou estruturas dinâmicas de dados. Assim, é uma ferramenta avançada para 
 programadores e arquitetos de sistemas que precisam de soluções que vão além do simples acesso direto a valores 
 fixos na memória.
+
+
+
+                                "Endereçamento Por Deslocamento"
+
+ O endereçamento por deslocamento é um método versátil e amplamente utilizado em arquiteturas modernas de 
+computação. Ele combina uma base inicial, geralmente fornecida por um registrador ou pelo contador de programa 
+(PC), com um valor de deslocamento para calcular o endereço efetivo de memória. Imagine um endereço  de uma casa, 
+onde o número da rua é fixo, mas o número da casa muda dependendo do quarteirão. Da mesma forma, no endereçamento 
+por deslocamento, você começa de um ponto fixo e ajusta o local com base em um valor adicional. Esse método é uma 
+peça-chave para acessar posições relativas na memória, como elementos de arrays, variáveis locais ou mesmo 
+instruções de programas. 
+
+ * Tipos de Endereçamento Por Deslocamento: O endereçamento por deslocamento se subdivide em três categorias 
+  principais: endereçamento relativo , endereçamento por registrador base e endereçamento por indexação , cada um 
+  adaptado para necessidades específicas no cálculo de endereços.
+
+   A seguir, exploraremos os três tipos, explicando suas características e como funcionam.
+
+   - Endereçamento Relativo: O endereçamento relativo faz o  uso do contador de programa (PC) como ponto de 
+                            referência. A localização especifica a distância até a posição desejada em relação à 
+                            instrução atual, permitindo acessar dados ou instruções próximas na memória. É 
+                            amplamente utilizado em saltos condicionais ou loops, onde o código precisa navegar 
+                            entre trechos adjacentes de memória.
+
+                             Como funciona: Quando o processador encontra uma instrução com endereçamento relativo, 
+                            ele soma o valor do deslocamento ao endereço armazenado no contador de programa (PC). 
+                            Por exemplo, em um salto condicional, a posição pode ser um número positivo para 
+                            avançar no código ou negativo para retornar a um trecho anterior. Esse método é 
+                            eficiente porque reduz o tamanho das instruções, já que o endereço completo não precisa 
+                            ser especificado.
+
+   
+   - Endereçamento Por Registrador Base: No endereçamento por registrador base, um registrador específico armazena 
+                                        a base ou ponto de referência. A localização indica a posição relativa à 
+                                        base, permitindo o acesso a dados organizados em torno de uma posição fixa, 
+                                        como variações locais ou registradores em estruturas complexas.
+
+                                         Como funciona: O processador calcula o endereço específico somando o valor 
+                                        armazenado no registrador base com o deslocamento fornecido pela instrução. 
+                                        Por exemplo, em um array de estruturas, a base do registrador pode conter o 
+                                        endereço inicial do array, e a localização determinará qual elemento 
+                                        específico será acessado. Essa técnica é útil em arquiteturas que utilizam 
+                                        memória segmentada ou modular.
+
+
+   - Endereçamento Por Indexação: No endereçamento por indexação, um índice, geralmente armazenado em um 
+                                 registrador, é combinado a uma base fixa para acessar elementos sequenciais, como 
+                                 em arrays ou tabelas. Cada posição do array é acessada deslocando-se da base por 
+                                 um valor correspondente ao índice.
+
+                                  Como funciona: O processador calcula o endereço específico somando o valor do 
+                                  índice ao ponto inicial do array ou tabela, que é especificado pela base fixa. 
+                                  Por exemplo, em um array começando no endereço 1000, para acessar o quinto 
+                                  elemento (índice 4), o processador soma a base (1000) ao índice multiplicado pelo 
+                                  tamanho de cada elemento. Essa abordagem é eficiente e fácil de implementar em  
+                                  estruturas com acesso sequencial.
+
+   Esses três tipos de endereçamento por colocação oferecem soluções práticas para diferentes cenários, desde 
+  navegação pelo fluxo de instruções até acesso eficiente a dados estruturados. Eles são essenciais para otimizar a 
+  execução de programas e garantir o uso eficaz da memória.
+
+
+ * Vantagens do Endereçamento Por Deslocamento:
+
+   Flexibilidade: Permite acessar posições variáveis na memória, sendo ideal para trabalhar com arrays, tabelas ou  
+                 variáveis locais.
+
+   Redução do tamanho das instruções: Em vez de codificar endereços completos, o uso de deslocamentos reduz a 
+                                     quantidade de bits necessários para endereçar a memória.
+
+   Apoio a estruturas de dados dinâmicas: Muito eficiente para trabalhar com listas, pilhas e outros dados 
+                                         estruturados.
+
+
+  * Desvantagens do Endereçamento Por Deslocamento: 
+
+    Complexidade adicional: O cálculo do endereço efetivo pode adicionar uma pequena sobrecarga ao tempo de 
+                           execução, especialmente em sistemas menos otimizados.
+
+    Dependência de registradores ou referências fixas: Requer pontos de referência como base, o que pode limitar a 
+                                                      flexibilidade em alguns cenários específicos.
+
+    Erro humano: Pode ser propenso a erros de programação, especialmente se o deslocamento não for calculado 
+                corretamente.
+
+
+ * Exemplo de Uso: Um uso clássico do endereçamento por deslocamento é o acesso a elementos em arrays. Por exemplo, 
+  se um array começa no endereço 1000 e o índice desejado é 5, o processador somará o deslocamento 5 ao ponto 
+  inicial (1000) para acessar a posição 1005. Outro exemplo é a utilização em pilhas, onde o registrador base 
+  aponta para o topo da pilha, e o deslocamento acessa elementos mais abaixo ou acima dela. No endereçamento 
+  relativo, ele é amplamente utilizado em saltos condicionais, onde o deslocamento indica a distância até a próxima 
+  instrução.
+
+ Em suma, o endereçamento por deslocamento é uma abordagem poderosa e flexível, permitindo acessar dados de maneira 
+eficiente e organizada. Seja em estruturas de dados como arrays e pilhas ou no controle do fluxo de execução de 
+programas, ele combina simplicidade com adaptabilidade. Embora sua implementação requeira cuidados, principalmente 
+na definição correta do deslocamento, sua utilidade em sistemas modernos de computação faz dele uma escolha 
+essencial em diversas aplicações.
