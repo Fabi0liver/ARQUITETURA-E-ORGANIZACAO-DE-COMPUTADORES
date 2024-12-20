@@ -350,61 +350,28 @@ fixos na memória.
 computação. Ele combina uma base inicial, geralmente fornecida por um registrador ou pelo contador de programa 
 (PC), com um valor de deslocamento para calcular o endereço efetivo de memória. Imagine um endereço  de uma casa, 
 onde o número da rua é fixo, mas o número da casa muda dependendo do quarteirão. Da mesma forma, no endereçamento 
-por deslocamento, você começa de um ponto fixo e ajusta o local com base em um valor adicional. Esse método é uma 
-peça-chave para acessar posições relativas na memória, como elementos de arrays, variáveis locais ou mesmo 
-instruções de programas. 
+por deslocamento, você começa de um ponto fixo e ajusta o local com base em um valor adicional. 
 
- * Tipos de Endereçamento Por Deslocamento: O endereçamento por deslocamento se subdivide em três categorias 
-  principais: endereçamento relativo , endereçamento por registrador base e endereçamento por indexação , cada um 
-  adaptado para necessidades específicas no cálculo de endereços.
+ Esse método é uma peça-chave para acessar posições relacionadas à memória, como elementos de arrays, variáveis ​​
+locais ou mesmo instruções de programas. Ele é subdividido em três categorias principais: o endereçamento 
+relativo , o endereçamento por registrador base e o endereçamento por indexação , cada uma com características 
+específicas que permitem acessar dados de forma eficiente e flexível.
 
-   A seguir, exploraremos os três tipos, explicando suas características e como funcionam.
+ * Como Funciona: No endereçamento por deslocamento, o endereço final de memória é obtido somando um valor de 
+  deslocamento a um ponto de referência específico. Esse ponto de referência pode ser um registrador (como no caso 
+  de registrador base), um contador de programa (endereçamento relativo) ou um índice (endereçamento por 
+  indexação). Por exemplo, suponha que você esteja trabalhando com um array. O início do array seria o ponto de 
+  referência, e o deslocamento seria o índice do elemento que você deseja acessar. O processador calcula o endereço 
+  somando esses dois valores.
 
-   - Endereçamento Relativo: O endereçamento relativo faz o  uso do contador de programa (PC) como ponto de 
-                            referência. A localização especifica a distância até a posição desejada em relação à 
-                            instrução atual, permitindo acessar dados ou instruções próximas na memória. É 
-                            amplamente utilizado em saltos condicionais ou loops, onde o código precisa navegar 
-                            entre trechos adjacentes de memória.
-
-                             Como funciona: Quando o processador encontra uma instrução com endereçamento relativo, 
-                            ele soma o valor do deslocamento ao endereço armazenado no contador de programa (PC). 
-                            Por exemplo, em um salto condicional, a posição pode ser um número positivo para 
-                            avançar no código ou negativo para retornar a um trecho anterior. Esse método é 
-                            eficiente porque reduz o tamanho das instruções, já que o endereço completo não precisa 
-                            ser especificado.
-
-   
-   - Endereçamento Por Registrador Base: No endereçamento por registrador base, um registrador específico armazena 
-                                        a base ou ponto de referência. A localização indica a posição relativa à 
-                                        base, permitindo o acesso a dados organizados em torno de uma posição fixa, 
-                                        como variações locais ou registradores em estruturas complexas.
-
-                                         Como funciona: O processador calcula o endereço específico somando o valor 
-                                        armazenado no registrador base com o deslocamento fornecido pela instrução. 
-                                        Por exemplo, em um array de estruturas, a base do registrador pode conter o 
-                                        endereço inicial do array, e a localização determinará qual elemento 
-                                        específico será acessado. Essa técnica é útil em arquiteturas que utilizam 
-                                        memória segmentada ou modular.
+   Um exemplo comum é o endereçamento relativo, que usa o contador de programa como base. Nesse caso, a posição 
+  indica quais posições à frente ou atrás a instrução ou dado está em relação à posição atual. Já no endereçamento 
+  por registrador base, o registrador guarda o ponto de partida, enquanto a posição define o quanto se deve mover a 
+  partir dele. No caso da indexação, o índice, muitas vezes armazenado em um registrador, é adicionado a uma base 
+  fixa para acessar elementos específicos em estruturas como arrays.
 
 
-   - Endereçamento Por Indexação: No endereçamento por indexação, um índice, geralmente armazenado em um 
-                                 registrador, é combinado a uma base fixa para acessar elementos sequenciais, como 
-                                 em arrays ou tabelas. Cada posição do array é acessada deslocando-se da base por 
-                                 um valor correspondente ao índice.
-
-                                  Como funciona: O processador calcula o endereço específico somando o valor do 
-                                  índice ao ponto inicial do array ou tabela, que é especificado pela base fixa. 
-                                  Por exemplo, em um array começando no endereço 1000, para acessar o quinto 
-                                  elemento (índice 4), o processador soma a base (1000) ao índice multiplicado pelo 
-                                  tamanho de cada elemento. Essa abordagem é eficiente e fácil de implementar em  
-                                  estruturas com acesso sequencial.
-
-   Esses três tipos de endereçamento por colocação oferecem soluções práticas para diferentes cenários, desde 
-  navegação pelo fluxo de instruções até acesso eficiente a dados estruturados. Eles são essenciais para otimizar a 
-  execução de programas e garantir o uso eficaz da memória.
-
-
- * Vantagens do Endereçamento Por Deslocamento:
+ * Vantagens:
 
    Flexibilidade: Permite acessar posições variáveis na memória, sendo ideal para trabalhar com arrays, tabelas ou  
                  variáveis locais.
@@ -416,7 +383,7 @@ instruções de programas.
                                          estruturados.
 
 
-  * Desvantagens do Endereçamento Por Deslocamento: 
+  * Desvantagens: 
 
     Complexidade adicional: O cálculo do endereço efetivo pode adicionar uma pequena sobrecarga ao tempo de 
                            execução, especialmente em sistemas menos otimizados.
@@ -440,3 +407,63 @@ eficiente e organizada. Seja em estruturas de dados como arrays e pilhas ou no c
 programas, ele combina simplicidade com adaptabilidade. Embora sua implementação requeira cuidados, principalmente 
 na definição correta do deslocamento, sua utilidade em sistemas modernos de computação faz dele uma escolha 
 essencial em diversas aplicações.
+
+
+
+                                "Endereçamento Relativo"
+
+ O endereçamento relativo, é um tipo de endereçamento por deslocamento, que é amplamente utilizado para acessar 
+posições de memória próximas à posição atual da execução do programa. Nesse modo, o endereço do dado é calculado 
+somando-se um valor constante, chamado deslocamento, ao endereço da instrução que está sendo realizado. É como 
+quando você calcula a distância até um lugar considerando onde está no momento , "a dois quarteirões daqui" está o 
+supermercado. Isso permite que as instruções usem referências dinâmicas em vez de valores fixos.
+
+ Esse tipo de endereçamento é muito comum em loops e saltos em programas, onde a posição é usada para determinar a 
+próxima instrução ou para acessar dados relacionados à posição atual. Ele oferece uma grande flexibilidade, 
+especialmente em programas que precisam de independência em relação à posição da memória, como em códigos 
+realocáveis. Contudo, como depender de um cálculo para determinar o endereço real, pode ter um impacto ligeiramente 
+maior no desempenho em comparação com modos mais diretos.
+
+ * Como Funciona: No endereçamento relativo, o processador calcula o endereço real do dado ou da instrução  
+  correspondente ao endereço base da instrução atual com um valor de localização especificado. Por exemplo, se uma 
+  instrução como JMP +10 está sendo realizada, o processador soma o posicionamento ( +10) ao endereço atual da 
+  instrução para determinar onde buscar a próxima instrução. Isso torna possível criar referências que sejam 
+  independentes da posição real do código ou dos dados na memória.
+
+
+ * Vantagens:
+
+   Flexibilidade: Permite que o código seja realocável, facilitando o uso em sistemas operacionais e bibliotecas 
+                 que precisam operar em diferentes locais na memória.
+
+   Eficiência espacial: Evita a necessidade de usar endereços absolutos, diminuindo o tamanho do código em 
+                       programas que utilizam referências próximas.
+
+   Ideal para loops e saltos: É especialmente útil em estruturas de controle como laços de repetição ou instruções 
+                             condicionais.
+
+
+ * Desvantagens:
+
+   Cálculo adicional: Como o endereço real precisa ser calculado durante a execução, pode haver um pequeno impacto 
+                     no desempenho em arquiteturas com restrições de tempo.
+
+   Limitação de alcance: O deslocamento precisa estar dentro de um intervalo específico, o que pode limitar a 
+                        capacidade de acesso em posições muito distantes.
+
+   Complexidade na depuração: Dependendo da posição relativa, o rastreamento de erros em programas pode ser um 
+                             pouco mais complicado em comparação com modos diretos.
+
+
+ * Exemplo de uso: O endereçamento relativo é amplamente utilizado em instruções de controle de fluxo, como saltos 
+  e chamadas condicionais. Um exemplo clássico é em loops: uma instrução como JUMP 4 negativo  pode ser usada para 
+  voltar quatro instruções na memória, implementando a reprodução do bloco de código. Outro uso comum é em chamadas 
+  de sub-rotinas, onde a localização relativa permite que o programa navegue para diferentes partes do código sem 
+  precisar de endereços absolutos. Em sistemas operacionais, ele também é útil para manipular tabelas de 
+  interrupção em bibliotecas dinâmicas, onde a localização do código pode variar.
+
+ O endereçamento relativo é como um mapa dinâmico que guia o programa baseado em sua posição atual, tornando o 
+código mais flexível e eficiente. Essa abordagem é especialmente poderosa em sistemas que necessitam de  
+portabilidade ou independência de posição, como softwares de baixo nível e sistemas embarcados. Apesar da demanda 
+de cálculos adicionais e das limitações de alcance, seu equilíbrio entre flexibilidade e eficiência faz dele um 
+recurso indispensável no arsenal de endereçamentos de memória.
