@@ -654,3 +654,73 @@ um acesso direto e eficiente aos dados necessários, tornando-o ideal para muita
 computação. Contudo, sua eficiência depende da organização da memória, e ele pode se tornar mais complexo se os 
 dados não estiverem organizados de forma contínua. Mesmo assim, o endereçamento por indexação continua a ser uma 
 das abordagens mais versáteis e amplamente utilizadas para manipulação de dados em muitos tipos de programas.
+
+
+
+                                      "Endereçamento de Pilha"
+
+ O endereçamento de pilha é um modo de endereçamento bastante utilizado em sistemas de computação para gerenciar 
+dados temporários durante a execução de um programa. Nesse tipo de endereçamento, os dados são acessados a partir 
+de uma estrutura de dados chamada "pilha", que segue a lógica de "último a entrar, primeiro a sair" (LIFO – Last 
+In, First Out). Imagine uma pilha de pratos em um restaurante: você sempre coloca um prato no topo e também retira 
+o prato do topo quando precisa. No contexto de memória, o último dado inserido na pilha será o primeiro a ser 
+removido quando for necessário, facilitando o controle e a organização das informações temporárias, como variáveis 
+locais ou endereços de retorno em funções.
+
+ Este modo é muito útil em situações em que os dados precisam ser armazenados temporariamente e recuperados 
+rapidamente, como no caso de chamadas de funções e manipulação de variáveis locais. A pilha facilita o controle 
+dessas informações, especialmente quando se trata de executar várias funções de maneira recursiva. Como a pilha é 
+auto-organizada, o processador consegue acessar dados e retornar a estados anteriores de maneira eficiente, sem 
+necessidade de acessar diretamente endereços de memória ou registradores.
+
+ * Como Funciona: O endereçamento de pilha se baseia na manipulação de um ponteiro de pilha (geralmente um 
+  registrador especial) que indica o topo da pilha. Quando um dado é empilhado (armazenado na pilha), o ponteiro é 
+  ajustado para apontar para o novo topo, e o valor é colocado nesse local. Quando os dados são desempilhados 
+  (retirados da pilha), o ponteiro volta para o valor anterior, e o dado do topo da pilha é acessado ou removido. 
+  Esse comportamento permite que a memória seja gerenciada de forma eficiente, especialmente quando se tratam de 
+  dados temporários que não precisam ser acessados fora de uma sequência controlada de operações.
+
+
+ * Vantagens: 
+
+   Eficiência em chamadas de funções: O endereçamento de pilha é altamente eficiente para armazenar informações 
+                                     temporárias durante as chamadas de funções, como endereços de retorno e 
+                                     variáveis locais.
+
+   Organização automática: A pilha organiza automaticamente os dados, permitindo um controle intuitivo de funções 
+                          recursivas e variáveis temporárias, sem necessidade de gerenciamento explícito.
+
+   Facilidade de implementação: O uso da pilha como estrutura de dados torna a implementação do gerenciamento de 
+                               memória mais simples, já que o processador lida com uma única operação de empilhar e 
+                               desempilhar.
+
+
+ * Desvantagens
+
+   Limitação de espaço: A pilha tem um espaço limitado, o que pode causar problemas, como estouros de pilha, quando 
+                       muitas funções são chamadas recursivamente ou quando o número de variáveis temporárias 
+                       excede a capacidade da pilha.
+
+   Não é ideal para dados de longo prazo: O endereçamento de pilha é mais adequado para dados temporários, como 
+                                         variáveis locais e endereços de retorno, não sendo ideal para o 
+                                         armazenamento de dados que precisam ser acessados por longos períodos ou 
+                                         de forma constante.
+
+   Ordem de acesso restrita: A pilha segue a lógica de "último a entrar, primeiro a sair", o que pode ser um 
+                            problema em situações onde o acesso a dados precisa ser feito de forma mais flexível e 
+                            não sequencial.
+
+
+ * Exemplo de Uso: Um exemplo típico de uso do endereçamento de pilha ocorre em linguagens de programação que 
+  utilizam recursão, como ao calcular o fatorial de um número. A cada chamada recursiva, a pilha armazena o valor 
+  do número atual e o endereço de retorno para que, após a execução da função recursiva, o programa saiba 
+  exatamente onde retomar a execução. Outro exemplo pode ser encontrado na execução de uma função com várias 
+  variáveis locais. Cada variável é armazenada na pilha, permitindo que o programa acesse rapidamente esses dados 
+  enquanto a função estiver em execução.
+
+ Assim, o endereçamento de pilha é uma ferramenta essencial para o gerenciamento de dados temporários e a execução 
+de funções, especialmente em programas que utilizam recursão. Sua estrutura organizada e intuitiva permite que o 
+processador manipule variáveis ​​locais e endereços de retorno com facilidade. Contudo, suas limitações de espaço e a 
+restrição de ordem de acesso podem ser desafios em situações mais complexas. Apesar disso, o endereçamento de pilha 
+continua sendo um dos pilares fundamentais para a execução eficiente de programas, especialmente em ambientes com 
+chamadas de funções e manipulação de dados temporários.
