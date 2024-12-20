@@ -784,7 +784,7 @@ da funcionalidade.
 
 
 
-                   "Conclusão sobre os Modos de Endereçamento"
+                           "Conclusão sobre os Modos de Endereçamento"
 
  Os modos de endereçamento são como as regras que orientam o processador na hora de encontrar dados na memória. 
 Imagine que a memória do computador é como uma grande biblioteca, com prateleiras cheias de livros (dados). Os 
