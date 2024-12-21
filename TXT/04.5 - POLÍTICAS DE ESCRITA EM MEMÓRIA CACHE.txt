@@ -1,0 +1,24 @@
+                           POLÍTICAS DE ESCRITA EM MEMÓRIA CACHE
+
+
+ Quando pensamos no funcionamento de um sistema de memória, é como organizar uma grande biblioteca. Não basta apenas 
+encontrar o livro certo; é preciso decidir como devolvê-lo ao lugar correto após a leitura ou atualização. No mundo da 
+computação, essa "devolução" é o equivalente ao momento em que dados atualizados precisam ser armazenados de volta na 
+memória, e é aí que entram as políticas de escrita. Essas políticas determinam a forma como as alterações realizadas 
+no cache serão refletidas na memória principal, afetando diretamente o desempenho e a eficiência do sistema.
+
+ Em um cenário ideal, gostaríamos que cada alteração no cache fosse refletida instantaneamente na memória principal. 
+No entanto, como na vida real, onde não é prático registrar todas as anotações feitas em um livro enquanto você o 
+consulta, fazer isso em um sistema computacional pode ser demorado e consumir muitos recursos. Por isso, as políticas 
+de escrita surgem como soluções para equilibrar eficiência e consistência, decidindo quando e como as atualizações 
+devem ocorrer.
+
+ A escolha da política de escrita não é apenas uma questão técnica; ela está intimamente ligada ao comportamento e às 
+necessidades do sistema. Por exemplo, em sistemas onde a consistência imediata dos dados é crucial, uma abordagem mais 
+direta pode ser necessária. Já em aplicações que priorizam desempenho e podem tolerar pequenas inconsistências 
+temporárias, outras políticas se mostram mais vantajosas. Assim como diferentes tarefas exigem ferramentas distintas, 
+diferentes sistemas demandam políticas de escrita personalizadas para suas operações.
+
+ Compreender as políticas de escrita é essencial para quem deseja otimizar sistemas de memória, sejam eles usados em 
+dispositivos móveis, servidores ou supercomputadores. Esses mecanismos, que podem parecer invisíveis no dia a dia, têm 
+um impacto enorme na forma como lidamos com dados em diferentes aplicações.
