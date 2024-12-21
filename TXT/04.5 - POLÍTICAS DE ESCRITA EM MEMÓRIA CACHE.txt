@@ -99,3 +99,130 @@ memória principal esteja sempre sincronizada com a cache. Apesar de seu  potenc
 solução confiável para sistemas onde a precisão é mais importante que a velocidade. Assim como anotar tudo 
 imediatamente no caderno oficial, o Write Through pode ser mais trabalhoso, mas oferece a segurança de que nada 
 será perdido ou esquecido.
+
+
+
+                           "Política de Escrita: Write Back"
+
+ O Write Back (Escrita em Atraso), é um tipo de política de escrita usada para gerenciar operações de gravação em 
+memória cache de forma eficiente. Nesse método, os dados modificados no cache não são imediatamente enviados para a 
+memória principal. Em vez disso, eles são mantidos no cache até que seja necessário substituí-los. É como anotar 
+mudanças em um rascunho antes de transferi-las para a versão final de um documento. Essa abordagem reduz o número 
+de acessos à memória principal, que geralmente é mais lenta, economizando tempo e recursos.
+
+ No Write Back, cada linha do cache possui um indicador chamado "bit de sujeira" (dirty bit). Esse bit informa se 
+os dados na linha foram alterados em relação à versão armazenada na memória principal. Quando a linha de cache 
+precisa ser substituída, o Write Back verifica esse bit. Se estiver ativado, os dados são gravados na memória 
+principal antes da substituição. Caso contrário, a instrução ocorre sem necessidade de escrever na memória. Essa 
+estratégia é amplamente utilizada em sistemas que priorizam desempenho, especialmente em aplicações de alta 
+demanda.
+
+ * Como Funciona: O Write Back opera de forma a minimizar as operações de gravação na memória principal. Quando um   
+  dado é alterado no cache, o sistema simplesmente atualiza o valor no cache e ativa o dirty bit correspondente. 
+  Esse bit é uma espécie de lembrete de que aquele dado precisa ser escrito na memória principal, mas apenas se for 
+  necessário substituí-lo. Isso contrasta com o método Write Through, onde toda alteração no cache é imediatamente 
+  propagada para a memória principal.
+
+   Por exemplo, se um programa está constantemente atualizando uma variável armazenada no cache, o Write Back evita 
+  múltiplas gravações na memória principal, que seriam redundantes. Apenas a última versão do dado será enviada 
+  para a memória principal quando a linha de cache for substituída. Isso economiza ciclos de clock e reduz a 
+  sobrecarga do barramento de memória, tornando o sistema mais eficiente em operações frequentes de escrita.  
+  Contudo, como o dado atualizado não está imediatamente na memória principal, pode haver inconsistências em 
+  sistemas que dependem da sincronização imediata entre cache e memória.
+
+
+ * Vantagens:
+
+   Redução de acessos à memória principal: Evita gravações frequentes, economizando tempo e recursos, especialmente 
+                                          em sistemas com operações de escrita intensivas.
+
+   Melhor desempenho geral: Ao minimizar a comunicação com a memória principal, o Write Back melhora 
+                           significativamente o desempenho em sistemas com alta carga de trabalho.
+
+   Eficiência em alterações frequentes: Ideal para aplicações que fazem várias modificações nos mesmos dados antes 
+                                       de gravá-los definitivamente.
+
+
+ * Desvantagens:
+
+   Complexidade no controle de dados: Requer o uso de mecanismos como o dirty bit para gerenciar quando e como os 
+                                     dados devem ser escritos na memória principal.
+
+   Risco de inconsistências: Em caso de falhas no sistema, os dados no cache podem ser perdidos antes de serem 
+                            gravados na memória principal.
+
+   Maior complexidade de implementação: Comparado ao Write Through, o Write Back é mais complicado de implementar e 
+                                       gerenciar devido à necessidade de rastrear dados sujos.
+
+
+ * Exemplo de Uso: O Write Back é amplamente utilizado em processadores modernos e sistemas com cache multinível, 
+  como em servidores e computadores de alto desempenho. Por exemplo, em aplicativos de edição de vídeo, onde 
+  grandes volumes de dados são frequentemente manipulados e alterados, o Write Back reduz a quantidade de gravações 
+  na memória principal, permitindo maior eficiência. Outro caso típico é em sistemas embarcados, onde o consumo de  
+  energia deve ser otimizado, já que o Write Back economiza ciclos de memória.
+
+ Em suma, o Write Back é como fazer anotações rápidas em um caderno antes de transcrevê-las para um arquivo 
+oficial: economiza tempo e recursos, mas exige cuidado para evitar perdas de informação. Embora seja mais complexo 
+e introduza desafios no gerenciamento de dados, seu impacto positivo no desempenho o torna essencial para sistemas 
+que demandam alta eficiência. Essa técnica permanece como uma escolha estratégica para equilibrar velocidade e 
+recursos em arquiteturas modernas.
+
+
+
+"Como Escolher a Política de Escrita Ideal"
+
+ A escolha da política de escrita ideal é essencial para garantir o desempenho e a confiabilidade do sistema de 
+memória. As políticas de escrita determinam como os dados serão atualizados entre a memória cache e a memória 
+principal, influenciando diretamente a eficiência e a integridade das operações. Assim como em um processo de 
+organização, onde você decide se anota algo imediatamente ou espera para consolidar informações, as políticas de 
+escrita, como write-through e write-back, possuem características que as tornam mais adequadas a diferentes 
+cenários e exigências do sistema.
+
+ A decisão sobre qual política de escrita usar não é universal; ela depende das características do sistema, como os 
+padrões de acesso aos dados e os requisitos de consistência. Para escolher corretamente, é necessário analisar 
+diversos fatores que impactam no funcionamento do sistema e nos resultados esperados. 
+
+ Abaixo, exploraremos os aspectos mais relevantes que influenciam essa escolha:
+
+ * Consistência dos Dados: A consistência dos dados é um dos fatores mais importantes na escolha da política de 
+  escrita. Em sistemas onde a integridade e a sincronização são cruciais, como bancos de dados, a política write-
+  through pode ser preferida. Ela atualiza a memória principal imediatamente após uma alteração na cache, 
+  garantindo que os dados estejam sempre atualizados. Por outro lado, se a consistência imediata não for uma 
+  prioridade, o write-back pode ser mais eficiente, já que armazena as alterações na cache e escreve na memória 
+  principal apenas quando necessário.
+
+
+ * Desempenho e Tempo de Resposta: A política de escrita impacta diretamente o desempenho do sistema. O write-back 
+  oferece maior desempenho em cenários com alta taxa de leitura e escrita, já que reduz a quantidade de acessos 
+  diretos à memória principal. Imagine que você está anotando ideias em um rascunho e só transfere as anotações 
+  finais para o documento principal quando está satisfeito com o conteúdo ,  isso economiza tempo e esforço. No 
+  entanto, em aplicações em tempo real, onde é crucial que as alterações sejam refletidas instantaneamente, write-
+  through pode ser mais vantajosa, mesmo que gere maior latência devido ao acesso constante à memória principal.
+
+
+ * Tolerância a Falhas: A escolha da política de escrita também deve considerar como o sistema lida com falhas. O 
+  write-back, embora mais rápido, apresenta maior risco em caso de falha, já que os dados podem ser perdidos se 
+  ainda não tiverem sido gravados na memória principal. É como guardar notas importantes em um bloco de papel e só 
+  transferi-las para um cofre seguro depois de um tempo; se algo acontecer ao papel, as informações podem ser 
+  perdidas. Por outro lado, o write-through é mais confiável nesse aspecto, pois cada alteração é imediatamente 
+  registrada na memória principal, reduzindo o risco de perda.
+
+
+ * Recursos de Hardware: A implementação de diferentes políticas de escrita também depende dos recursos disponíveis 
+  no sistema. O write-back, por exemplo, exige mais controle e gerenciamento na cache, o que pode demandar hardware 
+  mais sofisticado. Já o write-through é mais simples de implementar, mas pode exigir maior largura de banda para 
+  suportar as escritas constantes na memória principal. Avaliar os limites do hardware é essencial para equilibrar 
+  a escolha da política com a capacidade do sistema.
+
+
+ * Padrões de Acesso: Os padrões de acesso ao sistema também influenciam a decisão. Em sistemas com alta 
+  frequência de leituras e escritas repetitivas em dados específicos, o write-back é mais eficiente, pois evita 
+  acessos redundantes à memória principal. No entanto, em sistemas onde os dados são frequentemente acessados por 
+  diferentes dispositivos ou processos, o write-through pode ser mais adequado, garantindo que todos tenham acesso 
+  à versão mais recente das informações.
+
+ Escolher a política de escrita ideal é como decidir a melhor forma de gerenciar suas anotações e tarefas: tudo 
+depende do que é mais importante no momento; velocidade, segurança ou simplicidade. Ao avaliar fatores como 
+consistência dos dados, desempenho esperado e os padrões de acesso, é possível encontrar uma solução que equilibre 
+eficiência e confiabilidade. Compreender essas políticas e suas implicações permite criar sistemas mais robustos e 
+preparados para atender às demandas específicas de cada aplicação.
