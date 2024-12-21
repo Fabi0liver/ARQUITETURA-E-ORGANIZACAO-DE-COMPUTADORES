@@ -226,3 +226,28 @@ depende do que é mais importante no momento; velocidade, segurança ou simplici
 consistência dos dados, desempenho esperado e os padrões de acesso, é possível encontrar uma solução que equilibre 
 eficiência e confiabilidade. Compreender essas políticas e suas implicações permite criar sistemas mais robustos e 
 preparados para atender às demandas específicas de cada aplicação.
+
+
+
+                                           "Conclusão"
+
+ As políticas de escrita, como Write Through e Write Back, desempenham um papel fundamental no gerenciamento 
+eficiente de dados entre a memória cache e a memória principal em sistemas computacionais. Pense nelas como 
+diferentes estratégias para atualizar informações em um caderno e um computador: enquanto uma garante que cada 
+anotação feita no caderno também seja imediatamente salva no computador, a outra faz anotações no caderno e salva 
+tudo no computador apenas quando for necessário. A escolha entre essas políticas impacta diretamente o desempenho 
+do sistema, a consistência dos dados e a eficiência do uso de recursos.
+
+ Na política Write Through, cada vez que a cache é atualizada, os dados são imediatamente gravados na memória 
+principal. É como escrever uma ideia em um bloco de notas e ao mesmo tempo salvá-la no seu aplicativo de notas 
+digitais. Isso garante que as informações estejam sempre atualizadas e consistentes em todos os lugares, o que é 
+ótimo para sistemas onde a confiabilidade dos dados é uma prioridade. No entanto, esse método pode ser mais lento, 
+já que toda alteração exige um acesso à memória principal, que é mais demorada do que acessar a cache.
+
+ Já na política Write Back, as alterações são feitas na cache, mas só são transferidas para a memória principal 
+quando os dados precisam ser substituídos ou o sistema decide que é hora de sincronizá-los. É como fazer anotações 
+no caderno durante a aula e só passá-las a limpo no computador quando o caderno estiver cheio ou você terminar a 
+matéria. Isso aumenta a eficiência e reduz o tráfego de dados com a memória principal, mas pode criar 
+inconsistências temporárias caso ocorra uma falha antes da sincronização. Ambas as abordagens são importantes e 
+devem ser escolhidas com base nas necessidades específicas do sistema, equilibrando desempenho e integridade dos 
+dados.
