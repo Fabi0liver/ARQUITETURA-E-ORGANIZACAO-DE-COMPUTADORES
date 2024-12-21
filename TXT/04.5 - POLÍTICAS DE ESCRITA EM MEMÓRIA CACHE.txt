@@ -1,24 +1,101 @@
                            POLÍTICAS DE ESCRITA EM MEMÓRIA CACHE
 
 
- Quando pensamos no funcionamento de um sistema de memória, é como organizar uma grande biblioteca. Não basta apenas 
-encontrar o livro certo; é preciso decidir como devolvê-lo ao lugar correto após a leitura ou atualização. No mundo da 
-computação, essa "devolução" é o equivalente ao momento em que dados atualizados precisam ser armazenados de volta na 
-memória, e é aí que entram as políticas de escrita. Essas políticas determinam a forma como as alterações realizadas 
-no cache serão refletidas na memória principal, afetando diretamente o desempenho e a eficiência do sistema.
+ Quando pensamos no funcionamento de um sistema de memória, é como organizar uma grande biblioteca. Não basta 
+apenas encontrar o livro certo; é preciso decidir como devolvê-lo ao lugar correto após a leitura ou atualização. 
+No mundo da computação, essa "devolução" é o equivalente ao momento em que dados atualizados precisam ser 
+armazenados de volta na memória, e é aí que entram as políticas de escrita. Essas políticas determinam a forma como 
+as alterações realizadas no cache serão refletidas na memória principal, afetando diretamente o desempenho e a 
+eficiência do sistema.
 
- Em um cenário ideal, gostaríamos que cada alteração no cache fosse refletida instantaneamente na memória principal. 
-No entanto, como na vida real, onde não é prático registrar todas as anotações feitas em um livro enquanto você o 
-consulta, fazer isso em um sistema computacional pode ser demorado e consumir muitos recursos. Por isso, as políticas 
-de escrita surgem como soluções para equilibrar eficiência e consistência, decidindo quando e como as atualizações 
-devem ocorrer.
+ Em um cenário ideal, gostaríamos que cada alteração no cache fosse refletida instantaneamente na memória 
+principal. No entanto, como na vida real, onde não é prático registrar todas as anotações feitas em um livro 
+enquanto você o consulta, fazer isso em um sistema computacional pode ser demorado e consumir muitos recursos. Por 
+isso, as políticas de escrita surgem como soluções para equilibrar eficiência e consistência, decidindo quando e 
+como as atualizações devem ocorrer.
 
- A escolha da política de escrita não é apenas uma questão técnica; ela está intimamente ligada ao comportamento e às 
-necessidades do sistema. Por exemplo, em sistemas onde a consistência imediata dos dados é crucial, uma abordagem mais 
-direta pode ser necessária. Já em aplicações que priorizam desempenho e podem tolerar pequenas inconsistências 
-temporárias, outras políticas se mostram mais vantajosas. Assim como diferentes tarefas exigem ferramentas distintas, 
-diferentes sistemas demandam políticas de escrita personalizadas para suas operações.
+ A escolha da política de escrita não é apenas uma questão técnica; ela está intimamente ligada ao comportamento e 
+às necessidades do sistema. Por exemplo, em sistemas onde a consistência imediata dos dados é crucial, uma 
+abordagem mais direta pode ser necessária. Já em aplicações que priorizam desempenho e podem tolerar pequenas 
+inconsistências temporárias, outras políticas se mostram mais vantajosas. Assim como diferentes tarefas exigem 
+ferramentas distintas, diferentes sistemas demandam políticas de escrita personalizadas para suas operações.
 
- Compreender as políticas de escrita é essencial para quem deseja otimizar sistemas de memória, sejam eles usados em 
-dispositivos móveis, servidores ou supercomputadores. Esses mecanismos, que podem parecer invisíveis no dia a dia, têm 
-um impacto enorme na forma como lidamos com dados em diferentes aplicações.
+ Compreender as políticas de escrita é essencial para quem deseja otimizar sistemas de memória, sejam eles usados 
+em dispositivos móveis, servidores ou supercomputadores. Esses mecanismos, que podem parecer invisíveis no dia a 
+dia, têm um impacto enorme na forma como lidamos com dados em diferentes aplicações.
+
+
+
+                            "Política de Escrita: Write Through"
+
+ O Write Through ( Escrita Direta)  é um tipo de  política de escrita utilizada no gerenciamento de memória cache 
+para garantir a consistência entre os dados da cache e os da memória principal. Nesse método, sempre que um dado é 
+modificado na cache, a alteração é imediatamente refletida na memória principal. Imagine que você está anotando 
+informações importantes em uma folha de rascunho (cache), mas toda vez que faz uma alteração, você atualiza 
+imediatamente a cópia  em um caderno definitivo (memória principal). Esse processo garante que a versão oficial dos 
+dados esteja sempre atualizada, reduzindo o risco de inconsistências.
+
+ Embora o Write Through seja uma abordagem simples e eficaz para manter a integridade dos dados, ele também pode 
+ser menos eficiente em termos de desempenho, pois cada operação de escrita na cache gera automaticamente uma 
+operação na memória principal. Isso pode criar gargalos em sistemas que realizam muitas escritas, especialmente 
+quando a latência da memória principal é alta.
+
+ * Como Funciona: No Write Through, toda vez que um dado é alterado na cache, o mesmo dado é escrito 
+  simultaneamente na memória principal. Por exemplo, se uma CPU modifica o valor de uma variável armazenada na 
+  cache, essa mudança é imediatamente propagada para a memória principal. Isso significa que a memória principal 
+  sempre mantém a cópia mais atualizada dos dados, independentemente do que está acontecendo na cache.
+
+   Esse método elimina a necessidade de sincronização adicional, já que as alterações são realizadas em tempo real. 
+  Contudo, a necessidade de acesso constante à memória principal pode impactar o desempenho em sistemas onde a 
+  latência de acesso à memória é um fator crítico. Por isso, o Write Through geralmente é combinado com outros 
+  mecanismos, como Write Buffer, para reduzir o impacto de múltiplas operações de escrita consecutivas.
+
+
+ * Write Buffer : O Write Buffer é uma solução que complementa o Write Through para minimizar o impacto no 
+  desempenho. Ele funciona como uma área temporária onde as operações de escrita são armazenadas antes de serem 
+  enviadas para a memória principal. Imagine um caixa eletrônico com uma fila de pessoas; o Write Buffer é como um 
+  funcionário adicional que organiza a fila, processando os pedidos enquanto o caixa principal realiza as 
+  transações mais demoradas. Isso reduz os gargalos e melhora a eficiência.
+
+   Com o Write Buffer, a CPU não precisa esperar até que cada operação de escrita seja concluída na memória 
+  principal. Em vez disso, as escritas são rapidamente registradas na cache e no buffer, permitindo que a CPU 
+  continue suas tarefas enquanto o buffer gradualmente transfere os dados para a memória principal. Isso é 
+  particularmente útil em sistemas onde há um grande volume de operações de escrita, pois evita que o desempenho 
+  seja prejudicado por acessos frequentes à memória principal.
+
+
+ * Vantagens:
+
+   Consistência garantida: Os dados na memória principal estão sempre atualizados, reduzindo o risco de problemas 
+                          em sistemas onde a integridade dos dados é crítica.
+
+   Simplicidade: A lógica por trás do Write Through é fácil de implementar e entender, tornando-o uma escolha 
+                confiável em sistemas mais simples.
+
+   Menor risco de perda de dados: Como as alterações são feitas imediatamente, a perda de dados devido a falhas no 
+                                 sistema é minimizada.
+
+
+ * Desvantagens:
+
+   Impacto no desempenho: A necessidade de escrever na memória principal em todas as operações de escrita pode 
+                         causar lentidão, especialmente em sistemas com alta taxa de escrita.
+
+   Aumento da latência: Em sistemas onde a memória principal é mais lenta que a cache, o Write Through pode 
+                       introduzir atrasos adicionais.
+
+   Maior uso do barramento: Escrever constantemente na memória principal consome largura de banda do barramento, o 
+                           que pode limitar o desempenho em sistemas com alta carga de trabalho.
+
+
+ * Exemplo de Uso: O Write Through é amplamente utilizado em sistemas onde a consistência dos dados é essencial, 
+  como em bancos de dados financeiros e sistemas críticos em tempo real. Por exemplo, em um sistema de controle de 
+  tráfego aéreo, onde cada mudança nos dados deve ser imediatamente refletida na memória principal para evitar 
+  erros, o Write Through é uma escolha confiável. Outro exemplo seria em sistemas embarcados simples, onde o foco 
+  está na integridade dos dados em vez do desempenho máximo.
+
+ Em suma, o Write Through é uma estratégia que prioriza a consistência e a integridade dos dados, garantindo que a 
+memória principal esteja sempre sincronizada com a cache. Apesar de seu  potencial impacto no desempenho, ele é uma 
+solução confiável para sistemas onde a precisão é mais importante que a velocidade. Assim como anotar tudo 
+imediatamente no caderno oficial, o Write Through pode ser mais trabalhoso, mas oferece a segurança de que nada 
+será perdido ou esquecido.
