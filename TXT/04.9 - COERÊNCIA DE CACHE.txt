@@ -1,0 +1,30 @@
+                                       COERÊNCIA DE CACHE
+
+
+ Nos sistemas de computação modernos, a memória cache desempenha um papel fundamental ao armazenar dados 
+frequentemente utilizados próximos ao processador, reduzindo o tempo de acesso e aumentando a eficiência. Entretanto, 
+em sistemas com múltiplos processadores ou núcleos que compartilham uma única memória principal, surge um desafio 
+crucial: garantir que todas as cópias de um mesmo dado, armazenadas em cache diferentes, estejam sempre consistentes e 
+atualizadas. Esse desafio é o que chamamos de coerência de cache, uma peça vital para o funcionamento correto de 
+sistemas  multi-core.
+
+ Para entender melhor, imagine que várias pessoas estão trabalhando em cópias individuais de um mesmo documento. Se 
+alguém fizer uma alteração importante, como corrigir um erro ou adicionar informações, todos os outros precisam ser 
+informados dessa mudança para que não continuem trabalhando com informações desatualizadas. Do contrário, cada pessoa 
+poderia terminar com versões conflitantes do documento. A coerência de cache tem o mesmo objetivo: garantir que 
+qualquer atualização em uma cópia de dado na cache de um núcleo seja refletida de maneira correta e sincronizada nas 
+outras caches e na memória principal.
+
+ Esse problema de sincronização é especialmente crítico em sistemas  multi-core. Por exemplo, imagine que um 
+processador altera o valor de uma variável importante em sua cache local. Se outro processador tentar acessar essa 
+variável em sua própria cache e encontrar um valor antigo, podem ocorrer erros de execução. Esses erros podem ser 
+sutis, como cálculos incorretos, ou catastróficos, como o travamento completo de um sistema. É por isso que protocolos 
+específicos foram desenvolvidos para garantir que todas as caches "conversem entre si" e saibam quando precisam 
+atualizar suas cópias.
+
+ A coerência de cache também é essencial para garantir o desempenho do sistema. Sem ela, sempre que um dado fosse  
+atualizado, seria necessário acessar diretamente a memória principal para sincronizar as informações, o que é  
+extremamente lento em comparação com a velocidade da cache. Ao implementar mecanismos de coerência, como protocolos de  
+sincronização, os sistemas garantem que as atualizações sejam propagadas de forma eficiente, minimizando os atrasos e  
+mantendo a confiabilidade. Isso torna a coerência de cache não apenas um conceito teórico, mas uma necessidade prática  
+para que os sistemas modernos multi-core funcionem de maneira eficaz e previsível.
