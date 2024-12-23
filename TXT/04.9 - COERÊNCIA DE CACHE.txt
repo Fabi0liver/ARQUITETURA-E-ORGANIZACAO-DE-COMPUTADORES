@@ -183,7 +183,7 @@ específicas de suas aplicações.
 
 
 
-                            "Protocolos de Coerência de Cache"
+                       "Protocolos de Coerência de Cache"
 
  Quando pensamos em sistemas multicore, é como imaginar um time de cozinheiros trabalhando na mesma receita, mas 
 cada um com sua própria lista de ingredientes. Para que o prato final saia perfeito, é essencial que todos estejam 
@@ -191,16 +191,46 @@ alinhados sobre o que está atualizado ou alterado na receita. Esse alinhamento,
 realizado pelos protocolos de coerência de cache, responsáveis por garantir que todos os processadores trabalhem 
 com os mesmos dados, mesmo que estejam armazenados em cache diferentes.
 
- Os protocolos de coerência de cache são como regras de convivência para as cache em sistemas multicore. Eles 
+ Os protocolos de coerência de cache funcionam como regras de convivência para as cache em sistemas multicore. Eles 
 coordenam a troca de informações entre os processadores para evitar que um núcleo use dados desatualizados ou 
 contraditórios. Imagine um grupo de amigos jogando um jogo de tabuleiro em que as peças precisam ser movidas de 
 acordo com a vez de cada jogador. Se alguém faz um movimento fora de ordem, o jogo perde o sentido. Da mesma forma, 
 os protocolos de coerência organizam o acesso às cache, garantindo que cada modificação seja visível para todos os 
 processadores.
 
- Existem diferentes tipos de protocolos, como o MESI (Modified, Exclusive, Shared, Invalid)  e o  MSI (Modified, 
-Shared, Invalid) , cada um projetado para lidar com necessidades específicas de desempenho e sincronização. A 
-escolha de qual protocolo utilizar depende das características do sistema, como o número de processadores e a 
-frequência de compartilhamento de dados. Assim como um time escolhe estratégias diferentes para jogos distintos, os 
-sistemas computacionais escolhem protocolos que melhor equilibram eficiência e consistência. Essas soluções são a 
-base para garantir que os sistemas multiprocessadores funcionem de maneira confiável e eficiente.
+ Algumas das principais categorias de protocolos de coerênciasão: 
+
+ * Snooping Protocols: Os Snooping Protocols são como um grupo de vizinhos curiosos que sempre ouvem o que está 
+  acontecendo na rua. Cada cache monitora o barramento, que é o meio de comunicação entre os processadores, para 
+  verificar se outros núcleos estão tentando acessar ou modificar os mesmos dados. Quando uma alteração acontece, 
+  todas as caches que possuem uma cópia daquele dado são informadas e podem invalidar ou atualizar suas cópias.
+
+   Essa abordagem é eficiente em sistemas com poucos processadores, onde o barramento não fica sobrecarregado. No 
+  entanto, conforme o número de núcleos aumenta, o monitoramento constante do barramento pode criar gargalos, 
+  diminuindo o desempenho geral do sistema. É como uma rua muito movimentada, onde todos tentam ouvir todas as 
+  conversas ao mesmo tempo, chega um momento em que a confusão é inevitável.
+
+
+ * Protocolos Baseados em Diretório: Já os Protocolos Baseados em Diretório funcionam como um sistema de registros 
+  centralizado. Em vez de todas as cache monitorarem o barramento, há um diretório que atua como um "contador" 
+  oficial, registrando onde cada dado está armazenado e quem o está usando. Quando um processador precisa acessar 
+  ou modificar um dado, ele consulta o diretório, que gerencia as permissões e comunica as outras cache sobre 
+  quaisquer alterações.
+
+   Esse método é mais escalável e funciona bem em sistemas com muitos processadores, pois reduz o congestionamento 
+  no barramento. É como um escritório bem organizado, onde há um gerente que sabe exatamente quem está com qual 
+  arquivo e coordena o compartilhamento de informações. Porém, esse modelo pode introduzir alguma latência, já que 
+  todas as solicitações passam pelo diretório central.
+
+
+ * Protocolos Específicos e suas Estratégias: Além dessas categorias, existem protocolos específicos, como o MESI 
+  (Modified, Exclusive, Shared, Invalid) e o MSI (Modified, Shared, Invalid), que definem estados para os dados 
+  armazenados em cache. Cada estado ajuda a determinar se um dado pode ser lido, escrito ou precisa ser atualizado 
+  ou invalidado. A escolha de qual protocolo utilizar depende das características do sistema, como o número de 
+  processadores e a frequência de compartilhamento de dados.
+
+ Assim como um time escolhe estratégias diferentes para jogos distintos, os sistemas computacionais selecionam 
+protocolos que melhor equilibram eficiência e consistência. Os Snooping Protocols são ideais para sistemas menores, 
+enquanto os Protocolos Baseados em Diretório brilham em ambientes mais complexos e escaláveis. Essas soluções são a 
+base para garantir que os sistemas multiprocessadores funcionem de maneira confiável e eficiente, permitindo que 
+todos os processadores "joguem no mesmo time" e trabalhem com informações sincronizadas e corretas.
