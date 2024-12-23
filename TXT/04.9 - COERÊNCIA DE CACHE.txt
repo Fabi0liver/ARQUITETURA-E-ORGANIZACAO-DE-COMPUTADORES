@@ -183,7 +183,7 @@ específicas de suas aplicações.
 
 
 
-                       "Protocolos de Coerência de Cache"
+                               "Protocolos de Coerência de Cache"
 
  Quando pensamos em sistemas multicore, é como imaginar um time de cozinheiros trabalhando na mesma receita, mas 
 cada um com sua própria lista de ingredientes. Para que o prato final saia perfeito, é essencial que todos estejam 
@@ -238,7 +238,7 @@ todos os processadores "joguem no mesmo time" e trabalhem com informações sinc
 
 
 
-                                 "Protocolos Específicos"
+                                     "Protocolos Específicos"
 
  Os protocolos específicos de coerência de cache são estratégias sofisticadas desenvolvidas para gerenciar a 
 consistência de dados em sistemas multicore. Cada protocolo define um conjunto de estados pelos quais os blocos de 
@@ -431,7 +431,7 @@ processar grandes volumes de dados com precisão e agilidade.
 
 
 
-                                        Conclusão 
+                                         Conclusão 
  
  A coerência de cache é um dos pilares fundamentais para o bom funcionamento de sistemas multicore modernos, 
 garantindo que os dados utilizados por diferentes processadores estejam sempre alinhados e consistentes. Imagine 
