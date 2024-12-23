@@ -183,4 +183,24 @@ específicas de suas aplicações.
 
 
 
-                           
+                            "Protocolos de Coerência de Cache"
+
+ Quando pensamos em sistemas multicore, é como imaginar um time de cozinheiros trabalhando na mesma receita, mas 
+cada um com sua própria lista de ingredientes. Para que o prato final saia perfeito, é essencial que todos estejam 
+alinhados sobre o que está atualizado ou alterado na receita. Esse alinhamento, no contexto da computação, é 
+realizado pelos protocolos de coerência de cache, responsáveis por garantir que todos os processadores trabalhem 
+com os mesmos dados, mesmo que estejam armazenados em cache diferentes.
+
+ Os protocolos de coerência de cache são como regras de convivência para as cache em sistemas multicore. Eles 
+coordenam a troca de informações entre os processadores para evitar que um núcleo use dados desatualizados ou 
+contraditórios. Imagine um grupo de amigos jogando um jogo de tabuleiro em que as peças precisam ser movidas de 
+acordo com a vez de cada jogador. Se alguém faz um movimento fora de ordem, o jogo perde o sentido. Da mesma forma, 
+os protocolos de coerência organizam o acesso às cache, garantindo que cada modificação seja visível para todos os 
+processadores.
+
+ Existem diferentes tipos de protocolos, como o MESI (Modified, Exclusive, Shared, Invalid)  e o  MSI (Modified, 
+Shared, Invalid) , cada um projetado para lidar com necessidades específicas de desempenho e sincronização. A 
+escolha de qual protocolo utilizar depende das características do sistema, como o número de processadores e a 
+frequência de compartilhamento de dados. Assim como um time escolhe estratégias diferentes para jogos distintos, os 
+sistemas computacionais escolhem protocolos que melhor equilibram eficiência e consistência. Essas soluções são a 
+base para garantir que os sistemas multiprocessadores funcionem de maneira confiável e eficiente.
