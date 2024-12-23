@@ -143,7 +143,7 @@ processadores “conversem” entre si e trabalhem em harmonia.
 
 
  * Transferência de Estado: Os dados armazenados em cache podem mudar de estado dependendo das operações 
-  realizadas. Por exemplo, em um protocolo como M E S I, um dado pode passar de “Shared” (compartilhado) para 
+  realizadas. Por exemplo, em um protocolo como MESI, um dado pode passar de “Shared” (compartilhado) para 
   “Modified” (modificado). Essa mudança de estado indica se o dado é exclusivo de uma cache, compartilhado entre 
   várias caches ou se precisa ser atualizado. É como um semáforo: cada cor indica se os carros devem parar, avançar 
   ou aguardar. Da mesma forma, o estado de um dado diz como ele deve ser tratado no sistema.
@@ -168,7 +168,7 @@ processadores “conversem” entre si e trabalhem em harmonia.
   esperar a entrega de uma única folha.
 
    Embora a replicação aumente a velocidade de acesso aos dados, ela traz desafios relacionados à manutenção da 
-  consistência entre as várias cópias. Protocolos específicos, como M E S I, ajudam a gerenciar essas situações, 
+  consistência entre as várias cópias. Protocolos específicos, como MESI, ajudam a gerenciar essas situações, 
   garantindo que todas as réplicas sejam atualizadas quando um dado for alterado.
 
  As operações de coerência de cache são peças-chave para garantir que os dados permaneçam consistentes em sistemas 
@@ -183,24 +183,4 @@ específicas de suas aplicações.
 
 
 
-                            "Protocolos de Coerência de Cache"
-
- Quando pensamos em sistemas multicore, é como imaginar um time de cozinheiros trabalhando na mesma receita, mas 
-cada um com sua própria lista de ingredientes. Para que o prato final saia perfeito, é essencial que todos estejam 
-alinhados sobre o que está atualizado ou alterado na receita. Esse alinhamento, no contexto da computação, é 
-realizado pelos protocolos de coerência de cache, responsáveis por garantir que todos os processadores trabalhem 
-com os mesmos dados, mesmo que estejam armazenados em cache diferentes.
-
- Os protocolos de coerência de cache são como regras de convivência para as cache em sistemas multicore. Eles 
-coordenam a troca de informações entre os processadores para evitar que um núcleo use dados desatualizados ou 
-contraditórios. Imagine um grupo de amigos jogando um jogo de tabuleiro em que as peças precisam ser movidas de 
-acordo com a vez de cada jogador. Se alguém faz um movimento fora de ordem, o jogo perde o sentido. Da mesma forma, 
-os protocolos de coerência organizam o acesso às cache, garantindo que cada modificação seja visível para todos os 
-processadores.
-
- Existem diferentes tipos de protocolos, como o MESI (Modified, Exclusive, Shared, Invalid)  e o  MSI (Modified, 
-Shared, Invalid) , cada um projetado para lidar com necessidades específicas de desempenho e sincronização. A 
-escolha de qual protocolo utilizar depende das características do sistema, como o número de processadores e a 
-frequência de compartilhamento de dados. Assim como um time escolhe estratégias diferentes para jogos distintos, os 
-sistemas computacionais escolhem protocolos que melhor equilibram eficiência e consistência. Essas soluções são a 
-base para garantir que os sistemas multiprocessadores funcionem de maneira confiável e eficiente.
+                           
