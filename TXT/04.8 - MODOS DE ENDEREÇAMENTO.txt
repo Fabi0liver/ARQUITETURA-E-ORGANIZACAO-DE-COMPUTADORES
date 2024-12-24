@@ -292,7 +292,9 @@ endereço de memória armazenado em R2 será movido para R1.
  Esse tipo de endereçamento é útil em cenários em que os dados podem estar em diferentes locais da memória, e não 
 são valores fixos. Ele oferece mais facilidade do que o endereçamento imediato, permitindo que o valor da memória á 
 ser acessado seja dinâmico, ou seja, determinado em tempo de execução, a partir do conteúdo dos registradores. 
-Isso torna o endereçamento indireto por registrador um modo versátil para trabalhar com dados que não são  conhecidos anteriormente, especialmente em operações com grandes volumes de dados ou estruturas de dados, como  listas ou matrizes dinâmicas.
+Isso torna o endereçamento indireto por registrador um modo versátil para trabalhar com dados que não são  conhecidos 
+anteriormente, especialmente em operações com grandes volumes de dados ou estruturas de dados, como  listas ou 
+matrizes dinâmicas.
 
  * Como Funciona: No endereçamento indireto por registrador, o valor contido no registrador especificado é 
   utilizado como um ponteiro para um local de memória onde o dado é armazenado. Em vez de armazenar o dado 
