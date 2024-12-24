@@ -94,7 +94,8 @@ o sistema seja confiável, rápido e capaz de lidar com dados compartilhados de 
                                  "Operações de Coerência de Cache"
                                                                                                                                                                                                                            
  Manter a coerência de cache em sistemas multicore é essencial para garantir que todas as partes do sistema 
-trabalhem com dados atualizados e confiáveis. Como cada processador pode ter sua própria cache, as informações podem se tornar inconsistentes quando um processador altera um dado e outros continuam com versões desatualizadas. 
+trabalhem com dados atualizados e confiáveis. Como cada processador pode ter sua própria cache, as informações 
+podem se tornar inconsistentes quando um processador altera um dado e outros continuam com versões desatualizadas. 
 Para evitar isso, foram desenvolvidas operações específicas que permitem sincronizar as cache e a memória principal 
 de forma eficiente. Essas operações ajudam a resolver os desafios de inconsistência, garantindo que os 
 processadores “conversem” entre si e trabalhem em harmonia.
