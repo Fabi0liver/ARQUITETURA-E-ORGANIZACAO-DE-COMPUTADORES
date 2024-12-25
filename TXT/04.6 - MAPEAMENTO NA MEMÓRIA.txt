@@ -38,7 +38,8 @@ maneira mais eficiente. Para garantir que a busca por informações no cache sej
 dados no cache é organizado em componentes diferentes: Tag, Index, Offset e Bit Valid. Cada um desses elementos tem 
 uma função específica, colaborando para localizar, verificar e acessar os dados de forma rápida e eficiente. 
 
- Entender como cada componente funciona é fundamental para compreender como o cache otimiza o desempenho de sistemas computacionais.
+ Entender como cada componente funciona é fundamental para compreender como o cache otimiza o desempenho de sistemas 
+computacionais.
 
  * Tag: É o identificador exclusivo que garante que os dados armazenados em uma linha de cache, sejam relacionados 
   aos dados solicitados pela CPU. Funciona como um "rótulo" que diferencia os dados armazenados em uma linha 
