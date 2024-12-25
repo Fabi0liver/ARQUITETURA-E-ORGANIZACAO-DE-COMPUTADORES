@@ -489,7 +489,8 @@ entender melhor como esse método funciona e explorar suas características.
 
   - Offset: Indica a posição exata dentro do bloco, útil quando o bloco contém múltiplos bytes ou palavras.
 
-  - Bit Valid : O bit de validade indica se os dados armazenados na linha são válidos. Se o bit for 1 , significa que os dados podem ser usados. Caso contrário, o processador deve buscar os dados na memória principal.                                     
+  - Bit Valid : O bit de validade indica se os dados armazenados na linha são válidos. Se o bit for 1 , significa 
+que os dados podem ser usados. Caso contrário, o processador deve buscar os dados na memória principal.                                     
                                                                                                                                                                                                                              
    Exemplo Prático: Vamos imaginar um cache com 8 conjuntos , onde cada conjunto possui 2 linhas (ou seja, é um 
   cache associativo por conjunto de grau 2). O endereço de memória tem 8 bits e será dividido em Tag, Index e 
