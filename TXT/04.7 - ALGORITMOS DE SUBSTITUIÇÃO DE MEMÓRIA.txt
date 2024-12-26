@@ -8,7 +8,8 @@ requisitados perto de sua mesa, para que você não precise procurar na pratelei
 entanto, o cache é limitado em espaço, e, em algum momento, ele precisa decidir quais dados armazenar e quais remover.
 
  É aí que entra os  algoritmos de substituição de cache . Esses algoritmos são como um conjunto de regras para 
-decidir qual dado deve ser removido quando o cache atinge sua capacidade máxima. A ideia é maximizar o desempenho,  garantindo que os dados mais úteis estejam sempre disponíveis para o processador acessar rapidamente. Imagine uma 
+decidir qual dado deve ser removido quando o cache atinge sua capacidade máxima. A ideia é maximizar o desempenho, 
+garantindo que os dados mais úteis estejam sempre disponíveis para o processador acessar rapidamente. Imagine uma 
 sala cheia de livros e você tem que escolher quais deixar na mesa para facilitar seu estudo. Você vai querer deixar 
 os livros que mais usa, mas, como o espaço é limitado, precisa tomar decisões inteligentes.
 
