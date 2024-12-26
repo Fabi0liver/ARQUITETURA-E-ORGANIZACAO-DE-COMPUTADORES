@@ -390,4 +390,6 @@ do sistema em questão.
 
  No final, os algoritmos de substituição de cache nos lembram que, na discussão, as soluções mais eficazes nem  
 sempre são as mais complexas, mas sim as que melhor se adaptam ao contexto. Compreender como esses algoritmos  
-funcionam e as necessidades específicas de cada sistema é o primeiro passo para construir soluções otimizadas.   Investir tempo nessa escolha pode fazer a diferença no desempenho de aplicações, seja em dispositivos móveis,   servidores de alto desempenho ou sistemas embarcados.
+funcionam e as necessidades específicas de cada sistema é o primeiro passo para construir soluções otimizadas. 
+Investir tempo nessa escolha pode fazer a diferença no desempenho de aplicações, seja em dispositivos móveis,  
+servidores de alto desempenho ou sistemas embarcados.
