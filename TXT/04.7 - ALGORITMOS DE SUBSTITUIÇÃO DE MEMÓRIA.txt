@@ -378,7 +378,8 @@ confiáveis ​​e adaptados às demandas do mundo real.
 Eles não são apenas soluções técnicas, mas estratégias inteligentes para gerenciar o espaço limitado da memória 
 cache. A escolha do dado certo para remover, no momento certo, é garantir que os recursos do sistema sejam 
 utilizados da melhor forma possível, minimizando o impacto das especificações físicas e maximizando a velocidade de 
-acesso às informações. Cada algoritmo, seja ele FIFO, LRU, LFU, ou outros, oferece abordagens específicas para  lidar com padrões de acesso variáveis ​​e cenários de uso diversos.
+acesso às informações. Cada algoritmo, seja ele FIFO, LRU, LFU, ou outros, oferece abordagens específicas para lidar 
+com padrões de acesso variáveis ​​e cenários de uso diversos.
 
  Entender as características e o funcionamento de cada algoritmo é crucial, pois não existe uma solução universal 
 que atenda a todos os tipos de aplicação. Algoritmos como o LRU brilham em contextos onde o acesso recente é 
