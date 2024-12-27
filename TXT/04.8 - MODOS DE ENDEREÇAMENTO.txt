@@ -1,8 +1,7 @@
                                          MODOS DE ENDEREÇAMENTO
 
   
- A memória é como o grande armazém onde o computador guarda todas as informações que precisa para funcionar, desde 
-os dados de um programa até as instruções que ele deve executar. No entanto, acessar essas informações nem sempre é 
+ A memória é como o grande armazém onde o computador guarda todas as informações que precisa para funcionar, desde os dados de um programa até as instruções que ele deve executar. No entanto, acessar essas informações nem sempre é 
 uma tarefa tão direta quanto abrir uma gaveta e pegar algo. Para que o processador saiba exatamente onde buscar o 
 que precisa, ele usa diferentes modos de endereçamento , que são como estratégias para localizar dados de forma 
 eficiente. Esses modos são essenciais para o funcionamento correto e ágil do sistema, influenciando diretamente o 
