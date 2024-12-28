@@ -144,6 +144,53 @@ simples em operações complexas que realizam tarefas do nosso dia a dia.
 
 
 
+                                  "Tamanhos das Instruções na ISA"
+
+ Os tamanhos de instruções na ISA  se referem ao número de bits que uma instrução ocupa na memória. O tamanho das 
+instruções é uma consideração importante no design do processador, pois afeta tanto o desempenho quanto a 
+eficiência do sistema. Dependendo da arquitetura do processador, as instruções podem ter tamanhos fixos ou 
+variáveis, e essa escolha impacta diretamente como a CPU processa e executa os comandos. Vamos explorar os dois 
+principais tipos de tamanhos de instruções na ISA.
+
+ * Instruções de Tamanho Fixo: Nas arquiteturas que utilizam instruções de tamanho fixo, todas as instruções têm a 
+  mesma quantidade de bits. Por exemplo, uma instrução pode ser sempre de 32 bits ou 64 bits, independentemente da 
+  operação que ela realiza. Isso facilita a decodificação das instruções, já que a CPU sabe exatamente o que 
+  esperar a cada ciclo.
+
+   Uma analogia útil seria pensar em um trem cujos vagões têm todos o mesmo comprimento. Assim, a locomotiva sabe 
+  exatamente como encaixar e mover cada vagão sem precisar de ajustes. Essa abordagem facilita a implementação de 
+  hardware e pode melhorar a eficiência, pois o processador pode acessar e decodificar rapidamente as instruções. 
+  No entanto, pode ser menos flexível, pois o número de bits fixos precisa ser suficiente para representar todos os 
+  tipos de operações que o processador pode realizar.
+
+ 
+ * Instruções de Tamanho Variável: Em arquiteturas com instruções de tamanho variável, as instruções podem ter 
+  diferentes tamanhos dependendo da operação que estão realizando. Por exemplo, uma instrução simples pode ser de 
+  16 bits, enquanto uma operação mais complexa pode exigir 64 bits. Isso oferece uma maior flexibilidade, 
+  permitindo que o processador use diferentes tamanhos de instruções conforme necessário para realizar operações 
+  mais complexas de forma mais compacta.
+
+   Imagine um escritório onde diferentes documentos têm diferentes tamanhos (por exemplo, relatórios curtos ou 
+  relatórios longos ) os trabalhadores podem adaptar a quantidade de papel necessária para cada tarefa. Isso é útil 
+  quando a operação requer mais dados ou endereços, mas também torna a decodificação das instruções mais complexa, 
+  pois a CPU precisa entender a quantidade de bits antes de processá-las. Arquiteturas como x86 utilizam esse tipo 
+  de design, com a vantagem de ser mais flexível, mas a desvantagem de uma maior complexidade no hardware.
+
+ A escolha entre instruções de tamanho fixo ou variável tem um impacto direto no desempenho e na eficiência do 
+processador. As instruções de tamanho fixo tendem a ser mais rápidas de decodificar, o que pode melhorar a 
+velocidade de execução, especialmente em sistemas onde a simplicidade e a velocidade são essenciais. Por outro 
+lado, as instruções de tamanho variável oferecem mais flexibilidade e podem ser mais compactas, mas exigem um 
+processamento adicional para determinar o tamanho de cada instrução, o que pode reduzir a velocidade de 
+decodificação.
+
+ Em resumo, o tipo de tamanho de instrução escolhido depende do equilíbrio desejado entre simplicidade, desempenho 
+e flexibilidade. Instruções de tamanho fixo são rápidas e previsíveis, enquanto as de tamanho variável oferecem 
+mais opções e uma utilização de memória mais eficiente, mas com maior complexidade na decodificação e execução. 
+Ambos os tipos têm suas aplicações dependendo dos requisitos da arquitetura e das operações que precisam ser 
+executadas.
+
+
+
                                        "Número de Operandos"
 
  O número de operandos em uma instrução é um dos aspectos mais importantes da arquitetura do conjunto de instruções 
