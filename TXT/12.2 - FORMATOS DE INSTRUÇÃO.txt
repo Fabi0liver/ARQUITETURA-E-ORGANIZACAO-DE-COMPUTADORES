@@ -45,17 +45,17 @@ explicitamente os operandos em registradores ou na memória, o formato de pilha 
 armazenados na estrutura como operandos. Isso resulta em instruções mais curtas e reduz a necessidade de buscar 
 dados em outros lugares, como na memória principal.
 
- * Como Funciona o Formato Pilha: No formato pilha, os dados são empilhados ("push") para a pilha antes de serem 
-  utilizados e retirados ("pop") após a operação. As instruções operam implicitamente nos dois valores que estão no 
-  topo da pilha, sem a necessidade de especificar registradores ou endereços de memória. Por exemplo, para somar 
-  dois números, você primeiro empilha os números na  pilha, e então a instrução de soma ("ADD") opera nesses 
+ * Como Funciona o Formato Pilha: No formato pilha, os dados são adiconados ("push") ao topo da pilha antes de   
+  serem utilizados, e retirados ("pop") após a operação. As instruções operam implicitamente nos dois valores que 
+  estão no topo da pilha, sem a necessidade de especificar registradores ou endereços de memória. Por exemplo, para 
+  somar dois números, você primeiro empilha os números na  pilha, e então a instrução de soma ("ADD") opera nesses 
   valores, deixando o resultado no topo da pilha.
 
    Exemplo de Instrução:  PUSH 1000
                           PUSH 2000
                           ADD
 
-   Nesse caso, o valor 1000 é empilhados no topo da pilha, seguido de 2000. A instrução ADD remove esses dois 
+   Nesse caso, o valor 1000 é inserido ao topo da pilha, seguido de 2000. A instrução ADD remove esses dois 
   valores do topo da pilha, soma-os e devolve o resultado (3000) ao topo.
 
 
