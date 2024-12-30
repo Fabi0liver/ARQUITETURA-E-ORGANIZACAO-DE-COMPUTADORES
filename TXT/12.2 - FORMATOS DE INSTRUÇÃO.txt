@@ -306,8 +306,8 @@ para entender como as escolhas no design de instruções impactam diretamente o 
 sistemas computacionais.
 
 
-
-                              "Formato de Instrução Load-Store"
+  
+                                "Formato de Instrução Load-Store"
 
  O formato de instrução Load-Store é uma abordagem essencial em arquiteturas modernas, como as baseadas em RISC. 
 Nesse modelo, as operações aritméticas e lógicas são realizadas exclusivamente entre valores armazenados em 
@@ -454,6 +454,7 @@ os sistemas que utilizam esse formato garantem que cada instrução seja executa
 refletindo o avanço contínuo da tecnologia computacional.
 
 
+
                              "Formato de Instrução Registrador-Memória"
 
  O formato de instrução registrador-memória combina a eficiência dos registradores com a acessibilidade da memória, 
@@ -595,7 +596,7 @@ sistema computacional.
 
 
 
-                        "Formato de Instrução Entrada e Saída"
+                          "Formato de Instrução Entrada e Saída"
 
  O formato de instrução de entrada e saída é uma abordagem essencial em arquiteturas computacionais, voltada para a 
 comunicação entre o processador e os dispositivos periféricos, como teclados, monitores, impressoras e discos. 
