@@ -520,3 +520,75 @@ diretamente com dados na memória o torna ideal para uma ampla gama de aplicaç�
 ajuda a reconhecer as escolhas feitas no design de processadores modernos e como essas decisões impactam o 
 desempenho e a funcionalidade do sistema. Assim, ele se mantém como um componente essencial em muitas arquiteturas 
 contemporâneas.
+
+
+
+                                 "Formato de Instrução Memória-Memória"
+
+ O formato de instrução memória-memória é uma abordagem em que todas as operações são realizadas diretamente nos 
+dados armazenados na memória principal. Diferente de outros formatos que dependem de registradores ou pilhas para 
+armazenar temporariamente os operandos, este modelo opera diretamente nos endereços de memória especificados. É 
+como se você fosse cozinhar usando ingredientes diretamente da despensa, sem transferi-los para a bancada: prático 
+em algumas situações, mas pode ser menos eficiente em outras.
+
+ A principal característica do formato memória-memória é que as instruções especificam os endereços de memória 
+tanto para os operandos quanto para o resultado. Isso elimina a necessidade de transferir dados para registradores 
+intermediários, simplificando o fluxo de execução para certos tipos de operações. No entanto, como o acesso à 
+memória é relativamente lento comparado ao acesso a registradores, esse formato pode apresentar desafios de 
+desempenho em arquiteturas modernas.
+
+ * Como Funciona o Formato Memória-Memória: No formato memória-memória, cada instrução inclui os endereços de 
+  memória dos operandos necessários e também o local onde o resultado será armazenado. Por exemplo, em uma operação 
+  de soma, a instrução lê os valores diretamente da memória, realiza a operação e escreve o resultado novamente na 
+  memória, tudo em um único passo.
+
+   Exemplo de Instrução: ADD 1000, 2000, 3000
+
+   Neste caso, os valores armazenados nos endereços 1000 e 2000 são somados, e o resultado é armazenado no endereço 
+  3000. Esse tipo de instrução é claro e direto, mas pode envolver múltiplos acessos à memória, o que pode impactar 
+  a velocidade de execução.
+
+
+ * Vantagens:
+
+   Simplicidade do Código: As instruções são fáceis de interpretar, já que operam diretamente sobre os endereços de 
+                           memória.
+
+   Menor Dependência de Registradores: Como os dados são manipulados diretamente na memória, a necessidade de 
+                                      registradores é reduzida.
+
+   Adequado para Arquiteturas Simples: Ideal para sistemas onde a memória é acessada com baixa latência, como em 
+                                      alguns sistemas embarcados.
+
+   Compactação de Dados: Pode ser eficiente em cenários onde há muitas operações que envolvem a memória, eliminando 
+                        a necessidade de movimentar dados para registradores.
+
+
+ * Desvantagens:
+
+    Lentidão no Acesso à Memória: O acesso à memória é mais lento que o acesso a registradores, impactando o 
+                                 desempenho em sistemas modernos.
+
+    Complexidade no Gerenciamento de Memória: Requer um cuidado maior para evitar conflitos de acesso ou erros no 
+                                             manuseio de endereços.
+
+    Baixa Escalabilidade: Em arquiteturas modernas, onde a latência de memória é um gargalo, esse formato pode se 
+                         tornar inviável.
+
+
+ * Exemplos de Uso: O formato memória-memória é encontrado principalmente em arquiteturas mais antigas ou em 
+  contextos especializados, como sistemas embarcados simples. Em máquinas modernas, ele é menos comum devido às 
+  limitações de desempenho. Ainda assim, esse formato é útil em aplicações onde a simplicidade do código e a baixa 
+  complexidade do hardware são mais importantes do que a eficiência máxima. Exemplos incluem processadores antigos 
+  e algumas linguagens de montagem que priorizam a clareza.
+
+ O formato de instrução memória-memória destaca a importância de acessar diretamente os dados na memória, 
+priorizando a simplicidade de design e execução. Embora não seja ideal para sistemas modernos que dependem de alta 
+velocidade e paralelismo, ele desempenha um papel crucial em arquiteturas onde a simplicidade supera a necessidade 
+de desempenho extremo.
+
+ Compreender o formato memória-memória ajuda a perceber como diferentes escolhas de design influenciam o 
+funcionamento do hardware e software. Ele nos mostra que, em um mundo de tecnologias diversas, cada abordagem tem 
+seu lugar, dependendo do contexto e das prioridades do sistema. Assim como escolher a ferramenta certa para uma 
+tarefa específica, o formato de instrução adequado pode fazer toda a diferença no desempenho e na funcionalidade do 
+sistema computacional.
