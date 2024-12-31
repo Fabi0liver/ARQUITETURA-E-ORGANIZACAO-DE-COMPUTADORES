@@ -1,0 +1,35 @@
+                                      ARQUITETURAS RISC E CISC
+
+ 
+ Quando falamos sobre processadores, uma das decisões mais importantes no design de suas arquiteturas está 
+relacionada a como eles lidam com as instruções que executam. É aqui que entram as arquiteturas RISC (Reduced 
+Instruction Set Computer) e CISC (Complex Instruction Set Computer), dois paradigmas que moldaram o desenvolvimento 
+da computação ao longo das décadas. Apesar de parecerem termos técnicos, eles representam filosofias opostas que 
+podem ser comparadas a diferentes abordagens para resolver um problema: uma mais direta e simplificada, e outra 
+mais abrangente e multifuncional.
+
+ A ideia central por trás do RISC é simplificar as coisas. Imagine uma pessoa que prefere fazer cada tarefa passo a 
+passo, mas de forma extremamente rápida e eficiente. Essa é a essência do RISC: usar instruções pequenas e 
+padronizadas, que podem ser executadas em ciclos rápidos, como se o processador estivesse realizando movimentos 
+precisos em um ritmo acelerado. Por outro lado, a abordagem do CISC é mais próxima de um multitarefa avançado. 
+Aqui, as instruções são mais complexas, permitindo que uma única operação realize várias tarefas de uma vez. É como 
+usar uma ferramenta multifuncional, que pode parecer mais prática em alguns momentos, mas pode ser mais lenta 
+devido à complexidade.
+
+ Essas diferenças não são apenas questões técnicas; elas impactam diretamente como o hardware e o software 
+interagem. Por exemplo, enquanto o RISC busca desempenho simplificando o design e otimizando operações, o CISC 
+tenta reduzir a quantidade de instruções necessárias para completar uma tarefa, mesmo que isso signifique adicionar 
+complexidade ao processador. É como escolher entre uma abordagem minimalista e ágil ou uma solução robusta e 
+abrangente.
+
+ Estudar as arquiteturas RISC e CISC é entender como os processadores modernos evoluíram para atender diferentes 
+necessidades. Cada uma tem suas vantagens e desvantagens, e a escolha entre elas depende de fatores como o tipo de 
+aplicação, os recursos disponíveis e as prioridades do sistema, como desempenho ou eficiência energética. Antes de 
+nos aprofundarmos nesses conceitos, é importante entender que ambas as arquiteturas têm seu lugar na computação, e 
+explorar suas características nos ajuda a desvendar os fundamentos do funcionamento dos processadores.
+
+
+
+
+
+
