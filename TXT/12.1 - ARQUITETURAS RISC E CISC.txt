@@ -58,6 +58,136 @@ frente às necessidades tecnológicas.
 
 
 
+                                      "Arquitetura CISC"
+
+ A arquitetura CISC (Complex Instruction Set Computer) foi desenvolvida durante as décadas de 1960 e 1970, quando a 
+computação começava a crescer em popularidade. Nesse período, os custos de hardware eram altos, e a programação era 
+feita em linguagens de baixo nível, próximas ao código de máquina. Para facilitar a vida dos programadores e 
+reduzir o esforço de desenvolvimento, a ideia era criar processadores capazes de executar tarefas complexas com 
+poucas instruções. Assim, nasceu a filosofia CISC, que oferecia um conjunto de instruções abrangente e sofisticado.
+
+ Esse tipo de arquitetura teve como objetivo principal diminuir o número de linhas de código que o programador 
+precisava escrever. Uma única instrução no CISC podia executar uma sequência de operações, como carregar dados da 
+memória, realizar um cálculo e armazenar o resultado de volta, tudo em uma única etapa. Pense nisso como usar um 
+comando para "preparar e servir um café", em vez de descrever cada etapa separadamente. Essa abordagem era ideal 
+para sistemas em que o espaço de armazenamento para programas era limitado.
+
+ Com o tempo, a popularidade do CISC cresceu, sendo adotado em muitos dos primeiros computadores pessoais e 
+mainframes. Processadores como os da linha x86, da Intel, são exemplos clássicos dessa arquitetura, que até hoje 
+continua influenciando a tecnologia. Contudo, à medida que a tecnologia evoluiu, os desafios dessa abordagem 
+começaram a se tornar mais evidentes, especialmente em termos de desempenho e complexidade.
+
+
+ * Como a Arquitetura CISC Funciona:
+
+   A arquitetura CISC funciona executando instruções complexas diretamente no 
+  hardware, o que significa que o processador é projetado para interpretar e executar comandos abrangentes. Uma 
+  única instrução CISC pode realizar múltiplas operações, como acessar a memória, realizar cálculos e manipular 
+  dados. Isso reduz a necessidade de dividir uma tarefa em várias instruções menores, como ocorre em arquiteturas 
+  mais simples.
+
+   Por exemplo, uma instrução típica em CISC poderia ser algo como "MULT 1000, 2000, 3000", que multiplicaria os 
+  valores armazenados em dois endereços de memória (1000 e 2000) e armazenaria o resultado no terceiro endereço 
+  (3000). Isso elimina a necessidade de etapas intermediárias, como carregar os valores em registradores, realizar 
+  a operação e, em seguida, armazenar o resultado.
+
+   - Complexidade da Arquitetura CISC: A maior característica da arquitetura CISC é sua complexidade, tanto no 
+    design do processador quanto na forma como ele executa as instruções. Para suportar um grande número de 
+    operações sofisticadas, os processadores CISC precisam de hardware mais elaborado, o que aumenta seu tamanho e 
+    consumo de energia. Cada instrução deve ser decodificada e gerenciada por circuitos dedicados, tornando o   
+    design do chip mais difícil.
+
+     Além disso, a complexidade das instruções pode levar a problemas de desempenho. Como muitas operações precisam 
+    ser realizadas em sequência para concluir uma única instrução, o tempo de execução pode ser maior em comparação 
+    com arquiteturas que dividem as tarefas em várias instruções menores. É como tentar mover uma peça de mobília 
+    grande e pesada de uma só vez, em vez de desmontá-la em partes menores e mais fáceis de manusear.
+
+
+   - Microprogramação na Arquitetura CISC: A microprogramação é uma técnica fundamental na arquitetura CISC. Ela 
+    funciona como uma camada intermediária entre as instruções de máquina e o hardware. Quando o processador recebe 
+    uma instrução complexa, ele a traduz em uma série de micro-instruções mais simples, que são executadas 
+    diretamente pelo hardware. Esse processo facilita a implementação de conjuntos de instruções complexos, sem 
+    exigir circuitos extremamente especializados para cada operação.
+
+     A microprogramação pode ser comparada a seguir uma receita passo a passo. Embora o comando original seja "faça     
+    um bolo", a microprogramação detalha as etapas menores, como "bata os ovos", "adicione a farinha" e "asse a 
+    massa". Essa abordagem permite maior flexibilidade, mas pode ser mais lenta, já que cada instrução precisa 
+    passar por essa etapa de decomposição.
+
+
+   - Tamanho e Formato das Instruções: As instruções em CISC variam em tamanho e formato, podendo ser bastante 
+    longas em comparação com outras arquiteturas. Isso ocorre porque uma única instrução pode conter múltiplos 
+    operandos e endereços de memória, dependendo da complexidade da tarefa que está sendo executada. Essa 
+    flexibilidade permite que o programador escreva código mais compacto, mas também aumenta o esforço do 
+    processador para decodificar as instruções.
+
+     Por exemplo, em vez de uma instrução simples como "SOMA R1, R2", no CISC poderíamos ter algo como "ADD [1000], 
+    [2000], [3000]", especificando diretamente os endereços de memória a serem usados. Isso economiza etapas para o 
+    programador, mas exige mais processamento por parte do hardware.
+
+
+ * Vantagens da Arquitetura CISC:
+
+   Conjuntos de Instruções Robustas: O CISC permite executar operações complexas com poucas instruções,      
+                                    simplificando tarefas que exigiriam várias etapas em outras arquiteturas. É 
+                                    como usar uma ferramenta multifuncional que resolve problemas complexos de  
+                                    forma direta e eficiente.
+
+   Facilidade para Programadores: Com instruções mais completas, os programadores precisam escrever menos código 
+                                 para realizar tarefas. Isso torna o desenvolvimento mais intuitivo e reduz o 
+                                 esforço, especialmente em linguagens de baixo nível.
+
+   Código Mais Compacto: Como as instruções podem realizar múltiplas operações, o código final ocupa menos espaço. 
+                        Essa compactação era crucial quando os sistemas tinham memória limitada, permitindo 
+                        executar programas maiores em hardware simples.
+
+
+ * Desvantagens da Arquitetura CISC
+
+   Complexidade do Hardware: O design mais elaborado do processador aumenta a dificuldade de fabricação e os 
+                            custos, semelhante a construir uma máquina complexa para tarefas específicas.
+
+   Desempenho Inferior em Tarefas Simples: Operações básicas podem ser mais lentas, já que o processador precisa 
+                                          decodificar instruções complexas mesmo para ações simples, o que é como 
+                                          usar um equipamento pesado para uma tarefa leve.
+
+   Consumo de Energia Maior: O processamento de instruções detalhadas consome mais energia, tornando o CISC menos 
+                            eficiente em dispositivos modernos que exigem alta performance com baixo consumo.
+
+
+ * Exemplos de Processadores que Usam CISC:
+
+   Intel x86: A família de processadores x86 é muito conhecida e utilizada em PCs e servidores. Ela oferece uma 
+  grande variedade de instruções, permitindo que tarefas complexas sejam feitas com menos código, o que facilita a 
+  programação e o desempenho em diferentes tipos de máquinas.
+
+   IBM System/360: Lançado nos anos 60, o IBM System/360 foi um marco em mainframes, oferecendo um conjunto de 
+  instruções versátil. A arquitetura CISC permitiu que o mesmo processador fosse usado em diferentes tipos de 
+  sistemas, tornando-o flexível e eficiente para tarefas variadas.
+
+   Motorola 68000: Usado em computadores como o Apple Macintosh original, o Motorola 68000 foi popular por sua 
+  capacidade de realizar instruções complexas de forma compacta. Sua arquitetura CISC ajudava desenvolvedores a 
+  escrever programas mais simples, usando menos etapas no código.
+
+ Em suma, a arquitetura CISC foi essencial para o avanço da computação, especialmente em seus primeiros dias, ao 
+oferecer flexibilidade e eficiência para desenvolvedores que trabalhavam com recursos limitados. Apesar de sua 
+complexidade e das limitações de desempenho, o CISC permanece relevante graças a sua evolução e adaptação às 
+demandas modernas.
+
+ Embora arquiteturas mais simples, como o RISC, tenham desafiado seu domínio, o CISC ainda encontra espaço em 
+muitos sistemas, muitas vezes adotando características do RISC para melhorar o desempenho. Compreender a CISC é 
+fundamental para quem deseja explorar as raízes da computação e entender como diferentes abordagens moldaram a 
+tecnologia que usamos hoje.
+
+
+
+
+
+
+
+
+
+
 
 
 
