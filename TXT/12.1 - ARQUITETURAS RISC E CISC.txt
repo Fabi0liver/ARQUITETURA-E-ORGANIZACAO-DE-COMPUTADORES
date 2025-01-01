@@ -30,7 +30,7 @@ explorar suas características nos ajuda a desvendar os fundamentos do funcionam
 
 
 
-                 "O Contexto Histórico das Arquiteturas RISC e CISC"
+                         "O Contexto Histórico das Arquiteturas RISC e CISC"
 
  As arquiteturas RISC e CISC nasceram em um momento em que a computação enfrentava desafios fundamentais sobre como 
 otimizar desempenho e eficiência. Nos primórdios dos computadores, na década de 1960 e 1970, a computação era um 
@@ -285,7 +285,7 @@ de novas tecnologias, tornando-o uma peça chave na computação moderna.
 
 
 
-                    "Diferenças entre as Arquiteturas RISC e CISC"
+                            "Diferenças entre as Arquiteturas RISC e CISC"
 
  A arquitetura RISC  e a arquitetura CISC  representam duas abordagens diferentes para o design de processadores, 
 cada uma com suas próprias vantagens e desvantagens. A principal diferença entre elas está na maneira como as 
@@ -403,7 +403,7 @@ mais ciclos de clock e hardware mais complexo.
 
 
 
-                     "Arquitetura Híbrida: O Melhor de Dois Mundos"
+                          "Arquitetura Híbrida: O Melhor de Dois Mundos"
 
  A arquitetura híbrida é uma abordagem que combina características das arquiteturas RISC e CISC para alcançar um 
 equilíbrio entre simplicidade, eficiência e flexibilidade. Imagine uma fusão de duas ferramentas: a eficiência 
@@ -499,7 +499,7 @@ peças de um grande quebra-cabeça que juntas constroem a computação do futuro
 
 
 
-                       "Conclusão Sobre as Arquiteturas RISC e CISC"
+                           "Conclusão Sobre as Arquiteturas RISC e CISC"
 
  As arquiteturas RISC e CISC representam duas abordagens distintas e complementares no design de processadores, 
 refletindo as necessidades e desafios enfrentados ao longo da evolução da computação. Enquanto o RISC prioriza a 
