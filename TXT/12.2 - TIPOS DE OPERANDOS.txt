@@ -90,6 +90,68 @@ continua sendo um dos pilares que sustentam a interação eficiente entre softwa
 
 
 
+                                   "Operando do Tipo Números"
+
+ Os operandos do tipo número, que podem ser inteiros (integer) ou de ponto flutuante (floating point), representam 
+os valores numéricos manipulados pelo processador. Esses operandos são como as ferramentas matemáticas que usamos 
+no dia a dia: os inteiros servem para contagens e cálculos exatos, enquanto os números de ponto flutuante permitem 
+lidar com medidas mais precisas, como pesos, distâncias e frações.
+
+ Esses operandos são fundamentais em quase todas as operações computacionais, de cálculos simples a simulações 
+científicas complexas. Eles podem ser armazenados em registradores, memória ou diretamente embutidos em uma 
+instrução, dependendo da arquitetura do processador. Essa flexibilidade os torna extremamente versáteis e 
+essenciais no funcionamento de qualquer sistema de computação.
+
+ * Características e Como É Usado: Os números inteiros são representados em binário e armazenados com um número 
+  fixo de bits, como 8, 16, 32 ou 64, dependendo da arquitetura. Eles são amplamente usados em contagens, índices 
+  de arrays e operações que exigem exatidão, como somas ou multiplicações simples. Já os números de ponto flutuante 
+  seguem um formato padronizado (geralmente o IEEE 754), que divide o número em partes para representar o sinal, o 
+  expoente e a mantissa. Isso permite lidar com uma ampla gama de valores, desde números muito pequenos até 
+  extremamente grandes.
+
+   Na prática, operandos inteiros aparecem em instruções como ADD R1, R2, R3 (soma de inteiros) ou CMP R1, R2 
+  (comparação entre dois valores inteiros). Por outro lado, os operandos de ponto flutuante são comuns em operações 
+  científicas e gráficas, como FADD F1, F2, F3, que realiza uma soma entre dois números de ponto flutuante.
+
+
+ * Vantagens:
+
+    Inteiros: Precisão exata para operações matemáticas simples.
+
+    Ponto Flutuante: Ampla faixa de valores, permitindo lidar com números muito grandes ou muito pequenos.
+
+    Versatilidade: Atendem a uma ampla gama de aplicações, desde aritmética básica até cálculos científicos.
+
+
+ * Desvantagens:
+
+   Inteiros: Limitação de alcance, não podendo representar números fracionários ou valores fora do intervalo dos 
+            bits disponíveis.
+
+   Ponto Flutuante: Perda de precisão, especialmente em operações que acumulam erros de arredondamento.
+
+   Maior complexidade: Operações de ponto flutuante são mais lentas e consomem mais energia.
+
+
+ * Exemplos de Uso: Os números inteiros são amplamente utilizados em cálculos contábeis ou em jogos, como no 
+  controle da pontuação de um jogador. Um exemplo seria um programa que soma os pontos de um jogador a cada ação 
+  bem-sucedida, onde cada ponto é representado como um valor inteiro.
+
+   Já os números de ponto flutuante brilham em aplicações científicas e gráficas. Imagine um simulador de voo que 
+  calcula a posição de um avião em um ambiente tridimensional. Esses cálculos envolvem coordenadas espaciais 
+  representadas como números de ponto flutuante para garantir precisão e realismo nas simulações.
+
+
+ Em suma, operandos do tipo número, sejam inteiros ou de ponto flutuante, são a base da maioria das operações 
+computacionais. Enquanto os inteiros oferecem simplicidade e exatidão, os números de ponto flutuante trazem a 
+flexibilidade necessária para trabalhar com valores complexos e de grande alcance.
+
+ Apesar de suas diferenças e limitações, esses operandos desempenham papéis complementares no mundo da computação, 
+ajudando a traduzir problemas do mundo real em soluções matemáticas que os processadores podem executar com 
+eficiência e precisão.
+
+
+
 
 
 
