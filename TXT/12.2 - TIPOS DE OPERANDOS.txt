@@ -217,7 +217,7 @@ comunicação e processamento de texto.
 
 
 
-                          "Operandos do Tipo String"
+                              "Operandos do Tipo String"
 
  Os operandos do tipo string são usados para representar cadeias de caracteres, como palavras, frases ou até mesmo 
 longos textos. Diferentemente de valores numéricos ou bits isolados, as strings agrupam múltiplos caracteres em uma 
