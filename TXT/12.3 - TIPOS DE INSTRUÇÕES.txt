@@ -1,4 +1,4 @@
-                                      TIPOS DE INSTRUÇÕES
+                                         TIPOS DE INSTRUÇÕES
 
 
  No coração da arquitetura de computadores, as instruções são como comandos que dizem ao processador o que fazer. 
@@ -181,7 +181,7 @@ de fato, o núcleo da lógica no mundo digital.
 
 
 
-                           "Instruções de Deslocamento e Rotação"
+                              "Instruções de Deslocamento e Rotação"
 
  As instruções de deslocamento e rotação são como ferramentas de organização e ajuste dentro do computador. Elas 
 movimentam os bits de dados para a esquerda ou direita, seja para criar espaço, reorganizar informações ou mesmo 
@@ -236,7 +236,7 @@ forma ágil e precisa.
 
 
 
-                              "Instruções de Controle de Fluxo"
+                               "Instruções de Controle de Fluxo"
 
  As instruções de controle de fluxo são como sinais de trânsito para o processador. Elas indicam para onde "virar", 
 quando parar ou avançar, e ajudam o sistema a navegar pelos caminhos do código. Sem elas, o processador seguiria 
@@ -286,7 +286,7 @@ programação prática e eficiente.
 
 
 
-                             "Instruções de Entrada e Saída"
+                                 "Instruções de Entrada e Saída"
 
  As instruções de entrada e saída são como as portas que conectam o mundo interno do computador ao mundo externo. 
 Elas permitem que o processador interaja com dispositivos periféricos, como teclados, mouses, impressoras e discos, 
@@ -341,7 +341,7 @@ compatibilidade com diferentes dispositivos, tornando-as uma parte crucial do de
 
 
 
-                             "Instruções de Conversão de Dados"
+                                 "Instruções de Conversão de Dados"
 
  As instruções de conversão de dados são como ferramentas que ajudam a traduzir informações de um formato para 
 outro dentro de um computador. Elas são essenciais quando o processador precisa transformar dados para poder 
@@ -402,7 +402,7 @@ transformados e utilizados corretamente dentro do sistema, tornando todo o proce
 
 
 
-                        "Instruções de Controle do Sistema"
+                              "Instruções de Controle do Sistema"
 
  As instruções de controle do sistema são como o maestro de uma orquestra, garantindo que todas as partes do 
 sistema trabalhem em harmonia e no tempo certo. Elas são responsáveis por coordenar o fluxo de execução do 
@@ -461,7 +461,7 @@ mantém o sistema funcionando de forma dinâmica e inteligente.
 
 
 
-                                       "Conclusão"
+                                              "Conclusão"
 
  Os tipos de instruções são fundamentais para o funcionamento de um computador, pois formam a base da comunicação 
 entre o processador e as diversas partes do sistema. Cada tipo de instrução tem um papel específico, seja para 
