@@ -233,7 +233,7 @@ profundos de como um computador realmente trabalha.
 
 
 
-                       "A Estrutura de um Programa em Assembly"
+                           "A Estrutura de um Programa em Assembly"
 
  Quando você escreve um programa em Assembly, ele é estruturado de uma forma organizada para facilitar a execução e 
 o gerenciamento dos dados e das instruções. A organização do código em diferentes seções ajuda a separar as 
@@ -373,6 +373,67 @@ controle os dados e as operações do processador com grande precisão. Desde mo
 cálculos e manipular bits, até decidir como o programa deve se comportar em diferentes situações, essas operações 
 são a base de tudo que o Assembly pode fazer. Como se fosse um conjunto de ferramentas para montar uma máquina 
 complexa, dominar essas instruções é essencial para entender como os computadores realmente funcionam.
+
+
+
+                            "Interrupções no Assembly"
+
+ No contexto do Assembly, interrupções são uma forma de o processador interromper temporariamente a execução de um 
+programa para lidar com algo mais urgente, como um evento externo ou uma solicitação do sistema operacional. Elas 
+funcionam como um "alvo" no meio de uma tarefa, permitindo que o processador desvie sua atenção para algo que 
+precisa ser tratado imediatamente. Após o evento ser tratado, o processador retoma sua execução de onde parou, como 
+se nada tivesse acontecido.
+
+ Imagine que você está lendo um livro (o processo normal de execução) e alguém bate à sua porta (uma interrupção). 
+Você para de ler, vai até a porta, resolve o que for necessário e então volta à leitura. Assim funciona a 
+interrupção: interrompe o processo normal para que algo mais importante seja feito.
+
+ * Interrupções de Hardware:
+
+   As interrupções de hardware acontecem quando um dispositivo externo precisa da atenção do processador. Exemplos 
+  comuns incluem pressionamento de teclas no teclado, movimento do mouse, ou a chegada de dados em uma porta de 
+  comunicação. Esses dispositivos podem enviar sinais de interrupção diretamente para o processador, que interrompe 
+  sua execução para tratar a solicitação.
+
+   Voltando à analogia, imagine que você está lendo seu livro (execução do programa), e o telefone toca 
+  (interrupção de hardware). Você não pode ignorar o telefone, pois pode ser uma emergência, então interrompe sua 
+  leitura para atender. Esses sinais vêm de fora do processo e exigem atenção imediata.
+
+
+ * Interrupções de Software:
+
+   As interrupções de software, por outro lado, são geradas pelo próprio programa que está em execução, muitas 
+  vezes para pedir algo ao sistema operacional. No Assembly, isso é feito com instruções específicas de 
+  interrupção, como int 0x80 no Linux, que chama uma rotina do sistema operacional para realizar ações como ler ou 
+  escrever arquivos, alocar memória, entre outras tarefas.
+
+   Aqui, a analogia é como se você estivesse lendo o livro, mas de repente se lembrasse de algo que precisa ser 
+  resolvido na biblioteca (o sistema operacional). Você então decide interromper sua leitura para resolver isso, 
+  fazendo um pedido direto à biblioteca (interrupção de software).
+
+
+ * Tratamento de Interrupções
+
+   O tratamento de interrupções ocorre quando o processador desvia temporariamente sua atenção para lidar com o 
+  evento que causou a interrupção. Após o tratamento, ele volta ao ponto onde parou. Para isso, o processador 
+  utiliza uma tabela de interrupções, que é uma lista de endereços de memória para os quais ele pode saltar, 
+  dependendo do tipo de interrupção.
+
+   Quando uma interrupção acontece, o processador salva o estado atual do programa (como se estivesse fazendo uma 
+  pausa na leitura do livro, marcando a página) e começa a execução de uma função especial chamada manejador de  
+  interrupção. Essa função é responsável por tratar a interrupção de maneira adequada. Após a execução do 
+  manejador, o processador retorna ao programa principal, como se tivesse voltado para o livro de onde parou.
+
+   Em termos práticos, ao programar em Assembly, você pode configurar as interrupções para realizar tarefas 
+  específicas, como capturar dados de entrada ou interagir com o sistema operacional. Ao programar um manejador de 
+  interrupção, você define como o sistema vai responder a diferentes tipos de eventos.
+
+ Em suma, as interrupções no Assembly são uma parte fundamental para o controle eficiente do computador, permitindo 
+que o processador "desvie" de sua execução para lidar com eventos importantes, sejam eles externos (hardware) ou 
+internos (software). Essa capacidade de interromper e retomar tarefas é uma forma de otimizar a execução de 
+programas e manter o sistema ágil e responsivo. Assim como você interrompe sua leitura para atender o telefone ou 
+resolver algo urgente, o processador faz o mesmo ao lidar com interrupções, assegurando que o sistema funcione de 
+maneira fluida e eficiente.
 
 
 
