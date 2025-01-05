@@ -277,7 +277,7 @@ profundos de como um computador realmente trabalha.
 
 
 
-                           "A Estrutura de um Programa em Assembly"
+                              "A Estrutura de um Programa em Assembly"
 
  Quando você escreve um programa em Assembly, ele é estruturado de uma forma organizada para facilitar a execução e 
 o gerenciamento dos dados e das instruções. A organização do código em diferentes seções ajuda a separar as 
@@ -338,7 +338,7 @@ estruturada e fácil de entender, como os componentes de uma máquina bem projet
 
 
 
-                              "Instruções Básicas de Assembly"
+                                 "Instruções Básicas de Assembly"
 
  O Assembly pode parecer complicado à primeira vista, mas, na verdade, ele é composto por algumas instruções 
 fundamentais que controlam as operações do processador. Vamos explorar as principais instruções de maneira simples 
@@ -420,7 +420,7 @@ complexa, dominar essas instruções é essencial para entender como os computad
 
 
 
-                            "Interrupções no Assembly"
+                                    "Interrupções no Assembly"
 
  No contexto do Assembly, interrupções são uma forma de o processador interromper temporariamente a execução de um 
 programa para lidar com algo mais urgente, como um evento externo ou uma solicitação do sistema operacional. Elas 
@@ -522,7 +522,7 @@ falássemos a língua nativa de cada máquina.
 
 
 
-                             "Principais Características do Assembly"
+                               "Principais Características do Assembly"
 
  O Assembly é uma linguagem muito próxima da linguagem de máquina, oferecendo ao programador um nível de controle 
 diretamente sobre o hardware do computador. Cada característica do Assembly reflete a sua natureza de baixo nível, 
