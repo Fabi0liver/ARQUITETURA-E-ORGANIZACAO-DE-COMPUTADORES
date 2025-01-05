@@ -42,3 +42,174 @@ operações do processador, tornando a programação mais eficiente e menos prop
 ou ARM). Eles são o idioma que os programadores usam para falar com o hardware. Assim, ao escrever ADD AX, BX, por 
 exemplo, você está dizendo ao processador: “Some o valor do registrador AX com o de BX.” Esse sistema de mnemônicos 
 é como um manual de instruções que traduz as ações humanas para a linguagem que a máquina realmente entende.
+
+
+
+                                  "Como o Assembly funciona?"
+
+ O Assembly age como uma ponte entre o programador e o processador, traduzindo as intenções humanas em comandos que 
+a máquina pode entender e executar. O processador, por sua vez, só consegue compreender linguagem de máquina, que é 
+basicamente uma série de 0s e 1s, o que podemos chamar de código binário. Essa comunicação direta com o processador 
+é fundamental para o funcionamento de qualquer programa, mas programar diretamente em binário seria uma tarefa 
+extremamente árdua e suscetível a erros. Imagine tentar escrever um livro inteiramente em código Morse, até seria 
+possível, mas certamente muito difícil de gerenciar e entender.
+
+ É aí que o Assembly entra em cena, ele oferece uma forma mais legível e estruturada de se comunicar com a máquina, 
+utilizando instruções simples e diretas que são próximas, mas não idênticas, ao código binário. Ele simplifica a 
+tarefa de controlar o computador sem perder o controle detalhado das operações realizadas. 
+
+ A seguir, vamos explorar algumas etapas desse processo de comunicação entre o programador e o processador, para 
+entender como as instruções em Assembly são transformadas e executadas dentro do sistema.
+
+ * Conversão para Linguagem de Máquina:
+
+   Quando você escreve um código em Assembly, você está criando uma sequência de instruções que são interpretadas 
+  quase diretamente como comandos que o engenheiro pode executar. Cada instrução em Assembly, como MOV, ADD ou JMP, 
+  é traduzida para linguagem de máquina, que é composta por códigos binários, que são compreendidos pelo 
+  processador. Esse processo de tradução é feito por um programa chamado assembler (ou montador).
+
+   Por exemplo:
+
+   - Instrução em Montagem: MOV AX, 5
+  
+     Isso significa "coloque o valor 5 no registrador AX", ou seja, armazene esse número em um local temporário 
+    muito  rápido dentro do processador.
+
+   - Instrução em linguagem de máquina (binário) seria: 10110000 00000101
+
+     Este é o código binário que o processador entende e executa.
+
+   Uma analogia simples para entender isso é de um restaurante internacional. Imagine que você está em um  
+  restaurante e sabe o nome dos pratos no cardápio (como em Assembly), mas o chef só entende o idioma local 
+  (linguagem de máquina). O garçom, que fala tanto o idioma do cardápio quanto o do chef, é o montador . Ele traduz 
+  seu pedido de forma que o chef (processador) possa preparar exatamente o que você quer, sem erro.
+
+   Essa conversão de Assembly para linguagem de máquina é fundamental para que o programa que você escreveu seja 
+  compreendido e executado pelo hardware. Em outras palavras, o Assembly serve como uma linguagem de ligação entre 
+  os humanos e as máquinas, facilitando a comunicação entre os dois.
+
+
+ * O Processo de Execução das Instruções:
+
+   O processador segue um ciclo contínuo chamado Ciclo de Instrução , que é fundamental para entender como as 
+  instruções, incluindo as escritas em Assembly, são processadas. Esse ciclo pode ser dividido em três etapas 
+  principais:
+
+   - Busca: O processador vai até a memória e pega a próxima instrução que precisa ser realizada.
+
+   - Decodificação: Depois de buscar uma instrução, o processador precisa entender o que ela faz. Ele “decodifica” 
+                   o comando para saber se deve somar dois números, mover dados entre registradores ou fazer outro 
+                   tipo de operação.
+
+   - Execução: Finalmente, o processador realiza a ação indicada pela instrução, seja realizando cálculos, 
+               acessando a memória ou alterando o valor dos registradores.
+
+   No caso da Montagem, cada uma das instruções que você escreve é ​​convertida diretamente em operações que o 
+  processador pode executar. Isso significa que, ao escrever o código Assembly, você tem controle detalhado sobre 
+  cada uma dessas etapas, com instruções mapeadas para operações simples e diretas no nível do hardware.
+
+   Uma analogia útil seria pensar em uma fábrica. O processador é como uma linha de montagem onde as instruções são 
+  as peças que precisam ser montadas. Primeiramente, ele busca as peças (instruções) que chegaram à linha. Depois, 
+  ele decodifica o manual de montagem para entender como usar cada peça e, finalmente, executa as ações necessárias 
+  para montar o produto final. Da mesma forma, no Assembly, cada instrução é como uma peça que o processador 
+  precisa organizar, entender e colocar em ação.
+
+   Esse ciclo contínuo permite que o processador execute rapidamente milhões de operações por segundo, fazendo com 
+  que o software funcione de maneira eficiente e controlada.
+
+
+ * Uso de registradores:
+
+   Os registradores são pequenas áreas de armazenamento dentro do processador, projetadas para guardar informações 
+  que precisam ser acessadas rapidamente. Eles são extremamente rápidos em comparação com a memória principal do 
+  computador, mas possuem espaço limitado. Pense nos registradores como gavetas super rápidas e organizadas onde o 
+  processador armazena temporariamente os dados mais importantes enquanto trabalha.
+
+   Por exemplo, imagine que você quer somar dois números em Assembly. O processo típico seria:
+
+   - Mover o primeiro número para um registrador: Isso seria como salvar o número no bolso para ter fácil acesso 
+                                                 (MOV AX, 5).
+
+   - Adicione o segundo número ao mesmo registrador: Você pega o próximo número e realiza a operação diretamente no 
+                                                     bolso ( ADD AX, 3).
+
+   - O resultado é armazenado no registrador: Agora, o valor final está pronto e ainda no bolso 
+                                             (neste caso, AX = 8).
+
+   Os registradores funcionam como ferramentas práticas para o processador. Uma analogia útil seria compará-los aos 
+  bolsos de um trabalhador. Quando alguém está realizando um trabalho manual, como montar algo ou pintar, não 
+  carrega todas as ferramentas e materiais no bolso isso seria impraticável. Em vez disso, coloque no bolso apenas 
+  o que será usado naquele momento, para facilitar e acelerar o trabalho.
+
+   Além disso, existem diferentes tipos de registradores com propósitos específicos:
+
+   - Registradores de uso geral: Como gavetas versáteis que podem armazenar qualquer tipo de dado.
+
+   - Registradores de propósito especial: Como compartimentos dedicados a funções específicas, por exemplo, 
+                                         calcular endereços de memória ou armazenar o status do processador.
+
+   O uso eficiente dos registradores é essencial para o desempenho, pois eles evitam o tempo gasto acessando a 
+  memória principal (mais lenta). Assim, o processador pode executar tarefas de forma rápida e contínua, como se 
+  estivesse trabalhando com tudo o que precisa na ponta dos dedos.
+
+
+ * Acesso à Memória:
+
+   Além dos registradores, o Assembly permite acessar diretamente a memória do computador. Isso é feito por meio de 
+  endereços de memória que indicam onde os dados estão armazenados. Existem diferentes modos de acessar a memória:
+
+   - Direto: Você especifica exatamente onde o dado está, como dizer “pegue o livro da prateleira 3”.
+
+   - Indireto: Você fornece uma referência que aponta para o dado, como dizer “pegue o livro que está na prateleira 
+              indicada pelo mapa”.
+
+   - Imediato: O valor está embutido diretamente na instrução. É como dizer: “Não vá buscar, aqui está o livro que 
+              você precisa”.
+
+   - Indexado: Combina um endereço base com uma posição. É como dizer “comece na prateleira 1 e caminhe 3 
+              prateleiras à frente”.
+
+   - Deslocamento: Usa um registrador como ponto de partida e soma um deslocamento para chegar ao endereço 
+                  desejado. Isso é útil para acessar elementos em estruturas como arrays. Imagine que cada gaveta 
+                  tem um número e você soma um valor para achar a gaveta específica.
+
+   - Relativo: Calcula o endereço com base na posição atual da execução do programa. É como dizer: “Dê cinco passos 
+              a partir de onde você está”.
+
+   - Segmentado: Divide a memória em segmentos e usa dois valores para calcular o endereço: o segmentos e a 
+                localização. Pense nisso como uma biblioteca gigante dividida em segmentos, e a localização é o 
+                número do livro dentro de cada seção.
+
+   A memória é como uma biblioteca, e o Assembly dá instruções planejadas para encontrar e usar o que você precisa. 
+  Cada modo de acesso é uma forma de navegação por essa biblioteca, seja usando coordenadas precisas, referências 
+  indiretas ou atalhos baseados na posição atual.
+
+
+ * Interação com o Sistema Operacional:
+
+   No Assembly, tarefas como exibir texto na tela ou ler entradas do teclado não podem ser feitas diretamente, pois 
+  ele lida apenas com o processador e a memória. Para isso, usamos chamadas de sistema (system calls), funções 
+  especiais fornecidas pelo sistema operacional. No Linux, por exemplo, a interrupção int 0x80 é usada para 
+  realizar essas funções, como mostrar algo no console.
+
+   Essas chamadas de sistema são feitas por meio de interrupções, que interrompem a execução normal do programa 
+  para que o sistema operacional processe a solicitação. Depois, o controle é devolvido ao programa. As 
+  interrupções funcionam como um "pedido", onde o Assembly chama o sistema operacional para realizar uma tarefa 
+  específica.
+
+   É como pedir permissão a um gerente para acessar uma área restrita de uma loja. O sistema operacional, como o 
+  gerente, autoriza a ação e, com isso, o Assembly pode executar a tarefa desejada, sem ter acesso direto ao 
+  recurso, mas contando com o auxílio do sistema operacional.
+
+ Em suma, diferente de linguagens de alto nível como Python ou Java, que possuem camadas de abstração, o Assembly 
+trabalha diretamente com os elementos do hardware. Cada instrução que você escreve corresponde quase 1:1 com uma 
+operação do processador. Isso significa que você pode controlar tudo, desde a movimentação de dados até a 
+manipulação de dispositivos de entrada e saída.
+
+ Pense no Assembly como dirigir um carro manual, enquanto uma linguagem de alto nível é como dirigir um carro 
+automático. O manual exige mais esforço, mas oferece controle total.
+
+ O Assembly funciona como uma forma detalhada e controlada de dar ordens ao processador. Ele traduz ideias humanas 
+para uma linguagem que a máquina entende, sem a complexidade do binário puro. Aprender como ele funciona é como 
+aprender a falar a "língua nativa" do processador, permitindo que você compreenda e controle os detalhes mais 
+profundos de como um computador realmente trabalha.
