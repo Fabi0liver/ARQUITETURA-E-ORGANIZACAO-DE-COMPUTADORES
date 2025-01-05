@@ -478,6 +478,78 @@ falássemos a língua nativa de cada máquina.
 
 
 
+                             "Principais Características do Assembly"
+
+ O Assembly é uma linguagem muito próxima da linguagem de máquina, oferecendo ao programador um nível de controle 
+diretamente sobre o hardware do computador. Cada característica do Assembly reflete a sua natureza de baixo nível, 
+em que o programador interage mais diretamente com os componentes do sistema, como a memória e os registradores, 
+sem a abstração que as linguagens de alto nível oferecem. Nesse contexto, entender as características do Assembly é 
+entender como ele se encaixa nas engrenagens do computador, permitindo ações rápidas e precisas, mas também 
+exigindo mais conhecimento sobre a arquitetura e o funcionamento interno da máquina.
+
+ * Proximidade com a Linguagem de Máquina:
+
+   O Assembly é uma linguagem de baixo nível que é muito próxima da linguagem de máquina. Cada instrução no 
+  Assembly é convertida diretamente em um código binário que o processador pode executar. Imagine que você está 
+  dando instruções para um robô em um código simples que ele consegue entender sem intermediários, mas com uma 
+  linguagem mais próxima do "humano" do que a linguagem pura de 0s e 1s.
 
 
+ * Controle Total sobre o Hardware:
+
+   Ao programar em Assembly, o programador tem o controle absoluto sobre os registradores e a memória do 
+  computador, podendo otimizar tarefas com um nível de precisão que outras linguagens não oferecem. Isso é como ter 
+  uma chave para todos os "portões" da máquina e poder ajustá-los diretamente para conseguir o desempenho desejado, 
+  sem depender de um sistema mais complexo que faz esse ajuste automaticamente.
+
+
+ * Portabilidade Limitada:
+
+   Diferente de linguagens de alto nível, o Assembly não é muito portátil entre diferentes tipos de processadores, 
+  já que cada arquitetura (x86, ARM, MIPS, etc.) possui seu próprio conjunto de instruções. É como aprender a falar 
+  uma língua muito específica de uma região, e quando você viaja para outra, precisa se adaptar a um novo dialeto 
+  com regras diferentes.
+
+
+ * Eficiência e Desempenho:
+
+   Uma das grandes vantagens do Assembly é a sua eficiência. Por ser uma linguagem que interage diretamente com o 
+  hardware, ela permite uma execução muito mais rápida e otimizada. Isso é como preparar um prato gourmet: o 
+  Assembly permite uma refeição rápida, sem desperdício, mas você precisa ter habilidade e precisão para acertar 
+  cada ingrediente e técnica.
+
+
+ * Dependência do Processador:
+
+   O Assembly é totalmente dependente da arquitetura do processador. Ou seja, o código escrito para um tipo de 
+  processador (como x86) não funcionará em outro (como ARM) sem modificações. Isso é como projetar uma peça de 
+  roupa que só serve em um tipo específico de corpo, o que exige mais atenção e ajustes.
+
+
+ * Fácil Acesso à Memória e Registradores:
+
+   No Assembly, o acesso à memória e aos registradores é feito diretamente, permitindo uma gestão detalhada e 
+  eficiente dos dados. Isso se assemelha a organizar uma prateleira de livros onde você escolhe exatamente onde 
+  colocar cada volume, sem precisar se preocupar com outras prioridades.
+
+
+ * Ausência de Abstrações:
+
+   O Assembly não esconde nada dos detalhes do computador, o que significa que o programador precisa gerenciar 
+  manualmente coisas como alocação de memória e controle de fluxo do programa. É como se você estivesse construindo 
+  algo do zero, com ferramentas simples e diretas, sem "ajuda" de automações que facilitariam o processo.
+
+
+ * Uso de Instruções Simples e Diretas:
+
+   As instruções em Assembly são simples e precisas, cada uma com uma função específica, como mover dados ou 
+  realizar cálculos. É como ter um conjunto de ferramentas bem definidas para tarefas específicas, permitindo que o 
+  programador execute exatamente o que é necessário, sem complicações.
+
+ Essas características fazem do Assembly uma linguagem poderosa, mas que exige do programador mais paciência, 
+conhecimento e atenção aos detalhes. Embora ofereça controle total sobre o computador e permita a criação de 
+códigos extremamente eficientes, também requer um entendimento profundo do funcionamento da máquina e de sua 
+arquitetura. Programar em Assembly é como ser um artesão que molda uma peça com cuidado e precisão, ao invés de 
+usar uma ferramenta automatizada que faz isso por você. Por isso, enquanto o Assembly oferece grande poder de 
+personalização e otimização, ele também exige mais dedicação e compreensão do sistema em que está sendo utilizado.
 
