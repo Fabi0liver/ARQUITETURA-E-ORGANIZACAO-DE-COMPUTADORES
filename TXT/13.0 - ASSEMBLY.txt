@@ -45,6 +45,23 @@ exemplo, você está dizendo ao processador: “Some o valor do registrador AX c
 
 
 
+                           "O que é Montador ou Assembler?"
+
+ O montador ou assembler é o programa responsável por traduzir o código escrito em Assembly para um formato que o 
+processador entenda, o código binário. Quando programamos em Assembly, usamos instruções simbólicas (mnemônicos), 
+mas o processador só entende 0s e 1s. O montador faz essa tradução automática, garantindo que o código seja 
+convertido de forma eficiente para a máquina executar.
+
+ Podemos comparar o montador a um tradutor, que converte a linguagem de Assembly para um idioma que o processador 
+compreende. Cada instrução em Assembly, como MOV AX, 5, é convertida em código binário para ser executada 
+diretamente pelo hardware, tornando a comunicação entre programador e máquina possível.
+
+ Além de traduzir, o montador organiza o código na memória e gerencia os endereços para garantir que tudo funcione  
+corretamente. Ele pode até otimizar o código para melhorar o desempenho. Em resumo, o montador facilita o processo  
+de criação de programas, cuidando dos detalhes técnicos e permitindo que o programador se concentre na lógica do  
+programa.
+
+
                                   "Como o Assembly funciona?"
 
  O Assembly age como uma ponte entre o programador e o processador, traduzindo as intenções humanas em comandos que 
