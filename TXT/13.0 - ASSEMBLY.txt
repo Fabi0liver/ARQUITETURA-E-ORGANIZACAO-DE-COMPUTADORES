@@ -294,6 +294,88 @@ estruturada e fácil de entender, como os componentes de uma máquina bem projet
 
 
 
-                             
+                              "Instruções Básicas de Assembly"
+
+ O Assembly pode parecer complicado à primeira vista, mas, na verdade, ele é composto por algumas instruções 
+fundamentais que controlam as operações do processador. Vamos explorar as principais instruções de maneira simples 
+e acessível, utilizando algumas analogias para facilitar o entendimento.
+
+ * Movimentação de Dados:
+
+   Uma das operações mais comuns no Assembly é a movimentação de dados, ou seja, transferir valores de um lugar 
+  para outro. Em Assembly, a instrução mais utilizada para isso é o comando MOV. Esse comando é como pedir a alguém 
+  para pegar um item e colocá-lo em outro lugar, como se você estivesse movendo um livro de uma prateleira para 
+  outra. 
+
+   Por exemplo:
+
+   - MOV AX, 5: Aqui, estamos colocando o valor 5 no registrador AX, que é uma espécie de "gaveta" dentro do 
+               processador para armazenar temporariamente dados.
+
+   A movimentação de dados é fundamental, porque a máquina precisa constantemente atualizar e acessar informações 
+  enquanto executa programas.
+
+
+ * Operações Aritméticas:
+
+   As operações aritméticas são aquelas que envolvem cálculos, como soma, subtração, multiplicação e divisão. No 
+  Assembly, você usa instruções como ADD para somar, SUB para subtrair, MUL para multiplicar e DIV para dividir. 
+  Essas operações permitem que o processador faça os cálculos necessários para executar qualquer tarefa.
+
+   Por exemplo:
+
+   - ADD AX, BX: Isso significa "soma o valor em BX ao valor em AX". Se AX for 5 e BX for 3, o valor em AX após a 
+                operação será 8.
+
+   Pense nas operações aritméticas como se você estivesse fazendo contas simples em um caderno. O Assembly torna 
+  isso possível para o processador, que lida com as "contas" de maneira rápida e eficiente.
+
+
+ * Operações Lógicas Bitwise:
+
+   As operações bitwise trabalham diretamente com os bits, as menores unidades de dados (0s e 1s). Essas operações 
+  são fundamentais para manipular dados em um nível muito baixo, permitindo que o programador faça ajustes 
+  detalhados. As instruções mais comuns aqui são AND, OR, XOR e NOT. 
+
+   Vamos ver cada uma delas:
+
+   - AND: Faz uma comparação entre dois valores bit a bit, e o resultado será 1 apenas quando ambos os bits 
+         comparados forem 1.
+
+   - OR: O resultado será 1 quando pelo menos um dos bits comparados for 1.
+
+   - XOR: O resultado será 1 quando os bits comparados forem diferentes (um 0 e um 1).
+
+   - NOT: Inverte o valor de cada bit (0 vira 1 e 1 vira 0).
+
+   Imagine que você tem duas lâmpadas (os bits) e quer saber se ambas estão acesas. Se ambas estiverem acesas (1), 
+  você liga a luz (AND). Se uma ou outra estiver acesa (OR), você também acende a luz. O XOR acende a luz apenas 
+  quando uma lâmpada está acesa e a outra apagada, e o NOT simplesmente inverte o estado das lâmpadas.
+
+
+ * Controle de Fluxo
+
+   O controle de fluxo permite alterar a sequência de execução do programa. Isso é feito com instruções como JMP 
+  (pular para outra parte do código), JE (pular se igual), JNE (pular se não igual), CALL (chamar uma sub-rotina) e 
+  RET (retornar de uma sub-rotina). Essas instruções são como sinais de trânsito que orientam o programador sobre 
+  qual direção o código deve seguir.
+
+   Por exemplo, uma instrução JMP pode ser usada para fazer o programa pular para uma nova linha de código, assim 
+  como você mudaria de rua ao encontrar uma placa indicando a direção correta. Já uma instrução JE vai fazer o 
+  programa pular apenas se uma condição for verdadeira (como "se o semáforo estiver verde, siga em frente").
+
+   As instruções de controle de fluxo permitem criar decisões no código, como um roteiro de cinema onde o 
+  protagonista toma decisões que alteram o curso da história.
+
+
+ Essas instruções básicas formam a espinha dorsal do Assembly. Elas são simples, mas poderosas, e permitem que você 
+controle os dados e as operações do processador com grande precisão. Desde mover dados entre registradores, fazer 
+cálculos e manipular bits, até decidir como o programa deve se comportar em diferentes situações, essas operações 
+são a base de tudo que o Assembly pode fazer. Como se fosse um conjunto de ferramentas para montar uma máquina 
+complexa, dominar essas instruções é essencial para entender como os computadores realmente funcionam.
+
+
+
+
 
 
