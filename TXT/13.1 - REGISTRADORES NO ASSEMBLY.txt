@@ -1,0 +1,26 @@
+                                      REGISTRADORES NO ASSEMBLY
+
+
+ Quando estamos programando em Assembly, é como se estivéssemos conversando diretamente com o processador. Nesse 
+"diálogo", os registradores desempenham um papel essencial, funcionando como pequenos espaços de armazenamento 
+temporário que o processador usa para manipular dados de forma rápida e eficiente. Imagine que, ao invés de ir até uma 
+grande estante de livros toda vez que precisar de um dado, você tenha à sua disposição uma mesa pequena onde pode 
+guardar os itens mais usados naquele momento. Esses pequenos "espaços" são os registradores.
+
+ Esses registradores são fundamentais no Assembly porque são a maneira que o processador tem de "segurar" e acessar 
+rapidamente os valores durante a execução de um programa. Assim como uma pessoa pode precisar de papel e caneta para 
+fazer anotações rápidas, o processador usa os registradores para armazenar temporariamente números, endereços de 
+memória ou resultados intermediários de cálculos. Eles estão diretamente ligados à eficiência do código, pois o acesso 
+a esses registros é muito mais rápido do que acessar a memória principal do computador.
+
+ Antes de nos aprofundarmos nos detalhes de cada tipo de registrador e suas funções, é importante entender que, embora 
+simples em sua essência, os registradores são a espinha dorsal da comunicação entre a CPU e os dados que ela processa. 
+Cada tipo de registrador tem um papel específico, e saber como utilizá-los corretamente é essencial para escrever 
+códigos eficientes em Assembly. Vamos explorar essa relação mais de perto, entendendo como esses "espaços" de 
+armazenamento interagem com o processador e como podemos usá-los para otimizar o desempenho do nosso código.
+
+
+
+
+
+
