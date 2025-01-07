@@ -247,7 +247,7 @@ eficientes.
 
 
 
-                          "Partes dos Registradores no Assembly"
+                               "Partes dos Registradores no Assembly"
 
  No Assembly, os registradores são essenciais para o funcionamento eficiente da CPU. Eles podem ser acessados em 
 diferentes "partes", que correspondem aos diversos tamanhos de dados que o processador pode manipular em uma única 
@@ -390,7 +390,7 @@ e como ele se adapta para oferecer soluções mais rápidas e poderosas para as 
 
 
 
-                           "Conclusão sobre os Registradores no Assembly"
+                            "Conclusão sobre os Registradores no Assembly"
 
  Os registradores no Assembly são componentes essenciais para o funcionamento de qualquer processador, funcionando 
 como pequenas áreas de armazenamento rápido dentro da CPU. Eles são como gavetas ou armários onde o processador 
