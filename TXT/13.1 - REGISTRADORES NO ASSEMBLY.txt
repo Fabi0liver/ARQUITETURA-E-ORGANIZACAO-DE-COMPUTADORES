@@ -247,6 +247,56 @@ eficientes.
 
 
 
+                          "Partes dos Registradores no Assembly"
+
+ No Assembly, os registradores são essenciais para o funcionamento eficiente da CPU. Eles podem ser acessados em 
+diferentes "partes", que correspondem aos diversos tamanhos de dados que o processador pode manipular em uma única 
+operação. Essas partes do registrador permitem que o programador trabalhe com porções menores de dados sem a 
+necessidade de acessar o registrador inteiro, o que torna as operações mais rápidas e eficientes. Cada registrador 
+pode ser dividido em duas partes principais: a parte inferior (Lower Part) e a parte superior (Upper Part), que 
+correspondem a diferentes intervalos de bits do registrador.
+
+ A parte inferior refere-se aos bits de menor valor do registrador. Em um registrador de 32 bits, por exemplo, a 
+parte inferior pode ser acessada em 8 ou 16 bits, permitindo que o processador trabalhe com dados menores sem mexer 
+no resto do registrador. Por outro lado, a parte superior diz respeito aos bits de maior valor. Dependendo do 
+tamanho do registrador, a parte superior pode ser acessada também em porções menores, como 8 ou 16 bits, permitindo 
+que dados significativos sejam manipulados de forma eficiente. Isso oferece ao programador flexibilidade, pois ele 
+pode usar apenas a parte necessária do registrador sem precisar acessar todo o seu conteúdo.
+
+ Essas divisões tornam o código mais eficiente, já que o processador pode operar apenas nos bits necessários para 
+uma operação específica. Além disso, elas são úteis quando se lida com operações de precisão variável, onde algumas 
+partes dos dados precisam ser mais detalhadas enquanto outras podem ser manipuladas de maneira mais rápida. 
+
+ Exemplo com RAX: Para entender melhor como essas divisões funcionam, vamos usar o exemplo do registrador RAX, que 
+                 é um registrador de 64 bits, e explicar como ele pode ser acessado em diferentes partes.
+
+                 RAX: Este é o registrador completo, que pode armazenar 64 bits de dados. Ele é usado para 
+                     armazenar grandes valores, como os resultados de operações matemáticas em cálculos de alto 
+                     nível.
+
+                 EAX: A parte inferior de RAX é acessada por meio de EAX, que é um registrador de 32 bits. Ao usar 
+                     EAX, você manipula os 32 bits mais baixos de RAX.
+
+                 AX: AX é a parte inferior de EAX, ou seja, ele acessa os 16 bits mais baixos de EAX. Isso 
+                    significa que AX lida com a menor parte de um valor de 32 bits.
+
+                 AH (High): Dentro de AX, você pode acessar AH, que são os 8 bits mais significativos de AX. 
+
+                 AL (Low): Finalmente, dentro de AX, você tem AL, que acessa os 8 bits menos significativos de AX.
+
+ Em suma, a utilização das partes inferior e superior dos registradores no Assembly oferece uma maneira flexível e 
+eficiente de manipular dados em diferentes larguras de bits. Ao dividir um registrador como o RAX em porções 
+menores, podemos trabalhar com valores de diferentes tamanhos sem precisar acessar o registrador inteiro. Isso 
+torna as operações mais rápidas, já que o processador pode se concentrar apenas nas partes necessárias dos dados. 
+Com essa abordagem, o código Assembly fica mais otimizado e o uso da memória mais eficiente.
+
+ Entender as partes inferior e superior dos registradores é fundamental para a programação de baixo nível, 
+especialmente quando se trabalha com arquiteturas complexas que exigem alta performance. Isso oferece uma maneira 
+eficaz de realizar operações com dados de tamanhos variados, tornando o código mais leve e rápido, o que é crucial 
+para otimizar o desempenho de sistemas e aplicações que exigem precisão e rapidez nas operações.
+
+
+
                                    "Registradores Especiais"
 
  Além dos registradores de propósito geral e registradores de propósito específico, que lidam com as operações e o 
