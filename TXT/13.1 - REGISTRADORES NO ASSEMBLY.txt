@@ -110,7 +110,7 @@ aprofundar na análise de cada um desses dois tipos de registradores, detalhando
 
                          Pense nele como um alfinete colocado no início de um rolo de fita métrica para garantir 
                         que você sempre saiba onde começou a medir, mesmo que o restante da fita esteja em 
-                        movimento. Ele também segue a nomenclatura por arquitetura: EBP (32 bits), BP (16 bits) e 
+                        movimento. Ele também segue a nomenclatura por arquitetura: BP (16 bits), EBP (32 bits) e 
                         RBP (64 bits).
 
 
@@ -183,7 +183,7 @@ aprofundar na análise de cada um desses dois tipos de registradores, detalhando
                             específico pode ser encontrado. O CS é crucial para o processador acessar o código de 
                             forma eficiente, garantindo que as instruções sejam recuperadas do lugar certo. Em 
                             arquiteturas de 32 bits e 64 bits , ele é representado como CS; só que em sistemas de 
-                            64 bits, esse registrador é ajustado conforme necessário para lidar com o maior espaço 
+                            64 bits, esse registrador é ajustado conforme necessidade para lidar com o maior espaço 
                             de endereçamento.
 
 
@@ -205,8 +205,8 @@ aprofundar na análise de cada um desses dois tipos de registradores, detalhando
 
                             Assim como o DS lida com os dados principais, o SS é essencial para gerenciar a pilha, 
                            onde as funções e variáveis locais são armazenadas temporariamente. Em 32 bits e 64 
-                           bits, o SS é o mesmo nome, e em 64 bits, ele também mantém seu papel, com ajustes para o 
-                           novo tamanho de memória.
+                           bits, o SS tem o mesmo nome, e em 64 bits, ele também mantém seu papel, com ajustes para 
+                           o novo tamanho de memória.
 
 
   - ES, GS, FS (Segmentos Adicionais): Os registradores ES, GS e FS são usados para acessar segmentos de memória 
@@ -219,11 +219,11 @@ aprofundar na análise de cada um desses dois tipos de registradores, detalhando
                                       informações adicionais de controle. Embora menos comuns que o DS e SS, esses 
                                       registradores são essenciais em arquiteturas que precisam de múltiplos 
                                       acessos a dados em segmentos específicos. Em 32 bits e 64 bits, são 
-                                      representados como ES, GS e FS, só que esses registradores em 64 bits, seguem 
+                                      representados como ES, GS e FS, esses registradores em 64 bits, seguem 
                                       a mesma função que 32 bits só que  com um maior espaço de endereçamento.
 
-   Os registradores de propósito específico desempenham papéis cruciais no controle do fluxo de execução do 
-  processador, ajudando a gerenciar o estado e as instruções do programa. Embora possam não ser tão "visíveis"  
+   Em suma, Os registradores de propósito específico desempenham papéis cruciais no controle do fluxo de execução 
+  do processador, ajudando a gerenciar o estado e as instruções do programa. Embora possam não ser tão "visíveis"  
   quanto os registradores de propósito geral, são fundamentais para garantir que o código seja executado de maneira 
   eficiente e sem erros.
 
