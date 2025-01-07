@@ -152,54 +152,95 @@ aprofundar na análise de cada um desses dois tipos de registradores, detalhando
   - EFLAGS (Flags de Status): O EFLAGS é o registrador que mantém o status geral do processador. Ele contém uma 
                              série de "flags" ou sinalizadores que indicam o resultado de operações, como se houve 
                              um estouro, se um número é zero ou se a última operação foi negativa. Imagine-o como 
-                             um painel de controle de um carro, com luzes que acendem para informar se algo precisa de atenção, como o combustível ou a temperatura do motor.
+                             um painel de controle de um carro, com luzes que acendem para informar se algo precisa 
+                             de atenção, como o combustível ou a temperatura do motor.
 
-Cada flag dentro do EFLAGS tem um propósito específico, sendo usado pelo processador para determinar como proceder após a execução de uma instrução. Por exemplo, a Flag de Zero (ZF) é ativada se o resultado de uma operação for zero, enquanto a Flag de Carry (CF) indica se houve um "carregamento" ou transbordamento em uma operação aritmética. No conjunto de 32 bits, ele é representado como EFLAGS, e em arquiteturas de 64 bits, ele é representado como RFLAGS.
-
-
-EIP (Ponteiro de Instrução): O EIP é o registrador responsável por armazenar o endereço da próxima instrução a ser executada pelo processador. Pense nele como um marcador de página em um livro, sempre apontando para onde o programa deve continuar. Sem o EIP, o processador ficaria perdido, sem saber qual trecho do código executar a seguir.
-
-Quando o processador executa uma instrução, o EIP é atualizado para refletir o próximo endereço de memória onde a próxima instrução está armazenada. Isso garante que o fluxo de execução ocorra de forma ordenada. Em 32 bits, o registrador é chamado de EIP, e em 64 bits, como RIP.
-
-
-CS (Segmento de Código): O CS é o registrador que armazena o endereço base do segmento de código onde o programa está sendo executado. Ele age como uma referência para o código em si, permitindo que o processador saiba onde encontrar as instruções que precisam ser executadas.
-
-Podemos compará-lo a uma etiqueta que indica em que parte da biblioteca um livro específico pode ser encontrado. O CS é crucial para o processador acessar o código de forma eficiente, garantindo que as instruções sejam recuperadas do lugar certo. Em arquiteturas de 32 bits e 64 bits , ele é representado como CS; só que em sistemas de 64 bits, esse registrador é ajustado conforme necessário para lidar com o maior espaço de endereçamento.
+                              Cada flag dentro do EFLAGS tem um propósito específico, sendo usado pelo processador 
+                             para determinar como proceder após a execução de uma instrução. Por exemplo, a Flag de 
+                             Zero (ZF) é ativada se o resultado de uma operação for zero, enquanto a Flag de 
+                             Carry (CF) indica se houve um "carregamento" ou transbordamento em uma operação 
+                             aritmética. No conjunto de 32 bits, ele é representado como EFLAGS, e em arquiteturas 
+                             de 64 bits, ele é representado como RFLAGS.
 
 
-DS (Segmento de Dados): O DS aponta para o início do segmento de dados do programa, que contém variáveis e outros dados usados durante a execução. Imagine o DS como uma prateleira onde os ingredientes de uma receita são armazenados. Quando o processador precisa acessar dados, como variáveis locais, o DS fornece o caminho para pegar esses valores.
+  - EIP (Ponteiro de Instrução): O EIP é o registrador responsável por armazenar o endereço da próxima instrução a 
+                                ser executada pelo processador. Pense nele como um marcador de página em um livro, 
+                                sempre apontando para onde o programa deve continuar. Sem o EIP, o processador 
+                                ficaria perdido, sem saber qual trecho do código executar a seguir.
 
-Além disso, o DS também facilita a organização da memória em segmentos, ajudando o processador a manter um controle eficiente sobre o que está sendo usado e acessado. Em 32 bits e 64 bits, esse registrador permanece com o nome DS, só que  em 64 bits, ele  se ajusta para lidar com os novos limites de endereçamento.
-
-
-SS (Segmento de Pilha): O SS é usado para apontar para o segmento de pilha, onde são armazenados dados temporários, como endereços de retorno e variáveis locais durante a execução das funções. Se pensarmos na pilha como uma torre de pratos, o SS indica onde ela começa, garantindo que o processador saiba onde empilhar ou desempilhar os dados.
-
-Assim como o DS lida com os dados principais, o SS é essencial para gerenciar a pilha, onde as funções e variáveis locais são armazenadas temporariamente. Em 32 bitse 64 bits, o SS é o mesmo nome, e em 64 bits, ele também mantém seu papel, com ajustes para o novo tamanho de memória.
-
-
-ES, GS, FS (Segmentos Adicionais): Os registradores ES, GS e FS são usados para acessar segmentos de memória adicionais, que podem ser usados para armazenar dados ou realizar operações específicas. Imagine que esses registradores são como "portas" extras para acessar diferentes salas de um grande armazém de dados.
-
-Esses registradores podem ser usados para fins variados, como manipulação de strings, acesso a dados em múltiplos processos ou gerenciamento de informações adicionais de controle. Embora menos comuns que o DS e SS, esses registradores são essenciais em arquiteturas que precisam de múltiplos acessos a dados em segmentos específicos. Em 32 bits e 64 bits, são representados como ES, GS e FS, só que esses registradores em 64 bits, seguem a mesma função que 32 bits só que  com um maior espaço de endereçamento.
+                                 Quando o processador executa uma instrução, o EIP é atualizado para refletir o 
+                                próximo endereço de memória onde a próxima instrução está armazenada. Isso garante 
+                                que o fluxo de execução ocorra de forma ordenada. Em 32 bits, o registrador é 
+                                chamado de EIP, e em 64 bits, como RIP.
 
 
-Os registradores de propósito específico desempenham papéis cruciais no controle do fluxo de execução do processador, ajudando a gerenciar o estado e as instruções do programa. Embora possam não ser tão "visíveis" quanto os registradores de propósito geral, são fundamentais para garantir que o código seja executado de maneira eficiente e sem erros.
+  - CS (Segmento de Código): O CS é o registrador que armazena o endereço base do segmento de código onde o 
+                            programa está sendo executado. Ele age como uma referência para o código em si, 
+                            permitindo que o processador saiba onde encontrar as instruções que precisam ser 
+                            executadas.
 
-Compreender esses registradores é como entender os sistemas de gerenciamento de uma grande empresa: cada um tem uma tarefa específica e, quando trabalhados em conjunto, garantem o bom funcionamento de todo o processo. Eles formam a base sobre a qual o processador mantém o controle e organiza a execução do programa de maneira eficaz.
-
-
-Em resumo, os tipos de registradores no Assembly são como diferentes ferramentas dentro de uma caixa, cada uma projetada para realizar uma tarefa específica no processo de execução de um programa. Os registradores de propósito geral são como as ferramentas multifuncionais: podem ser adaptados para diversas necessidades, facilitando operações mais flexíveis e dinâmicas. Já os registradores de propósito específico são mais como ferramentas especializadas: embora não possam ser modificados diretamente, desempenham um papel vital no controle do fluxo e da execução das instruções, garantindo que o processador siga o caminho correto e otimize seu desempenho.
-
-Entender as diferenças entre esses tipos de registradores é essencial para programadores que desejam otimizar o uso do Assembly e trabalhar de forma mais eficiente com o hardware. Ao saber quando e como utilizar cada tipo de registrador, podemos tirar o máximo proveito das capacidades do processador, realizando tarefas simples ou complexas de forma mais eficaz. Dessa forma, a escolha certa de registradores e a compreensão do seu funcionamento se tornam cruciais para o sucesso em programação de baixo nível e para a criação de sistemas mais rápidos e eficientes.
-
-
-
-
-
+                             Podemos compará-lo a uma etiqueta que indica em que parte da biblioteca um livro 
+                            específico pode ser encontrado. O CS é crucial para o processador acessar o código de 
+                            forma eficiente, garantindo que as instruções sejam recuperadas do lugar certo. Em 
+                            arquiteturas de 32 bits e 64 bits , ele é representado como CS; só que em sistemas de 
+                            64 bits, esse registrador é ajustado conforme necessário para lidar com o maior espaço 
+                            de endereçamento.
 
 
+   - DS (Segmento de Dados): O DS aponta para o início do segmento de dados do programa, que contém variáveis e 
+                            outros dados usados durante a execução. Imagine o DS como uma prateleira onde os 
+                            ingredientes de uma receita são armazenados. Quando o processador precisa acessar 
+                            dados, como variáveis locais, o DS fornece o caminho para pegar esses valores.
+
+                             Além disso, o DS também facilita a organização da memória em segmentos, ajudando o 
+                            processador a manter um controle eficiente sobre o que está sendo usado e acessado. Em 
+                            32 bits e 64 bits, esse registrador permanece com o nome DS, só que  em 64 bits, ele  
+                            se ajusta para lidar com os novos limites de endereçamento.
 
 
+  - SS (Segmento de Pilha): O SS é usado para apontar para o segmento de pilha, onde são armazenados dados 
+                           temporários, como endereços de retorno e variáveis locais durante a execução das 
+                           funções. Se pensarmos na pilha como uma torre de pratos, o SS indica onde ela começa, 
+                           garantindo que o processador saiba onde empilhar ou desempilhar os dados.
+
+                            Assim como o DS lida com os dados principais, o SS é essencial para gerenciar a pilha, 
+                           onde as funções e variáveis locais são armazenadas temporariamente. Em 32 bits e 64 
+                           bits, o SS é o mesmo nome, e em 64 bits, ele também mantém seu papel, com ajustes para o 
+                           novo tamanho de memória.
 
 
+  - ES, GS, FS (Segmentos Adicionais): Os registradores ES, GS e FS são usados para acessar segmentos de memória 
+                                      adicionais, que podem ser usados para armazenar dados ou realizar operações 
+                                      específicas. Imagine que esses registradores são como "portas" extras para 
+                                      acessar diferentes salas de um grande armazém de dados.
 
+                                       Esses registradores podem ser usados para fins variados, como manipulação de 
+                                      strings, acesso a dados em múltiplos processos ou gerenciamento de 
+                                      informações adicionais de controle. Embora menos comuns que o DS e SS, esses 
+                                      registradores são essenciais em arquiteturas que precisam de múltiplos 
+                                      acessos a dados em segmentos específicos. Em 32 bits e 64 bits, são 
+                                      representados como ES, GS e FS, só que esses registradores em 64 bits, seguem 
+                                      a mesma função que 32 bits só que  com um maior espaço de endereçamento.
 
+   Os registradores de propósito específico desempenham papéis cruciais no controle do fluxo de execução do 
+  processador, ajudando a gerenciar o estado e as instruções do programa. Embora possam não ser tão "visíveis"  
+  quanto os registradores de propósito geral, são fundamentais para garantir que o código seja executado de maneira 
+  eficiente e sem erros.
+
+   Compreender esses registradores é como entender os sistemas de gerenciamento de uma grande empresa: cada um tem 
+  uma tarefa específica e, quando trabalhados em conjunto, garantem o bom funcionamento de todo o processo. Eles 
+  formam a base sobre a qual o processador mantém o controle e organiza a execução do programa de maneira eficaz.
+
+ Em resumo, os tipos de registradores no Assembly são como diferentes ferramentas dentro de uma caixa, cada uma 
+projetada para realizar uma tarefa específica no processo de execução de um programa. Os registradores de propósito 
+geral são como as ferramentas multifuncionais: podem ser adaptados para diversas necessidades, facilitando 
+operações mais flexíveis e dinâmicas. Já os registradores de propósito específico são mais como ferramentas 
+especializadas: embora não possam ser modificados diretamente, desempenham um papel vital no controle do fluxo e da 
+execução das instruções, garantindo que o processador siga o caminho correto e otimize seu desempenho.
+
+ Entender as diferenças entre esses tipos de registradores é essencial para programadores que desejam otimizar o 
+uso do Assembly e trabalhar de forma mais eficiente com o hardware. Ao saber quando e como utilizar cada tipo de 
+registrador, podemos tirar o máximo proveito das capacidades do processador, realizando tarefas simples ou 
+complexas de forma mais eficaz. Dessa forma, a escolha certa de registradores e a compreensão do seu funcionamento 
+se tornam cruciais para o sucesso em programação de baixo nível e para a criação de sistemas mais rápidos e 
+eficientes.
