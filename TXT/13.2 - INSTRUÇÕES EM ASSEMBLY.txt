@@ -1,0 +1,10 @@
+                                    INSTRUÇÕES EM ASSEMBLY
+
+
+A linguagem Assembly é a ponte entre o software e o hardware, permitindo que o programador interaja diretamente com o processador. Diferente das linguagens de alto nível, que abstraem os detalhes técnicos, o Assembly expõe a essência do funcionamento do computador. Cada comando é traduzido em instruções que a CPU entende e executa diretamente. Por isso, aprender Assembly é essencial para quem deseja otimizar sistemas ou criar programas eficientes no nível mais básico.
+
+Dentro da programação em Assembly, as instruções são os "blocos de construção". Cada uma representa uma ação específica que a CPU deve realizar, seja transferir dados, realizar cálculos ou tomar decisões. Esses comandos refletem a arquitetura do processador, e cada tipo de instrução desempenha um papel crucial no controle do fluxo de dados e operações.
+
+É importante lembrar que a execução dessas instruções ocorre em alta velocidade, mas compreender como elas funcionam oferece uma visão clara do que está acontecendo "debaixo do capô". Desde tarefas simples, como mover um valor entre registradores, até operações mais complexas, como saltos condicionais, tudo é feito através dessas instruções.
+
+Ao longo deste texto, exploraremos os principais tipos de instruções em Assembly, detalhando suas funcionalidades e importância. 
