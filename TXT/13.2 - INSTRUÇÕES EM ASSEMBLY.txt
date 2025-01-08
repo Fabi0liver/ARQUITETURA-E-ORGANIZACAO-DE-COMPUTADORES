@@ -214,3 +214,55 @@ explorar os principais tipos de instruções em Assembly, entender suas aplicaç
   criação de condições de controle e para realizar manipulações bit a bit, algo muito importante quando o 
   desempenho e a eficiência são essenciais. Se você quiser verificar, modificar ou manipular informações com 
   precisão, as instruções lógicas são suas aliadas poderosas.
+
+
+ * Instruções de Controle de Fluxo:
+
+   As instruções de controle de fluxo são essenciais para direcionar a execução de um programa, permitindo que ele 
+  altere sua sequência de operações conforme as condições especificadas. Elas são como as placas de trânsito em uma 
+  estrada, guiando o programa por diferentes rotas, dependendo do contexto. Sem essas instruções, o programa 
+  seguiria uma sequência linear, sem a capacidade de tomar decisões, pular partes do código ou retornar a locais 
+  específicos conforme necessário.
+
+   Essas instruções permitem que você crie estruturas complexas, como loops (laços), condições (if/else) e chamadas 
+  de sub-rotinas, dando uma flexibilidade vital para programas que precisam responder a situações diferentes 
+  durante a execução. Por exemplo, em um jogo, você pode precisar que o programa tome uma decisão para avançar, 
+  repetir uma fase ou saltar para um nível mais avançado com base nas ações do jogador. Essas instruções são as 
+  responsáveis por essas escolhas e ajustes dinâmicos.
+
+   Principais Instruções de Controle:
+
+    JMP (Pular): A instrução JMP faz o programa saltar para um endereço específico na memória, alterando a 
+                sequência normal de execução. É como um atalho direto, levando o programa para outro ponto sem  
+                passar pelas instruções intermediárias. Pode ser incondicional ou condicional, dependendo do 
+                contexto.
+
+    CALL (Chamada): Quando o programa precisa executar uma sub-rotina (um conjunto de instruções que realizam uma 
+                   tarefa específica), ele utiliza o CALL. Essa instrução direciona o fluxo para uma seção do 
+                   código e, após a execução dessa seção, o programa retorna para o ponto de onde veio. É como se 
+                   você fosse até a cozinha para pegar algo e voltasse ao seu lugar na mesa depois.
+
+    RET (Retornar): Após a execução de uma sub-rotina chamada com a instrução CALL, a instrução RET é usada para 
+                   retornar ao ponto do programa onde a execução foi interrompida. Essa operação é como sair de uma 
+                   reunião (CALL) e voltar ao seu trabalho depois (RET), sem perder o lugar de onde estava.
+
+    JE/JNE (Jump if Equal/Jump if Not Equal): Essas instruções de salto condicional são úteis quando você precisa 
+                                             que o programa tome um caminho baseado no resultado de uma comparação. 
+                                             Por exemplo, JE salta para um endereço se dois valores forem iguais, 
+                                             enquanto JNE salta se forem diferentes. Elas são como um semáforo, 
+                                             onde o programa decide qual direção seguir dependendo do que aconteceu 
+                                             anteriormente.
+
+    LOOP (Laço de repetição): A instrução LOOP repete um bloco de código por um número especificado de vezes. Ela é 
+                             útil para tarefas que exigem repetição, como processar cada item de uma lista. Imagine 
+                             um ciclista fazendo várias voltas em um circuito, a instrução LOOP garante que o 
+                             programa repita a tarefa até que o objetivo seja alcançado.
+
+   As instruções de controle de fluxo são a espinha dorsal da lógica de programação em Assembly. Elas permitem que 
+  o programa "pense" e decida qual caminho seguir durante a execução. Graças a essas instruções, é possível criar 
+  programas interativos, responder a diferentes condições e realizar tarefas complexas de forma eficiente.
+
+   Em resumo, essas instruções proporcionam o poder de direcionar a execução do programa, garantindo que ele seja 
+  dinâmico e adaptável às necessidades do usuário ou do sistema. Assim como um mapa com várias rotas possíveis, 
+  elas permitem que o programador desenhe o percurso de execução com precisão, tornando o programa mais inteligente 
+  e flexível.
