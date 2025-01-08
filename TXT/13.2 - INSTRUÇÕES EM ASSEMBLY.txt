@@ -168,3 +168,49 @@ explorar os principais tipos de instruções em Assembly, entender suas aplicaç
   formam a espinha dorsal de qualquer programa que precise processar números, sejam eles usados em contagens, 
   loops, ou cálculos matemáticos mais elaborados. São, sem dúvida, ferramentas indispensáveis no arsenal de um 
   programador Assembly.
+
+
+ * Instruções Lógicas
+
+   As instruções lógicas em Assembly são fundamentais para trabalhar com dados binários, já que elas manipulam 
+  diretamente os bits. Elas operam em nível bit a bit, realizando transformações que podem ser simples ou 
+  complexas, dependendo do que se deseja alcançar. Para entender melhor, imagine que os bits são como interruptores 
+  que controlam diferentes partes de um sistema, e as instruções lógicas seriam os controles para ligar ou desligar 
+  esses interruptores de maneiras específicas. Essas operações são essenciais para a execução de comparações, 
+  verificações de condições e manipulações mais avançadas de dados.
+
+   Essas instruções funcionam de maneira que cada bit do operando de entrada é processado individualmente, e o 
+  resultado depende da operação lógica escolhida. Elas são ferramentas poderosas para controle e análise de dados, 
+  especialmente quando você precisa realizar operações de verificação, como testar se um certo valor está ativo ou 
+  não (por exemplo, verificando se um bit específico está setado). Além disso, são amplamente usadas em 
+  criptografia, algoritmos de compactação de dados e otimização de código, tornando-se indispensáveis em sistemas 
+  que exigem alta performance e manipulação de dados binários.
+
+   Principais Instruções Lógicas:
+
+    AND: Realiza uma conjunção lógica entre os bits dos dois operandos. Cada bit é comparado, e o resultado será 1 
+        apenas se ambos os bits correspondentes forem 1. Caso contrário, o resultado será 0. Imagine que você tem 
+        duas lâmpadas: a operação AND só acende a lâmpada se ambas as lâmpadas (bits) estiverem acesas (1).
+
+    OR: Realiza uma disjunção lógica entre os bits dos dois operandos. O resultado será 1 se pelo menos um dos bits 
+       for 1. Como se você tivesse duas lâmpadas conectadas em paralelo: a operação OR acende a lâmpada se ao menos 
+       uma delas estiver acesa.
+
+    XOR: A operação XOR (Exclusive OR) compara dois bits, mas a diferença é que o resultado será 1 somente se um 
+        dos bits for 1 e o outro for 0. Se ambos os bits forem iguais (ambos 1 ou ambos 0), o resultado será 0. 
+        Imagine dois interruptores: a lâmpada só acende se exatamente um dos interruptores for ligado.
+
+    NOT: A operação NOT inverte todos os bits de um valor. Em outras palavras, cada 0 se torna 1 e cada 1 se torna. 
+        Se você tem uma lâmpada acesa (1), o NOT a apaga (transforma em 0), e vice-versa. É como um interruptor que 
+        vira ao contrário.
+
+    TEST: Essa instrução é similar à operação AND, mas com a diferença de que ela não altera os operandos. Ela 
+         serve para verificar se um ou mais bits estão setados (1), sendo muito útil para testes de condição sem 
+         modificar os dados. Imagine que você tem um painel de controle para verificar se todas as lâmpadas estão 
+         funcionando, mas sem mudar o estado delas.
+
+   As instruções lógicas são fundamentais para qualquer operação que envolva manipulação de dados binários, e seu 
+  poder está na capacidade de realizar operações simples que afetam diretamente os bits. Elas são cruciais para a 
+  criação de condições de controle e para realizar manipulações bit a bit, algo muito importante quando o 
+  desempenho e a eficiência são essenciais. Se você quiser verificar, modificar ou manipular informações com 
+  precisão, as instruções lógicas são suas aliadas poderosas.
