@@ -1,19 +1,47 @@
                                     INSTRUÇÕES EM ASSEMBLY
 
 
- A linguagem Assembly é a ponte entre o software e o hardware, permitindo que o programador interaja diretamente com o 
-processador. Diferente das linguagens de alto nível, que abstraem os detalhes técnicos, o Assembly expõe a essência do 
-funcionamento do computador. Cada comando é traduzido em instruções que a CPU entende e executa diretamente. Por isso, 
-aprender Assembly é essencial para quem deseja otimizar sistemas ou criar programas eficientes no nível mais básico.
+ A linguagem Assembly é a ponte entre o software e o hardware, permitindo que o programador interaja diretamente   com o processador. Diferente das linguagens de alto nível, que abstraem os detalhes técnicos, o Assembly expõe a 
+essência do funcionamento do computador. Cada comando é traduzido em instruções que a CPU entende e executa 
+diretamente. Por isso, aprender Assembly é essencial para quem deseja otimizar sistemas ou criar programas 
+eficientes no nível mais básico.
 
  Dentro da programação em Assembly, as instruções são os "blocos de construção". Cada uma representa uma ação 
 específica que a CPU deve realizar, seja transferir dados, realizar cálculos ou tomar decisões. Esses comandos 
 refletem a arquitetura do processador, e cada tipo de instrução desempenha um papel crucial no controle do fluxo de 
 dados e operações.
 
- É importante lembrar que a execução dessas instruções ocorre em alta velocidade, mas compreender como elas funcionam 
-oferece uma visão clara do que está acontecendo "debaixo do capô". Desde tarefas simples, como mover um valor entre 
-registradores, até operações mais complexas, como saltos condicionais, tudo é feito através dessas instruções.
+ É importante lembrar que a execução dessas instruções ocorre em alta velocidade, mas compreender como elas 
+funcionam oferece uma visão clara do que está acontecendo "debaixo do capô". Desde tarefas simples, como mover um 
+valor entre registradores, até operações mais complexas, como saltos condicionais, tudo é feito através dessas 
+instruções.
 
- Ao longo deste texto, exploraremos os principais tipos de instruções em Assembly, detalhando suas funcionalidades e 
-importância. 
+ Ao longo deste texto, exploraremos os principais tipos de instruções em Assembly, detalhando suas funcionalidades 
+e importância. 
+
+
+
+                                 "Instrução Mnemônicas"
+
+ As instruções mnemônicas em Assembly são como atalhos para a comunicação entre programadores e o processador. Em 
+vez de usar longas sequências de números binários que representariam as operações no nível da máquina, os 
+mnemônicos traduzem essas instruções para um formato textual mais compreensível, como "MOV", "ADD" ou "SUB". Pense 
+neles como apelidos ou etiquetas fáceis de lembrar, que ajudam os desenvolvedores a descrever o que a CPU deve 
+fazer, sem precisar lidar diretamente com códigos numéricos complexos.
+
+ Esses mnemônicos são projetados para serem curtos, diretos e, sempre que possível, intuitivos. Por exemplo, "MOV" 
+significa "mover" e é usado para transferir dados, enquanto "ADD" indica uma operação de soma. Assim, mesmo sem 
+muita familiaridade com Assembly, é possível ter uma ideia geral da funcionalidade apenas lendo o mnemônico. É como 
+substituir uma lista de números de telefone por nomes de contatos: muito mais prático e acessível.
+
+ Além de facilitar o trabalho dos programadores, os mnemônicos também promovem padronização, garantindo que 
+diferentes arquiteturas de processadores utilizem convenções similares (embora com algumas variações específicas). 
+Essa padronização é crucial para o aprendizado e a portabilidade de habilidades entre sistemas. No final das 
+contas, os mnemônicos são a linguagem intermediária que transforma a complexidade da comunicação máquina-humano em 
+algo mais direto e manejável.
+
+
+
+
+
+
