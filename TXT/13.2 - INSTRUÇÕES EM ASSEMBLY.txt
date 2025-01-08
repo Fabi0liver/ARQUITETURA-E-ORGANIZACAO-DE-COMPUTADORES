@@ -94,26 +94,27 @@ explorar os principais tipos de instruções em Assembly, entender suas aplicaç
 
    Principais Instruções de Transferência de Dados:
 
-   MOV (Mover): A instrução MOV é a mais básica e usada para copiar dados de um local para outro. Por exemplo, pode 
-              mover o conteúdo de um registrador para outro, ou de uma posição de memória para um registrador. É 
-              como pegar um objeto em uma prateleira e colocá-lo em outra, sem alterar o objeto original.
+    MOV (Mover): A instrução MOV é a mais básica e usada para copiar dados de um local para outro. Por exemplo, 
+                pode mover o conteúdo de um registrador para outro, ou de uma posição de memória para um 
+                registrador. É como pegar um objeto em uma prateleira e colocá-lo em outra, sem alterar o objeto 
+                original.
 
-   PUSH (Empurrar para a pilha): PUSH armazena um valor na pilha, uma estrutura de dados que funciona como uma 
-                                pilha de pratos, onde o último prato colocado é o primeiro a ser retirado. Essa 
-                                instrução é útil para armazenar temporariamente dados ou preparar informações antes 
-                                de chamar uma sub-rotina.
+    PUSH (Empurrar para a pilha): PUSH armazena um valor na pilha, uma estrutura de dados que funciona como uma 
+                                 pilha de pratos, onde o último prato colocado é o primeiro a ser retirado. Essa 
+                                 instrução é útil para armazenar temporariamente dados ou preparar informações  
+                                 antes de chamar uma sub-rotina.
 
-   POP (Retirar da pilha): POP faz o oposto de PUSH, removendo o último valor armazenado na pilha e restaurando-o 
-                          para uso. É como pegar o prato do topo da pilha para usá-lo novamente.
+    POP (Retirar da pilha): POP faz o oposto de PUSH, removendo o último valor armazenado na pilha e restaurando-o 
+                           para uso. É como pegar o prato do topo da pilha para usá-lo novamente.
 
-   LEA (Load Effective Address): Carrega o endereço efetivo de uma variável ou dado na memória para um registrador. 
-                                Isso é útil quando você quer trabalhar diretamente com o endereço, em vez de com o 
-                                valor armazenado nele. Pense em LEA como consultar o endereço de uma casa em vez de 
-                                visitar o local.
+    LEA (Load Effective Address): Carrega o endereço efetivo de uma variável ou dado na memória para um 
+                                 registrador. Isso é útil quando você quer trabalhar diretamente com o endereço, em 
+                                 vez de com o valor armazenado nele. Pense em LEA como consultar o endereço de uma 
+                                 casa em vez de visitar o local.
 
-   XCHG (Trocar): Troca os valores de dois operandos sem a necessidade de um terceiro registrador temporário. É 
-                 como trocar o conteúdo de duas caixas diretamente, sem precisar de uma caixa intermediária para 
-                 guardar um dos itens.
+    XCHG (Trocar): Troca os valores de dois operandos sem a necessidade de um terceiro registrador temporário. É 
+                  como trocar o conteúdo de duas caixas diretamente, sem precisar de uma caixa intermediária para 
+                  guardar um dos itens.
 
    As instruções de transferência de dados desempenham um papel fundamental em qualquer programa em Assembly, 
   servindo como as vias que conectam os diferentes componentes do sistema. Elas garantem que os dados sejam movidos 
@@ -126,10 +127,44 @@ explorar os principais tipos de instruções em Assembly, entender suas aplicaç
   local certo.
 
 
+ * Instruções Aritméticas
 
+   As instruções aritméticas em Assembly são fundamentais para a realização de cálculos matemáticos, permitindo que 
+  o processador execute operações como soma, subtração, multiplicação e divisão. Essas operações são essenciais 
+  para transformar dados brutos em resultados úteis, formando a base de qualquer programa que lide com números. 
+  Imagine o processador como uma máquina de calcular ultrarrápida e eficiente, capaz de realizar milhões de 
+  operações por segundo com precisão.
 
+   Além de operações básicas, as instruções aritméticas incluem incrementos e decrementos, que ajustam o valor de 
+  variáveis em pequenas etapas. Esses comandos são úteis em loops e contadores, otimizando o código para realizar 
+  tarefas repetitivas de maneira mais eficiente. Cada instrução é projetada para trabalhar diretamente com os bits 
+  armazenados nos registradores ou na memória, garantindo um desempenho elevado.
 
+   Principais Instruções Aritméticas:
 
+    ADD (Adicionar): Soma dois valores e armazena o resultado no operando de destino. Por exemplo, ADD AX, BX 
+                    adiciona o valor em BX ao valor em AX, atualizando AX com o resultado.
 
+    SUB (Subtrair): Subtrai um valor de outro e armazena o resultado. É como pegar o que está em um registrador e 
+                   "remover" a quantidade do outro.
 
+    MUL (Multiplicar): Realiza a multiplicação entre dois valores sem sinal. O resultado é armazenado em 
+                      registradores específicos, dependendo do tamanho do operando.
 
+    DIV (Dividir): Divide um valor sem sinal por outro, retornando o quociente e o resto em registradores 
+                  diferentes.
+
+    INC (Incrementar): Adiciona 1 ao valor de um operando. Muito usado para contar itens ou avançar em uma 
+                      sequência.
+
+    DEC (Decrementar): Subtrai 1 de um operando, frequentemente utilizado para reduzir contagens ou controlar 
+                       loops.
+
+   As instruções aritméticas são como a engrenagem central de um motor, garantindo que cálculos matemáticos sejam 
+  realizados de maneira eficiente e precisa. Desde operações simples, como somar dois números, até cálculos mais 
+  complexos, essas instruções desempenham um papel crucial em transformar dados em informações processáveis.
+
+   Com sua capacidade de manipular diretamente os valores armazenados nos registradores, as instruções aritméticas 
+  formam a espinha dorsal de qualquer programa que precise processar números, sejam eles usados em contagens, 
+  loops, ou cálculos matemáticos mais elaborados. São, sem dúvida, ferramentas indispensáveis no arsenal de um 
+  programador Assembly.
