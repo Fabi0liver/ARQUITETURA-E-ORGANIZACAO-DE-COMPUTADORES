@@ -372,3 +372,64 @@ explorar os principais tipos de instruções em Assembly, entender suas aplicaç
   importantes em sistemas que lidam com grandes volumes de dados ou em situações em que a precisão dos cálculos é 
   essencial. Ao garantir que os dados estejam no formato correto, essas instruções aumentam a flexibilidade do 
   programador e evitam falhas durante o processamento de diferentes tipos de dados.
+
+
+ * Instruções de Sistema
+
+   As instruções de sistema desempenham um papel fundamental no funcionamento de um computador, pois permitem o 
+  controle direto do hardware e do estado do processador. Elas são como os "botões secretos" que operam as partes 
+  mais profundas e essenciais de uma máquina, permitindo ao programador acessar e manipular diretamente a forma 
+  como o processador executa suas tarefas. Sem essas instruções, o controle sobre o hardware seria limitado, 
+  tornando o sistema menos flexível e eficiente.
+
+   Essas instruções são essenciais para garantir que o processador e os dispositivos do sistema se comportem de 
+  maneira correta, eficiente e estável. Elas controlam eventos como interrupções, pausas no processamento e até 
+  mesmo a parada total do sistema, com ações que são executadas em níveis de privilégio mais elevados. Assim, é 
+  como se essas instruções permitissem que o programador tivesse uma chave mestra para alterar o funcionamento da  
+  "máquina" de forma precisa e em momentos específicos.
+
+   Principais Instruções de Sistema:
+
+    HLT (Halt - Pausa): Esta instrução tem a função de interromper a execução do processador, parando totalmente o 
+                       programa. É como se você apertasse o botão de "pausa" em uma máquina que estava trabalhando, 
+                       fazendo com que ela pare de processar até que outra ação seja tomada. Normalmente, ela é 
+                       usada para finalizar o programa ou quando uma condição de erro ocorre e não há mais o que 
+                       processar.
+
+    NOP (No Operation - Nenhuma operação): A instrução NOP é como um "espaço em branco" no código. Ela não realiza 
+                       nenhuma operação, mas simplesmente ocupa um ciclo de execução. Pode ser usada em situações 
+                       onde se quer garantir que o processador tenha um pequeno intervalo sem fazer nada, o que 
+                       pode ser útil para alinhar instruções ou criar espaço em um loop de execução, sem afetar os 
+                       dados ou o fluxo do programa.
+
+    INT (Interrupt - Interrupção): A instrução INT gera uma interrupção no processo em andamento, permitindo que o 
+                    controle do processador seja desviado para uma rotina especial, conhecida como "rotina de 
+                    interrupção". Essa instrução é como uma chamada de emergência que interrompe o que o 
+                    processador estava fazendo para lidar com uma tarefa de alta prioridade, como responder a um 
+                    evento de hardware, como a chegada de dados de um dispositivo de entrada.
+
+   Essas instruções de sistema são as ferramentas que permitem ao programador controlar as operações mais 
+  fundamentais do sistema. Elas garantem que o processador execute as tarefas de maneira eficiente, possibilitando 
+  interrupções, pausas e até o término do processamento de forma ordenada. Se as instruções de controle de fluxo 
+  são como as ruas e sinais de trânsito para um programa, as instruções de sistema são como os operadores das 
+  estradas, controlando e ajustando o fluxo de dados conforme necessário, para garantir que o sistema funcione de 
+  forma estável e eficiente.
+
+ Em suma, os tipos de instruções em Assembly são os componentes essenciais que permitem ao programador se conectar 
+diretamente com o funcionamento interno do hardware. Cada instrução tem uma função específica, seja para mover 
+dados, realizar operações matemáticas, controlar o fluxo de execução ou até mesmo interagir com dispositivos 
+externos. Juntas, essas instruções formam a base para a comunicação entre o software e o hardware, garantindo que 
+as ações do computador sejam realizadas de forma precisa e eficiente.
+
+ Dominar essas instruções é crucial para criar programas que não apenas funcionem corretamente, mas que também 
+aproveitem ao máximo o desempenho do sistema. Embora Assembly seja uma linguagem de baixo nível, ela oferece uma 
+flexibilidade e controle incomparáveis para o programador que deseja entender profundamente o funcionamento do 
+computador e explorar todo o seu potencial, tornando-se capaz de otimizar e personalizar operações ao nível do 
+hardware.
+
+
+
+
+
+
+
