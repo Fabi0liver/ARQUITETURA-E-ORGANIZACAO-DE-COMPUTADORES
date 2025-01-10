@@ -226,5 +226,44 @@ forma eficiente e segura.
 
 
 
+                                           "Seção Stack"
+
+ A seção Stack (ou Pilha) de um programa em Assembly é onde o gerenciamento temporário de dados acontece. Imagine-a 
+como uma pilha de pratos em uma cozinha: você empilha pratos ao lavar e retira os de cima para usar. De forma 
+semelhante, a Stack armazena informações de maneira temporária, adicionando dados ao topo e removendo-os na mesma 
+ordem (último a entrar, primeiro a sair – LIFO, do inglês "Last In, First Out").
+
+ Essa seção é amplamente utilizada durante a execução do programa para armazenar variáveis locais, endereços de  retorno de sub-rotinas e parâmetros de funções. É uma área extremamente dinâmica e eficiente, pois permite que o  programa armazene e recupere dados rapidamente conforme necessário, sem ocupar espaço fixo em outras áreas da  memória.
+
+ * Como a Seção Stack Funciona: A Stack opera com um princípio muito simples: ao precisar armazenar um valor 
+  temporário, ele é "empilhado" (push) no topo da Stack. Quando o valor não é mais necessário, ele é "desempilhado" 
+  (pop). Essa organização linear e direta facilita a execução de tarefas complexas, como chamadas de funções, onde 
+  os parâmetros e os endereços de retorno precisam ser gerenciados de maneira eficiente.
+
+   Durante a execução de um programa, a Stack cresce e diminui continuamente. Por exemplo, ao entrar em uma sub-
+  rotina, o endereço para onde o programa deve retornar é armazenado na Stack. Quando a sub-rotina termina, esse 
+  endereço é removido, permitindo que o programa continue a execução no ponto exato onde parou. Essa funcionalidade 
+  faz da Stack uma ferramenta indispensável para o controle de fluxo do programa.
+
+
+ * Características da Seção Stack:
+
+    Dinâmica: Cresce e diminui conforme necessário durante a execução do programa.
+
+    Baseada em LIFO: O último dado armazenado é o primeiro a ser recuperado, garantindo uma organização lógica.
+
+    Armazena Dados Temporários: Variáveis locais, endereços de retorno e parâmetros de funções são armazenados 
+                                aqui.
+
+    Espaço Limitado: Embora eficiente, a Stack possui um tamanho finito, o que significa que um uso excessivo pode 
+                    levar a um estouro (stack overflow).
+
+ A seção Stack é como uma área de trabalho temporária para o programa, oferecendo rapidez e organização para 
+manipular dados durante a execução. Sua natureza dinâmica e a simplicidade do modelo LIFO tornam-na essencial para 
+a eficiência e funcionalidade de um programa. Sem a Stack, tarefas como chamadas de funções e armazenamento de 
+variáveis locais seriam muito mais complicadas, dificultando a vida do programador e a performance do programa. 
+Assim, podemos dizer que a Stack é o motor invisível que mantém o programa fluindo com eficiência e precisão.
+
+
 
 
