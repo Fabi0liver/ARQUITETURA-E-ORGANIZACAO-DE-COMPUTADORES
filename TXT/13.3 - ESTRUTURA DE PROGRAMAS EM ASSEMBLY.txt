@@ -2,17 +2,17 @@
 
 
  Ao escrever programas em Assembly, entramos em um nível de detalhamento que nos coloca lado a lado com o 
-funcionamento interno do hardware. Nesse cenário, compreender como os programas são organizados na memória é essencial 
-para criar código eficiente e entender a interação entre o software e a máquina. A estrutura de um programa em 
-Assembly não é aleatória; ela segue uma lógica bem definida, dividida em diferentes seções que desempenham papéis 
-específicos. Essas divisões são como os compartimentos de uma casa, onde cada cômodo tem sua própria função, mas todos 
-trabalham juntos para manter o lar em harmonia.
+funcionamento interno do hardware. Nesse cenário, compreender como os programas são organizados na memória é 
+essencial para criar código eficiente e entender a interação entre o software e a máquina. A estrutura de um 
+programa em Assembly não é aleatória; ela segue uma lógica bem definida, dividida em diferentes seções que 
+desempenham papéis específicos. Essas divisões são como os compartimentos de uma casa, onde cada cômodo tem sua 
+própria função, mas todos trabalham juntos para manter o lar em harmonia.
 
- Cada programa em Assembly é estruturado em seções que ajudam a organizar tanto os dados quanto o código executável. 
-Essas seções incluem a Stack, que lida com armazenamento temporário, a Heap, dedicada à alocação dinâmica de memória, 
-e as seções BSS, Data, e Text, que armazenam dados de diferentes tipos e o próprio código do programa. Assim como em 
-uma casa, onde você pode ter uma cozinha para cozinhar, um quarto para descansar e um armário para armazenar roupas, 
-cada seção tem sua finalidade única dentro do programa.
+ Cada programa em Assembly é estruturado em seções que ajudam a organizar tanto os dados quanto o código 
+executável. Essas seções incluem a Stack, que lida com armazenamento temporário, a Heap, dedicada à alocação 
+dinâmica de memória, e as seções BSS, Data, e Text, que armazenam dados de diferentes tipos e o próprio código do 
+programa. Assim como em uma casa, onde você pode ter uma cozinha para cozinhar, um quarto para descansar e um 
+armário para armazenar roupas, cada seção tem sua finalidade única dentro do programa.
 
  Essa divisão em seções não é apenas uma questão de organização, mas também de eficiência. Imagine que você está 
 trabalhando em um projeto grande e tem todas as ferramentas misturadas em uma única caixa. Encontrar o que você 
@@ -299,5 +299,62 @@ desempenho ideal. Assim, a harmonia entre essas seções é o que permite ao pro
 funcional.
 
 
+                                             "Conclusão"
+
+ A estrutura de um programa em Assembly pode ser comparada a um grande prédio, com diferentes salas e andares, cada um com sua função específica. O endereço de memória começa em 0 e vai até N-1 (N endereços de memória menos 1), representando todo o espaço disponível para a execução do programa. Nesse espaço, as diversas seções do programa são organizadas de maneira específica, cada uma cumprindo um papel importante na execução e no funcionamento do código.
 
 
+					+-------------------+  Endereço de memória: 0  
+					|    Código (Text)  | 
+					|-------------------|   
+					|  Variáveis (Data) |  
+					|-------------------|  
+					| Não Inicial (BSS) |
+					|-------------------| 
+					|    Stack(Pilha)   | <- Cresce para baixo  
+					|...................| 
+					|         ↓         | 
+					|         .         |
+					|         .         |
+					|         .         |
+					|         ↑         |
+					|...................|  
+					|        Heap       | <- Cresce para cima  
+					+-------------------+ Endereço de memória:n-1
+
+
+ - Text: A primeira seção da memória é a seção de Text, que começa no endereço 0. Ela contém as instruções  
+        executáveis do programa, ou seja, o código que o processador irá ler e executar. É aqui que o "manual de 
+        instruções" do seu programa está guardado, indicando as operações que o processador deve realizar.
+
+ - Data: Armazena as variáveis globais e seus valores. Esses Data são alocados no momento da execução e são 
+        mantidos durante a vida do programa. A seção Data é como um escritório onde as informações fixas e    
+        persistentes do programa são armazenadas.
+
+ - BSS (Block Started by Symbol): armazena variáveis que foram declaradas mas ainda não foram inicializadas. Elas 
+      têm um espaço reservado na memória, mas ainda não possuem um valor específico até que o programa as 
+      inicialize. Pode-se pensar na BSS como uma sala de espera, onde as variáveis aguardam para serem 
+      configuradas.
+
+ - Stack ou Pilha: é uma área da memória que cresce para baixo, onde são armazenadas as variáveis locais de 
+                  funções, além de outros dados temporários, como endereços de retorno. A Stack  funciona como uma 
+                  pilha de pratos: a cada função chamada, um "prato" (dados) é colocado no topo, e, quando a função 
+                  termina, ele é removido. Essa área garante que o programa tenha um espaço temporário para 
+                  manipular dados enquanto executa suas tarefas.
+
+ - Heap: É uma área de memória usada para alocar dinamicamente dados durante a execução do programa. Diferente da 
+        stack, o heap cresce para cima, conforme o programa precisa de mais memória durante a execução. O heap pode 
+        ser comparado a um depósito onde objetos e dados de longa duração são armazenados quando a pilha não tem 
+        mais espaço.
+
+ Entender a estrutura de um programa em Assembly é fundamental para compreender como os computadores processam as  
+instruções e gerenciam os recursos de memória. Cada parte do programa, desde a seção Text até a seção Heap, tem um 
+papel crucial para garantir que o software funcione corretamente e de forma eficiente. Saber como essas áreas 
+interagem permite que o programador escreva código otimizado e tenha uma visão mais clara dos desafios e das 
+oportunidades que surgem durante o desenvolvimento.
+
+ Esse conhecimento é especialmente valioso quando se busca depurar ou otimizar programas em baixo nível, pois 
+oferece uma compreensão direta de como o processador e a memória estão sendo utilizados. Ao conectar o software com 
+o hardware de maneira profunda, a estrutura do programa em Assembly reflete a arquitetura interna dos sistemas 
+modernos, ajudando os desenvolvedores a aproveitar ao máximo o potencial das máquinas em que os programas são 
+executados.
