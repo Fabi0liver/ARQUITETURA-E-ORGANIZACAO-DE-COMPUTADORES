@@ -233,7 +233,10 @@ como uma pilha de pratos em uma cozinha: você empilha pratos ao lavar e retira 
 semelhante, a Stack armazena informações de maneira temporária, adicionando dados ao topo e removendo-os na mesma 
 ordem (último a entrar, primeiro a sair – LIFO, do inglês "Last In, First Out").
 
- Essa seção é amplamente utilizada durante a execução do programa para armazenar variáveis locais, endereços de  retorno de sub-rotinas e parâmetros de funções. É uma área extremamente dinâmica e eficiente, pois permite que o  programa armazene e recupere dados rapidamente conforme necessário, sem ocupar espaço fixo em outras áreas da  memória.
+ Essa seção é amplamente utilizada durante a execução do programa para armazenar variáveis locais, endereços de  
+retorno de sub-rotinas e parâmetros de funções. É uma área extremamente dinâmica e eficiente, pois permite que o  
+programa armazene e recupere dados rapidamente conforme necessário, sem ocupar espaço fixo em outras áreas da  
+memória.
 
  * Como a Seção Stack Funciona: A Stack opera com um princípio muito simples: ao precisar armazenar um valor 
   temporário, ele é "empilhado" (push) no topo da Stack. Quando o valor não é mais necessário, ele é "desempilhado" 
