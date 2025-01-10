@@ -1,0 +1,24 @@
+                              ESTRUTURA DE PROGRAMAS EM ASSEMBLY
+
+
+ Ao escrever programas em Assembly, entramos em um nível de detalhamento que nos coloca lado a lado com o 
+funcionamento interno do hardware. Nesse cenário, compreender como os programas são organizados na memória é essencial 
+para criar código eficiente e entender a interação entre o software e a máquina. A estrutura de um programa em 
+Assembly não é aleatória; ela segue uma lógica bem definida, dividida em diferentes seções que desempenham papéis 
+específicos. Essas divisões são como os compartimentos de uma casa, onde cada cômodo tem sua própria função, mas todos 
+trabalham juntos para manter o lar em harmonia.
+
+ Cada programa em Assembly é estruturado em seções que ajudam a organizar tanto os dados quanto o código executável. 
+Essas seções incluem a Stack, que lida com armazenamento temporário, a Heap, dedicada à alocação dinâmica de memória, 
+e as seções BSS, Data, e Text, que armazenam dados de diferentes tipos e o próprio código do programa. Assim como em 
+uma casa, onde você pode ter uma cozinha para cozinhar, um quarto para descansar e um armário para armazenar roupas, 
+cada seção tem sua finalidade única dentro do programa.
+
+ Essa divisão em seções não é apenas uma questão de organização, mas também de eficiência. Imagine que você está 
+trabalhando em um projeto grande e tem todas as ferramentas misturadas em uma única caixa. Encontrar o que você 
+precisa seria muito mais difícil, certo? Dividir o programa em seções específicas garante que o processador possa 
+acessar rapidamente as informações necessárias, reduzindo erros e melhorando o desempenho.
+
+ Neste texto, exploraremos em detalhes essas seções, suas funções e como elas interagem dentro de um programa em 
+Assembly. Entender essa estrutura é como aprender o mapa de uma cidade antes de explorá-la: ajuda a navegar com 
+confiança, sabendo exatamente onde encontrar o que você precisa e como tudo está conectado.
