@@ -22,3 +22,48 @@ acessar rapidamente as informações necessárias, reduzindo erros e melhorando 
  Neste texto, exploraremos em detalhes essas seções, suas funções e como elas interagem dentro de um programa em 
 Assembly. Entender essa estrutura é como aprender o mapa de uma cidade antes de explorá-la: ajuda a navegar com 
 confiança, sabendo exatamente onde encontrar o que você precisa e como tudo está conectado.
+
+
+
+                                           "Seção Text"
+
+ A seção Text (Código ou Segmento de Texto) de um programa em Assembly é onde o código executável reside, ou seja, 
+é a área da memória destinada às instruções que o processador irá executar. Pense nela como o coração de um 
+programa, onde estão armazenadas todas as ações que ele deve realizar. Desde cálculos matemáticos até controle de 
+dispositivos, as instruções contidas nessa seção guiam o funcionamento do programa, passo a passo.
+
+ Essa seção é geralmente marcada como somente leitura (read-only) para evitar alterações acidentais ou maliciosas 
+durante a execução do programa. Essa proteção garante que as instruções permaneçam consistentes e inalteradas, o 
+que é essencial para a estabilidade do sistema. Assim como um manual de instruções impresso não pode ser alterado 
+enquanto está sendo seguido, a seção Text também mantém sua integridade enquanto o programa está em execução.
+
+ * Como a Seção Text Funciona: A seção Text é carregada na memória pelo sistema operacional no momento em que o 
+  programa é iniciado. Quando o processador começa a executar o programa, ele busca as instruções diretamente dessa 
+  área da memória. Cada instrução é traduzida em linguagem de máquina, interpretada e executada pelo processador. 
+  Essa sequência de eventos acontece de maneira extremamente rápida, permitindo que o programa funcione como 
+  planejado.
+
+   Além disso, a localização exata da seção Text na memória é cuidadosamente controlada para garantir eficiência e 
+  segurança. Geralmente, ela está localizada em uma região separada de outras seções, como a Stack ou a Data, para 
+  evitar interferências. Isso é como organizar um escritório, onde os documentos importantes ficam em um local 
+  específico, longe de áreas com muito tráfego ou sujeitas a desordem.
+
+
+ * Características da Seção Text:
+
+    Somente Leitura: As instruções armazenadas na seção Text não podem ser modificadas durante a execução do 
+                    programa. Isso aumenta a segurança e evita comportamentos inesperados.
+
+    Tamanho Fixo: Geralmente, o tamanho da seção Text é definido no momento em que o programa é compilado ou 
+                 montado, o que ajuda a otimizar o uso de memória.
+
+    Armazenamento de Instruções: Contém apenas o código executável, excluindo dados ou variáveis.
+
+    Proteção de Memória: Por ser isolada, reduz o risco de interferências acidentais ou ataques, como tentativas de 
+                        sobrescrever o código.
+
+ A seção Text é uma parte essencial de qualquer programa, servindo como o espaço onde as instruções que dão vida ao 
+software estão armazenadas. Sua organização e proteção garantem que o código seja executado de forma eficiente e 
+segura, permitindo que o programa funcione conforme o esperado. Assim, a seção Text é como o roteiro de um filme, 
+onde cada instrução tem seu papel definido, trabalhando em conjunto para criar um resultado final coeso e 
+funcional.
