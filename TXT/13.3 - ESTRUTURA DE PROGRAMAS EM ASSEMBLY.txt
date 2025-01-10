@@ -1,4 +1,4 @@
-                              ESTRUTURA DE PROGRAMAS EM ASSEMBLY
+                                ESTRUTURA DE PROGRAMAS EM ASSEMBLY
 
 
  Ao escrever programas em Assembly, entramos em um nível de detalhamento que nos coloca lado a lado com o 
@@ -70,7 +70,7 @@ funcional.
 
 
 
-                                          "Seção Data"
+                                           "Seção Data"
 
  A seção Data (Dados Inicializados) de um programa em Assembly é onde os dados pré-definidos e inicializados são 
 armazenados. Essa seção é como o inventário de um programa, contendo todas as informações necessárias para que ele 
@@ -133,7 +133,7 @@ confiável.
 
 
 
-                                     "Seção BSS"
+                                          "Seção BSS"
 
  A seção BSS (Block Started by Symbol - Dados Não Inicializados) de um programa em Assembly é onde são alocadas 
 variáveis não inicializadas. Em outras palavras, é o espaço reservado na memória para armazenar dados que serão 
@@ -269,7 +269,7 @@ Assim, podemos dizer que a Stack é o motor invisível que mantém o programa fl
 
 
 
-                             "Como as Seções Funcionam Juntas"
+                                "Como as Seções Funcionam Juntas"
 
  As seções de um programa em Assembly, como Text, Stack, Heap, BSS e Data, podem ser vistas como diferentes  
 compartimentos dentro de uma grande fábrica, onde cada uma tem sua função específica, mas todas trabalham juntas  
