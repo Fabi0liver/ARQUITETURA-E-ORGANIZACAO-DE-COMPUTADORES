@@ -441,7 +441,7 @@ processador e permite que ele execute mais operações em menos tempo.
 
 
 
-                         "Por que a Microarquitetura é Importante?"
+                            "Por que a Microarquitetura é Importante?"
 
  A microarquitetura é a base sobre a qual todo o desempenho de um computador é construído, e entender sua 
 importância é fundamental para compreender como os processadores funcionam. Imagine que um processador é como um 
@@ -469,6 +469,9 @@ importante em dispositivos móveis, como smartphones e laptops, que precisam equ
 bateria. É como otimizar o consumo de combustível de um carro, conseguindo viajar mais longe com menos combustível. 
 Com a evolução da microarquitetura, os computadores conseguem oferecer maior poder de processamento sem aumentar 
 significativamente o consumo de energia, proporcionando um desempenho superior de forma mais sustentável.
+
+
+
 
 
 
