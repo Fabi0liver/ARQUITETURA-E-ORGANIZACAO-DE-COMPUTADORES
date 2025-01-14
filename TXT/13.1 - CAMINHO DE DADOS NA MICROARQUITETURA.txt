@@ -1,4 +1,4 @@
-                                CAMINHO DE DADOS NA MICROARQUITETURA
+                                 CAMINHO DE DADOS NA MICROARQUITETURA
 
 
  O caminho de dados é como a estrada principal por onde as informações trafegam dentro do processador (o cérebro do 
@@ -35,7 +35,7 @@ específico e segue a melhor rota definida pelo projeto da microarquitetura para
 
 
 
-                   "Como o Caminho de dados Funciona?"
+                            "Como o Caminho de dados Funciona?"
 
  O caminho de dados em um processador é como uma rede de ruas e avenidas por onde circulam os dados necessários 
 para a execução das instruções. Ele é responsável por garantir que as informações fluam de maneira rápida e 
@@ -121,7 +121,7 @@ dorsal do processador, garantindo que tudo funcione de forma integrada e eficien
 
 
 
-                               "Tipos de Caminho de dados"
+                                   "Tipos de Caminho de dados"
 
  Na Microarquitetura de processadores, o caminho de dados desempenha um papel crucial na forma como as instruções 
 são processadas pelo processador. Porém, o que realmente define a eficiência de um processador não é apenas como 
@@ -276,7 +276,7 @@ funcione como o cérebro da computação moderna.
 
 
 
-                           "Principais Componentes do Caminho de dados"
+                            "Principais Componentes do Caminho de dados"
 
  Os componentes do caminho de dados em um processador são essenciais para garantir a execução eficiente das 
 instruções e o processamento rápido dos dados. Cada um desses componentes, com sua função específica, trabalha de 
@@ -440,7 +440,7 @@ mundo da computação.
 
 
 
-                            "Sinais de Controle no Caminho de Dados"
+                               "Sinais de Controle no Caminho de Dados"
 
  Os sinais de controle são essenciais para coordenar e gerenciar o fluxo de dados dentro do processador, garantindo 
 que as operações sejam executadas de forma correta e sincronizada. Esses sinais, gerados pela unidade de controle, 
