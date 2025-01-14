@@ -190,7 +190,7 @@ funcione como o cérebro da computação moderna.
 
 
 
-                         "Principais Componentes do Caminho de dados"
+                           "Principais Componentes do Caminho de dados"
 
  Os componentes do caminho de dados em um processador são essenciais para garantir a execução eficiente das 
 instruções e o processamento rápido dos dados. Cada um desses componentes, com sua função específica, trabalha de 
@@ -297,16 +297,16 @@ colaboram para o funcionamento eficaz do processador.
 
    Os multiplexadores  são dispositivos cruciais em um processador, responsáveis por selecionar entre várias 
   entradas possíveis e encaminhar a entrada escolhida para o destino adequado, como a ULA (Unidade Lógica e 
-  Aritmética) ou os registradores. Em termos simples, os MUXs funcionam como uma espécie de "seletor" inteligente 
-  de dados, garantindo que o processador escolha a fonte certa de informações no momento certo, entre várias 
-  opções.
+  Aritmética) ou os registradores. Em termos simples, os multiplexadores funcionam como uma espécie de "seletor" 
+  inteligente de dados, garantindo que o processador escolha a fonte certa de informações no momento certo, entre 
+  várias opções.
 
    A função dos multiplexadores no caminho de dados é assegurar que, em momentos específicos, os dados corretos 
   sejam enviados para os componentes certos, como a ULA ou o banco de registradores. Eles fazem isso permitindo 
   que, quando há múltiplas fontes de dados disponíveis, o processador selecione qual delas deve ser usada em uma 
-  determinada operação. Podemos comparar os MUXs a um semáforo de trânsito em uma interseção, onde o semáforo 
-  decide qual via (ou dado) deve ser liberada (ou processada) em um determinado momento, para que tudo funcione de 
-  forma ordenada e eficiente.
+  determinada operação. Podemos comparar os multiplexadores a um semáforo de trânsito em uma interseção, onde o 
+  semáforo decide qual via (ou dado) deve ser liberada (ou processada) em um determinado momento, para que tudo 
+  funcione de forma ordenada e eficiente.
 
    Sem a presença dos multiplexadores, o processador teria dificuldades em garantir que os dados certos chegassem 
   aos lugares certos na hora certa, o que poderia resultar em falhas de sincronização e, consequentemente, uma 
