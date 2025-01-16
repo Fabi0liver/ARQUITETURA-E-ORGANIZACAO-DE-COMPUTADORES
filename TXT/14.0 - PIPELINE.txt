@@ -98,7 +98,7 @@ engenheiros para maximizar a capacidade do processador sem comprometer sua funci
   um produto.
 
    No pipeline, essa etapa realiza a operação definida na instrução, como uma soma, multiplicação ou comparação. A 
-  execução acontece na Unidade Lógica e Aritmética (ALU) ou em outras partes especializadas do processador. É aqui 
+  execução acontece na Unidade Lógica e Aritmética (ULA) ou em outras partes especializadas do processador. É aqui 
   que o "resultado bruto" é produzido.
 
    Assim como na fábrica, onde o motor é montado de acordo com o manual, o processador precisa garantir que a 
@@ -132,8 +132,8 @@ engenheiros para maximizar a capacidade do processador sem comprometer sua funci
   processando as próximas instruções.
 
 
- O pipeline de instruções é como uma linha de produção altamente eficiente, onde cada etapa desempenha um papel 
-específico e todas trabalham juntas para entregar o resultado final. A divisão em etapas permite que várias 
+ Em suma, o pipeline de instruções é como uma linha de produção altamente eficiente, onde cada etapa desempenha um 
+papel específico e todas trabalham juntas para entregar o resultado final. A divisão em etapas permite que várias 
 instruções sejam processadas ao mesmo tempo, aproveitando ao máximo os recursos do processador. Apesar dos 
 desafios, como a coordenação entre as etapas e o gerenciamento de riscos, o pipeline é uma das ferramentas mais 
 importantes para aumentar o desempenho dos processadores modernos. Compreender cada estágio é essencial para 
