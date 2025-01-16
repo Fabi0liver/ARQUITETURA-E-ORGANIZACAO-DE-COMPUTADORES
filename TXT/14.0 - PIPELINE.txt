@@ -160,8 +160,52 @@ terminar antes de avançar. Outro exemplo é quando há desvios no fluxo, como e
 processador precisa ajustar sua execução. Para lidar com isso, processadores modernos utilizam técnicas como 
 predição de desvios e execução especulativa, que ajudam a minimizar esses atrasos e manter o pipeline fluindo.
 
- Em suma, o pipeline de instrução é uma solução engenhosa para aumentar a eficiência dos processadores, permitindo 
-que múltiplas instruções sejam processadas simultaneamente em diferentes estágios. Ao dividir o trabalho em etapas 
-paralelas, o pipeline aproveita melhor o tempo e os recursos, reduzindo o tempo total de execução. Apesar dos 
-desafios, como dependências e desvios, técnicas avançadas garantem que ele continue sendo uma das abordagens mais 
-importantes na arquitetura de computadores.
+ Em suma, o pipeline é uma solução engenhosa para aumentar a eficiência dos processadores, permitindo que múltiplas 
+instruções sejam processadas simultaneamente em diferentes estágios. Ao dividir o trabalho em etapas paralelas, o 
+pipeline aproveita melhor o tempo e os recursos, reduzindo o tempo total de execução. Apesar dos desafios, como 
+dependências e desvios, técnicas avançadas garantem que ele continue sendo uma das abordagens mais importantes na 
+arquitetura de computadores.
+
+ - Tabela de Como o Pipeline Funciona
+
+ A tabela abaixo ilustra como o pipeline de instrução opera, demonstrando a execução simultânea de várias 
+instruções em diferentes estágios. Cada ciclo de clock representa um momento no tempo em que uma etapa do pipeline 
+está sendo executada para uma instrução específica.
+
+Ciclo de Clock | Instrução 1        | Instrução 2        | Instrução 3        | Instrução 4
+---------------|--------------------|--------------------|--------------------|--------------------
+Ciclo 1        | Fetch              |                    |                    |                    
+Ciclo 2        | Decode             | Fetch              |                    |                    
+Ciclo 3        | Execute            | Decode             | Fetch              |                    
+Ciclo 4        | Memory             | Execute            | Decode             | Fetch      
+Ciclo 5        | Write Back         | Memory             | Execute            | Decode 
+Ciclo 6        |                    | Write Back         | Memory             | Execute  
+Ciclo 7        |                    |                    | Write Back         | Memory   
+Ciclo 8        |                    |                    |                    | Write Back 
+
+ Explicação da tabela:
+
+ A tabela divide o pipeline em ciclos de clock e mostra como diferentes instruções ocupam etapas específicas do pipeline ao mesmo tempo:
+
+ * Ciclos de Clock: Cada linha da tabela representa um ciclo, ou "passo" temporal, em que uma etapa do pipeline é 
+                   executada.
+
+ * Estágios do Pipeline: As etapas de cada instrução incluem:
+                        
+                         Fetch (Busca): A instrução é buscada na memória.
+
+                         Decode (Decodificação): A instrução é traduzida para comandos que o processador entende.
+
+                         Execute (Execução): A operação especificada pela instrução é realizada.
+
+                         Memory (Memória): O processador lê ou escreve dados na memória, se necessário.
+
+                         Write Back (Escrita): O resultado da instrução é armazenado.
+
+ * Execução Paralela: Enquanto uma instrução está no estágio de escrita, outras estão sendo buscadas, decodificadas  
+                     ou executadas. Isso mantém o pipeline continuamente ocupado, maximizando o desempenho do 
+                     processador.
+
+ Essa estrutura permite que o processador execute várias instruções simultaneamente, economizando tempo e 
+aumentando a eficiência geral. É um exemplo prático de como dividir tarefas complexas em etapas menores pode 
+acelerar significativamente o processamento.
