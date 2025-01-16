@@ -166,46 +166,126 @@ pipeline aproveita melhor o tempo e os recursos, reduzindo o tempo total de exec
 dependências e desvios, técnicas avançadas garantem que ele continue sendo uma das abordagens mais importantes na 
 arquitetura de computadores.
 
- - Tabela de Como o Pipeline Funciona
 
- A tabela abaixo ilustra como o pipeline de instrução opera, demonstrando a execução simultânea de várias 
-instruções em diferentes estágios. Cada ciclo de clock representa um momento no tempo em que uma etapa do pipeline 
-está sendo executada para uma instrução específica.
 
-Ciclo de Clock | Instrução 1        | Instrução 2        | Instrução 3        | Instrução 4
----------------|--------------------|--------------------|--------------------|--------------------
-Ciclo 1        | Fetch              |                    |                    |                    
-Ciclo 2        | Decode             | Fetch              |                    |                    
-Ciclo 3        | Execute            | Decode             | Fetch              |                    
-Ciclo 4        | Memory             | Execute            | Decode             | Fetch      
-Ciclo 5        | Write Back         | Memory             | Execute            | Decode 
-Ciclo 6        |                    | Write Back         | Memory             | Execute  
-Ciclo 7        |                    |                    | Write Back         | Memory   
-Ciclo 8        |                    |                    |                    | Write Back 
+                 "Execução de Instruções Sem o Uso de Pipeline e Com Uso de  Pipeline"
 
- Explicação da tabela:
+ Como já vimos, o pipeline de instrução é uma técnica essencial usada pelos processadores para aumentar a 
+velocidade de execução, dividindo o trabalho de uma instrução em etapas paralelizadas. Em um processo sem pipeline, 
+cada instrução precisa passar por todas as etapas de execução de uma vez, uma após a outra. Isso pode ser comparado 
+a um trabalhador que precisa realizar todas as tarefas de uma construção antes de passar para a próxima. Já com o 
+pipeline, as instruções são "quebradas" em várias etapas e cada uma delas trabalha simultaneamente em diferentes 
+instruções, aumentando significativamente a eficiência, como uma linha de montagem bem coordenada onde diferentes 
+partes da tarefa estão sendo feitas ao mesmo tempo.
 
- A tabela divide o pipeline em ciclos de clock e mostra como diferentes instruções ocupam etapas específicas do pipeline ao mesmo tempo:
+ A seguir, vamos ver como funciona a execução de instruções sem o uso de pipeline e com pipeline, destacando a 
+diferença no tempo e no processo de execução. As tabelas ajudam a visualizar a sequência de execução de várias 
+instruções em cada cenário, mostrando como o pipeline agiliza a execução e permite maior paralelismo entre as 
+instruções.
 
- * Ciclos de Clock: Cada linha da tabela representa um ciclo, ou "passo" temporal, em que uma etapa do pipeline é 
-                   executada.
+ * Execução sem Pipeline
 
- * Estágios do Pipeline: As etapas de cada instrução incluem:
-                        
-                         Fetch (Busca): A instrução é buscada na memória.
+   Ciclo de Clock | Instrução 1        | Instrução 2        | Instrução 3        | Instrução 4
+   ---------------|--------------------|--------------------|--------------------|--------------------
+   Ciclo 1        | Fetch              |                    |                    |                    
+   Ciclo 2        | Decode             |                    |                    |                   
+   Ciclo 3        | Execute            |                    |                    |                  
+   Ciclo 4        | Memory             |                    |                    |                 
+   Ciclo 5        | Write Back         |                    |                    |                  
+   Ciclo 6        |                    | Fetch              |                    |                 
+   Ciclo 7        |                    | Decode             |                    |             
+   Ciclo 8        |                    | Execute            |                    |              
+   Ciclo 9        |                    | Memory             |                    |             
+   Ciclo 10       |                    | Write Back         |                    |           
+   Ciclo 11       |                    |                    | Fetch              | 
+   Ciclo 12       |                    |                    | Decode             |
+   Ciclo 13       |                    |                    | Execute            |
+   Ciclo 14       |                    |                    | Memory             |
+   Ciclo 15       |                    |                    | Write Back         |
+   Ciclo 16       |                    |                    |                    |Fetch
+   Ciclo 17       |                    |                    |                    |Decode
+   Ciclo 18       |                    |                    |                    |Execute
+   Ciclo 19       |                    |                    |                    |Memory
+   Ciclo 20       |                    |                    |                    |Write Back
 
-                         Decode (Decodificação): A instrução é traduzida para comandos que o processador entende.
 
-                         Execute (Execução): A operação especificada pela instrução é realizada.
+   Na execução sem pipeline, o processador precisa passar por todas as etapas de execução de uma instrução antes de 
+  iniciar a próxima. Cada ciclo de clock é dedicado a uma única instrução, que vai atravessando as etapas de busca 
+  (Fetch), decodificação (Decode), execução (Execute), acesso à memória (Memory) e gravação do resultado (Write 
+  Back) de forma sequencial. Isso significa que, ao longo de vários ciclos, uma única instrução será processada em 
+  etapas distintas, mas uma por vez. Não há paralelismo entre as instruções, pois a próxima só começa após a 
+  instrução anterior concluir todas as suas fases.
 
-                         Memory (Memória): O processador lê ou escreve dados na memória, se necessário.
+    Ciclos 1 a 5: A Instrução 1 passa por todas as etapas do pipeline. Durante o ciclo 1, ela é buscada da memória    
+                 (Fetch), no ciclo 2 ela é decodificada (Decode), no ciclo 3 é executada (Execute), no ciclo 4 
+                 acessa a memória (Memory) e no ciclo 5, o resultado é gravado de volta (Write Back).
 
-                         Write Back (Escrita): O resultado da instrução é armazenado.
+    Ciclos 6 a 10: A Instrução 2 começa no ciclo 6, quando o ciclo 1 de Instrução 1 já foi concluído, e passa por 
+                  todas as mesmas etapas (Fetch, Decode, Execute, Memory, Write Back), uma após a outra, até 
+                  terminar no ciclo 10.
 
- * Execução Paralela: Enquanto uma instrução está no estágio de escrita, outras estão sendo buscadas, decodificadas  
-                     ou executadas. Isso mantém o pipeline continuamente ocupado, maximizando o desempenho do 
-                     processador.
+    Ciclos 11 a 15: A Instrução 3 inicia no ciclo 11, logo após a Instrução 2 completar a etapa de Write Back, e o 
+                   processo continua da mesma maneira.
 
- Essa estrutura permite que o processador execute várias instruções simultaneamente, economizando tempo e 
-aumentando a eficiência geral. É um exemplo prático de como dividir tarefas complexas em etapas menores pode 
-acelerar significativamente o processamento.
+    Ciclos 16 a 20: Por fim, a Instrução 4 entra no pipeline após a Instrução 3 ser concluída.
+
+   Como vemos, o processo é linear e as instruções são executadas de forma sequencial. Isso resulta em uma execução 
+  mais demorada, pois a próxima instrução só pode começar depois que a anterior passa por todas as suas etapas.
+
+
+ * Execução com Pipeline
+
+   Ciclo de Clock | Instrução 1        | Instrução 2        | Instrução 3        | Instrução 4
+   ---------------|--------------------|--------------------|--------------------|--------------------
+   Ciclo 1        | Fetch              |                    |                    |                    
+   Ciclo 2        | Decode             | Fetch              |                    |                    
+   Ciclo 3        | Execute            | Decode             | Fetch              |                    
+   Ciclo 4        | Memory             | Execute            | Decode             | Fetch      
+   Ciclo 5        | Write Back         | Memory             | Execute            | Decode 
+   Ciclo 6        |                    | Write Back         | Memory             | Execute  
+   Ciclo 7        |                    |                    | Write Back         | Memory   
+   Ciclo 8        |                    |                    |                    | Write Back 
+
+
+   Na execução com pipeline, as instruções são divididas em etapas e, em vez de esperar a instrução anterior 
+  terminar completamente, o processador começa a executar a próxima instrução enquanto a anterior ainda está em 
+  andamento. Isso cria um sistema paralelo onde as instruções estão sendo processadas simultaneamente, mas em 
+  diferentes estágios. Em vez de uma execução sequencial, como no caso sem pipeline, o pipeline permite que 
+  diferentes partes do trabalho sejam feitas ao mesmo tempo.
+
+    Ciclos 1 a 5: A Instrução 1 passa pelas etapas de Fetch, Decode, Execute, Memory e Write Back, de forma 
+                 semelhante ao que acontece sem pipeline.
+      
+    Ciclos 2 a 8: A Instrução 2 começa no ciclo 2, enquanto a Instrução 1 já está na etapa de Execute. Isso 
+                 significa que enquanto a Instrução 1 está sendo executada, a Instrução 2 pode ser decodificada, e 
+                 isso vai acontecendo em paralelo. O mesmo acontece com as instruções seguintes.
+
+    Ciclos 3 a 8: A Instrução 3 começa no ciclo 3, e, enquanto ela está sendo buscada e decodificada, as instruções 
+                 anteriores já avançaram para as etapas seguintes.
+
+   Com esse modelo, o tempo total de execução para várias instruções é significativamente reduzido, pois enquanto 
+  uma instrução está em execução, outra está sendo decodificada e outra sendo buscada na memória. O paralelismo 
+  entre as instruções é o principal benefício do pipeline.
+
+
+  A principal diferença  entre a execução sem pipeline e com pipeline está no tempo gasto. Na execução sem 
+pipeline, cada instrução ocupa um ciclo de clock completo para cada etapa, e só pode passar para a próxima quando a 
+anterior terminar. Isso resulta em um tempo total muito maior para executar várias instruções, já que elas são 
+processadas uma por uma. Por exemplo, se houver 4 instruções, serão necessários 20 ciclos de clock para 
+completá-las (5 ciclos para cada uma).
+
+ Já com o pipeline, como as instruções são processadas simultaneamente em diferentes estágios, o tempo total é 
+reduzido. A primeira instrução leva 5 ciclos para ser completada, mas as próximas começam a ser processadas em 
+ciclos subsequentes. Isso resulta em um tempo de execução menor, pois o processador utiliza os ciclos de clock de 
+forma mais eficiente, trabalhando em várias instruções ao mesmo tempo. O tempo total para 4 instruções, por 
+exemplo, pode ser reduzido para apenas 8 ciclos de clock (5 ciclos para a primeira e 1 ciclo adicional para cada 
+uma das outras).
+
+ Em suma, o pipeline de instrução melhora significativamente a eficiência do processador ao permitir que múltiplas 
+instruções sejam processadas em paralelo, embora cada uma passe por diferentes estágios. Ao contrário da execução 
+sequencial, que é mais lenta e linear, o pipeline otimiza o uso dos ciclos de clock e reduz o tempo de execução das 
+instruções. Isso é crucial para melhorar o desempenho dos processadores em tarefas complexas, como processamento de 
+dados e execução de programas, permitindo que múltiplas operações sejam realizadas ao mesmo tempo.
+
+ 
+
