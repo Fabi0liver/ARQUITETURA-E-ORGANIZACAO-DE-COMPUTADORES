@@ -283,7 +283,7 @@ precisa esperar por sua vez para utilizar o recurso, criando uma interrupção n
     Inst. 4 |         |         |         | [ IF ]! |  REG.L  |   ALU   |    DA   | REG.S   |
 
 
-      Explicação do Hazard Estrutural na tabela:
+     Explicação do Hazard Estrutural na tabela:
 
       No ciclo 4 do pipeline, temos um exemplo clássico de hazard estrutural que ocorre entre a Instrução 1 e a 
      Instrução 4 devido ao uso simultâneo de um recurso compartilhado: a memória. 
@@ -315,6 +315,85 @@ capacidade do processador de utilizá-los de maneira eficiente.
 software que buscam otimizar a execução de instruções e melhorar a eficiência dos sistemas computacionais. Ao lidar 
 com esses desafios de forma adequada, é possível projetar processadores mais rápidos e eficazes, capazes de atender 
 às crescentes demandas de desempenho de aplicações modernas.
+
+
+
+                                       "Control Hazards"
+
+ Os Control Hazards, ou hazards de controle, representam um dos principais desafios no design de processadores com 
+pipeline. Esses conflitos ocorrem quando o pipeline enfrenta incertezas sobre qual instrução executar em seguida, 
+geralmente como resultado de desvios condicionais ou saltos incondicionais no fluxo de execução. Em outras 
+palavras, o processador precisa tomar uma decisão sobre o caminho correto a seguir, mas ainda não possui as 
+informações necessárias para fazer isso.
+
+ Imagine que você está dirigindo em uma estrada e se depara com uma bifurcação, mas o GPS demora para carregar o 
+mapa. Você sabe que precisará tomar uma decisão (virar à direita ou à esquerda) mas, enquanto o mapa não aparece,  
+você é forçado a parar o carro ou escolher um caminho às cegas, correndo o risco de ter que voltar atrás. Essa 
+pausa ou possível erro representa bem como os control hazards impactam o pipeline de um processador.
+
+ No contexto do pipeline, esses hazards ocorrem porque as instruções de desvio (Branch) precisam determinar se a 
+próxima instrução será executada na sequência normal ou se o processador deverá pular para uma parte diferente do 
+programa. Até que o desvio seja resolvido, o pipeline pode ser forçado a aguardar, o que diminui a eficiência do processador.
+
+ * Como os Hazards de Controle Funcionam?
+
+   Os control hazards aparecem em instruções de controle que alteram o fluxo padrão do programa, como desvios 
+  condicionais (Branch) ou saltos (Jump). O problema ocorre porque o processador precisa prever ou esperar 
+  para saber qual será a próxima instrução correta a ser executada.
+
+   Por exemplo, considere uma instrução de desvio condicional que verifica se uma condição é verdadeira. A decisão 
+  sobre qual instrução seguir (a próxima no fluxo normal ou a do salto) só pode ser tomada após o estágio de 
+  execução no pipeline, quando a condição é avaliada. Durante esse tempo, o pipeline fica em um estado de 
+  incerteza, aguardando o resultado para evitar executar a instrução errada.
+
+   Essa incerteza pode ser comparada a uma fila de pessoas na entrada de um show, onde o porteiro precisa verificar 
+  o ingresso de cada pessoa antes de deixá-las entrar. Se o ingresso de uma pessoa está demorando para ser 
+  validado, a fila inteira pode parar até que a situação seja resolvida, atrasando o fluxo. No pipeline, esse 
+  atraso impacta diretamente no desempenho, especialmente em programas com muitos desvios condicionais.
+
+
+ * Exemplo de Hazard de Controle:
+
+   A tabela abaixo considera um cenário com um pipeline de cinco estágios processando instruções, incluindo uma de 
+  desvio condicional:
+
+              Ciclo 1 | Ciclo 2 | Ciclo 3 | Ciclo 4 | Ciclo 5 | Ciclo 6 | Ciclo 7 | Ciclo 8 |
+             ---------|---------|---------|---------|---------|---------|---------|---------|
+    Inst. 1 |    IF   |  REG.L  |   ALU   |   DA    |  REG.S  |         |         |         |
+    Inst. 2 |         |   IF    |  REG.L  |   ALU   |   DA    |  REG.S  |         |         |
+    Inst. 3 |         |         |   IF    |  REG.L  |   ALU   |    DA   |  REG.S  |         |
+    Inst. 4 |         |         |         |   IF    |   ???   |         |         |         |
+
+   Explicação do Hazard de Controle na tabela:
+
+   No Ciclo 4, vemos um exemplo clássico de hazard de controle causado por uma instrução de desvio condicional na  
+  Instrução 4 (IF - Busca de Instrução). O problema surge porque, neste estágio do pipeline, o processador ainda 
+  não sabe qual será o próximo caminho a seguir: ele não conseguiu calcular o resultado da condição do desvio. Por    
+  conta disso, o pipeline entra em um estado de espera, representado como "???" na tabela.
+
+   Esse atraso ocorre porque o processador não pode tomar uma decisão imediatamente sobre qual instrução deve ser 
+  executada a seguir. Ele precisa primeiro resolver a condição do desvio, algo que só será possível nos estágios 
+  posteriores, como a execução na ALU. Até lá, o pipeline permanece "travado", aguardando a resolução para evitar a 
+  execução incorreta de uma instrução.
+
+   Para simplificar, imagine que você está em uma estrada com uma bifurcação à frente. Você não tem um mapa 
+  atualizado e precisa esperar alguém lhe informar se deve virar à direita ou à esquerda. Enquanto essa decisão não 
+  é tomada, você é obrigado a parar o carro, atrasando sua viagem. No pipeline, essa pausa significa que as 
+  instruções seguintes não podem ser processadas, prejudicando o desempenho geral do processador.
+
+ Em resumo, os hazards de controle são um desafio inevitável em  pipeline devido à natureza imprevisível dos 
+desvios no fluxo de execução. Eles representam um gargalo no desempenho, pois a execução eficiente depende da 
+capacidade do processador de determinar rapidamente o próximo passo correto.
+
+ Assim como em outros tipos de hazards, entender os control hazards é essencial para projetar soluções que 
+minimizem seus impactos. Previsões de salto e outras técnicas avançadas podem ajudar a reduzir o atraso, mas 
+frequentemente exigem um equilíbrio cuidadoso entre complexidade de hardware e ganhos de desempenho.
+
+ Para engenheiros de hardware e software, é vital compreender o impacto desses hazards no desempenho do sistema e 
+buscar maneiras de reduzir o tempo de espera no pipeline, garantindo que o processador funcione com o máximo de 
+eficiência possível.
+
+
 
 
 
