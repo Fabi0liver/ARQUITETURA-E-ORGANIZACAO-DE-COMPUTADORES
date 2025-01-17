@@ -158,7 +158,7 @@ resolvidas para melhorar o fluxo do pipeline.
 
    Em suma, a dependência WAR  é um desafio quando há uma dependência de escrita após uma leitura, pois ele pode 
   levar a um resultado incorreto caso as instruções sejam executadas fora de ordem. Embora não seja tão comum 
-  quanto a dependência RAW, ela é igualmente importante entende-lá, pois pode causar erros se o pipeline não 
+  quanto a dependência RAW, mas é igualmente importante entende-la, pois pode causar erros se o pipeline não 
   gerenciar corretamente a sequência de operações. Entender como esse tipo de conflito funciona e suas implicações 
   é essencial para garantir que as instruções sejam executadas corretamente e que os dados utilizados estejam 
   atualizados de acordo com a necessidade de cada instrução.
@@ -215,3 +215,106 @@ computacionais, seja no desenvolvimento de processadores ou na criação de algo
 obstáculos pareçam complicados, eles são uma parte importante do aprendizado para engenheiros e desenvolvedores que 
 buscam garantir que o pipeline de dados seja o mais ágil e eficiente possível, funcionando como uma máquina bem 
 lubrificada que executa tarefas com rapidez e precisão.
+
+
+
+                                   "Structural Hazards"
+
+ Os Structural Hazards ou hazards estruturais são um tipo de conflito que ocorre quando o processador não tem 
+recursos suficientes para atender simultaneamente a várias instruções que estão sendo executadas em seu pipeline. 
+Esses recursos podem ser unidades de processamento, barramentos de memória ou até mesmo registradores, e quando não 
+há capacidade suficiente para processar todas as instruções ao mesmo tempo, o pipeline é forçado a esperar. Esse 
+tipo de hazard é como uma sobrecarga em uma linha de produção, onde uma máquina ou estação de trabalho não tem a 
+capacidade de lidar com mais de uma tarefa ao mesmo tempo.
+
+ Para entender melhor, imagine que uma fábrica tem apenas uma única linha de montagem para vários tipos de 
+produtos. Se um determinado produto precisar de um tipo de equipamento que está ocupado com outro item, a produção 
+de um item terá que esperar até que o equipamento esteja disponível. No contexto do pipeline, os recursos limitados 
+podem criar um gargalo quando duas instruções exigem o mesmo recurso ao mesmo tempo, resultando em atrasos na 
+execução.
+
+ Esse tipo de hazard ocorre principalmente quando diferentes estágios do pipeline tentam acessar o mesmo recurso 
+simultaneamente, mas o processador só possui uma instância desse recurso, como uma única unidade de memória ou uma 
+unidade de ponto flutuante. Como o número de unidades de execução e memória disponíveis é limitado, o processador 
+precisa esperar por sua vez para utilizar o recurso, criando uma interrupção no fluxo de dados.
+
+
+ * Como os Hazards Estruturais ocorrem?
+
+   Os hazards estruturais ocorrem quando o processador possui apenas um recurso compartilhado, mas várias 
+  instruções no pipeline tentam utilizá-lo ao mesmo tempo. Para ilustrar, imagine que o processador tem uma única 
+  unidade de memória e duas instruções que precisam acessar a memória simultaneamente. Uma instrução pode precisar 
+  ler da memória, enquanto a outra deseja escrever nela. Sem um mecanismo eficiente para gerenciar essas operações, 
+  o processador não consegue atender ambas as instruções ao mesmo tempo, resultando em um hazard estrutural.
+
+   Esse tipo de conflito é diferente dos data hazards, pois não é causado por dependências de dados entre as 
+  instruções. Em vez disso, o problema surge devido à limitação de recursos disponíveis. Quando o pipeline precisa 
+  aguardar o recurso para continuar a execução, o desempenho do processador é comprometido, criando um gargalo. Ou 
+  seja, o processador não consegue otimizar seu desempenho, pois não tem recursos suficientes para atender 
+  simultaneamente às instruções que exigem o mesmo recurso.
+
+   Embora os hazards estruturais não envolvam interdependência de dados, eles são frequentemente resultado de 
+  limitações físicas do processador, como a quantidade limitada de unidades de memória, registradores ou unidades 
+  de execução. Esse tipo de hazard pode ser particularmente crítico em processadores mais simples, onde o número de 
+  recursos é limitado. A compreensão de como esses conflitos afetam o desempenho é crucial para projetar sistemas 
+  de processamento eficientes e melhorar o uso dos recursos disponíveis.
+
+
+ * Exemplo de Hazard Estrutural: 
+
+   A tabela abaixo representa o processamento de quatro instruções em um pipeline com cinco estágios:
+
+    IF: Instruction Fetch (Busca da Instrução)
+
+    REG.L: Register Load (Carregamento do Registrador)
+
+    ALU: ALU Operation (Operação na Unidade Lógica e Aritmética)
+
+    DA: Data Access (Acesso à Memória de Dados)
+
+    REG.S: Register Store (Armazenamento no Registrador)
+
+
+              Ciclo 1 | Ciclo 2 | Ciclo 3 | Ciclo 4 | Ciclo 5 | Ciclo 6 | Ciclo 7 | Ciclo 8 |
+             ---------|---------|---------|---------|---------|---------|---------|---------|
+    Inst. 1 |    IF   |  REG.L  |   ALU   | [ DA ]! |  REG.S  |         |         |         |
+    Inst. 2 |         |   IF    |  REG.L  |   ALU   |   DA    |  REG.S  |         |         |
+    Inst. 3 |         |         |   IF    |  REG.L  |   ALU   |    DA   |  REG.S  |         |
+    Inst. 4 |         |         |         | [ IF ]! |  REG.L  |   ALU   |    DA   | REG.S   |
+
+
+      Explicação do Hazard Estrutural na tabela:
+
+      No ciclo 4 do pipeline, temos um exemplo clássico de hazard estrutural que ocorre entre a Instrução 1 e a 
+     Instrução 4 devido ao uso simultâneo de um recurso compartilhado: a memória. 
+
+      - A Instrução 1 está no estágio DA (Acesso à Memória de Dados), onde tenta acessar a memória para carregar ou 
+       armazenar um valor, essencial para concluir sua operação.
+
+      - Ao mesmo tempo, a Instrução 4 entra no estágio IF (Busca de Instrução), que também depende da memória para 
+       buscar a próxima instrução que precisa ser executada.
+
+   O problema surge porque o pipeline, nesse caso, possui apenas uma única unidade de memória disponível para  
+  lidar com ambas as operações. É como se duas pessoas quisessem usar um único telefone ao mesmo tempo: uma para 
+  fazer uma ligação e outra para enviar uma mensagem. Sem um segundo telefone, uma das pessoas terá que esperar. No 
+  pipeline, isso significa que uma das instruções precisa ser pausada, criando um atraso.
+
+ Em resumo, os hazards estruturais representam um desafio importante no design de processadores, pois indicam que o 
+número de recursos disponíveis no sistema não é suficiente para lidar com o número de instruções que precisam ser 
+processadas simultaneamente. Esses conflitos não são causados por dependências entre dados, mas sim por uma 
+limitação física do processador. Como a execução de instruções depende de recursos como unidades de memória, 
+unidades aritméticas e registradores, a falta de capacidade pode levar a atrasos e baixa eficiência.
+
+ Embora esses hazards sejam inevitáveis em alguns cenários, é possível melhorar a eficiência dos processadores por 
+meio do aumento da quantidade de recursos disponíveis ou do design de arquiteturas de processadores mais 
+sofisticadas. No entanto, em muitos casos, essas soluções vêm com custos, seja em termos de complexidade do design 
+ou de consumo de energia. Por isso, é importante encontrar o equilíbrio entre a quantidade de recursos e a 
+capacidade do processador de utilizá-los de maneira eficiente.
+
+ Entender como os hazards estruturais afetam o desempenho do pipeline é essencial para engenheiros de hardware e 
+software que buscam otimizar a execução de instruções e melhorar a eficiência dos sistemas computacionais. Ao lidar 
+com esses desafios de forma adequada, é possível projetar processadores mais rápidos e eficazes, capazes de atender 
+às crescentes demandas de desempenho de aplicações modernas.
+
+
+
