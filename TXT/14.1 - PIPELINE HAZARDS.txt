@@ -507,3 +507,27 @@ desde dependências de dados até controle de energia, criando um equilíbrio en
  Essas soluções, quando usadas em conjunto, transformam o pipeline em um sistema altamente adaptável e otimizado. 
 Elas nos lembram que, mesmo diante de complexidades e conflitos, estratégias inteligentes e planejamento eficiente 
 podem superar obstáculos e levar ao melhor resultado possível no processamento de dados.
+
+
+
+                            "Conclusão sobre Pipeline Hazards
+
+ Em resumo, os pipeline hazards são desafios inevitáveis que surgem quando múltiplas instruções estão sendo 
+processadas de maneira paralela em um pipeline. Esses conflitos podem ser causados por dependências de dados, 
+controle ou recursos, e podem resultar em atrasos ou falhas na execução das instruções. Assim como em uma estrada 
+movimentada, onde engarrafamentos surgem devido a obstáculos ou mudanças de direção inesperadas, os hazards 
+interrompem o fluxo eficiente de dados e instruções, prejudicando o desempenho do processador.
+
+ Felizmente, existem diversas técnicas e métodos para contornar esses obstáculos e melhorar a eficiência do 
+pipeline. Estratégias como forwarding, reordenação de instruções e predição de ramo permitem que o processador 
+continue a executar instruções de forma fluida, mesmo quando há dependências entre elas. Essas abordagens funcionam 
+como desvios inteligentes em uma estrada congestionada, garantindo que o tráfego continue fluindo sem perdas de 
+tempo, mesmo diante de imprevistos. Ao aplicar essas técnicas, os processadores se tornam mais rápidos e 
+eficientes, maximizando o uso do pipeline.
+
+ No entanto, apesar de todas as soluções, é importante lembrar que os hazards são parte natural do processo de 
+execução paralela de instruções. A chave está em gerenciar essas dependências de forma eficaz, usando as 
+estratégias adequadas para cada situação. Ao fazer isso, conseguimos otimizar o fluxo de dados, reduzir os atrasos 
+e garantir que o processador opere da melhor forma possível. Assim, o pipeline se torna uma estrada bem planejada, 
+onde as instruções conseguem seguir seu caminho sem grandes interrupções, alcançando o destino final de forma 
+eficiente e eficaz.
