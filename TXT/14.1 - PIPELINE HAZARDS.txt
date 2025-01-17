@@ -1,0 +1,27 @@
+                                     PIPELINE HAZARDS
+
+ Pipeline hazards ou obstáculos no pipeline, são desafios que surgem no funcionamento de pipelines de instruções 
+nos processadores, limitando o fluxo contínuo das operações. Imagine uma linha de montagem onde cada etapa é 
+cuidadosamente planejada para funcionar de forma sincronizada, como a produção de carros em uma fábrica. Se uma etapa 
+atrasar ou faltar um componente essencial, toda a cadeia pode ser impactada, causando interrupções. No pipeline de um 
+processador, essas interrupções são chamadas de hazards ou obstáculos, e são responsáveis por atrasar a execução 
+ideal das instruções.
+
+ Existem diferentes tipos de pipeline hazards, cada um relacionado a causas específicas. Alguns surgem quando os 
+recursos do processador não são suficientes para atender a múltiplas instruções simultaneamente, como duas pessoas 
+tentando usar o mesmo caixa eletrônico ao mesmo tempo. Outros aparecem quando uma instrução precisa de um dado que 
+ainda não está pronto, como tentar colocar a cobertura em um bolo que ainda está assando. E há também os hazards que 
+ocorrem em situações de controle, quando o processador não tem certeza sobre qual caminho seguir, algo parecido com 
+se perder em uma bifurcação sem sinalização clara.
+
+ Esses obstáculos são importantes porque afetam diretamente o desempenho do pipeline. Em teoria, o pipeline deve 
+permitir que várias instruções sejam executadas em paralelo, aumentando a velocidade geral do processador. Mas, na 
+prática, os hazards criam momentos de inatividade, conhecidos como stalls, que impedem o pipeline de alcançar todo o 
+seu potencial. Esses momentos de pausa não apenas diminuem a eficiência, mas também aumentam o tempo necessário para 
+completar as tarefas, algo que engenheiros e desenvolvedores trabalham arduamente para minimizar.
+
+ Felizmente, existem técnicas avançadas para lidar com esses desafios. Soluções como previsão de saltos, técnicas de 
+repasse de dados e recursos adicionais no hardware ajudam a reduzir os impactos dos hazards. Entender como esses 
+obstáculos funcionam e quais estratégias podem mitigá-los é essencial para projetar processadores mais rápidos e 
+eficientes. Essa base de conhecimento é um passo fundamental para quem deseja explorar os detalhes do funcionamento 
+do pipeline em arquiteturas modernas.
