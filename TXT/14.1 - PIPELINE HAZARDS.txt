@@ -27,6 +27,7 @@ eficientes. Essa base de conhecimento é um passo fundamental para quem deseja e
 do pipeline em arquiteturas modernas.
 
 
+
                                      Stalls no Pipeline
 
  Os stalls  são como pequenas pausas ou engasgos que ocorrem durante a execução de instruções em um processador. 
@@ -47,3 +48,25 @@ reduzir o tempo de espera ou encontrar formas de preencher essas pausas com trab
 como previsão de saltos ajudam a antecipar decisões, enquanto o repasse de dados permite que informações sejam 
 utilizadas antes mesmo de concluídas em outros estágios. Entender e lidar com stalls é essencial para otimizar o 
 desempenho de processadores modernos e garantir que o pipeline funcione de maneira mais eficiente e fluida.
+
+
+
+                                     Bolhas no Pipeline
+
+ As bolhas (bubbles) no pipeline são períodos de inatividade criados intencionalmente dentro do fluxo de instruções 
+para lidar com situações que impedem o progresso contínuo. Imagine o pipeline como uma esteira rolante em uma linha 
+de montagem, onde cada etapa deve ser ocupada o tempo todo para maximizar a eficiência. Uma bolha é como um espaço 
+vazio na esteira, ela não carrega nenhum trabalho útil, mas serve para manter o ritmo enquanto a esteira aguarda 
+que os materiais necessários para a próxima etapa estejam disponíveis.
+
+ Essas bolhas geralmente aparecem quando uma instrução depende de algo que ainda não foi concluído em uma etapa 
+anterior do pipeline. Por exemplo, se uma instrução precisa de um dado que está sendo calculado por outra instrução 
+em execução, o pipeline insere uma bolha para "esperar" que o dado fique pronto. Durante esse tempo, nenhuma nova 
+operação é realizada naquela etapa específica, e isso cria uma pausa temporária. Essa pausa, embora pareça 
+ineficiente, é necessária para garantir que as instruções sejam executadas corretamente, sem conflitos ou erros.
+
+ Embora as bolhas sejam inevitáveis em algumas situações, elas também representam uma perda de desempenho 
+potencial, já que o pipeline não está operando em sua capacidade máxima. Por isso, projetar maneiras de reduzir ou 
+eliminar bolhas é uma prioridade no desenvolvimento de processadores modernos. Técnicas como forwarding (repasse de 
+dados) e predição de saltos ajudam a evitar que essas "pausas" se tornem frequentes, garantindo que o pipeline 
+continue fluindo o mais próximo possível do ideal, como uma esteira que nunca para de entregar resultados.
