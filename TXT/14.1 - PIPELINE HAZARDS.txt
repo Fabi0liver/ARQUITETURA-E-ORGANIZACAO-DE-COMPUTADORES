@@ -70,3 +70,148 @@ potencial, já que o pipeline não está operando em sua capacidade máxima. Por
 eliminar bolhas é uma prioridade no desenvolvimento de processadores modernos. Técnicas como forwarding (repasse de 
 dados) e predição de saltos ajudam a evitar que essas "pausas" se tornem frequentes, garantindo que o pipeline 
 continue fluindo o mais próximo possível do ideal, como uma esteira que nunca para de entregar resultados.
+
+
+
+                                      "Data Hazards"
+
+ Os data hazards ou hazards de dados surgem quando há dependências entre instruções no pipeline que causam 
+conflitos no uso de dados. No pipeline, as instruções são divididas em várias etapas que operam em paralelo, mas, 
+quando uma instrução depende de um dado que outra ainda está processando, o fluxo é interrompido. É como tentar 
+pegar um livro emprestado de alguém que ainda está lendo; você precisa esperar que a pessoa termine antes de poder 
+usá-lo. Esses conflitos são inevitáveis em pipelines, mas entender como eles ocorrem é essencial para encontrar 
+maneiras de minimizá-los.
+
+ O impacto dos data hazards no desempenho do pipeline é significativo. Eles introduzem atrasos, conhecidos como 
+stalls ou bolhas, que impedem o processamento contínuo das instruções. Isso significa que, em vez de aproveitar a 
+capacidade total do processador, o pipeline fica parcialmente ocioso enquanto espera a resolução do hazard. Esse 
+problema é comum em aplicações que fazem uso intensivo de cálculos e manipulações de dados, como jogos e softwares 
+de engenharia.
+
+ Existem diferentes tipos de dependências que causam data hazards, cada uma com características específicas e 
+soluções próprias. Essas dependências são classificadas como RAW (Read After Write), WAR (Write After Read) e WAW 
+(Write After Write). Vamos explorar cada uma delas em detalhes, entender como se manifestam e como podem ser 
+resolvidas para melhorar o fluxo do pipeline.
+
+
+ * RAW (Read After Write): É um tipo de dependência que causa o data hazards, esse tipo de conflito que ocorre no 
+  pipeline quando uma instrução tenta ler um dado que ainda está sendo escrito por uma instrução anterior. Em 
+  outras palavras, é como se uma pessoa estivesse aguardando a conclusão de uma tarefa de outra pessoa, mas sem 
+  saber que o trabalho ainda não foi finalizado. Isso pode levar a problemas, pois a instrução subsequente pode 
+  tentar usar um valor que ainda não foi atualizado corretamente, comprometendo o resultado final.
+
+   Imagine que você está em uma biblioteca, e uma pessoa está fazendo anotações em um livro (escrita). Você está 
+  logo atrás dessa pessoa e precisa ler o mesmo livro para escrever seu próprio relatório (leitura). Se você tentar 
+  começar a ler o livro antes de a primeira pessoa terminar de escrever, você pode acabar lendo informações erradas 
+  ou desatualizadas, o que prejudica seu próprio trabalho. No pipeline, a dependência RAW  ocorre quando a 
+  instrução que realiza a leitura tenta acessar um dado que ainda está sendo processado por uma instrução anterior, 
+  resultando em um valor incorreto sendo usado.
+
+   Exemplo de dependência RAW :
+
+                                Considerando as instruções:  1. ADD R1, R2, R3 ; (R1 = R2 + R3) 
+                                                             2. SUB R4, R1, R5 ; (R4 = R1 - R5)
+
+                                A instrução 1 realiza uma soma entre os valores R2 e R3 e armazena o resultado em 
+                               R1. Já a instrução 2, que realiza uma subtração, depende do valor atualizado de R1 
+                               para completar sua operação. Se o pipeline não estiver gerenciando adequadamente o 
+                               tempo de execução, a instrução 2 pode tentar acessar o registrador R1 antes que a 
+                               soma da instrução 1 seja completada. Nesse caso, a instrução 2 pode usar um valor 
+                               desatualizado de R1, o que resulta em um cálculo incorreto. Esse erro é o que 
+                               chamamos de dependência RAW , a instrução subsequente está tentando ler um valor que 
+                               ainda não foi escrito corretamente.
+
+   Em suma, esse tipo de conflito é uma consequência natural das dependências de leitura e escrita entre 
+  instruções. Quando uma instrução depende de um dado que está sendo alterado por uma instrução anterior, a 
+  dependência RAW surge como um obstáculo para a execução eficiente no pipeline. Embora seja um desafio comum, sua 
+  presença destaca a importância de um gerenciamento adequado das dependências de dados, para garantir que as 
+  instruções sejam executadas corretamente e sem comprometer o resultado final do processamento.
+
+
+ * WAR (Write After Read): É outro tipo de dependência que causa o data hazards, esse tipo de conflito que ocorre 
+  no pipeline, mas de uma forma oposta a dependência RAW . Ele acontece quando uma instrução tenta escrever em um 
+  dado que uma instrução anterior ainda precisa ler. Isso cria uma situação em que a instrução subsequente pode 
+  alterar um dado antes que a instrução anterior tenha a chance de usá-lo corretamente. Esse tipo de dependência é 
+  menos comum, mas pode ser tão problemático quanto a dependência RAW, pois pode levar a resultados incorretos 
+  quando a ordem das operações não é respeitada.
+
+   Para entender melhor, imagine que você está organizando uma fila para o uso de um computador. A primeira pessoa 
+  na fila precisa visualizar um documento em um monitor (leitura). A segunda pessoa, que está logo atrás, precisa 
+  alterar esse documento (escrita), mas não pode começar até que a primeira termine de ver o conteúdo. Se a segunda 
+  pessoa começar a editar o documento antes da primeira visualizar o que é necessário, o conteúdo alterado pode não 
+  ser o esperado, comprometendo o trabalho de ambos. Da mesma forma, no pipeline, a dependência WAR ocorre quando a 
+  instrução de escrita precisa ocorrer depois de uma leitura, mas acaba sendo executada fora de ordem.
+
+   Exemplo de dependência WAR:
+
+                               Considerando as instruções: 1. ADD R1, R2, R3 ; (R1 = R2 + R3)
+                                                           2. SUB R2, R1, R5 ; (R2 = R1 - R5)
+
+                               Na instrução 1, o valor de R1 é atualizado com a soma de R2 e R3. Já a instrução 2 
+                              tenta escrever em R2, utilizando o valor de R1. O problema aqui é que, no pipeline, 
+                              se a instrução 2 tentar escrever em R2 antes que a instrução 1 termine de ler R2, o 
+                              valor de R2 usado na instrução 2 pode ser incorreto, pois a instrução 1 ainda não 
+                              completou sua operação. Isso pode gerar um resultado errado e comprometer o processo. 
+                              Esse conflito é conhecido como dependência WAR , pois há uma tentativa de escrita em 
+                              R2 depois que ele foi lido na instrução anterior, mas a ordem das operações pode não 
+                              ser respeitada.
+
+   Em suma, a dependência WAR  é um desafio quando há uma dependência de escrita após uma leitura, pois ele pode 
+  levar a um resultado incorreto caso as instruções sejam executadas fora de ordem. Embora não seja tão comum 
+  quanto a dependência RAW, ela é igualmente importante entende-lá, pois pode causar erros se o pipeline não 
+  gerenciar corretamente a sequência de operações. Entender como esse tipo de conflito funciona e suas implicações 
+  é essencial para garantir que as instruções sejam executadas corretamente e que os dados utilizados estejam 
+  atualizados de acordo com a necessidade de cada instrução.
+
+
+ * WAW (Write After Write): É mais um tipo de dependência que causa o data hazards, esse tipo de conflito ocorre 
+  quando duas instruções tentam escrever no mesmo registrador, mas em uma ordem incorreta. Em outras palavras nesse 
+  tipo de conflito, uma instrução posterior tenta escrever em um dado (ou registrador) que já será sobrescrito por 
+  uma instrução anterior, antes que o valor atualizado seja utilizado ou processado. Esse tipo de dependência é 
+  menos frequente que os outros dois, mas ainda pode causar sérios problemas, pois pode resultar em a última 
+  escrita não ser a esperada, comprometendo o resultado final.
+
+   Para entender melhor, imagine que duas pessoas estão escrevendo no mesmo caderno, mas com a mesma página. A 
+  primeira pessoa vai escrever uma informação importante, mas, antes de terminar, a segunda pessoa também escreve   
+  algo na mesma página. O problema é que, se a segunda pessoa escrever antes da primeira, o conteúdo da primeira 
+  será sobrescrito, e a informação final no caderno será incorreta. No pipeline, esse tipo de dependência acontece 
+  quando duas instruções tentam escrever no mesmo registrador em uma ordem que pode causar a perda de dados 
+  importantes.
+
+   Exemplo de dependência WAW:
+
+                               Considerando as instruções: 1. ADD R1, R2, R3 ; (R1 = R2 + R3)
+                                                         2. SUB R1, R4, R5 ; (R1 = R4 - R5)
+
+                               Na instrução 1, R1 é atualizado com a soma de R2 e R3. Na instrução 2, R1 será        
+                              atualizado novamente, mas com o valor de R4 menos R5. A dependência WAW ocorre 
+                              porque, no pipeline, se a instrução 2 tentar sobrescrever R1 antes que a instrução 1 
+                              termine de escrever seu resultado, a última atualização pode não ser a correta, já 
+                              que o valor de R1 calculado pela instrução 1 não foi efetivamente gravado antes da 
+                              escrita de R1 pela instrução 2. Esse erro pode levar a um resultado incorreto, já que 
+                              a ordem de escrita foi violada.
+
+   Em suma,  dependência WAW  é um tipo de conflito que ocorre quando há múltiplas instruções tentando escrever no 
+  mesmo registrador, mas na ordem errada. Embora menos comum, ele pode ter impactos significativos no resultado 
+  final de um programa, pois pode resultar na perda ou alteração de valores cruciais. Para evitar esse tipo de 
+  problema, é fundamental garantir que as instruções no pipeline respeitem a ordem correta de escrita. Se o 
+  pipeline não gerenciar isso corretamente, o programa pode produzir resultados errados, comprometendo a execução e 
+  o comportamento do sistema como um todo.
+
+ Em resumo, Os data hazards são desafios inevitáveis no funcionamento dos pipelines, mas também fazem parte do 
+processo de evolução da arquitetura de processadores. Assim como um carro precisa de ajustes na suspensão e nos 
+pneus para garantir que o movimento seja fluido e eficiente, o pipeline de um processador precisa ser otimizado 
+para lidar com as dependências de dados que surgem durante a execução das instruções. Essas dependências, como os  
+RAW, WAR e WAW, são obstáculos naturais, mas superáveis, na busca por um desempenho mais rápido e eficaz.
+
+ Compreender as diferentes dependências de dados e como elas afetam a execução das instruções no pipeline é 
+essencial para projetar sistemas computacionais mais rápidos e confiáveis. É como entender as leis do tráfego: 
+quando se conhece o comportamento dos carros (ou dados) nas vias (ou pipelines), fica mais fácil planejar as rotas 
+para evitar engarrafamentos e garantir que o fluxo de trabalho seja contínuo. Essa compreensão leva a soluções mais 
+inteligentes, evitando que as instruções se bloqueiem ou aguardem em uma fila desnecessária.
+
+ Aprofundar-se nos data hazards é uma etapa fundamental para quem deseja otimizar o desempenho de sistemas 
+computacionais, seja no desenvolvimento de processadores ou na criação de algoritmos mais eficientes. Embora esses 
+obstáculos pareçam complicados, eles são uma parte importante do aprendizado para engenheiros e desenvolvedores que 
+buscam garantir que o pipeline de dados seja o mais ágil e eficiente possível, funcionando como uma máquina bem 
+lubrificada que executa tarefas com rapidez e precisão.
