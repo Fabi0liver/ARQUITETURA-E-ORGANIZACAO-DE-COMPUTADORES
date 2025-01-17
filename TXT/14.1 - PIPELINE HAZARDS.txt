@@ -2,26 +2,48 @@
 
  Pipeline hazards ou obstáculos no pipeline, são desafios que surgem no funcionamento de pipelines de instruções 
 nos processadores, limitando o fluxo contínuo das operações. Imagine uma linha de montagem onde cada etapa é 
-cuidadosamente planejada para funcionar de forma sincronizada, como a produção de carros em uma fábrica. Se uma etapa 
-atrasar ou faltar um componente essencial, toda a cadeia pode ser impactada, causando interrupções. No pipeline de um 
-processador, essas interrupções são chamadas de hazards ou obstáculos, e são responsáveis por atrasar a execução 
-ideal das instruções.
+cuidadosamente planejada para funcionar de forma sincronizada, como a produção de carros em uma fábrica. Se uma 
+etapa atrasar ou faltar um componente essencial, toda a cadeia pode ser impactada, causando interrupções. No 
+pipeline de um processador, essas interrupções são chamadas de hazards ou obstáculos, e são responsáveis por 
+atrasar a execução ideal das instruções.
 
  Existem diferentes tipos de pipeline hazards, cada um relacionado a causas específicas. Alguns surgem quando os 
 recursos do processador não são suficientes para atender a múltiplas instruções simultaneamente, como duas pessoas 
 tentando usar o mesmo caixa eletrônico ao mesmo tempo. Outros aparecem quando uma instrução precisa de um dado que 
-ainda não está pronto, como tentar colocar a cobertura em um bolo que ainda está assando. E há também os hazards que 
-ocorrem em situações de controle, quando o processador não tem certeza sobre qual caminho seguir, algo parecido com 
-se perder em uma bifurcação sem sinalização clara.
+ainda não está pronto, como tentar colocar a cobertura em um bolo que ainda está assando. E há também os hazards 
+que ocorrem em situações de controle, quando o processador não tem certeza sobre qual caminho seguir, algo parecido 
+com se perder em uma bifurcação sem sinalização clara.
 
  Esses obstáculos são importantes porque afetam diretamente o desempenho do pipeline. Em teoria, o pipeline deve 
 permitir que várias instruções sejam executadas em paralelo, aumentando a velocidade geral do processador. Mas, na 
-prática, os hazards criam momentos de inatividade, conhecidos como stalls, que impedem o pipeline de alcançar todo o 
-seu potencial. Esses momentos de pausa não apenas diminuem a eficiência, mas também aumentam o tempo necessário para 
-completar as tarefas, algo que engenheiros e desenvolvedores trabalham arduamente para minimizar.
+prática, os hazards criam momentos de inatividade, conhecidos como stalls, que impedem o pipeline de alcançar todo 
+o seu potencial. Esses momentos de pausa não apenas diminuem a eficiência, mas também aumentam o tempo necessário 
+para completar as tarefas, algo que engenheiros e desenvolvedores trabalham arduamente para minimizar.
 
- Felizmente, existem técnicas avançadas para lidar com esses desafios. Soluções como previsão de saltos, técnicas de 
-repasse de dados e recursos adicionais no hardware ajudam a reduzir os impactos dos hazards. Entender como esses 
+ Felizmente, existem técnicas avançadas para lidar com esses desafios. Soluções como previsão de saltos, técnicas 
+de repasse de dados e recursos adicionais no hardware ajudam a reduzir os impactos dos hazards. Entender como esses 
 obstáculos funcionam e quais estratégias podem mitigá-los é essencial para projetar processadores mais rápidos e 
 eficientes. Essa base de conhecimento é um passo fundamental para quem deseja explorar os detalhes do funcionamento 
 do pipeline em arquiteturas modernas.
+
+
+                                     Stalls no Pipeline
+
+ Os stalls  são como pequenas pausas ou engasgos que ocorrem durante a execução de instruções em um processador. 
+Imagine que você está em uma fila para comprar ingressos, e cada pessoa leva exatamente o mesmo tempo para ser 
+atendida. De repente, alguém esquece a carteira ou precisa confirmar informações, atrasando toda a fila. No 
+pipeline de um processador, os stalls representam esses momentos em que o fluxo regular das instruções é 
+interrompido porque o processador precisa esperar que algo esteja pronto ou resolvido antes de continuar.
+
+ Essas pausas podem acontecer por diferentes razões, como quando uma instrução depende de dados que ainda estão 
+sendo processados em outro estágio do pipeline ou quando há incertezas sobre qual caminho seguir em uma decisão de 
+controle. Durante um stall, o pipeline fica parcialmente ocioso, ou seja, algumas partes do processador não estão 
+executando trabalho útil, esperando que o problema seja resolvido. Isso reduz temporariamente a eficiência do 
+pipeline, já que o objetivo principal é manter todas as etapas em funcionamento contínuo, como uma linha de 
+montagem perfeitamente sincronizada.
+
+ Embora os stalls sejam inevitáveis em certas situações, existem técnicas para minimizar seu impacto. A ideia é 
+reduzir o tempo de espera ou encontrar formas de preencher essas pausas com trabalho útil. Por exemplo, estratégias 
+como previsão de saltos ajudam a antecipar decisões, enquanto o repasse de dados permite que informações sejam 
+utilizadas antes mesmo de concluídas em outros estágios. Entender e lidar com stalls é essencial para otimizar o 
+desempenho de processadores modernos e garantir que o pipeline funcione de maneira mais eficiente e fluida.
