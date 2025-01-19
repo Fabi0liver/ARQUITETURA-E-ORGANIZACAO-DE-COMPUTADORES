@@ -358,34 +358,50 @@ importantes do que nunca.
 
                                          Lei de Amdahl
 
-A Lei de Amdahl é um conceito muito importante no campo do paralelismo, que nos ajuda a entender os limites da aceleração de tarefas quando utilizamos múltiplos processadores ou núcleos. Ela foi formulada por Gene Amdahl, um cientista da computação, para ilustrar que, por mais que possamos dividir uma tarefa em partes que podem ser feitas ao mesmo tempo (paralelismo), sempre haverá uma parte do trabalho que precisa ser feito de forma sequencial. Essa parte sequencial limita o quanto podemos acelerar o processo como um todo, não importa quantos núcleos ou processadores usemos.
+ A Lei de Amdahl é um conceito muito importante no campo do paralelismo, que nos ajuda a entender os limites da 
+aceleração de tarefas quando utilizamos múltiplos processadores ou núcleos. Ela foi formulada por Gene Amdahl, um 
+cientista da computação, para ilustrar que, por mais que possamos dividir uma tarefa em partes que podem ser feitas 
+ao mesmo tempo (paralelismo), sempre haverá uma parte do trabalho que precisa ser feito de forma sequencial. Essa 
+parte sequencial limita o quanto podemos acelerar o processo como um todo, não importa quantos núcleos ou 
+processadores usemos.
 
-Vamos pensar na analogia de uma equipe de pessoas fazendo um trabalho em conjunto. Se 75% do trabalho pode ser dividido entre várias pessoas, mas os outros 25% precisam ser feitos por uma única pessoa, mesmo que você adicione mais pessoas para o restante do trabalho, o tempo total não será proporcional ao número de pessoas, já que aquela parte dos 25% não pode ser acelerada. Ou seja, adicionar mais pessoas para o que pode ser feito simultaneamente traz benefícios, mas a parte que precisa ser feita por apenas uma pessoa continua sendo um fator limitante.
+ Vamos pensar na analogia de uma equipe de pessoas fazendo um trabalho em conjunto. Se 75% do trabalho pode ser 
+dividido entre várias pessoas, mas os outros 25% precisam ser feitos por uma única pessoa, mesmo que você adicione 
+mais pessoas para o restante do trabalho, o tempo total não será proporcional ao número de pessoas, já que aquela 
+parte dos 25% não pode ser acelerada. Ou seja, adicionar mais pessoas para o que pode ser feito simultaneamente 
+traz benefícios, mas a parte que precisa ser feita por apenas uma pessoa continua sendo um fator limitante.
 
-Fórmula da Lei de Amdahl: A Lei de Amdahl pode ser expressa de forma matemática pela seguinte fórmula:
+ * Fórmula da Lei de Amdahl: A Lei de Amdahl pode ser expressa de forma matemática pela seguinte fórmula:
 
-                    S = 1 / ((1 - P) + (P / N))
-Onde:
+                              S = 1 / ((1 - P) + (P / N))
 
-"S" é o speedup (aceleração) do sistema, ou seja, o quanto conseguimos reduzir o tempo total de execução.
+   Onde: "S" é o speedup (aceleração) do sistema, ou seja, o quanto conseguimos reduzir o tempo total de execução.
 
-"P" é a fração do trabalho que pode ser paralelizada (o quanto da tarefa pode ser dividida entre vários processadores),
+         "P" é a fração do trabalho que pode ser paralelizada (o quanto da tarefa pode ser dividida entre vários         
+         processadores).
 
-"N" é o número de processadores ou núcleos que estamos utilizando.
-
-Exemplo Prático:
-
-Agora, vamos aplicar a fórmula a um exemplo prático. Imagine que temos uma tarefa de 100 segundos e 75% dela pode ser paralelizada (P = 0.75). Isso significa que 25% da tarefa (1 - P) precisa ser feita sequencialmente.
-
-Se usarmos 4 processadores (N = 4), o tempo total de execução seria calculado da seguinte forma:
-
-S = 1 / ((1 - 0.75) + (0.75 / 4))
-S = 1 / (0.25 + 0.1875)
-S = 1 / 0.4375
-S ≈ 2.29
-
-Isso significa que, com 4 processadores, o speedup que conseguimos é de aproximadamente 2.29 vezes. Ou seja, a tarefa, que originalmente levaria 100 segundos, agora será concluída em cerca de 43,7 segundos. Porém, como vemos, o ganho de desempenho não é proporcional a 4 (não reduzimos o tempo pela quarta parte), porque os 25% de trabalho sequencial ainda impactam no tempo total.
+         "N" é o número de processadores ou núcleos que estamos utilizando.
 
 
-Em suma, a Lei de Amdahl nos lembra que, mesmo com o uso de múltiplos processadores, sempre haverá uma parte do trabalho que não pode ser paralelizada. Portanto, para obter um ganho significativo de desempenho, é fundamental reduzir ao máximo a fração sequencial do trabalho. Quando projetamos sistemas paralelos, devemos considerar não apenas a quantidade de núcleos, mas também a natureza do problema e a fração que pode ser paralelizada. Esse equilíbrio é essencial para otimizar o desempenho de qualquer sistema computacional.
+ * Exemplo Prático: Agora, vamos aplicar a fórmula a um exemplo prático. Imagine que temos uma tarefa de 100 
+  segundos e 75% dela pode ser paralelizada (P = 0.75). Isso significa que 25% da tarefa (1 - P) precisa ser feita 
+  sequencialmente.
+
+   Se usarmos 4 processadores (N = 4), o tempo total de execução seria calculado da seguinte forma:
+
+                         S = 1 / ((1 - 0.75) + (0.75 / 4))
+                         S = 1 / (0.25 + 0.1875)
+                         S = 1 / 0.4375
+                         S ≈ 2.29
+
+   Isso significa que, com 4 processadores, o speedup que conseguimos é de aproximadamente 2.29 vezes. Ou seja, a 
+  tarefa, que originalmente levaria 100 segundos, agora será concluída em cerca de 43,7 segundos. Porém, como 
+  vemos, o ganho de desempenho não é proporcional a 4 (não reduzimos o tempo pela quarta parte), porque os 25% de 
+  trabalho sequencial ainda impactam no tempo total.
+
+ Em suma, a Lei de Amdahl nos lembra que, mesmo com o uso de múltiplos processadores, sempre haverá uma parte do 
+trabalho que não pode ser paralelizada. Portanto, para obter um ganho significativo de desempenho, é fundamental 
+reduzir ao máximo a fração sequencial do trabalho. Quando projetamos sistemas paralelos, devemos considerar não 
+apenas a quantidade de núcleos, mas também a natureza do problema e a fração que pode ser paralelizada. Esse 
+equilíbrio é essencial para otimizar o desempenho de qualquer sistema computacional.
 
