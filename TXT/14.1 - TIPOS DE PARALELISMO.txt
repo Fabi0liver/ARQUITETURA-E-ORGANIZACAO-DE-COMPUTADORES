@@ -280,7 +280,7 @@ computacional.
 
 
 
-                           "Conclusão sobre os Tipos de Paralelismo"
+                             "Conclusão sobre os Tipos de Paralelismo"
 
  Os diferentes tipos de paralelismo que exploramos são como ferramentas especializadas em um conjunto de 
 ferramentas de trabalho. Cada tipo, seja o paralelismo de dados, de tarefas, de instruções ou de processos, tem um 
