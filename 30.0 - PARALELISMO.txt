@@ -1,32 +1,4 @@
-                                           PARALELISMO
-
- O paralelismo é uma técnica utilizada na computação para realizar várias tarefas ao mesmo tempo, em vez 
-de uma de cada vez. Pense no seguinte: se você tivesse que organizar uma festa sozinho, você faria tudo de 
-maneira sequencial, uma tarefa após a outra — decorar o ambiente, preparar a comida, organizar a música. 
-Agora, imagine se você pudesse dividir essas tarefas entre várias pessoas. Enquanto alguém monta a decoração,
-outra pessoa cuida da comida, e uma terceira ajusta a playlist. O resultado? Tudo é feito mais rápido, e 
-você consegue concluir o trabalho em menos tempo. Esse é o princípio básico do paralelismo aplicado aos 
-computadores.
-
- Nos sistemas de computação, a ideia central do paralelismo é semelhante. Um grande problema é quebrado em 
-pedaços 
-menores e independentes, e cada um desses pedaços pode ser resolvido simultaneamente. Ao invés de processar um 
-conjunto de instruções de forma linear (ou seja, uma de cada vez), diferentes partes do problema podem ser 
-processadas ao mesmo tempo, o que maximiza o uso dos recursos disponíveis, como os processadores (CPUs) e a 
-memória do sistema. Isso resulta em uma aceleração significativa, especialmente quando lidamos com grandes 
-volumes de dados ou cálculos complexos.
-
- Essa abordagem faz muito sentido no mundo atual, onde nossos dispositivos possuem múltiplos núcleos de 
-processamento (como os computadores e smartphones modernos). Cada núcleo pode lidar com uma tarefa separada, 
-aumentando a eficiência do sistema. É como ter várias mãos trabalhando juntas para um objetivo comum. Sem o 
-paralelismo, seria como usar apenas uma dessas mãos, enquanto as outras ficam paradas, esperando sua vez. Isso, 
-claro, não seria a forma mais inteligente de aproveitar todo o potencial que temos disponível.
-
- Em resumo, o paralelismo é fundamental para melhorar o desempenho de sistemas de computação. Ele permite que 
-múltiplas operações sejam realizadas ao mesmo tempo, o que é crucial em um mundo onde os dados crescem 
-exponencialmente e a necessidade de processá-los rapidamente é cada vez maior. Com isso em mente, ao aprofundarmos 
-no conceito, entenderemos como ele se aplica a diferentes áreas da tecnologia e quais são os desafios que ele traz.
-
+                                          
 
 
                                     "Processos vs. Threads"
@@ -522,7 +494,7 @@ complexas de maneira mais eficaz.
 
 
 
-                      "Ferramentas e Tecnologias para Paralelismo"
+                         "Ferramentas e Tecnologias para Paralelismo"
 
  Nos últimos anos, tanto o hardware quanto o software evoluíram significativamente para apoiar e otimizar o 
 paralelismo em diversas aplicações. Essa evolução é crucial para atender à crescente demanda por processamento 
