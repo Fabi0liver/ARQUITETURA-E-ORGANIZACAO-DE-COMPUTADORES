@@ -77,3 +77,89 @@ ingredientes usar (dados), a Taxonomia de Flynn nos ajuda a identificar a maneir
 tarefas computacionais em diferentes cenários.
 
 
+
+                         "SISD: Single Instruction, Single Data"
+
+ O conceito de SISD  é uma das formas mais simples de arquitetura de computação, em que um único processador 
+executa uma única instrução em um único dado por vez. Esse tipo de arquitetura reflete a ideia de processamento 
+sequencial, onde as operações são realizadas uma após a outra, sem que haja a possibilidade de realizar múltiplas 
+tarefas simultaneamente. O SISD é comumente encontrado em sistemas mais antigos ou em tarefas simples que não 
+exigem processamento paralelo ou grande capacidade computacional. Em outras palavras, é como se estivéssemos 
+lidando com um único operário em uma linha de montagem, que realiza cada etapa do processo de forma ordenada, sem 
+se apressar para fazer várias coisas ao mesmo tempo.
+
+ No contexto da computação moderna, o SISD pode ser visto como uma arquitetura limitada em termos de eficiência, já 
+que, à medida que as demandas por maior poder computacional aumentaram, surgiram novas arquiteturas que permitem a 
+execução simultânea de várias tarefas. Entretanto, ainda é importante entender o SISD, pois ele serve como base 
+para outras arquiteturas mais complexas, sendo fundamental para compreender a evolução dos processadores e sistemas 
+de computação. A simplicidade do SISD torna-o adequado para determinadas tarefas, onde a complexidade paralela não 
+é necessária e o desempenho de um único processador é suficiente.
+
+ * Funcionamento do SISD: Em um sistema SISD, as instruções são processadas de forma sequencial: o processador 
+  busca uma instrução da memória, a executa, manipula um dado específico e, em seguida, passa para a próxima  
+  instrução. Imagine que você tenha uma máquina de café e um único operador. Esse operador executa uma tarefa por 
+  vez: ele pega uma xícara, coloca no local certo, prepara o café e depois passa para a próxima xícara. Não há 
+  aceleração ou simultaneidade no processo. Cada ação deve ser concluída antes da próxima começar.
+
+   Essa execução sequencial limita a velocidade do processamento, pois cada dado é manipulado separadamente, sem 
+  aproveitar os avanços da computação paralela. Assim, enquanto um dado é processado, o sistema precisa esperar até  
+  que esse ciclo seja concluído antes de passar para o próximo. Isso pode ser eficiente em tarefas simples e de 
+  pequeno volume, mas torna-se uma limitação para operações mais complexas e com grandes quantidades de dados.
+
+
+ * Vantagens do SISD:
+
+    Simplicidade de Implementação: O SISD é fácil de implementar e projetar, pois não há necessidade de gerenciar 
+                                  múltiplos fluxos de dados ou instruções. Ele oferece uma arquitetura simples e de 
+                                  baixo custo, que pode ser ideal para dispositivos e sistemas simples.
+
+    Eficiência para Tarefas Simples: Para tarefas simples que não exigem processamento paralelo, como em sistemas 
+                                    embarcados ou cálculos básicos, o SISD pode ser altamente eficiente, já que não 
+                                    há sobrecarga de gerenciar complexidade extra.
+
+    Baixo Custo de Hardware: Como não requer múltiplos núcleos ou processadores, os sistemas SISD são mais baratos 
+                            em termos de hardware, tornando-os acessíveis para aplicações em que o desempenho 
+                            paralelo não é necessário.
+
+
+ * Limitações do SISD:
+
+    Desempenho Limitado: Como o SISD executa uma instrução por vez em um único dado, ele não consegue aproveitar o 
+                        poder dos processadores modernos que possuem múltiplos núcleos. Isso significa que o 
+                        desempenho é limitado, especialmente em tarefas que exigem grandes volumes de dados ou 
+                        operações complexas.
+
+    Escalabilidade Restrita: O SISD não permite escalar o desempenho de forma significativa, pois ele depende de um 
+                            único processador. Isso pode ser uma limitação importante em ambientes que exigem alta 
+                            performance ou precisam lidar com grandes conjuntos de dados.
+
+    Baixa Eficiência em Processamento Paralelo: O SISD não tira proveito da computação paralela, o que significa 
+                                               que ele é menos eficiente quando comparado a arquiteturas como SIMD 
+                                               (Single Instruction, Multiple Data) ou MIMD (Multiple Instruction, 
+                                               Multiple Data), que podem processar múltiplos dados ao mesmo tempo.
+
+
+ * Exemplo de Sistemas SISD: Sistemas baseados em SISD podem ser encontrados em computadores pessoais antigos, como  
+  os primeiros PCs, que possuíam processadores de um único núcleo e eram projetados para executar uma tarefa de 
+  cada vez. Esses computadores, com hardware mais simples, eram adequados para tarefas como processamento de texto 
+  e cálculos básicos, sem a necessidade de executar múltiplos processos ao mesmo tempo. Outro exemplo seria 
+  sistemas embarcados, como dispositivos de controle simples em automóveis ou aparelhos de áudio antigos, onde uma 
+  única tarefa de processamento era suficiente para o funcionamento do sistema. Em ambos os casos, a limitação de 
+  processamento era compensada pela simplicidade das operações realizadas.
+
+
+ * Desempenho do SISD: O desempenho do SISD é geralmente limitado pela capacidade do único processador que executa 
+                      as instruções de forma sequencial. Em tarefas simples, isso pode ser eficiente, mas à medida 
+                      que as exigências de processamento aumentam, a arquitetura SISD começa a se tornar um 
+                      gargalo, já que não consegue aproveitar a paralelização do trabalho. Portanto, sistemas SISD 
+                      não são ideais para tarefas que exigem grande capacidade computacional ou que envolvem 
+                      processamento de grandes volumes de dados.
+
+
+ Em suma, o SISD é uma arquitetura simples e eficiente para tarefas pequenas e com baixo volume de dados. Embora 
+sua capacidade de processamento seja limitada em comparação com arquiteturas paralelas mais avançadas, ele ainda 
+tem aplicações valiosas em sistemas de baixo custo e simplicidade. À medida que as necessidades de processamento 
+aumentam, é importante entender a evolução para arquiteturas como SIMD e MIMD, que aproveitam melhor os recursos 
+modernos de hardware e permitem um processamento mais rápido e eficiente de grandes volumes de dados.
+
+
