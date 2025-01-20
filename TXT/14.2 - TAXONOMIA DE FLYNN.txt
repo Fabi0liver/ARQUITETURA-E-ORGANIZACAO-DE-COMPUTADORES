@@ -1,25 +1,26 @@
                                        TAXONOMIA DE FLYNN
 
- A Taxonomia de Flynn é uma das classificações mais conhecidas no campo da computação, especialmente quando o assunto 
-é arquitetura de sistemas e paralelismo. Desenvolvida por Michael J. Flynn em 1966, essa taxonomia foi criada como 
-uma forma de categorizar os computadores com base em como eles lidam com instruções e dados durante o processamento. 
-Em essência, é uma estrutura que organiza sistemas computacionais de acordo com sua capacidade de executar tarefas de 
-maneira paralela, fornecendo uma visão clara sobre as diferentes abordagens para o processamento de informações.
+ A Taxonomia de Flynn é uma das classificações mais conhecidas no campo da computação, especialmente quando o 
+assunto é arquitetura de sistemas e paralelismo. Desenvolvida por Michael J. Flynn em 1966, essa taxonomia foi 
+criada como uma forma de categorizar os computadores com base em como eles lidam com instruções e dados durante o 
+processamento. Em essência, é uma estrutura que organiza sistemas computacionais de acordo com sua capacidade de 
+executar tarefas de maneira paralela, fornecendo uma visão clara sobre as diferentes abordagens para o 
+processamento de informações.
 
  No contexto histórico, a década de 1960 foi marcada por avanços significativos na computação, com o surgimento de 
-computadores cada vez mais poderosos e complexos. Entretanto, entender como esses sistemas processavam informações e 
-identificar padrões em suas arquiteturas era um desafio crescente. A Taxonomia de Flynn surgiu como uma resposta a 
-essa necessidade, oferecendo uma forma de simplificar e padronizar o entendimento das arquiteturas computacionais. 
-Isso foi especialmente útil para engenheiros e pesquisadores, que passaram a usar essa classificação como uma base 
-para projetar sistemas mais eficientes.
+computadores cada vez mais poderosos e complexos. Entretanto, entender como esses sistemas processavam informações 
+e identificar padrões em suas arquiteturas era um desafio crescente. A Taxonomia de Flynn surgiu como uma resposta 
+a essa necessidade, oferecendo uma forma de simplificar e padronizar o entendimento das arquiteturas 
+computacionais. Isso foi especialmente útil para engenheiros e pesquisadores, que passaram a usar essa 
+classificação como uma base para projetar sistemas mais eficientes.
 
- De forma simplificada, a Taxonomia de Flynn classifica os computadores em quatro categorias principais: SISD (Single 
-Instruction, Single Data), SIMD (Single Instruction, Multiple Data), MISD (Multiple Instruction, Single Data) e MIMD 
-(Multiple Instruction, Multiple Data). Cada uma dessas categorias representa uma maneira diferente de um sistema 
-lidar com instruções e dados. Para entender melhor, pense na diferença entre cozinhar sozinho em casa (SISD), 
-trabalhar com uma equipe que faz a mesma receita em várias panelas ao mesmo tempo (SIMD) ou coordenar um restaurante 
-com chefs fazendo pratos completamente diferentes ao mesmo tempo (MIMD). Essa analogia ajuda a visualizar como as  
-categorias variam na abordagem para execução de tarefas.
+ De forma simplificada, a Taxonomia de Flynn classifica os computadores em quatro categorias principais: SISD 
+(Single Instruction, Single Data), SIMD (Single Instruction, Multiple Data), MISD (Multiple Instruction, Single 
+Data) e MIMD (Multiple Instruction, Multiple Data). Cada uma dessas categorias representa uma maneira diferente de 
+um sistema lidar com instruções e dados. Para entender melhor, pense na diferença entre cozinhar sozinho em casa 
+(SISD), trabalhar com uma equipe que faz a mesma receita em várias panelas ao mesmo tempo (SIMD) ou coordenar um 
+restaurante com chefs fazendo pratos completamente diferentes ao mesmo tempo (MIMD). Essa analogia ajuda a 
+visualizar como as  categorias variam na abordagem para execução de tarefas.
 
  Embora tenha sido criada há mais de cinco décadas, a Taxonomia de Flynn ainda é relevante, pois suas categorias 
 ajudam a explicar as bases de sistemas modernos. Seja em supercomputadores, que utilizam arquiteturas MIMD para 
@@ -27,3 +28,53 @@ simulações científicas, ou em processadores gráficos, que exploram o SIMD pa
 pixels, essa taxonomia continua sendo uma referência valiosa. Ela não apenas nos ensina como os sistemas eram 
 estruturados no passado, mas também ilumina o caminho para entender as complexas arquiteturas que impulsionam a 
 tecnologia hoje.
+
+
+
+                             "Categorização na Taxonomia de Flynn"
+
+ A Taxonomia de Flynn categoriza sistemas de computação com base em dois aspectos principais: o Instruction Stream 
+(Fluxo de Instruções) e o Data Stream (Fluxo de Dados). Esses dois fluxos são fundamentais para entender como os 
+sistemas processam informações e comandos, e cada um deles pode ser classificado como Single (único) ou Multiple 
+(múltiplo). Essa combinação dá origem a diferentes tipos de sistemas, organizados de forma clara para explicar as 
+estratégias de processamento.
+
+ O Instruction Stream refere-se ao conjunto de comandos que um sistema executa. Aqui, a pergunta principal é: o 
+sistema trabalha com um único fluxo de instruções ou com vários fluxos simultaneamente? Imagine uma orquestra em 
+que as instruções seriam as partituras que os músicos seguem. Em um fluxo único de instruções, todos os músicos 
+compartilham a mesma partitura; já em fluxos múltiplos, diferentes grupos de músicos seguem partituras diferentes, 
+cada um com um conjunto específico de instruções.
+
+ Já o Data Stream foca nos dados que o sistema processa. Ele define se o sistema manipula um único conjunto de 
+dados ou vários ao mesmo tempo. Nessa analogia, os dados seriam as notas musicais nas partituras. Em um único fluxo 
+de dados, todos os músicos tocam as mesmas notas, em sincronia; com múltiplos fluxos de dados, diferentes grupos 
+podem tocar notas variadas, criando um arranjo mais complexo.
+
+ Combinando esses dois eixos, temos as bases para classificar os sistemas na Taxonomia de Flynn. Um sistema pode 
+operar, por exemplo, com um único fluxo de instruções e um único fluxo de dados (SISD), ou pode expandir para 
+múltiplos fluxos de instruções e múltiplos fluxos de dados (MIMD). Essa categorização organiza os sistemas 
+computacionais em categorias claras e permite analisar como diferentes arquiteturas se comportam e se adaptam a 
+variados problemas.
+
+ De forma simplificada, essa abordagem é como um mapa para entender a organização interna de diferentes tipos de 
+computadores. Assim como em uma receita culinária, onde você precisa saber o que será feito (instruções) e quais 
+ingredientes usar (dados), a Taxonomia de Flynn nos ajuda a identificar a maneira mais eficiente de lidar com 
+tarefas computacionais em diferentes cenários.
+
+
+                                |   Single Data   |  MUltiple Data
+                                |      Stream     |      Stream
+                   _____________|_________________|_________________
+                                |                 |                               
+                      Single    |                 |                
+                   Instruction  |       SISD      |       SIMD
+                      Steam     |                 |
+                   _____________|_________________|_________________
+                                |                 |                  
+                    Multiple    |                 |                 
+                   Instruction  |       MISD      |       MIMD      
+                    Stream      |                 |                   
+                   _____________|_________________|__________________        
+   
+
+
