@@ -1,0 +1,29 @@
+                                       TAXONOMIA DE FLYNN
+
+ A Taxonomia de Flynn é uma das classificações mais conhecidas no campo da computação, especialmente quando o assunto 
+é arquitetura de sistemas e paralelismo. Desenvolvida por Michael J. Flynn em 1966, essa taxonomia foi criada como 
+uma forma de categorizar os computadores com base em como eles lidam com instruções e dados durante o processamento. 
+Em essência, é uma estrutura que organiza sistemas computacionais de acordo com sua capacidade de executar tarefas de 
+maneira paralela, fornecendo uma visão clara sobre as diferentes abordagens para o processamento de informações.
+
+ No contexto histórico, a década de 1960 foi marcada por avanços significativos na computação, com o surgimento de 
+computadores cada vez mais poderosos e complexos. Entretanto, entender como esses sistemas processavam informações e 
+identificar padrões em suas arquiteturas era um desafio crescente. A Taxonomia de Flynn surgiu como uma resposta a 
+essa necessidade, oferecendo uma forma de simplificar e padronizar o entendimento das arquiteturas computacionais. 
+Isso foi especialmente útil para engenheiros e pesquisadores, que passaram a usar essa classificação como uma base 
+para projetar sistemas mais eficientes.
+
+ De forma simplificada, a Taxonomia de Flynn classifica os computadores em quatro categorias principais: SISD (Single 
+Instruction, Single Data), SIMD (Single Instruction, Multiple Data), MISD (Multiple Instruction, Single Data) e MIMD 
+(Multiple Instruction, Multiple Data). Cada uma dessas categorias representa uma maneira diferente de um sistema 
+lidar com instruções e dados. Para entender melhor, pense na diferença entre cozinhar sozinho em casa (SISD), 
+trabalhar com uma equipe que faz a mesma receita em várias panelas ao mesmo tempo (SIMD) ou coordenar um restaurante 
+com chefs fazendo pratos completamente diferentes ao mesmo tempo (MIMD). Essa analogia ajuda a visualizar como as  
+categorias variam na abordagem para execução de tarefas.
+
+ Embora tenha sido criada há mais de cinco décadas, a Taxonomia de Flynn ainda é relevante, pois suas categorias 
+ajudam a explicar as bases de sistemas modernos. Seja em supercomputadores, que utilizam arquiteturas MIMD para 
+simulações científicas, ou em processadores gráficos, que exploram o SIMD para manipular grandes quantidades de 
+pixels, essa taxonomia continua sendo uma referência valiosa. Ela não apenas nos ensina como os sistemas eram 
+estruturados no passado, mas também ilumina o caminho para entender as complexas arquiteturas que impulsionam a 
+tecnologia hoje.
