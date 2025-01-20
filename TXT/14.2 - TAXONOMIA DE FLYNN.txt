@@ -39,27 +39,16 @@ sistemas processam informações e comandos, e cada um deles pode ser classifica
 (múltiplo). Essa combinação dá origem a diferentes tipos de sistemas, organizados de forma clara para explicar as 
 estratégias de processamento.
 
- O Instruction Stream refere-se ao conjunto de comandos que um sistema executa. Aqui, a pergunta principal é: o 
+ O "Instruction Stream" refere-se ao conjunto de comandos que um sistema executa. Aqui, a pergunta principal é: o 
 sistema trabalha com um único fluxo de instruções ou com vários fluxos simultaneamente? Imagine uma orquestra em 
 que as instruções seriam as partituras que os músicos seguem. Em um fluxo único de instruções, todos os músicos 
 compartilham a mesma partitura; já em fluxos múltiplos, diferentes grupos de músicos seguem partituras diferentes, 
 cada um com um conjunto específico de instruções.
 
- Já o Data Stream foca nos dados que o sistema processa. Ele define se o sistema manipula um único conjunto de 
+ Já o "Data Stream" foca nos dados que o sistema processa. Ele define se o sistema manipula um único conjunto de 
 dados ou vários ao mesmo tempo. Nessa analogia, os dados seriam as notas musicais nas partituras. Em um único fluxo 
 de dados, todos os músicos tocam as mesmas notas, em sincronia; com múltiplos fluxos de dados, diferentes grupos 
 podem tocar notas variadas, criando um arranjo mais complexo.
-
- Combinando esses dois eixos, temos as bases para classificar os sistemas na Taxonomia de Flynn. Um sistema pode 
-operar, por exemplo, com um único fluxo de instruções e um único fluxo de dados (SISD), ou pode expandir para 
-múltiplos fluxos de instruções e múltiplos fluxos de dados (MIMD). Essa categorização organiza os sistemas 
-computacionais em categorias claras e permite analisar como diferentes arquiteturas se comportam e se adaptam a 
-variados problemas.
-
- De forma simplificada, essa abordagem é como um mapa para entender a organização interna de diferentes tipos de 
-computadores. Assim como em uma receita culinária, onde você precisa saber o que será feito (instruções) e quais 
-ingredientes usar (dados), a Taxonomia de Flynn nos ajuda a identificar a maneira mais eficiente de lidar com 
-tarefas computacionais em diferentes cenários.
 
 
                                 |   Single Data   |  MUltiple Data
@@ -76,5 +65,16 @@ tarefas computacionais em diferentes cenários.
                     Stream      |                 |                   
                    _____________|_________________|__________________        
    
+
+ Combinando esses dois eixos, temos as bases para classificar os sistemas na Taxonomia de Flynn. Um sistema pode 
+operar, por exemplo, com um único fluxo de instruções e um único fluxo de dados (SISD), ou pode expandir para 
+múltiplos fluxos de instruções e múltiplos fluxos de dados (MIMD). Essa categorização organiza os sistemas 
+computacionais em categorias claras e permite analisar como diferentes arquiteturas se comportam e se adaptam a 
+variados problemas.
+
+ De forma simplificada, essa abordagem é como um mapa para entender a organização interna de diferentes tipos de 
+computadores. Assim como em uma receita culinária, onde você precisa saber o que será feito (instruções) e quais 
+ingredientes usar (dados), a Taxonomia de Flynn nos ajuda a identificar a maneira mais eficiente de lidar com 
+tarefas computacionais em diferentes cenários.
 
 
