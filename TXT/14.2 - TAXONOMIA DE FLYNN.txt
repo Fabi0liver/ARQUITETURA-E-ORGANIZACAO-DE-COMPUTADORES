@@ -51,19 +51,18 @@ de dados, todos os músicos tocam as mesmas notas, em sincronia; com múltiplos 
 podem tocar notas variadas, criando um arranjo mais complexo.
 
 
-                                |   Single Data   |  MUltiple Data
-                                |      Stream     |      Stream
-                   _____________|_________________|_________________
-                                |                 |                               
-                      Single    |                 |                
-                   Instruction  |       SISD      |       SIMD
-                      Steam     |                 |
-                   _____________|_________________|_________________
-                                |                 |                  
-                    Multiple    |                 |                 
-                   Instruction  |       MISD      |       MIMD      
-                    Stream      |                 |                   
-                   _____________|_________________|__________________        
+                                       +----------------------+----------------------+
+                                       |     Single Data      |    Multiple Data     |
+                                       |       Stream         |        Stream        |
+                  +--------------------+----------------------+----------------------+
+                  |       Single       |       "SISD"         |        "SIMD"        |
+                  |    Instruction     |  Single Instruction  |  Single Instruction  |
+                  |       Stream       |      Single Data     |     Multiple Data    |
+                  +--------------------+----------------------+----------------------+
+                  |      Multiple      |         "MISD"       |        "MIMD"        |
+                  |    Instruction     | Multiple Instruction | Multiple Instruction |
+                  |       Stream       |     Single Data      |  Multiple Data       |
+                  +--------------------+----------------------+----------------------+  
    
 
  Combinando esses dois eixos, temos as bases para classificar os sistemas na Taxonomia de Flynn. Um sistema pode 
