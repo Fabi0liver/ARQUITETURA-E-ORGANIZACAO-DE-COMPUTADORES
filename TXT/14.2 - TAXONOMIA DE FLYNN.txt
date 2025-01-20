@@ -1,4 +1,4 @@
-                                       TAXONOMIA DE FLYNN
+                                        TAXONOMIA DE FLYNN
 
  A Taxonomia de Flynn é uma das classificações mais conhecidas no campo da computação, especialmente quando o 
 assunto é arquitetura de sistemas e paralelismo. Desenvolvida por Michael J. Flynn em 1966, essa taxonomia foi 
@@ -31,7 +31,7 @@ tecnologia hoje.
 
 
 
-                             "Categorização na Taxonomia de Flynn"
+                               "Categorização na Taxonomia de Flynn"
 
  A Taxonomia de Flynn categoriza sistemas de computação com base em dois aspectos principais: o Instruction Stream 
 (Fluxo de Instruções) e o Data Stream (Fluxo de Dados). Esses dois fluxos são fundamentais para entender como os 
@@ -78,7 +78,7 @@ tarefas computacionais em diferentes cenários.
 
 
 
-                         "SISD: Single Instruction, Single Data"
+                            "SISD: Single Instruction, Single Data"
 
  O conceito de SISD  é uma das formas mais simples de arquitetura de computação, em que um único processador 
 executa uma única instrução em um único dado por vez. Esse tipo de arquitetura reflete a ideia de processamento 
@@ -164,7 +164,7 @@ modernos de hardware e permitem um processamento mais rápido e eficiente de gra
 
 
 
-                        "SIMD: Single Instruction, Multiple Data"
+                           "SIMD: Single Instruction, Multiple Data"
 
  O conceito de SIMD é uma abordagem mais avançada de arquitetura de computação em comparação ao SISD, permitindo 
 que o processador execute a mesma instrução em múltiplos dados simultaneamente. Isso significa que, enquanto o SISD 
@@ -256,7 +256,7 @@ solução eficiente, especialmente quando se lida com grandes conjuntos de dados
 
 
 
-                          "MISD: Multiple Instruction, Single Data"
+                            "MISD: Multiple Instruction, Single Data"
 
  O conceito de MISD é uma das categorias menos comuns na Taxonomia de Flynn. Essa arquitetura é projetada para 
 processar um único dado por vez, mas com a aplicação de múltiplas instruções diferentes sobre ele simultaneamente. 
@@ -341,7 +341,7 @@ paralelizadas, como o SIMD e o MIMD.
 
 
 
-                        "MIMD: Multiple Instruction, Multiple Data"
+                           "MIMD: Multiple Instruction, Multiple Data"
 
  O conceito de MIMD  é uma das arquiteturas mais avançadas de computação paralela. Ao contrário do SISD (Single 
 Instruction, Single Data) e do SIMD (Single Instruction, Multiple Data), o MIMD permite que múltiplos processadores 
@@ -432,7 +432,7 @@ eficientes para uma gama ampla de problemas computacionais.
 
 
 
-                       "Comparação entre as Categorias da Taxonomia de Flynn"
+                        "Comparação entre as Categorias da Taxonomia de Flynn"
 
  As categorias da Taxonomia de Flynn descrevem diferentes maneiras de organizar a execução de instruções em uma 
 arquitetura de computador. Cada categoria define como as instruções e os dados são manipulados, e o número de 
@@ -466,7 +466,7 @@ extremamente potente e flexível para operações complexas e diversas (MIMD).
 
 
 
-                                        "SPMD e MPMD"
+                                          "SPMD e MPMD"
 
  No contexto da Taxonomia de Flynn, além das categorias tradicionais, também encontramos modelos que lidam com a 
 execução de programas e dados em ambientes paralelos. Esses modelos são úteis quando consideramos a execução de 
@@ -543,7 +543,7 @@ complexidade da execução paralela necessária.
 
 
 
-                            "Conclusão sobre a Taxonomia de Flynn"
+                               "Conclusão sobre a Taxonomia de Flynn"
 
  A Taxonomia de Flynn tem uma importância fundamental para a compreensão das arquiteturas de computadores, pois 
 fornece um framework claro e organizado para classificar os diferentes modelos de processamento. Ela permite que 
