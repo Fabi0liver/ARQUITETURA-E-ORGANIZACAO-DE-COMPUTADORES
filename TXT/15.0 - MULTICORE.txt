@@ -32,3 +32,31 @@ multi-core podem dividir suas tarefas internamente e executá-las de forma paral
 significativos. 
 
 
+
+                               "Contexto Histórico do Multi-Core"
+
+ O conceito de processadores multi-core surge a partir de uma necessidade crescente de aumentar a capacidade de 
+processamento sem aumentar significativamente o consumo de energia. Nos primeiros dias da computação, os 
+processadores tinham um único núcleo, e todo o trabalho precisava ser executado por esse único componente. À medida 
+que os requisitos de desempenho dos computadores aumentavam — especialmente com o surgimento de gráficos mais 
+complexos, vídeos em alta definição e jogos avançados — os fabricantes começaram a perceber que aumentar a 
+velocidade de um único núcleo não seria suficiente para acompanhar o ritmo da evolução tecnológica. Foi aí que a 
+ideia de múltiplos núcleos começou a ganhar forma.
+
+ Na década de 2000, com a popularização dos computadores pessoais e a demanda por maior desempenho, os principais 
+fabricantes, como Intel e AMD, começaram a explorar a ideia de colocar mais de um núcleo de processamento em um 
+único chip. Esse movimento foi uma resposta à Lei de Moore, que prevê que o número de transistores em um chip dobra 
+a cada dois anos, permitindo mais capacidade de processamento. No entanto, aumentar a velocidade de um único núcleo 
+estava chegando aos seus limites físicos, devido ao calor gerado e ao consumo excessivo de energia. Assim, os 
+engenheiros começaram a projetar chips com vários núcleos para melhorar o desempenho sem incorrer em grandes 
+aumentos de consumo de energia.
+
+ O lançamento do Intel Pentium D em 2005, com dois núcleos, e o AMD Athlon 64 X2, também em 2005, marcaram os 
+primeiros grandes passos dos processadores multi-core no mercado de consumo. No entanto, foi só em 2006, com a 
+introdução do Intel Core 2 Duo, que a tecnologia multi-core começou a se tornar mais acessível ao grande público. 
+Essa transição foi um marco importante, pois representou uma mudança de paradigma na maneira como os processadores 
+eram projetados, dando início à era dos chips multi-core. A partir daí, o desenvolvimento de processadores com 
+múltiplos núcleos se acelerou, com os fabricantes incorporando até mesmo 4, 8 e mais núcleos em seus chips, 
+acompanhando as demandas cada vez maiores por desempenho em sistemas de computação, desde computadores pessoais até 
+servidores e supercomputadores.
+
