@@ -181,7 +181,63 @@ garantir que eles atendam a diferentes necessidades computacionais.
 
 
 
-                      "Cache Compartilhada e a Coerência de Cache"
+                           "Processos e Threads em Multi-core"
+
+ Em um sistema multi-core, a execução de múltiplas tarefas ao mesmo tempo é essencial para melhorar o desempenho. 
+Para isso, os processos e threads desempenham papéis fundamentais, permitindo que o processador execute diferentes 
+operações simultaneamente. A arquitetura multi-core facilita essa paralelização, distribuindo essas tarefas entre 
+os núcleos de um processador. Imagine uma fábrica onde várias máquinas (núcleos) trabalham juntas para produzir 
+diferentes peças (tarefas). Cada máquina pode estar fazendo uma parte do trabalho ao mesmo tempo, acelerando o 
+processo de produção. No contexto de computadores, essa divisão de trabalho se dá por meio de processos e threads, 
+que permitem que o sistema execute várias operações ao mesmo tempo.
+
+ Embora os processos e as threads estejam intimamente relacionados, eles são conceitos distintos. Um processo é uma 
+unidade autônoma de execução, com seu próprio conjunto de recursos, como memória e arquivos. Já as threads são as 
+menores unidades de execução dentro de um processo, que compartilham recursos como memória e dados. Quando 
+trabalhamos com sistemas multi-core, o processador pode distribuir tanto os processos quanto as threads entre seus 
+núcleos, permitindo que diferentes partes do trabalho sejam feitas de forma paralela, aumentando a eficiência e o 
+desempenho.
+
+ * O que são Processos?
+
+   Um processo pode ser descrito como um programa em execução, com seus próprios recursos e espaço de memória 
+  isolado. Quando você abre um aplicativo no seu computador, o sistema operacional cria um processo para esse 
+  aplicativo, garantindo que ele tenha os recursos necessários para funcionar. Cada processo é independente e, 
+  normalmente, não pode acessar diretamente a memória de outros processos, o que oferece uma camada de segurança. 
+  Em um sistema multi-core, vários processos podem ser executados ao mesmo tempo, com o sistema operacional 
+  distribuindo esses processos entre os núcleos disponíveis para otimizar o desempenho e evitar gargalos.
+
+   Se pensamos no processo como uma grande fábrica, o processo seria o prédio onde todo o trabalho acontece, e 
+  dentro dessa fábrica, diferentes áreas de trabalho (threads) cuidam das tarefas específicas. Por exemplo, em um 
+  programa de edição de vídeo, um processo pode ser responsável por carregar o arquivo, outro por aplicar efeitos, 
+  e assim por diante. O processador pode distribuir esses processos entre vários núcleos para otimizar a execução e 
+  diminuir o tempo total necessário para concluir o trabalho.
+
+
+ * O que são Threads?
+
+   As threads são unidades menores de execução dentro de um processo. Elas compartilham a mesma memória e recursos 
+  do processo em que estão inseridas, mas cada uma realiza uma tarefa específica. Em vez de ter um único 
+  trabalhador (processo) fazendo tudo, as threads funcionam como equipes de trabalhadores especializados, cada uma 
+  cuidando de uma parte do trabalho de forma simultânea. No exemplo da fábrica, as threads são como trabalhadores 
+  que têm acesso ao mesmo local de trabalho (memória) e fazem suas tarefas paralelamente.
+
+   Em um sistema multi-core, o sistema operacional distribui essas threads pelos núcleos de processamento 
+  disponíveis. Isso significa que, se um processo for bem projetado para usar múltiplas threads, o trabalho será  
+  dividido e realizado de maneira mais rápida e eficiente. Em termos simples, uma thread é como uma tarefa dentro 
+  de uma missão maior, e com múltiplos núcleos disponíveis, várias dessas tarefas podem ser executadas ao mesmo 
+  tempo, acelerando o processamento do programa.
+
+ Em suma, a utilização de processos e threads em sistemas multi-core permite que os computadores sejam mais rápidos 
+e eficientes, pois as tarefas podem ser distribuídas e executadas simultaneamente. Enquanto os processos funcionam 
+como unidades independentes de execução, as threads são menores e realizam tarefas específicas dentro desses 
+processos. Ao entender como esses conceitos interagem, podemos desenvolver sistemas mais eficientes que aproveitam 
+ao máximo a capacidade dos processadores modernos, especialmente em cenários que exigem grande poder de 
+processamento, como jogos, edição de vídeo ou análise de grandes volumes de dados.
+
+
+
+                         "Cache Compartilhada e a Coerência de Cache"
 
  Nos processadores modernos, especialmente os multi-core, a cache compartilhada e a coerência de cache desempenham 
 papéis cruciais no desempenho e na eficiência do sistema. Ambos os conceitos estão intimamente ligados à forma como 
@@ -276,57 +332,8 @@ opere de forma fluida e eficiente, lidando com múltiplas tarefas simultâneas s
 
 
 
-                           "Processos e Threads em Multi-core"
-
- Em um sistema multi-core, a execução de múltiplas tarefas ao mesmo tempo é essencial para melhorar o desempenho. 
-Para isso, os processos e threads desempenham papéis fundamentais, permitindo que o processador execute diferentes 
-operações simultaneamente. A arquitetura multi-core facilita essa paralelização, distribuindo essas tarefas entre 
-os núcleos de um processador. Imagine uma fábrica onde várias máquinas (núcleos) trabalham juntas para produzir 
-diferentes peças (tarefas). Cada máquina pode estar fazendo uma parte do trabalho ao mesmo tempo, acelerando o 
-processo de produção. No contexto de computadores, essa divisão de trabalho se dá por meio de processos e threads, 
-que permitem que o sistema execute várias operações ao mesmo tempo.
-
- Embora os processos e as threads estejam intimamente relacionados, eles são conceitos distintos. Um processo é uma 
-unidade autônoma de execução, com seu próprio conjunto de recursos, como memória e arquivos. Já as threads são as 
-menores unidades de execução dentro de um processo, que compartilham recursos como memória e dados. Quando 
-trabalhamos com sistemas multi-core, o processador pode distribuir tanto os processos quanto as threads entre seus 
-núcleos, permitindo que diferentes partes do trabalho sejam feitas de forma paralela, aumentando a eficiência e o 
-desempenho.
-
- * O que são Processos?
-
-   Um processo pode ser descrito como um programa em execução, com seus próprios recursos e espaço de memória 
-  isolado. Quando você abre um aplicativo no seu computador, o sistema operacional cria um processo para esse 
-  aplicativo, garantindo que ele tenha os recursos necessários para funcionar. Cada processo é independente e, 
-  normalmente, não pode acessar diretamente a memória de outros processos, o que oferece uma camada de segurança. 
-  Em um sistema multi-core, vários processos podem ser executados ao mesmo tempo, com o sistema operacional 
-  distribuindo esses processos entre os núcleos disponíveis para otimizar o desempenho e evitar gargalos.
-
-   Se pensamos no processo como uma grande fábrica, o processo seria o prédio onde todo o trabalho acontece, e 
-  dentro dessa fábrica, diferentes áreas de trabalho (threads) cuidam das tarefas específicas. Por exemplo, em um 
-  programa de edição de vídeo, um processo pode ser responsável por carregar o arquivo, outro por aplicar efeitos, 
-  e assim por diante. O processador pode distribuir esses processos entre vários núcleos para otimizar a execução e 
-  diminuir o tempo total necessário para concluir o trabalho.
 
 
- * O que são Threads?
 
-   As threads são unidades menores de execução dentro de um processo. Elas compartilham a mesma memória e recursos 
-  do processo em que estão inseridas, mas cada uma realiza uma tarefa específica. Em vez de ter um único 
-  trabalhador (processo) fazendo tudo, as threads funcionam como equipes de trabalhadores especializados, cada uma 
-  cuidando de uma parte do trabalho de forma simultânea. No exemplo da fábrica, as threads são como trabalhadores 
-  que têm acesso ao mesmo local de trabalho (memória) e fazem suas tarefas paralelamente.
 
-   Em um sistema multi-core, o sistema operacional distribui essas threads pelos núcleos de processamento 
-  disponíveis. Isso significa que, se um processo for bem projetado para usar múltiplas threads, o trabalho será  
-  dividido e realizado de maneira mais rápida e eficiente. Em termos simples, uma thread é como uma tarefa dentro 
-  de uma missão maior, e com múltiplos núcleos disponíveis, várias dessas tarefas podem ser executadas ao mesmo 
-  tempo, acelerando o processamento do programa.
-
- Em suma, a utilização de processos e threads em sistemas multi-core permite que os computadores sejam mais rápidos 
-e eficientes, pois as tarefas podem ser distribuídas e executadas simultaneamente. Enquanto os processos funcionam 
-como unidades independentes de execução, as threads são menores e realizam tarefas específicas dentro desses 
-processos. Ao entender como esses conceitos interagem, podemos desenvolver sistemas mais eficientes que aproveitam 
-ao máximo a capacidade dos processadores modernos, especialmente em cenários que exigem grande poder de 
-processamento, como jogos, edição de vídeo ou análise de grandes volumes de dados.
                        
