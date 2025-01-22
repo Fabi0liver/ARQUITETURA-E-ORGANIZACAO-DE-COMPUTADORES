@@ -415,6 +415,35 @@ opere de forma fluida e eficiente, lidando com múltiplas tarefas simultâneas s
 
 
 
+                                 Escalabilidade em Multi-Core
+
+ Escalabilidade em sistemas multi-core refere-se à capacidade de um sistema de aumentar seu desempenho à medida que 
+mais núcleos são adicionados. É como se você tivesse um time de futebol. Quando o time cresce e ganha mais 
+jogadores (núcleos), ele deve ser capaz de jogar melhor e mais rápido, aproveitando o esforço de todos para 
+conquistar o objetivo de forma mais eficiente. A escalabilidade garante que, ao adicionar mais núcleos, o 
+desempenho do sistema aumente de forma proporcional, ou pelo menos, de forma significativa.
+
+ No entanto, nem todas as tarefas podem ser escalonadas linearmente com a adição de mais núcleos. Algumas tarefas 
+têm um limite de como podem ser divididas ou paralelizadas, o que significa que, mesmo com mais núcleos, o aumento 
+de desempenho pode ser menor do que o esperado. Isso ocorre porque algumas partes do trabalho precisam ser feitas 
+em sequência, e não podem ser divididas entre os núcleos, o que impede que toda a carga de trabalho seja 
+paralelizada. Em um time de futebol, isso seria como ter jogadores demais tentando realizar a mesma jogada, sem 
+poder dividir o esforço.
+
+ A eficiência de escalabilidade depende do tipo de aplicação ou tarefa que está sendo executada. Tarefas que são 
+naturalmente paralelizadas, como renderização de gráficos ou simulações científicas, se beneficiam muito da adição 
+de núcleos. Isso porque essas tarefas podem ser divididas em várias partes menores que podem ser processadas ao 
+mesmo tempo, aproveitando todo o poder de múltiplos núcleos. Já tarefas sequenciais, como processamento de textos, 
+não aproveitam tão bem os núcleos extras, já que a sequência de execução não pode ser dividida facilmente.
+
+ Por fim, para garantir uma boa escalabilidade, os desenvolvedores de software precisam projetar sistemas que 
+possam aproveitar ao máximo os núcleos adicionais. Isso envolve dividir o trabalho de forma inteligente, 
+identificando quais partes podem ser feitas em paralelo e quais precisam ser executadas em sequência. No mundo 
+real, isso seria como distribuir o trabalho de maneira justa entre todos os membros de uma equipe, sem 
+sobrecarregar ninguém e garantindo que cada pessoa (ou núcleo) esteja fazendo a sua parte de maneira eficiente.
+
+
+
 
 
 
