@@ -72,6 +72,38 @@ moderna.
 
 
 
+                             "Como Funciona o Multiprocessamento?"
+
+ O multiprocessamento funciona ao dividir o trabalho entre dois ou mais processadores em um único sistema. Em vez 
+de um único processador lidar com todas as tarefas de maneira sequencial, vários processadores podem operar 
+simultaneamente, cada um executando uma parte específica da carga de trabalho. Essa divisão é gerenciada pelo 
+sistema operacional, que aloca as tarefas de maneira eficiente, garantindo que os recursos sejam bem utilizados e 
+que o sistema funcione sem sobrecargas. Pense nisso como uma equipe de construção: cada trabalhador tem uma função 
+específica, como pintar, construir ou decorar, mas todos estão colaborando para completar o mesmo projeto.
+
+ Uma das principais técnicas usadas no multiprocessamento é a distribuição de tarefas. O sistema operacional divide 
+os processos em threads ou subprocessos menores, que podem ser atribuídos a diferentes processadores. Cada thread é 
+como uma pequena "subtarefa" que trabalha de forma independente, mas em sincronia com as outras. Por exemplo, 
+imagine que você está organizando uma festa. Enquanto uma pessoa cuida da decoração, outra prepara a comida, e 
+outra cria a playlist. Cada tarefa acontece em paralelo, mas todas colaboram para que o evento esteja pronto no 
+prazo.
+
+ Para que o multiprocessamento funcione, a comunicação entre os processadores é essencial. Isso é feito por meio de 
+memória compartilhada ou mensagens que permitem a troca de informações entre os processadores. Em sistemas que usam 
+memória compartilhada, todos os processadores têm acesso à mesma área de memória, como se estivessem lendo um livro 
+juntos. Já em sistemas baseados em mensagens, cada processador troca informações como se estivesse enviando 
+bilhetes com instruções específicas. Ambos os métodos garantem que as tarefas não entrem em conflito e que o 
+resultado final seja coerente.
+
+ Por fim, o multiprocessamento utiliza técnicas de balanceamento de carga para otimizar o desempenho. Isso 
+significa que o sistema operacional monitora constantemente o uso dos processadores e redistribui tarefas conforme 
+necessário para evitar que um processador fique sobrecarregado enquanto outro está ocioso. É como em uma cozinha de 
+restaurante: se um chef está atolado com pedidos, o gerente pode passar algumas tarefas para outro chef menos 
+ocupado, garantindo que todos os pedidos sejam atendidos no prazo. Esse equilíbrio é fundamental para maximizar a 
+eficiência e garantir uma experiência fluida para o usuário.
+
+
+
                                 "Sistemas de Multiprocessamento"
 
  Com o avanço das tecnologias de computação, tornou-se essencial maximizar o uso dos recursos disponíveis para 
