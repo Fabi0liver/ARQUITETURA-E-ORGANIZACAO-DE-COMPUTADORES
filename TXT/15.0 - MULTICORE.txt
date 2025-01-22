@@ -251,3 +251,26 @@ gerenciamento de cache e coerência continuam a ser desenvolvidas, melhorando ai
 modernos.
 
 
+
+                             "Gerenciamento e Escalonamento de tarefas"
+
+ Gerenciar e escalonar tarefas em um processador multi-core é como organizar uma grande festa, onde o sistema 
+operacional atua como o "planejador", distribuindo as atividades entre os núcleos do processador para garantir que 
+tudo funcione de maneira eficiente. O processo de escalonamento de tarefas, ou thread scheduling, define qual 
+núcleo executará cada tarefa, dependendo da sua prioridade e da carga de trabalho. Isso garante que os núcleos não 
+fiquem sobrecarregados e todos os trabalhos sejam realizados sem atraso.
+
+ Um aspecto essencial desse gerenciamento é o balanceamento de carga, que evita que um núcleo seja sobrecarregado 
+enquanto os outros ficam ociosos. O sistema operacional distribui as tarefas de forma equilibrada, aproveitando ao 
+máximo os recursos do processador. Esse balanceamento aumenta a eficiência, ajudando a reduzir o tempo total de 
+execução e evitando o desperdício de energia ou processamento.
+
+ Além disso, o escalonamento de tarefas em sistemas multi-core deve considerar o paralelismo, onde tarefas grandes 
+podem ser divididas em partes menores e executadas em paralelo por diferentes núcleos. Isso acelera a execução, mas 
+nem todas as tarefas podem ser paralelizadas. Algumas dependem de uma sequência específica de execução, e o sistema 
+deve identificar essas situações para garantir que o trabalho seja feito de maneira correta e eficiente.
+
+ No fim, o objetivo de gerenciar e escalonar tarefas é otimizar o uso dos núcleos do processador, aproveitando ao 
+máximo seus recursos e garantindo que todas as tarefas sejam concluídas rapidamente. Isso permite que o sistema 
+opere de forma fluida e eficiente, lidando com múltiplas tarefas simultâneas sem sobrecarregar nenhum núcleo.
+                       
