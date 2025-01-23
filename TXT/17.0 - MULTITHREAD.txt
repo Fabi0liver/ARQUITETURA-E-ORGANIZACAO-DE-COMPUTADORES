@@ -98,7 +98,7 @@ mundo da computação.
 
 
 
-                        "Granularidade de Tarefas em Multithread"
+                           "Granularidade de Tarefas em Multithread"
 
  A granularidade de tarefas em multithread refere-se ao tamanho das tarefas que são divididas para serem executadas 
 simultaneamente em diferentes threads. Em outras palavras, é o nível de detalhamento com que um programa "quebra" o 
@@ -161,7 +161,7 @@ threads contribuam de forma harmoniosa para o desempenho geral.
 
 
 
-                               "Simultaneous Multithreading"
+                                   "Simultaneous Multithreading"
 
  O Simultaneous Multithreading (SMT), ou Multithread Simultâneo, é uma técnica que ajuda o processador a ser mais 
 eficiente, permitindo que ele execute várias tarefas ao mesmo tempo, mesmo em um único núcleo. Para entender isso, 
@@ -187,3 +187,72 @@ mesmo tempo, como em jogos ou edição de vídeos, onde múltiplas threads (ou p
 mesmo tempo. No entanto, quando a tarefa é pesada ou precisa de muita concentração, o SMT pode não trazer tanto 
 benefício. É como se o processador funcionasse melhor quando as tarefas são simples e rápidas, mas mais difícil 
 quando as tarefas exigem mais tempo e foco.
+
+
+
+                                      "Comunicação Entre Threads"
+
+ A comunicação entre threads é um conceito fundamental no multithread, que trata de como diferentes threads de um 
+mesmo programa conseguem trocar informações e interagir entre si. Em um programa multithread, cada thread é como um 
+trabalhador que realiza uma tarefa, mas muitas vezes essas tarefas precisam de informações de outras partes do 
+programa. Para que isso aconteça de forma eficiente e organizada, é necessário ter uma forma de comunicação entre 
+as threads, garantindo que elas possam compartilhar dados e resultados sem conflitos. Isso é crucial para que o 
+programa funcione corretamente e aproveite ao máximo o potencial de múltiplas threads.
+
+ A seguir, vamos explorar os principais tipos de comunicação entre threads e como eles funcionam.
+
+ * Memória Compartilhada:
+
+   Na memória compartilhada, todas as threads de um mesmo processo podem acessar uma área comum de memória. Isso é 
+  como se todos os trabalhadores de uma equipe tivessem acesso à mesma mesa de trabalho, onde podem escrever 
+  anotações e trocar ideias. Esse modelo é eficiente porque as threads podem ler e escrever dados rapidamente, sem 
+  precisar de muitos intermediários. Porém, como várias threads podem acessar a mesma memória, é necessário tomar 
+  cuidados especiais para evitar que elas acessem ou modifiquem os dados ao mesmo tempo, o que poderia gerar 
+  conflitos e erros. Para resolver isso, são usados mecanismos de sincronização, como mutexes e semáforos, que 
+  ajudam a controlar quem pode acessar a memória em determinado momento.
+
+   No entanto, o uso da memória compartilhada exige uma boa organização. Se muitas threads tentarem acessar a 
+  memória simultaneamente, isso pode causar contenção, onde as threads precisam "esperar" umas pelas outras, o que 
+  pode diminuir o desempenho do programa. É como se várias pessoas tentassem usar o mesmo computador ao mesmo 
+  tempo, sem uma ordem, e ficassem esperando a sua vez para usar o dispositivo. Por isso, é importante que o acesso 
+  à memória compartilhada seja feito de maneira controlada, para evitar que o sistema fique sobrecarregado.
+
+    Tempo de Acesso à Memória: É um fator importante quando se fala em multithread. O acesso à memória pode ser 
+   diferente dependendo da arquitetura do sistema. Em uma arquitetura UMA (Uniform Memory Access), todos os núcleos 
+   de um processador têm o mesmo tempo de acesso à memória, ou seja, qualquer núcleo pode acessar a memória 
+   principal com a mesma velocidade. Imagine que todos os trabalhadores de um escritório têm acesso à mesma 
+   impressora sem nenhum atraso. No entanto, em uma arquitetura NUMA (Non-Uniform Memory Access), os núcleos são 
+   agrupados em blocos e cada bloco tem acesso mais rápido à sua própria memória local, mas pode ser mais lento 
+   acessar a memória de outros blocos. Isso seria como se, em um escritório, alguns trabalhadores tivessem acesso 
+   direto a uma impressora local, enquanto outros precisassem esperar um pouco mais, caso precisassem usar a 
+   impressora de um bloco distante.
+
+
+ * Filas de Mensagens:
+
+   Nas filas de mensagens, a comunicação entre threads é feita através do envio de mensagens. Cada thread coloca 
+  informações em uma "fila" de mensagens, e outras threads podem ler essas informações quando necessário. Isso é 
+  como se, em uma equipe de trabalho, uma pessoa colocasse um bilhete em uma caixa de mensagens para que outra 
+  pessoa o lesse e tomasse uma ação com base nesse bilhete. O principal benefício das filas de mensagens é que elas 
+  permitem que as threads se comuniquem de forma desacoplada, ou seja, uma thread pode enviar uma mensagem sem 
+  precisar saber quem vai ler ou quando isso vai acontecer. Isso facilita o trabalho em sistemas distribuídos ou 
+  quando as threads precisam executar tarefas de forma mais independente.
+
+   As filas de mensagens são particularmente úteis quando o programa tem muitas threads que precisam se comunicar, 
+  mas não é necessário que elas compartilhem a memória diretamente. Em vez de acessar a memória compartilhada, as 
+  threads podem simplesmente colocar suas mensagens na fila, evitando a complexidade da sincronização de memória. 
+  No entanto, é necessário gerenciar as filas com eficiência, para garantir que as mensagens não se percam ou 
+  fiquem presas, esperando para serem processadas. Uma analogia seria uma equipe de trabalho que utiliza uma caixa 
+  de entrada para trocar informações, mas precisa garantir que todos os bilhetes sejam lidos e processados na ordem 
+  certa, sem que fiquem acumulados.
+
+ Em suma, a comunicação entre threads é essencial para que elas possam trabalhar juntas de maneira eficiente em 
+programas multithread. Seja por meio de memória compartilhada ou filas de mensagens, cada método tem suas vantagens 
+e desafios, dependendo do tipo de aplicação e da necessidade de sincronização. A escolha do tipo de comunicação e a 
+gestão eficiente do acesso à memória são fatores-chave para garantir que as threads possam se comunicar de forma 
+eficaz, sem prejudicar o desempenho do sistema.
+
+ A compreensão de como a comunicação entre threads funciona é fundamental para o desenvolvimento de programas que 
+realmente aproveitem ao máximo a arquitetura multithread. Com o uso correto dos mecanismos de comunicação e a 
+otimização do acesso à memória, podemos criar sistemas mais rápidos e escaláveis, que utilizam os recursos de forma 
+inteligente e eficiente.
