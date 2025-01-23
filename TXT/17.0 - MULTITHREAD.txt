@@ -98,7 +98,77 @@ mundo da computação.
 
 
 
-                             "Threads de Usuário e Threads de Kernel"
+                                         "Estados de Threads"
+
+ No mundo da programação multithread, cada thread passa por diferentes "estados" ao longo de sua vida. Esses 
+estados refletem em que ponto do processo a thread está, seja se preparando para iniciar, esperando por sua vez ou 
+concluindo sua tarefa. É como a jornada de um trabalhador em um dia de trabalho, começando ao se preparar, 
+aguardando a ordem para agir, executando as tarefas e, eventualmente, finalizando o dia. Esses estados ajudam o 
+sistema operacional a gerenciar as threads de maneira eficiente, garantindo que todas as tarefas sejam executadas 
+sem conflitos ou atrasos desnecessários.
+
+ A transição entre esses estados é coordenada pelo sistema operacional, que funciona como um gerente que decide 
+qual tarefa deve ser realizada e quando. Isso é essencial para aproveitar ao máximo os recursos do sistema e evitar 
+problemas como competição por recursos ou condições de corrida. 
+
+ Vamos explorar cada estado de uma thread e como ele contribui para o funcionamento do sistema.
+
+ * Nova (New): O estado "Nova" é o ponto de partida para qualquer thread. Assim que uma thread é criada, mas antes 
+  de começar a executar qualquer código, ela está nesse estado. Pense nisso como um trabalhador que foi contratado 
+  e está em casa se preparando para começar o primeiro dia no trabalho. A thread está pronta para ser iniciada, mas 
+  ainda não entrou em ação.
+
+   Nesse estado, a thread ainda não foi entregue ao sistema operacional para execução. Apenas quando você chama 
+  explicitamente algo como start() (em muitas linguagens de programação), ela deixa o estado "Nova" e passa para o 
+  próximo.
+
+
+ * Pronta (Ready): Após sair do estado "Nova", a thread entra no estado "Pronta". Aqui, ela está como um 
+  trabalhador em um ponto de encontro, aguardando a ordem para começar sua tarefa. Ela já está preparada, mas ainda 
+  precisa esperar sua vez de usar o processador.
+
+   O estado "Pronta" é fundamental para organizar as threads em um sistema. As threads que estão nesse estado 
+  aguardam em uma fila de escalonamento, e o sistema operacional decide qual delas será a próxima a entrar em 
+  execução, baseado em fatores como prioridade e recursos disponíveis.
+
+
+ * Executando (Running): O estado "Executando" é quando a thread realmente começa a trabalhar. Nesse ponto, ela foi 
+  escolhida pelo sistema operacional e está usando o processador para executar suas tarefas. Imagine o trabalhador 
+  que finalmente recebeu sua tarefa e está totalmente focado nela, realizando cada passo necessário.
+
+   Neste estado, a thread consome ativamente os recursos do processador para executar seu código. No entanto, ela 
+  pode ser interrompida a qualquer momento pelo sistema operacional para dar lugar a outra thread, especialmente em 
+  sistemas multitarefa.
+
+
+ * Bloqueada (Blocked): A thread entra no estado "Bloqueada" quando não consegue continuar sua execução 
+  imediatamente porque está esperando por algo, como um recurso ou a resposta de outro processo. É como um 
+  trabalhador que foi interrompido porque precisa de uma ferramenta que ainda não chegou. Ele fica parado,  
+  aguardando, até que possa continuar.
+
+   Nesse estado, a thread não usa o processador, o que permite ao sistema operacional dedicar recursos a outras 
+  threads que podem continuar trabalhando. Assim que o evento pelo qual a thread está esperando é resolvido, ela 
+  volta para o estado "Pronta", aguardando uma nova oportunidade de ser executada.
+
+
+ * Finalizada (Terminated): Quando a thread conclui sua tarefa, ela entra no estado "Finalizada". Aqui, é como o 
+  trabalhador que terminou seu dia de trabalho e pode finalmente ir para casa. A thread não é mais necessária e 
+  libera os recursos que estava usando, permitindo que o sistema os reutilize para outras tarefas.
+
+   Uma vez que a thread atinge esse estado, ela não pode ser reiniciada. É o fim de sua jornada no ciclo de 
+  execução, e o sistema operacional remove quaisquer rastros que ela tenha deixado para otimizar o desempenho 
+  geral.
+
+ Em suma, os estados de threads (Nova, Pronta, Executando, Bloqueada e Finalizada) formam o ciclo de vida que 
+permite ao sistema operacional gerenciar o multithread de maneira eficiente e organizada. Cada estado representa um 
+momento específico na jornada de uma thread, ajudando a garantir que o sistema possa distribuir recursos e tempo de 
+forma equilibrada. Entender esses estados não é apenas importante para criar programas mais eficientes, mas também 
+para evitar problemas como deadlocks e competição por recursos. Essa visão clara ajuda a construir sistemas mais 
+robustos e confiáveis no desenvolvimento multithread.
+
+
+
+                              "Threads de Usuário e Threads de Kernel"
 
  Quando estamos falando de multithread, é importante entender que nem todas as threads são criadas da mesma forma. 
 Podemos dividir as threads em dois tipos principais: as threads de usuário e as threads de kernel. Cada uma tem 
@@ -168,14 +238,88 @@ suas tarefas.
   robustez das threads de kernel, aproveitando o melhor de ambos os mundos para garantir o melhor desempenho 
   possível.
 
+ Em resumo, tanto as threads de usuário quanto as threads de kernel têm seu lugar no mundo da programação 
+multithread. As threads de usuário são leves, rápidas e eficazes para tarefas simples, mas dependem do programa 
+para o gerenciamento. Já as threads de kernel são mais robustas, controladas pelo sistema operacional e capazes de 
+acessar recursos avançados, mas com um custo maior em termos de desempenho. Ao entender as vantagens e desvantagens 
+de cada tipo de thread, podemos escolher a melhor estratégia de acordo com as necessidades do programa, garantindo 
+um equilíbrio entre desempenho e controle.
 
-   Em resumo, tanto as threads de usuário quanto as threads de kernel têm seu lugar no mundo da programação 
-  multithread. As threads de usuário são leves, rápidas e eficazes para tarefas simples, mas dependem do programa 
-  para o gerenciamento. Já as threads de kernel são mais robustas, controladas pelo sistema operacional e capazes 
-  de acessar recursos avançados, mas com um custo maior em termos de desempenho. Ao entender as vantagens e 
-  desvantagens de cada tipo de thread, podemos escolher a melhor estratégia de acordo com as necessidades do 
-  programa, garantindo um equilíbrio entre desempenho e controle.
 
+
+                                  "Mapeamento de Threads"
+
+ O mapeamento de threads é uma maneira de organizar como as threads de um programa se relacionam com o sistema 
+operacional. Imagine que cada thread seja como um trabalhador em uma fábrica. Para que a fábrica funcione bem, é 
+necessário organizar a forma como os trabalhadores interagem com os recursos da fábrica, como máquinas e 
+ferramentas. O mapeamento de threads lida exatamente com essa organização, definindo como os "trabalhadores" 
+(threads de usuário) interagem com o "gerente da fábrica" (sistema operacional), para garantir que tudo funcione de 
+forma eficiente.
+
+ Existem diferentes formas de fazer esse mapeamento, e cada uma tem suas vantagens dependendo do que estamos 
+tentando alcançar. Algumas formas são mais simples, mas podem não aproveitar ao máximo os recursos da máquina, 
+enquanto outras podem ser mais complexas, mas oferecem maior controle e desempenho. 
+
+ Vamos explorar três formas principais de mapeamento: 
+
+ * Mapeamento Many-to-One:
+
+   O mapeamento Many-to-One (Muitos para Um) é como se várias pessoas na equipe precisassem se reunir com um único 
+  chefe para tomar decisões. Nesse modelo, várias threads de usuário são mapeadas para uma única thread de kernel, 
+  o que significa que o sistema operacional só lida com uma thread para controlar todas as operações. Isso pode ser 
+  mais simples e requer menos recursos, mas tem uma grande desvantagem: se uma dessas threads ficar esperando por 
+  algum processo, todas as outras também terão que esperar.
+
+   Uma vantagem desse modelo é que ele tem um custo baixo de recursos, já que só precisamos de uma única thread de 
+  kernel para controlar várias threads de usuário. No entanto, como todas as threads de usuário compartilham a 
+  mesma thread de kernel, se uma delas fizer uma operação bloqueante, isso afeta todas as outras, o que pode 
+  diminuir o desempenho, principalmente em sistemas que precisam de muitas tarefas ao mesmo tempo.
+
+   Esse modelo é útil para sistemas mais simples, onde as tarefas não exigem muito processamento simultâneo, mas em 
+  cenários mais complexos, como em servidores, esse modelo pode não ser o mais eficaz.
+
+
+ * Mapeamento One-to-One:
+
+   Já o modelo One-to-One (Um para Um) é como se cada pessoa na equipe tivesse seu próprio chefe, e cada chefe é 
+  responsável por uma tarefa específica. No caso das threads, isso significa que cada thread de usuário é mapeada 
+  diretamente para uma thread de kernel, e cada uma recebe seu próprio controle do sistema operacional. Isso 
+  resolve o problema do bloqueio, pois, se uma thread precisar esperar, as outras podem continuar trabalhando sem 
+  interrupções.
+
+   Esse modelo traz a vantagem de maior independência entre as threads, o que melhora o desempenho e a capacidade 
+  de lidar com tarefas simultâneas. Porém, ele exige mais recursos, pois para cada thread de usuário, o sistema 
+  precisa gerenciar uma thread de kernel. Isso pode aumentar a sobrecarga do sistema, tornando-o mais pesado, 
+  especialmente em sistemas com muitas threads.
+
+   É uma escolha excelente quando a eficiência e o controle sobre as threads são essenciais, como em aplicativos de 
+  servidores de alto desempenho, mas pode não ser a melhor opção em sistemas com muitos processos simples.
+
+
+ * Mapeamento Many-to-Many
+
+   O modelo Many-to-Many (Muitos para Muitos) tenta combinar o melhor dos dois modelos anteriores, permitindo que 
+  várias threads de usuário sejam mapeadas para várias threads de kernel, mas de forma equilibrada, para que não 
+  sobrecarreguem o sistema. Imagine uma equipe de trabalhadores, mas agora com vários gerentes (threads de kernel) 
+  para distribuir as tarefas entre eles. O número de gerentes é menor do que o número de trabalhadores, mas eles 
+  conseguem coordenar bem as atividades, sem deixar ninguém esperando demais.
+
+   A vantagem desse modelo é que ele permite uma boa flexibilidade, já que as threads de usuário podem ser 
+  distribuídas entre as threads de kernel conforme necessário. Isso ajuda a evitar o problema de sobrecarregar o 
+  sistema com threads demais, mantendo a eficiência e a flexibilidade. Porém, esse modelo pode exigir um pouco mais 
+  de gerenciamento, já que é necessário coordenar as threads de forma inteligente para não desperdiçar recursos.
+
+   Esse modelo é ideal para sistemas que precisam de muitas threads para realizar tarefas simultâneas sem 
+  sobrecarregar os recursos, como em aplicativos interativos que exigem boa performance sem deixar o sistema muito 
+  pesado.
+
+ Em suma, a escolha do modelo de mapeamento de threads depende do tipo de sistema que você está desenvolvendo e dos 
+requisitos de desempenho. O modelo Many-to-One é simples e funciona bem em sistemas menores, mas pode ter 
+limitações em cenários mais complexos. O modelo One-to-One oferece maior controle e desempenho, sendo ideal para 
+sistemas que exigem muita interação e concorrência entre threads, mas com um custo maior de recursos. O modelo 
+Many-to-Many é uma solução equilibrada, proporcionando flexibilidade e desempenho, sendo útil para sistemas que 
+precisam lidar com muitas threads ao mesmo tempo. Escolher o mapeamento certo é essencial para garantir que seu 
+sistema funcione de maneira eficiente, aproveitando ao máximo os recursos disponíveis.
 
 
 
