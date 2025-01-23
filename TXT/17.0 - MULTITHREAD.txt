@@ -158,3 +158,32 @@ deve ser nem muito grande, nem muito pequena, mas adequada às necessidades do s
 granularidade e os fatores que influenciam essa escolha é essencial para criar programas eficientes e equilibrados. 
 Com prática e experimentação, é possível aproveitar ao máximo os recursos do hardware e garantir que todas as 
 threads contribuam de forma harmoniosa para o desempenho geral.
+
+
+
+                               "Simultaneous Multithreading"
+
+ O Simultaneous Multithreading (SMT), ou Multithread Simultâneo, é uma técnica que ajuda o processador a ser mais 
+eficiente, permitindo que ele execute várias tarefas ao mesmo tempo, mesmo em um único núcleo. Para entender isso, 
+imagine que o núcleo do processador é uma pessoa trabalhando em uma tarefa. Normalmente, essa pessoa faz uma coisa 
+de cada vez. Mas, com o SMT, essa pessoa pode, de alguma forma, dividir sua atenção em várias tarefas ao mesmo 
+tempo, tornando o trabalho mais rápido. Assim, o processador consegue lidar com mais de uma tarefa simultaneamente, 
+aproveitando melhor o tempo disponível.
+
+ Em um processador tradicional, cada núcleo executa uma tarefa de cada vez, passando rapidamente de uma para outra. 
+O SMT muda isso, permitindo que o núcleo "divida" seu tempo entre várias tarefas. Isso é como se você tivesse uma 
+única pessoa trabalhando em várias frentes ao mesmo tempo, como responder e-mails, conversar com alguém e fazer 
+anotações, tudo ao mesmo tempo. O SMT faz com que o processador pareça ter mais núcleos do que realmente tem, o que 
+ajuda a acelerar o processamento de tarefas que podem ser divididas em partes menores.
+
+ No entanto, essa divisão do trabalho nem sempre é tão simples. Se a tarefa que o processador está realizando for 
+muito complexa, pode ser que o SMT não seja tão eficiente. Imagine que, mesmo que a pessoa possa tentar fazer 
+várias coisas ao mesmo tempo, se uma tarefa for muito complicada, ela vai precisar de mais atenção, e o multitarefa 
+pode acabar não sendo tão produtivo. Isso também acontece com o SMT: se o trabalho não for bem dividido ou se o 
+núcleo não tiver recursos suficientes para lidar com a carga, o benefício pode ser menor.
+
+ No mundo real, o SMT é muito útil em situações onde muitas tarefas pequenas e independentes podem ser feitas ao 
+mesmo tempo, como em jogos ou edição de vídeos, onde múltiplas threads (ou pequenas tarefas) são executadas ao 
+mesmo tempo. No entanto, quando a tarefa é pesada ou precisa de muita concentração, o SMT pode não trazer tanto 
+benefício. É como se o processador funcionasse melhor quando as tarefas são simples e rápidas, mas mais difícil 
+quando as tarefas exigem mais tempo e foco.
