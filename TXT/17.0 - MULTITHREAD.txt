@@ -28,7 +28,7 @@ e escalonamento para programar de maneira eficaz e segura.
 
 
 
-                                "Como o Multithread funciona?" 
+                                 "Como o Multithread funciona?" 
 
  O multithread funciona como se você tivesse várias pessoas, ou "threads", fazendo tarefas dentro de um único 
 programa ao mesmo tempo. Cada thread é como um "trabalhador" que realiza uma parte de um trabalho maior. Quando 
@@ -247,7 +247,7 @@ um equilíbrio entre desempenho e controle.
 
 
 
-                                  "Mapeamento de Threads"
+                                        "Mapeamento de Threads"
 
  O mapeamento de threads é uma maneira de organizar como as threads de um programa se relacionam com o sistema 
 operacional. Imagine que cada thread seja como um trabalhador em uma fábrica. Para que a fábrica funcione bem, é 
@@ -323,7 +323,7 @@ sistema funcione de maneira eficiente, aproveitando ao máximo os recursos dispo
 
 
 
-                           "Granularidade de Tarefas em Multithread"
+                              "Granularidade de Tarefas em Multithread"
 
  A granularidade de tarefas em multithread refere-se ao tamanho das tarefas que são divididas para serem executadas 
 simultaneamente em diferentes threads. Em outras palavras, é o nível de detalhamento com que um programa "quebra" o 
@@ -386,7 +386,7 @@ threads contribuam de forma harmoniosa para o desempenho geral.
 
 
 
-                                   "Simultaneous Multithreading"
+                                    "Simultaneous Multithreading"
 
  O Simultaneous Multithreading (SMT), ou Multithread Simultâneo, é uma técnica que ajuda o processador a ser mais 
 eficiente, permitindo que ele execute várias tarefas ao mesmo tempo, mesmo em um único núcleo. Para entender isso, 
@@ -484,7 +484,7 @@ inteligente e eficiente.
 
 
 
-                           "Sincronização e Controle de Concorrência"
+                              "Sincronização e Controle de Concorrência"
 
  A sincronização e o controle de concorrência são fundamentais no desenvolvimento de sistemas multithread, 
 garantindo que várias threads possam acessar e modificar recursos compartilhados de forma organizada e segura. 
@@ -562,7 +562,7 @@ aproveitem ao máximo o poder do multithread, mantendo a integridade dos dados e
 
 
 
-                            "Coerência e Consistência em Multithread"
+                               "Coerência e Consistência em Multithread"
 
  Quando trabalhamos com sistemas multithread, garantir que todas as threads acessem os mesmos dados de maneira 
 correta é essencial para evitar erros. É aqui que entram os conceitos de coerência e consistência, que ajudam a 
@@ -592,7 +592,7 @@ multithread funcionem de forma confiável e previsível.
 
 
 
-                        "Vantagens e Desvantagens do Multithread"
+                               "Vantagens e Desvantagens do Multithread"
 
  O multithread é uma abordagem amplamente utilizada no desenvolvimento de sistemas e aplicações para melhorar o 
 desempenho e a eficiência, especialmente em hardware multicore. No entanto, como qualquer ferramenta, ele vem com 
@@ -666,4 +666,5 @@ lidar com uma ferramenta poderosa que exige cuidado e planejamento para ser usad
 repensar como dividimos e organizamos o trabalho para resolver problemas de maneira eficiente. Seja na programação 
 de sistemas operacionais, no desenvolvimento de jogos ou em aplicações corporativas, o multithread continua a ser 
 uma peça fundamental para a computação moderna. O domínio dessa tecnologia não apenas abre portas para o 
-desenvolvimento de soluções robustas, mas também ensina lições valiosas sobre como coordenação e organização podem transformar desafios em resultados excepcionais.
+desenvolvimento de soluções robustas, mas também ensina lições valiosas sobre como coordenação e organização podem 
+transformar desafios em resultados excepcionais.
