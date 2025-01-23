@@ -65,3 +65,66 @@ programa. Sua relação com os processos e o compartilhamento de recursos facili
 simultâneas, mas também exige cuidados para evitar problemas como condições de corrida e deadlocks. Compreender 
 threads e sua diferença em relação aos processos é essencial para desenvolver sistemas eficientes e escaláveis no 
 mundo da computação.
+
+
+
+                       "Granularidade de Tarefas em Multithread"
+
+ A granularidade de tarefas em multithread refere-se ao tamanho das tarefas que são divididas para serem executadas 
+simultaneamente em diferentes threads. Em outras palavras, é o nível de detalhamento com que um programa "quebra" o 
+trabalho em pedaços menores. Essa escolha é crucial, pois afeta diretamente o desempenho e a eficiência do 
+programa. Um bom balanceamento na granularidade pode fazer um programa rodar como uma orquestra bem ensaiada, 
+enquanto uma escolha ruim pode gerar sobrecarga desnecessária ou uso ineficiente dos recursos disponíveis.
+
+ Imagine que você está organizando um grupo de pessoas para construir um muro. Se você dividir o trabalho em 
+tarefas grandes, como "cada pessoa constrói metade do muro", poucas pessoas trabalham, mas cada uma precisa se 
+esforçar muito. Por outro lado, se cada pessoa só coloca um tijolo por vez, há muita coordenação envolvida, o que 
+pode atrasar o progresso. Encontrar o equilíbrio entre essas abordagens é o que torna a escolha da granularidade 
+tão importante.
+
+ * Tipos de Granularidade
+
+    Granularidade Grossa (Coarse-Grained): A granularidade grossa ocorre quando o trabalho é dividido em tarefas  
+                        maiores. Nesse caso, cada thread realiza uma quantidade substancial de trabalho antes de 
+                        precisar sincronizar com outras threads. Um exemplo seria um sistema de renderização de 
+                        imagens onde cada thread é responsável por processar uma grande seção da imagem. Isso reduz 
+                        a necessidade de comunicação entre as threads, tornando a abordagem mais simples de 
+                        implementar e gerenciar.
+
+                         Entretanto, o ponto negativo dessa abordagem é que, se as tarefas não forem bem 
+                        balanceadas, algumas threads podem terminar muito antes de outras, deixando recursos do 
+                        processador ociosos. Voltando à analogia do muro, é como dividir o trabalho em grandes 
+                        seções: se uma pessoa termina rápido enquanto outra ainda está na metade, parte do grupo 
+                        ficará sem trabalho.
+
+
+    Granularidade Fina (Fine-Grained): Na granularidade fina, o trabalho é dividido em tarefas menores, com threads 
+                      frequentemente sincronizando e comunicando-se. Isso pode ser útil para sistemas que requerem 
+                      alta precisão ou que lidam com operações rápidas e repetitivas, como cálculos em células 
+                      individuais de uma planilha. A granularidade fina permite aproveitar ao máximo os núcleos do 
+                      processador, mantendo todos ocupados com pequenas partes do trabalho.
+
+                       Por outro lado, essa abordagem pode gerar um custo significativo de overhead (sobrecarga), 
+                      devido à constante necessidade de sincronização entre as threads. Na analogia do muro, seria 
+                      como cada pessoa colocar um tijolo e depois perguntar ao coordenador qual o próximo lugar 
+                      para trabalhar. Isso pode resultar em atrasos, mesmo que o trabalho esteja bem distribuído.
+
+
+ * Como Escolher a Granularidade Ideal?
+
+   Escolher a granularidade ideal depende de vários fatores, como o tipo de tarefa, o número de threads disponíveis 
+  e o custo da comunicação entre elas. Tarefas mais complexas e demoradas geralmente se beneficiam de uma 
+  granularidade grossa, pois isso reduz o tempo perdido em coordenação. Por outro lado, tarefas simples e rápidas 
+  podem funcionar melhor com granularidade fina, desde que o custo de sincronização não seja maior do que o ganho 
+  em desempenho.
+
+   Outro aspecto importante é a natureza do hardware. Processadores modernos com múltiplos núcleos podem lidar com 
+  granularidade mais fina, mas sistemas mais antigos ou com menos núcleos podem ser sobrecarregados pela constante 
+  troca de informações. Testar diferentes configurações em cenários reais pode ajudar a encontrar o equilíbrio 
+  certo para cada aplicação.
+
+ Em suma, a granularidade de tarefas em multithread é como ajustar a "dose" do trabalho que cada thread executa: 
+deve ser nem muito grande, nem muito pequena, mas adequada às necessidades do sistema. Entender os tipos de 
+granularidade e os fatores que influenciam essa escolha é essencial para criar programas eficientes e equilibrados. 
+Com prática e experimentação, é possível aproveitar ao máximo os recursos do hardware e garantir que todas as 
+threads contribuam de forma harmoniosa para o desempenho geral.
