@@ -1,4 +1,4 @@
-                                         SISTEMA OPERACIONAL
+                                        SISTEMA OPERACIONAL
 
 
  Imagine que um computador é como uma cidade moderna. Nessa cidade, há muitas pessoas (os programas) tentando 
@@ -11,19 +11,20 @@ computador trabalhem de forma harmônica, sem desperdício de recursos ou confli
  O Sistema Operacional é o intermediário entre o hardware (as partes físicas do computador, como o processador e a 
 memória) e o software (os programas que usamos, como navegadores ou editores de texto). Ele age como um tradutor 
 fluente, convertendo os comandos que você dá em ações compreensíveis para o hardware. Quando você clica para abrir 
-um aplicativo ou salvar um arquivo, é o SO que transforma sua solicitação em instruções específicas para que o 
-computador execute a tarefa.
+um aplicativo ou salvar um arquivo, é o Sistema Operacional que transforma sua solicitação em instruções 
+específicas para que o computador execute a tarefa.
 
- Outra forma de entender o SO é pensar nele como um administrador de recursos. Em uma festa com um buffet, o 
-administrador é quem distribui os pratos, organiza a fila e garante que todos tenham comida suficiente, sem deixar 
-ninguém esperando demais. Da mesma forma, o SO gerencia recursos como memória, espaço em disco e tempo de 
-processamento para garantir que todos os programas rodem eficientemente, mesmo que vários estejam abertos ao mesmo 
-tempo.
+ Outra forma de entender o Sistema Operacional é pensar nele como um administrador de recursos. Em uma festa com um 
+buffet, o administrador é quem distribui os pratos, organiza a fila e garante que todos tenham comida suficiente, 
+sem deixar ninguém esperando demais. Da mesma forma, o Sistema Operacional gerencia recursos como memória, espaço 
+em disco e tempo de processamento para garantir que todos os programas rodem eficientemente, mesmo que vários 
+estejam abertos ao mesmo tempo.
 
- O conceito de multitarefa também é importante para compreender o papel do SO. Assim como um bom garçom que 
-consegue atender várias mesas ao mesmo tempo, o SO é responsável por alternar rapidamente entre as tarefas, dando a 
-impressão de que tudo está acontecendo simultaneamente. Esse equilíbrio é essencial para que o usuário tenha uma 
-experiência fluida, sem perceber o trabalho pesado que acontece nos bastidores.
+ O conceito de multitarefa também é importante para compreender o papel do Sistema Operacional. Assim como um bom 
+garçom que consegue atender várias mesas ao mesmo tempo, o Sistema Operacional é responsável por alternar 
+rapidamente entre as tarefas, dando a impressão de que tudo está acontecendo simultaneamente. Esse equilíbrio é 
+essencial para que o usuário tenha uma experiência fluida, sem perceber o trabalho pesado que acontece nos 
+bastidores.
 
  Por fim, o Sistema Operacional também tem a função de proteger o "ambiente da cidade" contra ameaças externas, 
 como vírus ou invasões. Ele define regras e permissões que garantem que os diferentes programas não interfiram uns 
