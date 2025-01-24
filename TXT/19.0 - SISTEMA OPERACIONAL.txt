@@ -34,3 +34,38 @@ restritas, garantindo que tudo permaneça em ordem.
  Em suma, o Sistema Operacional é a base que torna possível a interação entre pessoas e máquinas, permitindo que 
 computadores sejam ferramentas poderosas e eficientes. Entendê-lo é como aprender as engrenagens de um relógio: 
 mesmo que pareçam complexas à primeira vista, elas revelam uma beleza em sua organização e funcionamento.
+
+
+
+                            "Contexto Histórico do Sistema Operacional"
+
+ O conceito de Sistema Operacional surgiu como uma resposta às necessidades de organização e eficiência no uso dos 
+primeiros computadores. Nos anos 1940 e 1950, as máquinas eram enormes e rudimentares, e cada tarefa precisava ser 
+configurada manualmente por meio de cabos e cartões perfurados. Imagine que, naquela época, programar um computador 
+era como montar um quebra-cabeça complexo toda vez que você quisesse realizar uma tarefa. Não havia intermediários 
+para simplificar o processo, e cada programa ocupava o computador inteiro enquanto estava em execução.
+
+ Com o avanço da tecnologia e a popularização dos computadores nos anos 1960, surgiu a necessidade de gerenciar 
+múltiplos usuários e tarefas simultaneamente. Foi nessa época que os primeiros Sistemas Operacionais começaram a 
+tomar forma. A introdução dos mainframes – computadores usados por empresas e governos – trouxe consigo o conceito 
+de tempo compartilhado (time-sharing). Essa inovação permitia que várias pessoas utilizassem o mesmo computador ao 
+mesmo tempo, alternando entre tarefas rapidamente. Era como se o computador fosse um restaurante e o Sistema 
+Operacional fosse o garçom, garantindo que cada cliente fosse atendido de forma justa e eficiente.
+
+ Nos anos 1970, com a criação do UNIX, o Sistema Operacional ganhou uma estrutura mais moderna e flexível, que 
+serviu de base para muitos sistemas futuros. Ele introduziu ideias como o gerenciamento de arquivos hierárquico e a 
+possibilidade de rodar vários programas simultaneamente, algo revolucionário para a época. O UNIX era tão eficiente 
+que se tornou o alicerce de muitos sistemas contemporâneos, incluindo o Linux e o macOS. Podemos compará-lo a uma 
+planta arquitetônica que, com ajustes e melhorias, deu origem a inúmeros edifícios tecnológicos.
+
+ A chegada dos computadores pessoais (PCs) nos anos 1980 e 1990 foi outro marco importante. Sistemas como o MS-DOS 
+e o Windows trouxeram os Sistemas Operacionais para o uso doméstico, transformando-os em ferramentas acessíveis e 
+intuitivas. Essa evolução foi comparável a tirar os computadores de grandes fábricas e colocá-los nas mãos de 
+indivíduos, permitindo que tarefas antes complexas se tornassem simples e comuns. Desde então, os Sistemas 
+Operacionais continuaram a evoluir, integrando-se a dispositivos móveis, servidores e até mesmo carros e 
+eletrodomésticos, consolidando-se como o coração da era digital.
+
+ Com essa trajetória, os Sistemas Operacionais deixaram de ser ferramentas exclusivas de especialistas para se 
+tornarem peças fundamentais da vida cotidiana, conectando-nos a um mundo de possibilidades tecnológicas. A história 
+do Sistema Operacional é, ao mesmo tempo, a história da transformação dos computadores em instrumentos 
+indispensáveis para o mundo moderno.
