@@ -297,11 +297,11 @@ para atender aos processos em execução. Isso inclui acompanhar quais partes da
 estão livres e como distribuir o espaço para os programas sem desperdício ou conflito.
 
  Uma das principais funções do gerenciamento de memória é garantir que cada processo tenha acesso ao espaço 
-necessário para executar suas tarefas, sem interferir no espaço de outros processos. Para isso, o SO utiliza 
-estratégias como particionamento (divisão da memória em blocos) e paginação (divisão da memória em pequenas 
-unidades chamadas páginas). A paginação, por exemplo, permite que a memória física seja usada de forma mais 
-flexível, ajudando a evitar situações onde partes grandes da memória ficam inutilizadas. É como dividir um armário 
-em várias gavetas pequenas, para que cada item tenha um espaço apropriado sem ocupar mais do que precisa.
+necessário para executar suas tarefas, sem interferir no espaço de outros processos. Para isso, o sistema 
+operacional utiliza estratégias como particionamento (divisão da memória em blocos) e paginação (divisão da memória 
+em pequenas unidades chamadas páginas). A paginação, por exemplo, permite que a memória física seja usada de forma 
+mais flexível, ajudando a evitar situações onde partes grandes da memória ficam inutilizadas. É como dividir um 
+armário em várias gavetas pequenas, para que cada item tenha um espaço apropriado sem ocupar mais do que precisa.
 
  Outro conceito fundamental no gerenciamento de memória é o espaço de memória virtual, que dá aos processos a 
 ilusão de terem acesso a uma memória maior do que a física disponível. Essa técnica, que utiliza o armazenamento 
@@ -348,15 +348,32 @@ computador.
 
 
 
-                                      Gerenciamento de Arquivos
+                                     "Gerenciamento de Arquivos"
 
-O gerenciamento de arquivos é uma das funções mais visíveis e importantes de um sistema operacional, pois é através dele que os dados são organizados, armazenados e acessados no computador. Um arquivo pode ser entendido como uma "caixa" onde você guarda informações, como documentos, imagens ou músicas. O sistema operacional age como o bibliotecário dessa enorme coleção de caixas, organizando-as em prateleiras (diretórios) e facilitando o acesso quando você precisa de algo específico.
+ O gerenciamento de arquivos é uma das funções mais visíveis e importantes de um sistema operacional, pois é 
+através dele que os dados são organizados, armazenados e acessados no computador. Um arquivo pode ser entendido 
+como uma "caixa" onde você guarda informações, como documentos, imagens ou músicas. O sistema operacional age como 
+o bibliotecário dessa enorme coleção de caixas, organizando-as em prateleiras (diretórios) e facilitando o acesso 
+quando você precisa de algo específico.
 
-Uma das tarefas principais do gerenciamento de arquivos é fornecer uma estrutura lógica para o armazenamento de dados. Para isso, o sistema operacional utiliza sistemas de arquivos (como NTFS, FAT32 ou ext4), que definem regras sobre como os dados serão armazenados e recuperados. Esses sistemas funcionam como mapas, permitindo que o sistema operacional encontre rapidamente onde um arquivo está guardado no disco, mesmo que fisicamente ele esteja espalhado em várias partes. Essa organização torna possível acessar arquivos grandes e complexos de forma rápida e eficiente.
+ Uma das tarefas principais do gerenciamento de arquivos é fornecer uma estrutura lógica para o armazenamento de 
+dados. Para isso, o sistema operacional utiliza sistemas de arquivos (como NTFS, FAT32 ou ext4), que definem regras 
+sobre como os dados serão armazenados e recuperados. Esses sistemas funcionam como mapas, permitindo que o sistema 
+operacional encontre rapidamente onde um arquivo está guardado no disco, mesmo que fisicamente ele esteja espalhado 
+em várias partes. Essa organização torna possível acessar arquivos grandes e complexos de forma rápida e eficiente.
 
-Além de organizar, o sistema operacional também controla quem pode acessar os arquivos e como. Ele implementa permissões, que são regras definindo quais usuários ou processos têm permissão para ler, escrever ou executar um arquivo. Por exemplo, um documento confidencial pode ser configurado para que apenas seu dono tenha acesso. Essa camada de segurança é fundamental para proteger os dados de acessos indevidos e para garantir que programas ou usuários não alterem ou apaguem informações importantes por engano.
+ Além de organizar, o sistema operacional também controla quem pode acessar os arquivos e como. Ele implementa 
+permissões, que são regras definindo quais usuários ou processos têm permissão para ler, escrever ou executar um 
+arquivo. Por exemplo, um documento confidencial pode ser configurado para que apenas seu dono tenha acesso. Essa 
+camada de segurança é fundamental para proteger os dados de acessos indevidos e para garantir que programas ou 
+usuários não alterem ou apaguem informações importantes por engano.
 
-Outra função essencial do gerenciamento de arquivos é lidar com a manipulação de arquivos, como criação, exclusão, cópia e renomeação. O sistema operacional fornece interfaces amigáveis, como o explorador de arquivos, ou comandos no terminal, para que essas operações sejam realizadas facilmente. Por trás dessas ações simples, o SO executa tarefas complexas, como alocar espaço no disco, atualizar diretórios e manter registros para garantir a consistência dos dados. Esse trabalho invisível é o que torna possível navegar pelas pastas e acessar informações de forma prática e confiável.
+ Outra função essencial do gerenciamento de arquivos é lidar com a manipulação de arquivos, como criação, exclusão, 
+cópia e renomeação. O sistema operacional fornece interfaces amigáveis, como o explorador de arquivos, ou comandos 
+no terminal, para que essas operações sejam realizadas facilmente. Por trás dessas ações simples, o SO executa 
+tarefas complexas, como alocar espaço no disco, atualizar diretórios e manter registros para garantir a 
+consistência dos dados. Esse trabalho invisível é o que torna possível navegar pelas pastas e acessar informações 
+de forma prática e confiável.
 
 
 
