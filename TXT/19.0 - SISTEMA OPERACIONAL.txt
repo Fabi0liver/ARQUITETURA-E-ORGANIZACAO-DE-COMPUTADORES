@@ -291,15 +291,33 @@ operam, mostrando como eles transformam comandos simples em ações coordenadas 
 
 
 
-                   "Escalonamento de Processos em Sistemas Operacionais"
+                     "Escalonamento de Processos em Sistemas Operacionais"
 
-O escalonamento de processos em sistemas operacionais é o mecanismo responsável por gerenciar a execução de múltiplos processos no processador. Imagine que o processador é como um garçom em um restaurante, e cada processo é um pedido de cliente. O escalonador decide qual pedido (ou processo) será atendido e por quanto tempo, garantindo que todos sejam tratados de forma justa e eficiente, sem sobrecarregar o garçom. Isso é crucial, pois o processador, por ser um recurso limitado, precisa dividir seu tempo entre todos os processos que precisam ser executados.
+ O escalonamento de processos em sistemas operacionais é o mecanismo responsável por gerenciar a execução de 
+múltiplos processos no processador. Imagine que o processador é como um garçom em um restaurante, e cada processo é 
+um pedido de cliente. O escalonador decide qual pedido (ou processo) será atendido e por quanto tempo, garantindo 
+que todos sejam tratados de forma justa e eficiente, sem sobrecarregar o garçom. Isso é crucial, pois o 
+processador, por ser um recurso limitado, precisa dividir seu tempo entre todos os processos que precisam ser 
+executados.
 
-Existem diferentes algoritmos de escalonamento que definem como o processador irá priorizar e alocar tempo de execução para os processos. Um exemplo comum é o escalonamento "Round Robin", onde cada processo recebe uma fatia de tempo fixa, de forma rotativa, como se cada cliente no restaurante fosse atendido por um curto período. Isso ajuda a evitar que um único processo consuma todo o tempo do processador, garantindo que outros processos também tenham oportunidade de serem executados.
+ Existem diferentes algoritmos de escalonamento que definem como o processador irá priorizar e alocar tempo de 
+execução para os processos. Um exemplo comum é o escalonamento "Round Robin", onde cada processo recebe uma fatia 
+de tempo fixa, de forma rotativa, como se cada cliente no restaurante fosse atendido por um curto período. Isso 
+ajuda a evitar que um único processo consuma todo o tempo do processador, garantindo que outros processos também 
+tenham oportunidade de serem executados.
 
-Outro ponto importante do escalonamento é o conceito de "prioridade". Em alguns casos, processos mais críticos ou urgentes precisam de mais atenção, enquanto outros podem esperar um pouco mais. Isso é como um garçom que, ao perceber que um cliente está em uma emergência (como uma refeição quente que precisa ser entregue rapidamente), pode decidir atender esse cliente antes dos outros. O sistema operacional, então, pode usar algoritmos como o "Prioridade Preemptiva", que altera a execução do processo em tempo real, para garantir que os processos mais importantes sejam executados primeiro.
+ Outro ponto importante do escalonamento é o conceito de "prioridade". Em alguns casos, processos mais críticos ou 
+urgentes precisam de mais atenção, enquanto outros podem esperar um pouco mais. Isso é como um garçom que, ao 
+perceber que um cliente está em uma emergência (como uma refeição quente que precisa ser entregue rapidamente), 
+pode decidir atender esse cliente antes dos outros. O sistema operacional, então, pode usar algoritmos como o 
+"Prioridade Preemptiva", que altera a execução do processo em tempo real, para garantir que os processos mais 
+importantes sejam executados primeiro.
 
-O escalonamento de processos é, portanto, fundamental para garantir que o sistema seja eficiente e justo, tratando todos os processos de maneira equilibrada, mas também priorizando os mais críticos quando necessário. Ele permite que o sistema operacional otimize o uso do processador, assegurando que todos os programas tenham tempo de execução suficiente e sem prejudicar a performance geral do sistema. O bom gerenciamento do escalonamento é a chave para manter um desempenho adequado e uma boa experiência para o usuário.
+ O escalonamento de processos é, portanto, fundamental para garantir que o sistema seja eficiente e justo, tratando 
+todos os processos de maneira equilibrada, mas também priorizando os mais críticos quando necessário. Ele permite 
+que o sistema operacional otimize o uso do processador, assegurando que todos os programas tenham tempo de execução 
+suficiente e sem prejudicar a performance geral do sistema. O bom gerenciamento do escalonamento é a chave para 
+manter um desempenho adequado e uma boa experiência para o usuário.
 
 
  
